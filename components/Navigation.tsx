@@ -33,7 +33,7 @@ const Navigation = () => {
     { href: '/launchpad', label: 'Launchpad' },
     { href: '/research', label: 'Think Tank' },  //Think tank
     { href: '/internship', label: 'Ignite' },  // ignite
-    { href: '/claimit', label: 'ClaimIt' },
+    { href: '/claimit', label: 'Claim It' },
   ]
 
   const handleContactClick = () => {

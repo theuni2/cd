@@ -24,8 +24,8 @@ export default function Launchpad() {
      <TimelineSection/>
      <ShowcaseSection/>
      <LaunchpadComparison/>
-     <Plans/>
-     <MobilePlans/>
+     {/* <Plans/>
+     <MobilePlans/> */}
       <Footer />
     </main>
   )

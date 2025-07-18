@@ -22,17 +22,17 @@ const steps = [
   },
   {
     week: 'Weeks 3–4',
-    title: 'Interview Preparation & Placement',
+    title: 'Placement and Work + Live Projects',
     points: [
       {
         icon: <BsChatDots className="text-blue-600" size={24} />,
-        heading: 'Mock Interviews',
-        description: 'Participate in mock interviews to build confidence and master interview techniques.',
+        heading: 'Placement connections',
+        description: 'Get connected with top startups and partner organizations, paving the eay for your placement success',
       },
       {
         icon: <BsBriefcase className="text-blue-600" size={24} />,
-        heading: 'Recruiter Connections',
-        description: 'Connect with top recruiters and partner orgs to boost placement success.',
+        heading: 'Live Projects',
+        description: 'Intern with top firms on real-time business challenges, gaining hands-on experience,industry exposure, and practical-solving skills',
       },
     ],
   },
