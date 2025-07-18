@@ -29,10 +29,11 @@ const Navigation = () => {
   const linkClass = isScrolled ? "text-gray-900 hover:text-gray-600" : "text-white hover:text-gray-200"
 
   const navItems = [
-    { href: '/', label: 'Career Lab' },
-    { href: '/research', label: 'Research' },  //Think tank
-    { href: '/internship', label: 'Internship' },  // ignite
-    { href: '/claimit', label: 'Value Adds' },
+    { href: '/', label: 'Home' },
+    { href: '/launchpad', label: 'Launchpad' },
+    { href: '/research', label: 'Think Tank' },  //Think tank
+    { href: '/internship', label: 'Ignite' },  // ignite
+    { href: '/claimit', label: 'ClaimIt' },
   ]
 
   const handleContactClick = () => {

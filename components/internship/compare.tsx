@@ -85,9 +85,9 @@ export default function InternshipComparisonSection() {
           <thead className="bg-blue-50">
             <tr>
               <th className="p-4 font-semibold text-sm text-gray-700">Feature</th>
-              <th className="p-4 font-semibold text-sm text-gray-700">Ignite Internships (Us)</th>
-              <th className="p-4 font-semibold text-sm text-gray-700">Ladder Internships</th>
-              <th className="p-4 font-semibold text-sm text-gray-700">AIP Partners</th>
+              <th className="p-4 font-semibold text-sm text-gray-700">Ignite Internships (CD)</th>
+              <th className="p-4 font-semibold text-sm text-gray-700">Competitor 1</th>
+              <th className="p-4 font-semibold text-sm text-gray-700">Competitor 2</th>
               <th className="p-4 font-semibold text-sm text-gray-700">Why Us?</th>
             </tr>
           </thead>

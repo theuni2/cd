@@ -12,8 +12,8 @@ const Hero = () => {
           </span>
         </div>
         <h1 className="mb-8 text-4xl font-bold leading-tight text-gray-900 md:text-5xl lg:text-6xl">
-          {/* Discover Your Perfect<br />Career Path */}
-          Launch Your Career Journey with <br/> Launchpad 🚀
+          Discover Your Perfect<br />Career Path 🚀
+          {/* Launch Your Career Journey with <br/> Launchpad 🚀 */}
         </h1>
         <div className="mb-8">
           <p className="text-base md:text-xl text-gray-600 text-center">

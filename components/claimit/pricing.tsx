@@ -45,7 +45,7 @@ export default function FinalPricing() {
           transition={{ duration: 0.7 }}
           className="text-4xl md:text-5xl font-bold text-gray-900 mb-6"
         >
-          Final Pricing
+          Timeline
         </motion.h2>
 
         <motion.p
@@ -80,9 +80,9 @@ export default function FinalPricing() {
               <p className="text-sm text-gray-600 italic mb-2">
                 <strong>Timeline:</strong> {plan.timeline}
               </p>
-              <p className="text-lg font-semibold text-gray-900">
+              {/* <p className="text-lg font-semibold text-gray-900">
                 {plan.price}
-              </p>
+              </p> */}
             </motion.div>
           ))}
         </div>

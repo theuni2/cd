@@ -365,9 +365,25 @@ export default function WhyResearch() {
           transition={{ duration: 0.7 }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900">
-            Why Thinktank? 💡
+
+  <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          className="flex items-center justify-center gap-4 mb-4"
+        >
+           <h2 className="text-4xl md:text-5xl font-bold text-gray-900">
+            Why Thinktank? 
           </h2>
+          <Image
+            src="/thinktank.png" // ✅ Update path to your actual logo
+            alt="Launchpad Logo"
+            width={50}
+            height={50}
+            className="rounded-full"
+          />
+        </motion.div>
+
           <p className="text-lg text-gray-700 max-w-2xl mx-auto mt-4">
             Research isn’t just about academics — it demonstrates curiosity, initiative,
             and creative thinking. Here’s what top universities say.

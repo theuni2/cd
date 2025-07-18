@@ -1,6 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 import { FaGlobe, FaUsers, FaCheckCircle, FaUserGraduate, FaRocket } from 'react-icons/fa';
 
 const IgniteExperienceSection: React.FC = () => {
@@ -8,9 +9,29 @@ const IgniteExperienceSection: React.FC = () => {
     <section className="bg-white py-20 px-6 md:px-20">
       {/* Heading */}
       <div className="text-center max-w-4xl mx-auto mb-16">
-        <h2 className="text-4xl md:text-5xl font-bold text-gray-900">IGNITE</h2>
+        {/* <h2 className="text-4xl md:text-5xl font-bold text-gray-900">IGNITE</h2> */}
+                    
+
+  <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          className="flex items-center justify-center gap-4 mb-4"
+        >
+          <h3 className="text-4xl md:text-5xl font-bold text-gray-900">IGNITE</h3>
+
+          <Image
+            src="/ignite.png" 
+            alt="Launchpad Logo"
+            width={50}
+            height={50}
+            className="rounded-full"
+          />
+        </motion.div>
+
+
         <p className="mt-4 text-lg text-gray-600">
-          Guaranteed internships and mentorships with Career Discovery
+          Fast-track your future with prestigious internships, apprenticeships, and mentor-led projects—organize TEDx events, collaborate with PhD researchers, or intern with global brands.
         </p>
       </div>
 

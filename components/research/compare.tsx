@@ -84,10 +84,10 @@ export default function ComparisonSection() {
           <thead className="bg-[#f2f2f2] text-sm uppercase text-gray-700">
             <tr>
               <th className="p-4 font-medium">Feature</th>
-              <th className="p-4 font-medium text-[#111]">Us</th>
+              <th className="p-4 font-medium text-[#111]">Thinktank (CD)</th>
               {[...Array(4)].map((_, i) => (
                 <th key={i} className="p-4 font-medium text-gray-600 text-sm text-center">
-                  Other {i + 1}
+                  Competitor {i + 1}
                 </th>
               ))}
             </tr>
