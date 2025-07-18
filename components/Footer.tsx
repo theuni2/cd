@@ -85,9 +85,12 @@ const handleContactClick = () => {
           <FooterSection 
             title="Quick Links" 
             links={[
-              { label: 'Home', href: '/' },
+              { label: 'Career Lab', href: '/' },
               { label: 'Research', href: '/research' },
               { label: 'Internship', href: '/internship' },
+              // { href: '/research', label: 'Research' },  //Think tank
+    // { href: '/internship', label: 'Internship' },  // ignite
+    { href: '/claimit', label: 'Value Adds' },
               { label: 'Career Pathways', href: '#services' },
               { label: 'Success Stories', href: '#success-stories' },
             ]}
@@ -95,7 +98,7 @@ const handleContactClick = () => {
           
            <div>
             <h3 className="text-lg font-semibold mb-4 text-gray-800">Stay Updated</h3>
-            <p className="text-gray-600 mb-4">Subscribe to our newsletter for the latest career insights and opportunities.</p>
+            <p className="text-gray-600 mb-4">Fill out the form below to connect with us and explore exciting career opportunities.</p>
             {/* <NewsletterSubscription /> */}
             <button 
                   onClick={handleContactClick}
