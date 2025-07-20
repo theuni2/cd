@@ -63,7 +63,7 @@ export default function ClaimItHero() {
               className="flex flex-col sm:flex-row gap-4 pt-4"
             >
               <Button
-                href="/#apply"
+                href="/#contact"
                 variant="primary"
                 className="group relative overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300"
               >
