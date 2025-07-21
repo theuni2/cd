@@ -86,7 +86,7 @@ const handleContactClick = () => {
             title="Quick Links" 
             links={[
               { label: 'Launchpad', href: '/launchpad' },
-              { label: 'Launchpad', href: '/launchpad' },
+              // { label: 'Launchpad', href: '/launchpad' },
               { label: 'Think Tank', href: '/research' },
               { label: 'Ignite', href: '/internship' },
               // { href: '/research', label: 'Research' },  //Think tank
