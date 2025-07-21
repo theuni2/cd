@@ -85,12 +85,13 @@ const handleContactClick = () => {
           <FooterSection 
             title="Quick Links" 
             links={[
-              { label: 'Career Lab', href: '/' },
-              { label: 'Research', href: '/research' },
-              { label: 'Internship', href: '/internship' },
+              { label: 'Launchpad', href: '/launchpad' },
+              { label: 'Launchpad', href: '/launchpad' },
+              { label: 'Think Tank', href: '/research' },
+              { label: 'Ignite', href: '/internship' },
               // { href: '/research', label: 'Research' },  //Think tank
     // { href: '/internship', label: 'Internship' },  // ignite
-    { href: '/claimit', label: 'Value Adds' },
+    { href: '/claimit', label: 'Claim It' },
               { label: 'Career Pathways', href: '#services' },
               { label: 'Success Stories', href: '#success-stories' },
             ]}
