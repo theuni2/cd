@@ -47,11 +47,11 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
 }
 
 async function handleNewsletterSubscription(email: string) {
-  console.log('Sending newsletter subscription email');
+  console.log('Sending CD newsletter subscription email');
   const mailOptions = {
     from: process.env.EMAIL_USER,
-    to: 'thecareerdiscovery@gmail.com',
-    subject: 'New Newsletter Subscription',
+    to: 'cdudleads@gmail.com',
+    subject: 'New CD Newsletter Subscription',
     html: `
       <!DOCTYPE html>
       <html lang="en">
@@ -93,8 +93,8 @@ async function handleFormSubmission(formData: any) {
 
   const mailOptions = {
     from: process.env.EMAIL_USER,
-    to: 'thecareerdiscovery@gmail.com',
-    subject: 'New Career Discovery Form Submission',
+    to: 'cdudleads@gmail.com',
+    subject: 'New CD Form Submission',
     html: `
       <!DOCTYPE html>
       <html lang="en">

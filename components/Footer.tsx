@@ -90,8 +90,8 @@ const handleContactClick = () => {
               { label: 'Think Tank', href: '/research' },
               { label: 'Ignite', href: '/internship' },
               // { href: '/research', label: 'Research' },  //Think tank
-    // { href: '/internship', label: 'Internship' },  // ignite
-    { href: '/claimit', label: 'Claim It' },
+              // { href: '/internship', label: 'Internship' },  // ignite
+              { href: '/claimit', label: 'Claim It' },
               { label: 'Career Pathways', href: '#services' },
               { label: 'Success Stories', href: '#success-stories' },
             ]}
