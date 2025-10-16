@@ -11,13 +11,13 @@ const showcases = [
       'An APP focused on accessible, affordable preventive healthcare with expert care and seamless service.',
     image: '/launchpad/img1.png', // Add these images in your /public folder
   },
-  {
-    name: 'Anvay',
-    title: 'ThriviFi',
-    description:
-      'An INTERNATIONAL FINANCE COMPETITION encouraging green finance initiatives through events, school partnerships, and sponsors.',
-    image: '/launchpad/img2.png',
-  },
+  // {
+  //   name: 'Anvay',
+  //   title: 'ThriviFi',
+  //   description:
+  //     'An INTERNATIONAL FINANCE COMPETITION encouraging green finance initiatives through events, school partnerships, and sponsors.',
+  //   image: '/launchpad/img2.png',
+  // },
   {
     name: 'Anaya',
     title: 'Journalism + Law Project',
