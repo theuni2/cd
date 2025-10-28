@@ -8,11 +8,11 @@ const features = [
     launchpad: '1:1 entrepreneurship program: Short: 6-15 weeks | Long: 25 weeks to 1 year',
     whyUs: 'Emphasis on real-world, long-lasting impact: funding, scaling, measurable outcomes, prototypes, 1:1 flexibility',
   },
-  {
-    title: 'Cost (USD)',
-    launchpad: '$3,000, inclusive of end-to-end mentorship & MVP execution',
-    whyUs: 'Transparent pricing, end-to-end guided support from mentors, open to all',
-  },
+//  {
+//     title: 'Execution & Outcomes',
+//     launchpad: 'From idea to prototype develop your MVP, refine your business model, and gain clarity on funding and growth strategies.',
+//     whyUs: 'Every session drives tangible outcomes: progress you can measure, pitch you can present, and impact you can showcase.',
+//   },
   {
     title: 'Mentorship',
     launchpad: 'Personalized mentorship from CEOs, founders, domain experts, and nonprofit leaders; regular check-ins',
@@ -23,6 +23,7 @@ const features = [
     launchpad: 'Media & PR support: featured in magazines, video scripts, Instagram, websites, interviews',
     whyUs: 'Documenting journey from ideation to execution to showcase real impact',
   },
+
 ];
 
 export default function LaunchpadFeatures() {

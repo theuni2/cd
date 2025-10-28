@@ -245,20 +245,27 @@ export default function CareerForm() {
   const renderStep = () => {
     if (isSubmitted) {
       return (
-        <div className="text-center">
-          <motion.div
-            initial={{ scale: 0 }}
-            animate={{ scale: 1 }}
-            transition={{ duration: 0.5 }}
-            className="inline-block p-4 bg-green-100 rounded-full mb-4"
-          >
-            <Check className="w-12 h-12 text-green-500" />
-          </motion.div>
-          <h3 className="text-2xl font-semibold mb-4 text-primary">Thank You!</h3>
-          <p className="text-lg text-gray-600 mb-8">
-            Your form has been submitted successfully. We'll be in touch soon!
-          </p>
-        </div>
+     <div className="text-center">
+  <motion.div
+    initial={{ scale: 0 }}
+    animate={{ scale: 1 }}
+    transition={{ duration: 0.5 }}
+    className="inline-block p-4 bg-green-100 rounded-full mb-4"
+  >
+    <Check className="w-12 h-12 text-green-500" />
+  </motion.div>
+  <h3 className="text-2xl font-semibold mb-4 text-primary">Thank You 🎉</h3>
+  <p className="text-lg text-gray-600 mb-3">
+    🎓 You’re on the <span className="font-semibold text-primary">Waitlist!</span>
+  </p>
+  <p className="text-lg text-gray-600 mb-3">
+    You’ve taken the first step toward joining an exclusive community of students shaping their global futures with <strong>Career Discovery</strong> 🌍
+  </p>
+  <p className="text-lg text-gray-600">
+    Our team will reach out as soon as spots open, giving you the chance for a <strong>1:1 session with the Senior Counsellor</strong> — a unique opportunity to get personalized guidance and insights.
+  </p>
+</div>
+
       )
     }
 

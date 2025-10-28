@@ -34,14 +34,14 @@ const mentors = [
     "quote": "Bridging the gap between academic theory and real-world applications through innovative research."
   },
   {
-    "name": "Dr. Khanna",
-    "title": "PhD in Psychology",
-    "institution": "University of Wisconsin-Madison",
-    "institutionLogo": "https://i.imgur.com/bJJbzbc.png",
-    "image": "https://media.licdn.com/dms/image/v2/C4D03AQFjfk1Dh00jew/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1656395679390?e=1746057600&v=beta&t=sWiDCKjlclpIYXEvVLS1AIVo9cYxFkxvf0e-i99j8mU",
+    "name": "Dr. Grossi ",
+    "title": "Professor",
+    "institution": "University of Oxford ",
+    "institutionLogo": "https://media.licdn.com/dms/image/v2/D4E0BAQGnc4qXLbE8Sg/company-logo_100_100/company-logo_100_100/0/1709206435851/oxforduni_logo?e=1762992000&v=beta&t=3l0M3v1ci620U7ObCmOZ0IqT6gxoxdARz0k14kebvS8",
+    "image": "/professor/marco.png",
     "linkedin": "https://www.linkedin.com/in/jainshreyansh108/",
-    "expertise": ["Clinical Psychology", "Cognitive Neuroscience", "Behavioral Research"],
-    "quote": "Inspiring students to explore the depths of human behavior and cognition through research."
+    "expertise": ["Logic", "Philosophy"],
+    "quote": "Encouraging students to delve into the foundations of reasoning and the philosophy of human thought to uncover deeper truths about knowledge and understanding."
   },
   {
     "name": "Dr. Mukherji",
@@ -64,14 +64,14 @@ const mentors = [
     "quote": "Fostering critical thinking and analytical skills through collaborative research projects."
   },
   {
-    "name": "Dr. Khan",
-    "title": "Professor, Faculty of Behavioural Sciences & Advisor",
-    "institution": "SGT University",
+    "name": "Mr.Cartwright",
+    "title": "Professor, Faculty of Food Sciences",
+    "institution": "Washington State University",
     "institutionLogo": "https://i.imgur.com/bYhX79Y.png",
-    "image": "https://media.licdn.com/dms/image/v2/D4D03AQGtWJ-Uo62K7w/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1679756084466?e=1746057600&v=beta&t=b-whg8y_jJJAj6fW9f-DvtctpWm4cWSJSLjUWHN3Tr0",
+    "image": "/professor/cat.png",
     "linkedin": "https://www.linkedin.com/in/dr-waheeda-khan-301b5810/",
-    "expertise": ["Psychology", "Mental Health", "Counseling", "Behavioral Research"],
-    "quote": "Empowering research and education in psychology, mental health, and well-being through global collaborations."
+    "expertise": ["Food Science", "Science Communicator"],
+    "quote": "Advancing innovation in food science and fostering global awareness through clear, impactful science communication."
   },
   {
     "name": "Dr. Majumdar",
@@ -84,11 +84,49 @@ const mentors = [
     "quote": "Advancing public health through implementation research and cross-disciplinary collaborations."
   },
   {
+    "name": "Dr. Jude",
+    "title": "Professor",
+    "institution": "Singapore Management University",
+    "institutionLogo": "https://media.licdn.com/dms/image/v2/C560BAQHz-TKrwq2GFA/company-logo_100_100/company-logo_100_100/0/1630585940673/singapore_management_university_logo?e=1762992000&v=beta&t=yWZX1aUMD-Ukuui9zXzCZphGkILxj3u5W8m4suuMYew",
+    "image": "/professor/jude.png",
+    "linkedin": "https://www.linkedin.com/in/piyushamajumdar/",
+    "expertise": ["Sustainability", "Governance"],
+    "quote": "Promoting sustainable development and responsible governance to shape a more equitable and resilient future."
+  },
+  {
   "name": "Mr. Barritt",
   "title": "Chief Development Officer, Michigan Medicine",
   "institution": "Michigan Medicine",
   "institutionLogo": "/unilogo/universityofmichigan.png",
   "image": "/unilogo/professor1.png",
+  "linkedin": "https://www.linkedin.com/in/ericbarritt/",
+  "expertise": [
+    "Philanthropy",
+    "Healthcare Fundraising",
+    "Major Gifts Strategy",
+    "Non-Profit Leadership"
+  ],
+  "quote": "Transforming healthcare through philanthropy—$1.5B+ raised and 200+ major gifts secured to fuel innovation and care."
+},
+  {
+  "name": "Mr. Takyar",
+  "title": "Assistant Professor University of Minnesota",
+  "institution": " University of Minnesota",
+  "institutionLogo": "/college/minn.png",
+  "image": "/professor/farjin.png",
+  "linkedin": "https://www.linkedin.com/in/ericbarritt/",
+  "expertise": [
+    
+    "Medicine"
+  ],
+  "quote": "Transforming healthcare through philanthropy—$1.5B+ raised and 200+ major gifts secured to fuel innovation and care."
+},
+  {
+  "name": "Mrs. Hajal",
+  "title": "",
+  "institution": "Professor, Northwestern University",
+  "institutionLogo": "/unilogo/universityofmichigan.png",
+  "image": "/professor/h.png",
   "linkedin": "https://www.linkedin.com/in/ericbarritt/",
   "expertise": [
     "Philanthropy",

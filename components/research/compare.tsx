@@ -3,16 +3,16 @@
 import { motion } from 'framer-motion';
 
 const comparisonData = [
-  {
-    feature: 'Price (USD)',
-    us: '$3,000 including 1v1 mentorship with top professors, LORs, and journal publication guidance',
-    others: [
-      '~$3000 for only 1v1 mentorship without add-ons like publication extending to $3,795',
-      '~$6500 for premium research and publication',
-      '~$5,000+ ',
-       '~$6500',
-    ],
-  },
+  // {
+  //   feature: 'Price (USD)',
+  //   us: '$3,000 including 1v1 mentorship with top professors, LORs, and journal publication guidance',
+  //   others: [
+  //     '~$3000 for only 1v1 mentorship without add-ons like publication extending to $3,795',
+  //     '~$6500 for premium research and publication',
+  //     '~$5,000+ ',
+  //      '~$6500',
+  //   ],
+  // },
   {
     feature: 'Format',
     us: ' 1v1 Ultra‑focused 10-hr sessions (5-hr with a top Professor, 5-hr with an expert writer) ',
