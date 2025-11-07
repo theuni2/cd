@@ -73,16 +73,16 @@ const mentors = [
     "expertise": ["Food Science", "Science Communicator"],
     "quote": "Advancing innovation in food science and fostering global awareness through clear, impactful science communication."
   },
-  {
-    "name": "Dr. Majumdar",
-    "title": "Associate Professor & Implementation Science Researcher",
-    "institution": "IIHMR University",
-    "institutionLogo": "https://i.imgur.com/TmaV6Bb.png",
-    "image": "https://media.licdn.com/dms/image/v2/D4D03AQHLSF76-OJtRg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1686293058158?e=1746057600&v=beta&t=yob06-lmp5kRYIk5lce7PCgH9JHrOek_kCksiEmtlK8",
-    "linkedin": "https://www.linkedin.com/in/piyushamajumdar/",
-    "expertise": ["Public Health", "Implementation Science", "Global Health Research"],
-    "quote": "Advancing public health through implementation research and cross-disciplinary collaborations."
-  },
+  // {
+  //   "name": "Dr. Majumdar",
+  //   "title": "Associate Professor & Implementation Science Researcher",
+  //   "institution": "IIHMR University",
+  //   "institutionLogo": "https://i.imgur.com/TmaV6Bb.png",
+  //   "image": "https://media.licdn.com/dms/image/v2/D4D03AQHLSF76-OJtRg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1686293058158?e=1746057600&v=beta&t=yob06-lmp5kRYIk5lce7PCgH9JHrOek_kCksiEmtlK8",
+  //   "linkedin": "https://www.linkedin.com/in/piyushamajumdar/",
+  //   "expertise": ["Public Health", "Implementation Science", "Global Health Research"],
+  //   "quote": "Advancing public health through implementation research and cross-disciplinary collaborations."
+  // },
   {
     "name": "Dr. Jude",
     "title": "Professor",
@@ -110,18 +110,18 @@ const mentors = [
 },
   {
   "name": "Mr. Takyar",
-  "title": "Assistant Professor University of Minnesota",
-  "institution": " University of Minnesota",
+  "title": "Assistant Professor, University of Minnesota",
+  "institution": "University of Minnesota",
   "institutionLogo": "/college/minn.png",
   "image": "/professor/farjin.png",
   "linkedin": "https://www.linkedin.com/in/ericbarritt/",
   "expertise": [
-    
     "Medicine"
   ],
-  "quote": "Transforming healthcare through philanthropy—$1.5B+ raised and 200+ major gifts secured to fuel innovation and care."
-},
-  {
+  "quote": "Advancing the frontiers of medicine through research, innovation, and compassionate care."
+}
+,
+ {
   "name": "Mrs. Hajal",
   "title": "",
   "institution": "Professor, Northwestern University",
@@ -134,8 +134,25 @@ const mentors = [
     "Major Gifts Strategy",
     "Non-Profit Leadership"
   ],
-  "quote": "Transforming healthcare through philanthropy—$1.5B+ raised and 200+ major gifts secured to fuel innovation and care."
+  "quote": "Bridging compassion and innovation—driving lasting impact through transformative healthcare philanthropy."
 },
+ 
+ {
+  "name": "Mr. Arrazola",
+  "title": "PhD Research",
+  "institution": "University College London",
+  "institutionLogo": "/unilogo/smu.png",
+  "image": "/professor/rebia.png",
+  "linkedin": "https://www.linkedin.com/in/ericbarritt/",
+  "expertise": [
+    "Science and Innovation",
+    "Sustainability",
+    "Corporate Social Responsibility",
+    "Environmental Engineering"
+  ],
+  "quote": "Bridging compassion and innovation—driving lasting impact through transformative healthcare philanthropy."
+}
+
 
 ];
 

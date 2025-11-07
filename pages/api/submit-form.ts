@@ -89,7 +89,7 @@ async function handleNewsletterSubscription(email: string) {
 
 async function handleFormSubmission(formData: any) {
   console.log('Sending form submission email');
-  const { fullName, email, phone, userType, grade, schoolName, preferredField, preferredRole, comments } = formData
+  const { fullName, email, phone, userType, grade, schoolName, desiredOutcome, fieldOfInterest, comments } = formData
 
   const mailOptions = {
     from: process.env.EMAIL_USER,
@@ -123,8 +123,8 @@ async function handleFormSubmission(formData: any) {
             <div class="field"><span class="label">User Type:</span> ${userType}</div>
             <div class="field"><span class="label">Grade:</span> ${grade}</div>
             <div class="field"><span class="label">School Name:</span> ${schoolName}</div>
-            <div class="field"><span class="label">Preferred Field:</span> ${preferredField}</div>
-            <div class="field"><span class="label">Preferred Role:</span> ${preferredRole}</div>
+            <div class="field"><span class="label">Desired Outcome:</span> ${desiredOutcome}</div>
+            <div class="field"><span class="label">Field Of Interest:</span> ${fieldOfInterest}</div>
             <div class="field"><span class="label">Comments:</span> ${comments}</div>
           </div>
         </div>

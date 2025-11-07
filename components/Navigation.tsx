@@ -30,9 +30,10 @@ const Navigation = () => {
 
   const navItems = [
     { href: '/', label: 'Home' },
+    { href: '/research', label: 'Research' },  //Think tank
+    { href: '/internship', label: 'Interships' },  
     { href: '/launchpad', label: 'Launchpad' },
-    { href: '/research', label: 'Think Tank' },  //Think tank
-    { href: '/internship', label: 'Ignite' },  // ignite
+    // ignite
     { href: '/claimit', label: 'Claim It' },
   ]
 

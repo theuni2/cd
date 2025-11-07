@@ -36,6 +36,18 @@ const getOrdinalSuffix = (num: number): string => {
   return "th";
 }
 
+// interface FormState {
+//   fullName: string;
+//   email: string;
+//   phone: string;
+//   userType: string;
+//   grade: string;
+//   schoolName: string;
+//   desiredOutcome: string;
+//   comments: string;
+//   consent: boolean;
+// }
+
 interface FormState {
   fullName: string;
   email: string;
@@ -44,9 +56,11 @@ interface FormState {
   grade: string;
   schoolName: string;
   desiredOutcome: string;
+  fieldOfInterest: string;  // 👈 new
   comments: string;
   consent: boolean;
 }
+
 
 const useFormValidation = (initialState: FormState) => {
   const [values, setValues] = useState(initialState)
@@ -105,7 +119,7 @@ const useFormValidation = (initialState: FormState) => {
   const stepFields: Record<number, Array<keyof FormState>> = {
     0: ['fullName', 'email', 'phone', 'userType'],
     1: ['grade', 'schoolName'],
-    2: ['desiredOutcome'],
+    2: ['desiredOutcome', 'fieldOfInterest'],
     3: ['consent']
   }
 
@@ -157,17 +171,31 @@ export default function CareerForm() {
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [isSubmitted, setIsSubmitted] = useState(false)
 
+  // const initialState = {
+  //   fullName: '',
+  //   email: '',
+  //   phone: '',
+  //   userType: '',
+  //   grade: '',
+  //   schoolName: '',
+  //   desiredOutcome: '',
+  //   comments: '',
+  //   consent: false
+  // }
+
   const initialState = {
-    fullName: '',
-    email: '',
-    phone: '',
-    userType: '',
-    grade: '',
-    schoolName: '',
-    desiredOutcome: '',
-    comments: '',
-    consent: false
-  }
+  fullName: '',
+  email: '',
+  phone: '',
+  userType: '',
+  grade: '',
+  schoolName: '',
+  desiredOutcome: '',
+  fieldOfInterest: '',  // 👈 new
+  comments: '',
+  consent: false
+}
+
 
   const { values, errors, touched, handleChange, handleBlur, isStepValid, validateForm } = useFormValidation(initialState)
 
@@ -396,40 +424,67 @@ export default function CareerForm() {
             </div>
           </div>
         )
-      case 2:
-        return (
-          <div className="space-y-6">
-            <h3 className="text-2xl font-semibold mb-6 text-primary">Career Preferences</h3>
-            <div className="space-y-4">
-              <div>
-                <label className="block text-sm font-medium text-gray-700 mb-1" htmlFor="desiredOutcome">
-                  Desired Outcome
-                </label>
-                <SelectField
-                  icon={Briefcase}
-                  id="desiredOutcome"
-                  name="desiredOutcome"
-                  value={values.desiredOutcome}
-                  onChange={handleChange}
-                  onBlur={handleBlur}
-                  error={errors.desiredOutcome}
-                  touched={touched.desiredOutcome}
-                >
-                  <option value="">Select Desired Outcome</option>
-                  <option value="PUBLISH A BOOK">PUBLISH A BOOK</option>
-                  <option value="BUILD AN AI CHATBOT">BUILD AN AI CHATBOT</option>
-                  <option value="BECOME AN INFLUENCER">BECOME AN INFLUENCER</option>
-                  <option value="BUILD A ROBOT">BUILD A ROBOT</option>
-                  <option value="START A PODCAST">START A PODCAST</option>
-                  <option value="MARKETING AGENCY">MARKETING AGENCY</option>
-                  <option value="ONLINE BUSINESS">ONLINE BUSINESS</option>
-                  <option value="DIGITAL WEBSITE">DIGITAL WEBSITE</option>
-                  <option value="LAUNCH NPO">LAUNCH NPO</option>
-                </SelectField>
-              </div>
-            </div>
+     case 2:
+  return (
+    <div className="space-y-6">
+      <h3 className="text-2xl font-semibold mb-6 text-primary">Career Preferences</h3>
+      <div className="space-y-4">
+        {/* Desired Outcome */}
+        <div>
+          <label className="block text-sm font-medium text-gray-700 mb-1" htmlFor="desiredOutcome">
+            Desired Outcome
+          </label>
+          <SelectField
+            icon={Briefcase}
+            id="desiredOutcome"
+            name="desiredOutcome"
+            value={values.desiredOutcome}
+            onChange={handleChange}
+            onBlur={handleBlur}
+            error={errors.desiredOutcome}
+            touched={touched.desiredOutcome}
+          >
+            <option value="">Select Desired Outcome</option>
+                <option value="WRITE A RESEARCH PAPER UNDER WORLD’S BEST COLLEGE PROFESSOR">
+              WRITE A RESEARCH PAPER UNDER WORLD’S BEST COLLEGE PROFESSOR
+            </option>
+            <option value="PUBLISH A BOOK">PUBLISH A BOOK</option>
+            <option value="BUILD AN AI CHATBOT">BUILD AN AI CHATBOT</option>
+            <option value="BECOME AN INFLUENCER">BECOME AN INFLUENCER</option>
+            <option value="BUILD A ROBOT">BUILD A ROBOT</option>
+            <option value="START A PODCAST">START A PODCAST</option>
+            <option value="MARKETING AGENCY">MARKETING AGENCY</option>
+            <option value="ONLINE BUSINESS">ONLINE BUSINESS</option>
+            <option value="DIGITAL WEBSITE">DIGITAL WEBSITE</option>
+            <option value="LAUNCH NPO">LAUNCH NPO</option>
+        
+          </SelectField>
+        </div>
+
+        {/* Field of Interest */}
+        <div>
+          <label className="block text-sm font-medium text-gray-700 mb-1" htmlFor="fieldOfInterest">
+            Field of Interest (related to your desired outcome)
+          </label>
+          <div className="relative">
+            <GraduationCap className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" size={18} />
+            <input
+              type="text"
+              id="fieldOfInterest"
+              name="fieldOfInterest"
+              value={(values as any).fieldOfInterest || ''}
+              onChange={handleChange}
+              onBlur={handleBlur}
+              placeholder="e.g., Artificial Intelligence, Pol Science, Business, Literature..."
+              className="pl-10 w-full py-3 bg-gray-50 border border-gray-300 rounded-lg shadow-sm focus:ring-2 focus:ring-primary focus:bg-white transition-all duration-300 ease-in-out"
+              required
+            />
           </div>
-        )
+        </div>
+      </div>
+    </div>
+  )
+
       case 3:
         return (
           <div className="space-y-6">

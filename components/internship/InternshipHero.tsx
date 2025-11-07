@@ -50,12 +50,28 @@ export default function InternshipHero() {
                       Gain Experience,
                     </span>
                     <br />
-                    Build Your Future with Ignite! 🔥 
+                     <span className="text-3xl">
+                     Build Your Future with the Ignite Internship Programme! 🔥
+                     </span>
                   </h1>
                   <p className="text-xl text-gray-400 max-w-xl">
                     Get industry exposure with exclusive Career Discovery internship opportunities.
                   </p>
                 </div>
+                {/* <div className="space-y-4">
+                  <h1 className="text-4xl md:text-6xl font-bold leading-tight text-white">
+                    Unlock Opportunities,
+                    <br />
+                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-violet-400">
+                      Gain Experience,
+                    </span>
+                    <br />
+                    Build Your Future with Ignite! 🔥 
+                  </h1>
+                  <p className="text-xl text-gray-400 max-w-xl">
+                    Get industry exposure with exclusive Career Discovery internship opportunities.
+                  </p>
+                </div> */}
 
                 {/* Stats */}
                 <div className="grid grid-cols-3 gap-6">

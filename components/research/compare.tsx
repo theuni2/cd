@@ -45,16 +45,28 @@ const comparisonData = [
       'Guided publication track; only the top 5% invited for publication',
     ],
   },
+  // {
+  //   feature: 'Selectivity',
+  //   us: 'Open to motivated 9th to 12th graders despite their grades',
+  //   others: [
+  //     'Moderately selective',
+  //     'Selective (focuses on academic scores + interview)',
+  //     '26% acceptance; GPA > 3.9; fewer than 5% are 9th graders',
+  //     'Selective; involves an interview session',
+  //   ],
+  // },
+
   {
-    feature: 'Selectivity',
-    us: 'Open to motivated 9th to 12th graders despite their grades',
-    others: [
-      'Moderately selective',
-      'Selective (focuses on academic scores + interview)',
-      '26% acceptance; GPA > 3.9; fewer than 5% are 9th graders',
-      'Selective; involves an interview session',
-    ],
-  },
+  feature: 'Selectivity',
+  us: 'Highly selective — only 13% of applicants are accepted, focusing on motivation, creativity, and research potential (open to students from Grades 9–12)',
+  others: [
+    'Moderately selective — admission based on basic academic performance and application quality',
+    'Selective — emphasizes academic scores, interview performance, and prior achievements',
+    '10% acceptance; GPA > 3.9; fewer than 5% are 9th graders — highly grade-dependent',
+    'Selective — includes a rigorous interview and application review process',
+  ],
+},
+
   {
     feature: 'Flexibility',
     us: 'Fully customizable topic and workflow in 1-on-1 sessions with professors',
