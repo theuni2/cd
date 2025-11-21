@@ -78,6 +78,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+     <head>
+        {/* 👉 Paste your meta tag here */}
+      <meta name="google-site-verification" content="GB1EqXwiUzNs9R-scWrTRSRKzqIQNJGj-6FL-SnG2WM" />
+      
+      </head>
       <body className={`${inter.className} min-h-screen bg-white`}>
         <div
           className="absolute top-0 left-0 right-0 h-[500px] -z-10 overflow-hidden"
