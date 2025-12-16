@@ -54,7 +54,7 @@ const features = [
   },
   {
     icon: Sparkles,
-    title: "Join 2000+ Successful Researchers",
+    title: "Join 200+ Successful Researchers",
     description: "who have made their mark in academia",
     image: "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     size: "small",

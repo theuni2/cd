@@ -68,6 +68,10 @@ export const metadata: Metadata = {
       rel: 'manifest',
       url: '/site.webmanifest',
     },
+  
+  },
+    alternates: {
+    canonical: "https://www.thecareerdiscovery.com",
   },
 };
 

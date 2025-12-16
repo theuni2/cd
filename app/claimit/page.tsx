@@ -7,7 +7,10 @@ import FinalPricing from '@/components/claimit/pricing'
 
 export const metadata: Metadata = {
   title: 'Claimit | Career Discovery',
-  description: 'Find your dream internship with Career Discovery. 100% internship guarantee with top companies across various industries.',
+  description: 'With ClaimIt, get expert guidance to win global competitions and elite programs like RSI, Diana Award, TEDx and more. From standout essays and nominations to personalized mentorship—we boost your chances of success.',
+  alternates: {
+    canonical: "https://www.thecareerdiscovery.com/claimit",
+  },
 }
 
 export default function Claimit() {

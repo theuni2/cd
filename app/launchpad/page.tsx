@@ -11,8 +11,11 @@ import MobilePlans from '../components/MobilePlans'
 
 
 export const metadata: Metadata = {
-  title: 'Internship | Career Discovery',
-  description: 'Find your dream internship with Career Discovery. 100% internship guarantee with top companies across various industries.',
+  title: 'Launchpad | Career Discovery',
+  description: 'Unlock your potential with self-driven projects—from launching startups and impactful nonprofit partnerships to building innovative prototypes and revenue-generating ventures.',
+alternates: {
+    canonical: "https://www.thecareerdiscovery.com/launchpad",
+  },
 }
 
 export default function Launchpad() {

@@ -12,6 +12,9 @@ import ComparisonSection from '@/components/research/compare'
 export const metadata: Metadata = {
   title: 'Research | Career Discovery',
   description: 'Explore research opportunities and mentorship programs at Career Discovery. Work with expert mentors on groundbreaking research projects.',
+  alternates: {
+    canonical: "https://www.thecareerdiscovery.com/research",
+  },
 }
 
 export default function Research() {

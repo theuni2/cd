@@ -64,7 +64,7 @@ const Hero = () => {
                 />
               </div>
             </div>
-            <span className="text-xs md:text-sm font-medium text-gray-600">Trusted already by 2k people</span>
+            <span className="text-xs md:text-sm font-medium text-gray-600">Trusted already by 20k people</span>
           </div>
         </div>
         <div className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">

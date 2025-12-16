@@ -31,8 +31,9 @@ const Navigation = () => {
   const navItems = [
     { href: '/', label: 'Home' },
     { href: '/research', label: 'Research' },  //Think tank
-    { href: '/internship', label: 'Interships' },  
+    { href: '/internship', label: 'Internships' },  
     { href: '/launchpad', label: 'Launchpad' },
+    { href: '/blog', label: 'Blogs' },
     // ignite
     { href: '/claimit', label: 'Claim It' },
   ]

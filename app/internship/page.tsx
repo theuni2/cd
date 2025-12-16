@@ -12,7 +12,12 @@ import IgniteAchievementsSection from '@/components/internship/IgniteAchievement
 export const metadata: Metadata = {
   title: 'Internship | Career Discovery',
   description: 'Find your dream internship with Career Discovery. 100% internship guarantee with top companies across various industries.',
+alternates: {
+    canonical: "https://www.thecareerdiscovery.com/internship",
+  },
 }
+
+
 
 export default function Internship() {
   return (

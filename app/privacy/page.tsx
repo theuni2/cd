@@ -8,6 +8,9 @@ import { ChevronLeft } from 'lucide-react'
 export const metadata: Metadata = {
   title: 'Privacy Policy | Career Discovery',
   description: 'Career Discovery Privacy Policy - Learn how we collect, use, and protect your personal information.',
+  alternates: {
+    canonical: "https://www.thecareerdiscovery.com/privacy",
+  },
 }
 
 export default function PrivacyPolicy() {

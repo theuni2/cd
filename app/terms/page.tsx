@@ -8,6 +8,9 @@ import { ChevronLeft } from 'lucide-react'
 export const metadata: Metadata = {
   title: 'Terms of Service | Career Discovery',
   description: 'Career Discovery Terms of Service - Read our terms and conditions for using our career guidance and educational planning services.',
+  alternates: {
+    canonical: "https://www.thecareerdiscovery.com/terms",
+  },
 }
 
 export default function TermsOfService() {
