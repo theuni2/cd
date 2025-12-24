@@ -22,7 +22,14 @@ const features = [
     title: 'Media Presence',
     launchpad: 'Media & PR support: featured in magazines, video scripts, Instagram, websites, interviews',
     whyUs: 'Documenting journey from ideation to execution to showcase real impact',
-  },
+  },{
+    
+title:"Outcome",
+launchpad:"Launch a startup, nonprofit, or idea with real-world impact and measurable outcomes.",
+whyUs:"Focus on execution and tangible results, not just learning."
+
+
+  }
 
 ];
 

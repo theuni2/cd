@@ -3,6 +3,7 @@
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 
+
 const showcases = [
   {
     name: 'Ssavya',
@@ -11,13 +12,13 @@ const showcases = [
       'An APP focused on accessible, affordable preventive healthcare with expert care and seamless service.',
     image: '/launchpad/img1.png', // Add these images in your /public folder
   },
-  // {
-  //   name: 'Anvay',
-  //   title: 'ThriviFi',
-  //   description:
-  //     'An INTERNATIONAL FINANCE COMPETITION encouraging green finance initiatives through events, school partnerships, and sponsors.',
-  //   image: '/launchpad/img2.png',
-  // },
+  {
+    name: 'Anaika',
+    title: 'Zero Waste One World',
+    description:
+      'Sustainability workshops to learn, create, and innovate with eco-friendly practices. Whether you’re a beginner or a pro, our sessions are designed for everyone who cares about the planet.',
+    image: '/launchpad/img2.png',
+  },
   {
     name: 'Anaya',
     title: 'Journalism + Law Project',

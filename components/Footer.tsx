@@ -101,12 +101,14 @@ const handleContactClick = () => {
             <h3 className="text-lg font-semibold mb-4 text-gray-800">Stay Updated</h3>
             <p className="text-gray-600 mb-4">Fill out the form below to connect with us and explore exciting career opportunities.</p>
             {/* <NewsletterSubscription /> */}
+            <a href='/#contact'>
             <button 
-                  onClick={handleContactClick}
+                  
                   className="mt-4 inline-flex items-center justify-center rounded-full px-8 py-3 text-base font-medium bg-[#356bff] text-white hover:bg-[#2e5ee6]"
                 >
                   Contact Us
                 </button>
+                </a>
           </div> 
         </div> 
         

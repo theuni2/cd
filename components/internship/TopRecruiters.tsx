@@ -8,8 +8,8 @@ import SectionHeading from '../SectionHeading'
 const recruiters = [
   {
     name: "Mindsy",
-    logo: "https://i.imgur.com/09XzZSf.jpeg",
-    description: "Leading mental health platform",
+    logo: "/company/mindsy.png",
+     description: "Leading mental health platform",
     link: "https://www.instagram.com/mindsy.in/"
   },
   {
@@ -78,6 +78,25 @@ const recruiters = [
     description: "Support Our Heroes is a non-profit organization dedicated to supporting the families of armed forces personnel.",
     link: "https://supportourheroes.in/"
   },
+  {
+    name: "MoneyMint",
+    logo: "/company/moneymint.png",
+    description: "Moneymint, we break down complex topics into simple, useful content you can actually use, whether you're a founder, investor, or just someone curious about how people make money.",
+    link: "https://moneymint.com/"
+  },
+  {
+    name: "Swaraj Vikas Foundation",
+    logo: "/company/svf.png",
+    description: "Swaraj Vikas Foundation is a non-profit organization dedicated to community development education health environment and social empowerment.",
+    link: "https://swarajvikas.1ngo.in/"
+  },
+  {
+    name: "Protiviti Inc.",
+    logo: "/company/proviti.png",
+    description: "Protiviti India is a global business consulting firm providing IT consulting, Risk & Compliance, Digital Transformation, Internal Audit services.",
+    link: "https://swarajvikas.1ngo.in/"
+  },
+  
   // {
   //   name: "Support Our Heroes",
   //   logo: "/company/supportourheros.png",

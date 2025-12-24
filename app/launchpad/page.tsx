@@ -8,6 +8,8 @@ import ShowcaseSection from '@/components/launchpad/project';
 import LaunchpadComparison from '@/components/compare'
 import Plans from '../components/Plans'
 import MobilePlans from '../components/MobilePlans'
+import NGOImpactSection from '@/components/launchpad/showcase';
+import LaunchpadImpactSection from '@/components/launchpad/program';
 
 
 export const metadata: Metadata = {
@@ -23,8 +25,10 @@ export default function Launchpad() {
     <main className="scroll-smooth">
      <Hero/>
      <LaunchpadSection/>
-     <CapstoneSection/>
-     <TimelineSection/>
+     <LaunchpadImpactSection/>
+     <NGOImpactSection/>
+     {/* <CapstoneSection/> */}
+     {/* <TimelineSection/> */}
      <ShowcaseSection/>
      <LaunchpadComparison/>
      {/* <Plans/>

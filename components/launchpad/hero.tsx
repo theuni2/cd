@@ -71,7 +71,7 @@ export default function ClaimItHero() {
                 className="group relative overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300"
               >
                 <span className="relative z-10 flex items-center">
-                  Start Your ClaimIt Journey
+                  Launch Your Idea
                   <ArrowRight className="w-5 h-5 ml-2 transition-transform group-hover:translate-x-1" />
                 </span>
               </Button>

@@ -8,6 +8,8 @@ import JournalMarquee from '@/components/research/journal'
 import ThreePAdvantage from '@/components/research/threepadvantage'
 import IdeasToImpactSection from '@/components/research/activity'
 import ComparisonSection from '@/components/research/compare'
+import ResearchOutcomes from '@/components/research/outcome'
+import ProfessorsTimelineSection from '@/components/research/upcoming'
 
 export const metadata: Metadata = {
   title: 'Research | Career Discovery',
@@ -25,11 +27,15 @@ export default function Research() {
       <WhyResearch />
       </section>
       <ValueProposition />
+      {/* <ResearchOutcomes/> */}
+      {/* <ProfessorsTimelineSection/> */}
       <JournalMarquee/>
-      <ThreePAdvantage/>
+   
       <Mentors />
+      
       <IdeasToImpactSection/>
       <ComparisonSection />
+
       <Footer />
     </main>
   )
