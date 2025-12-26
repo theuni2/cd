@@ -478,16 +478,16 @@ export default function Page() {
     },
     {
       id: 2,
-      title: "Your Roadmap to Landing Global Internships",
-      preview: "Step-by-step career advice for students aspiring to secure international internships.",
-      slug: "",
+      title: "Best Dubai Research Bootcamp for High School Students in 2026",
+      preview: "Dubai Research Bootcamp for High School helps students build real research skills, university ready profiles and strong academic foundations through guided project based learning.",
+      slug: "dubai-research-bootcamp-for-high-school",
       image: "/blog2.jpg",
     },
     {
       id: 3,
-      title: "Top Skills Recruiters Want in 2025",
-      preview: "Learn the most relevant skills for future-ready career success.",
-      slug: "",
+      title: "Research Mentors for Students in India Academic Guidance Program",
+      preview: "Experienced research mentors for students in India providing personalized academic guidance project supervision and mentorship for long term success.",
+      slug: "research-mentors-students-india",
       image: "/blog3.jpg",
     },
   ];
