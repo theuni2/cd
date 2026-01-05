@@ -71,9 +71,9 @@ const PodcastOutcomes = () => {
               <div className="w-12 h-12 bg-white text-pink-600 rounded-lg shadow-sm flex items-center justify-center mb-4 text-2xl">
                 🎙️
               </div>
-              <h3 className="text-xl font-bold text-slate-900 mb-2">Your 5-Episode Interview Series</h3>
+              <h3 className="text-xl font-bold text-slate-900 mb-2">Your 10-Episode Interview Series</h3>
               <p className="text-slate-700 text-sm leading-relaxed">
-                Walk away with a professionally produced mini-series featuring 4–5 real speakers. This is a tangible portfolio asset proving you can connect with experts and create high-value content.
+                Walk away with a professionally produced mini-series featuring 7–10 real speakers. This is a tangible portfolio asset proving you can connect with experts and create high-value content.
               </p>
             </div>
             <div className="w-full h-1.5 bg-gradient-to-r from-pink-500 to-pink-200 rounded-full"></div>

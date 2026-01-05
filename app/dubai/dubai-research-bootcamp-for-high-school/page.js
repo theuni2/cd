@@ -2,6 +2,15 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import Head from "next/head";
 
+
+export const metadata = {
+  title: 'Best Dubai Research Bootcamp for High School Students in 2026',
+  description: 'Dubai Research Bootcamp for High School helps students build real research skills, university-ready profiles, and strong academic foundations through guided project-based learning.',
+  alternates: {
+    canonical: "https://www.thecareerdiscovery.com/blog/dubai-research-bootcamp-for-high-school",
+  },
+}
+
 export default function DubaiResearchBootcamp() {
   return (
     <>
@@ -13,7 +22,7 @@ export default function DubaiResearchBootcamp() {
         />
         <link
           rel="canonical"
-          href="https://yourdomain.com/dubai-research-bootcamp-for-high-school"
+          href="https://www.thecareerdiscovery.com/blog/dubai-research-bootcamp-for-high-school"
         />
       </Head>
 
