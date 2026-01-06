@@ -401,6 +401,8 @@ const Navigation = () => {
             { href: '/india/research-mentors-students-india', label: 'Research Mentors for Students in India' },
             { href: '/india/india-high-schoolers-internship-program', label: 'India High Schoolers Internship Program' },
             { href: '/india/india-high-school-research-coaching', label: 'Best India High School Research Coaching in 2026' },
+            { href: '/india/research-mentors-students-india-2', label: 'Best Research Mentors for Students in India in 2026' },
+            { href: '/india/corporate-internship-india-teens', label: 'Best Corporate Internship India for Teens in 2026' },
           ]
         }
       ]
