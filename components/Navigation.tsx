@@ -409,7 +409,7 @@ const Navigation = () => {
       href: '/launchpad',
       label: 'Launchpad',
       subItems: [
-        { href: '/tedx', label: 'Be a TEDx Speaker' },
+        // { href: '/tedx', label: 'Be a TEDx Speaker' },
         { href: '/podcast', label: 'Podcast Incubator' }
       ]
     },

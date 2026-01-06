@@ -202,6 +202,145 @@
 
 
 
+// "use client";
+
+// import { motion } from "framer-motion";
+// import Link from "next/link";
+// import { Calendar, AlertCircle, ArrowRight } from "lucide-react";
+
+// const items = [
+//   // {
+//   //   title: "TEDx Speaker Residency",
+//   //   description:
+//   //     "A 12-week mentorship program where you craft your 'Big Idea' and deliver it on an official TEDx stage. Includes scriptwriting, coaching, and a recorded talk.",
+//   //   href: "/tedx",
+//   //   // Speaker Image
+//   //   imageSrc: "https://images.unsplash.com/photo-1544531586-fde5298cdd40?q=80&w=2070&auto=format&fit=crop",
+//   //   brandColor: "red",
+//   //   cohortDate: "Starts Jan 15th, 2026",
+//   //   status: "Limited Seats",
+//   // },
+//   {
+//     title: "Student Podcast Incubator",
+//     description:
+//       "An 8-week accelerator to launch your own show on Spotify and Apple. Master interviewing, audio engineering, and build your digital influence.",
+//     href: "/podcast",
+//     // Studio Image
+//     imageSrc: "https://images.unsplash.com/photo-1590602847861-f357a9332bbc?q=80&w=2070&auto=format&fit=crop",
+//     brandColor: "purple",
+//     cohortDate: "Starts Jan 15th, 2026",
+//     status: "Limited Slots",
+//   },
+// ];
+
+// export default function LaunchpadImpactSection() {
+//   return (
+//     <section className="w-full bg-slate-50 py-24 relative overflow-hidden" id="programs">
+      
+//       {/* Decorative background blob */}
+//       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[800px] bg-blue-100/30 blur-[120px] rounded-full -z-10 pointer-events-none"></div>
+
+//       <div className="mx-auto max-w-6xl px-6">
+        
+//         {/* Header */}
+//         <motion.div
+//           initial={{ opacity: 0, y: 20 }}
+//           whileInView={{ opacity: 1, y: 0 }}
+//           viewport={{ once: true }}
+//           transition={{ duration: 0.6 }}
+//           className="mb-16 text-center"
+//         >
+//           <span className="inline-block py-1 px-3 rounded-full bg-white text-blue-700 text-xs font-bold uppercase tracking-wider mb-4 border border-blue-100 shadow-sm">
+//             Choose Your Path
+//           </span>
+//           <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-gray-900 mb-4">
+//             Signature Programs
+//           </h2>
+//           <p className="text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed">
+//             Select a specialized track to build your personal brand and gain real-world experience before you graduate.
+//           </p>
+//         </motion.div>
+
+//         {/* Grid - Centered 2 Columns */}
+//         {/* 'items-stretch' ensures both grid cells are same height */}
+//         <div className="grid gap-8 md:grid-cols-2 max-w-5xl mx-auto items-stretch rounded-2xl shadow-lg">
+//           {items.map((item, index) => {
+            
+//             // Dynamic color classes based on brand
+//             const isRed = item.brandColor === 'red';
+//             const borderColor = isRed ? "border-t-red-500" : "border-t-purple-500";
+//             const buttonColor = isRed ? "bg-red-600 hover:bg-red-700 shadow-red-200" : "bg-purple-600 hover:bg-purple-700 shadow-purple-200";
+            
+//             return (
+//               <motion.div
+//                 key={item.title}
+//                 initial={{ opacity: 0, y: 30 }}
+//                 whileInView={{ opacity: 1, y: 0 }}
+//                 viewport={{ once: true }}
+//                 transition={{ delay: index * 0.1, duration: 0.5 }}
+//                 className="h-full rounded-2xl shadow-lg" // Crucial for height
+//               >
+//                 <Link
+//                   href={item.href}
+//                   className={`group relative flex flex-col h-full bg-white rounded-[2rem] shadow-sm hover:shadow-2xl transition-all duration-300 border-t-[8px] ${borderColor} overflow-hidden hover:-translate-y-2 ring-1 ring-gray-100`}
+//                 >
+                  
+//                   {/* 1. IMAGE HEADER (Increased Height) */}
+//                   <div className="relative h-64 overflow-hidden">
+//                     <img 
+//                       src={item.imageSrc} 
+//                       alt={item.title} 
+//                       className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+//                     />
+                    
+//                     {/* Gradient Overlay for text readability if needed */}
+//                     <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+                    
+//                     {/* Status Badge (Floating) */}
+//                     <div className="absolute top-5 right-5">
+//                       <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white/95 backdrop-blur-md text-orange-700 text-xs font-bold border border-orange-100 uppercase tracking-wide shadow-sm">
+//                         <AlertCircle className="w-3.5 h-3.5" />
+//                         {item.status}
+//                       </span>
+//                     </div>
+//                   </div>
+
+//                   {/* 2. CONTENT BODY (Flex-Grow used here) */}
+//                   <div className="p-8 flex flex-col flex-grow">
+                    
+//                     {/* Title */}
+//                     <h3 className="mb-4 text-2xl md:text-3xl font-bold text-gray-900 group-hover:text-blue-900 transition-colors">
+//                       {item.title}
+//                     </h3>
+                    
+//                     {/* Description (This pushes the button down) */}
+//                     <p className="mb-8 text-gray-600 leading-relaxed font-medium text-base flex-grow">
+//                       {item.description}
+//                     </p>
+
+//                     {/* Footer Info: Date & Button */}
+//                     <div className="pt-6 border-t border-gray-100 mt-auto w-full">
+//                       <div className="flex items-center gap-2 text-sm font-semibold text-gray-500 mb-6 bg-gray-50 w-fit px-3 py-1 rounded-lg">
+//                         <Calendar className="w-4 h-4 text-gray-400" />
+//                         <span>{item.cohortDate}</span>
+//                       </div>
+                      
+//                       <button className={`w-full py-4 px-6 rounded-xl text-white font-bold tracking-wide flex items-center justify-center gap-2 transition-all shadow-lg ${buttonColor}`}>
+//                         View Program Details
+//                         <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+//                       </button>
+//                     </div>
+//                   </div>
+//                 </Link>
+//               </motion.div>
+//             );
+//           })}
+//         </div>
+//       </div>
+//     </section>
+//   );
+// }"use client";
+
 "use client";
 
 import { motion } from "framer-motion";
@@ -210,23 +349,12 @@ import { Calendar, AlertCircle, ArrowRight } from "lucide-react";
 
 const items = [
   {
-    title: "TEDx Speaker Residency",
-    description:
-      "A 12-week mentorship program where you craft your 'Big Idea' and deliver it on an official TEDx stage. Includes scriptwriting, coaching, and a recorded talk.",
-    href: "/tedx",
-    // Speaker Image
-    imageSrc: "https://images.unsplash.com/photo-1544531586-fde5298cdd40?q=80&w=2070&auto=format&fit=crop",
-    brandColor: "red",
-    cohortDate: "Starts Jan 15th, 2026",
-    status: "Limited Seats",
-  },
-  {
     title: "Student Podcast Incubator",
     description:
       "An 8-week accelerator to launch your own show on Spotify and Apple. Master interviewing, audio engineering, and build your digital influence.",
     href: "/podcast",
-    // Studio Image
-    imageSrc: "https://images.unsplash.com/photo-1590602847861-f357a9332bbc?q=80&w=2070&auto=format&fit=crop",
+    imageSrc:
+      "https://images.unsplash.com/photo-1590602847861-f357a9332bbc?q=80&w=2070&auto=format&fit=crop",
     brandColor: "purple",
     cohortDate: "Starts Jan 15th, 2026",
     status: "Limited Slots",
@@ -235,13 +363,14 @@ const items = [
 
 export default function LaunchpadImpactSection() {
   return (
-    <section className="w-full bg-slate-50 py-24 relative overflow-hidden" id="programs">
-      
+    <section
+      className="relative w-full bg-slate-50 py-24 overflow-hidden"
+      id="programs"
+    >
       {/* Decorative background blob */}
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[800px] bg-blue-100/30 blur-[120px] rounded-full -z-10 pointer-events-none"></div>
+      <div className="pointer-events-none absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[800px] rounded-full bg-blue-100/30 blur-[120px] -z-10" />
 
       <div className="mx-auto max-w-6xl px-6">
-        
         {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -250,27 +379,27 @@ export default function LaunchpadImpactSection() {
           transition={{ duration: 0.6 }}
           className="mb-16 text-center"
         >
-          <span className="inline-block py-1 px-3 rounded-full bg-white text-blue-700 text-xs font-bold uppercase tracking-wider mb-4 border border-blue-100 shadow-sm">
+          <span className="mb-4 inline-block rounded-full border border-blue-100 bg-white px-3 py-1 text-xs font-bold uppercase tracking-wider text-blue-700 shadow-sm">
             Choose Your Path
           </span>
-          <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-gray-900 mb-4">
+          <h2 className="mb-4 text-3xl font-bold tracking-tight text-gray-900 md:text-5xl">
             Signature Programs
           </h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed">
-            Select a specialized track to build your personal brand and gain real-world experience before you graduate.
+          <p className="mx-auto max-w-2xl text-lg leading-relaxed text-gray-600">
+            Select a specialized track to build your personal brand and gain
+            real-world experience before you graduate.
           </p>
         </motion.div>
 
-        {/* Grid - Centered 2 Columns */}
-        {/* 'items-stretch' ensures both grid cells are same height */}
-        <div className="grid gap-8 md:grid-cols-2 max-w-5xl mx-auto items-stretch rounded-2xl shadow-lg">
+        {/* Updated Container: Changed grid to flex and added justify-center */}
+        <div className="flex flex-wrap justify-center gap-8">
           {items.map((item, index) => {
-            
-            // Dynamic color classes based on brand
-            const isRed = item.brandColor === 'red';
+            const isRed = item.brandColor === "red";
             const borderColor = isRed ? "border-t-red-500" : "border-t-purple-500";
-            const buttonColor = isRed ? "bg-red-600 hover:bg-red-700 shadow-red-200" : "bg-purple-600 hover:bg-purple-700 shadow-purple-200";
-            
+            const buttonColor = isRed
+              ? "bg-red-600 hover:bg-red-700 shadow-red-200"
+              : "bg-purple-600 hover:bg-purple-700 shadow-purple-200";
+
             return (
               <motion.div
                 key={item.title}
@@ -278,57 +407,54 @@ export default function LaunchpadImpactSection() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1, duration: 0.5 }}
-                className="h-full rounded-2xl shadow-lg" // Crucial for height
+                // Added a fixed max-width for the card so it doesn't stretch too wide when centered
+                className="w-full max-w-[150px]" 
               >
                 <Link
                   href={item.href}
-                  className={`group relative flex flex-col h-full bg-white rounded-[2rem] shadow-sm hover:shadow-2xl transition-all duration-300 border-t-[8px] ${borderColor} overflow-hidden hover:-translate-y-2 ring-1 ring-gray-100`}
+                  className={`group relative flex h-full flex-col overflow-hidden rounded-[2rem] border-t-[8px] bg-white ring-1 ring-gray-100 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl ${borderColor}`}
                 >
-                  
-                  {/* 1. IMAGE HEADER (Increased Height) */}
-                  <div className="relative h-64 overflow-hidden">
-                    <img 
-                      src={item.imageSrc} 
-                      alt={item.title} 
-                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                    />
-                    
-                    {/* Gradient Overlay for text readability if needed */}
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
-                    
-                    {/* Status Badge (Floating) */}
-                    <div className="absolute top-5 right-5">
-                      <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white/95 backdrop-blur-md text-orange-700 text-xs font-bold border border-orange-100 uppercase tracking-wide shadow-sm">
-                        <AlertCircle className="w-3.5 h-3.5" />
+                  {/* Image */}
+                  {/* <div className="relative h-64 overflow-hidden"> */}
+                    {/* <img
+                      src={item.imageSrc}
+                      alt={item.title}
+                      className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
+                    /> */}
+                    {/* <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" /> */}
+{/* 
+                    <div className="absolute right-5 top-5 my-5">
+                      <span className="inline-flex items-center gap-1.5 rounded-full border border-orange-100 bg-white/95 px-3 py-1.5 text-xs font-bold uppercase tracking-wide text-orange-700 backdrop-blur-md shadow-sm">
+                        <AlertCircle className="h-3.5 w-3.5" />
                         {item.status}
                       </span>
-                    </div>
-                  </div>
+                    </div> */}
+                  {/* </div> */}
 
-                  {/* 2. CONTENT BODY (Flex-Grow used here) */}
-                  <div className="p-8 flex flex-col flex-grow">
-                    
-                    {/* Title */}
-                    <h3 className="mb-4 text-2xl md:text-3xl font-bold text-gray-900 group-hover:text-blue-900 transition-colors">
+                  {/* Content */}
+                  <div className="flex flex-grow flex-col p-8">
+                    <h3 className="mb-4 text-2xl font-bold text-gray-900 transition-colors group-hover:text-blue-900 md:text-3xl">
                       {item.title}
                     </h3>
-                    
-                    {/* Description (This pushes the button down) */}
-                    <p className="mb-8 text-gray-600 leading-relaxed font-medium text-base flex-grow">
+
+                    <p className="mb-8 flex-grow text-base font-medium leading-relaxed text-gray-600">
                       {item.description}
                     </p>
 
-                    {/* Footer Info: Date & Button */}
-                    <div className="pt-6 border-t border-gray-100 mt-auto w-full">
-                      <div className="flex items-center gap-2 text-sm font-semibold text-gray-500 mb-6 bg-gray-50 w-fit px-3 py-1 rounded-lg">
-                        <Calendar className="w-4 h-4 text-gray-400" />
+                    {/* Footer */}
+                    <div className="mt-auto w-full border-t border-gray-100 pt-6">
+                      <div className="mb-6 flex w-fit items-center gap-2 rounded-lg bg-gray-50 px-3 py-1 text-sm font-semibold text-gray-500">
+                        <Calendar className="h-4 w-4 text-gray-400" />
                         <span>{item.cohortDate}</span>
                       </div>
-                      
-                      <button className={`w-full py-4 px-6 rounded-xl text-white font-bold tracking-wide flex items-center justify-center gap-2 transition-all shadow-lg ${buttonColor}`}>
+
+                      {/* Changed to div to avoid nested button error */}
+                      <div
+                        className={`flex w-full items-center justify-center gap-2 rounded-xl py-4 px-6 font-bold tracking-wide text-white shadow-lg transition-all ${buttonColor}`}
+                      >
                         View Program Details
-                        <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-                      </button>
+                        <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
+                      </div>
                     </div>
                   </div>
                 </Link>
