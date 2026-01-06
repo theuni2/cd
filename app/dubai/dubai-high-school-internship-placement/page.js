@@ -8,7 +8,7 @@ export const metadata = {
     "UAE corporate internships for teens by The Career Discovery offer structured corporate exposure, guided applications, and real world learning to build strong university and career profiles.",
   alternates: {
     canonical:
-      "https://www.thecareerdiscovery.com/uae/uae-corporate-internships-for-teens",
+      "https://www.thecareerdiscovery.com/dubai/uae-corporate-internships-for-teens",
   },
 };
 
@@ -23,7 +23,7 @@ export default function UAECorporateInternshipsForTeens() {
         />
         <link
           rel="canonical"
-          href="https://www.thecareerdiscovery.com/uae/uae-corporate-internships-for-teens"
+          href="https://www.thecareerdiscovery.com/dubai/uae-corporate-internships-for-teens"
         />
       </Head>
 

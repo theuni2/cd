@@ -7,7 +7,7 @@ export const metadata = {
   title: 'Best Dubai Research Bootcamp for High School Students in 2026',
   description: 'Dubai Research Bootcamp for High School helps students build real research skills, university-ready profiles, and strong academic foundations through guided project-based learning.',
   alternates: {
-    canonical: "https://www.thecareerdiscovery.com/blog/dubai-research-bootcamp-for-high-school",
+    canonical: "https://www.thecareerdiscovery.com/dubai/dubai-research-bootcamp-for-high-school",
   },
 }
 
@@ -22,7 +22,7 @@ export default function DubaiResearchBootcamp() {
         />
         <link
           rel="canonical"
-          href="https://www.thecareerdiscovery.com/blog/dubai-research-bootcamp-for-high-school"
+          href="https://www.thecareerdiscovery.com/dubai/dubai-research-bootcamp-for-high-school"
         />
       </Head>
 

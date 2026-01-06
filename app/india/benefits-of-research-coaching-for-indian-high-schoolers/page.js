@@ -228,7 +228,7 @@ export const metadata = {
   title: 'Maximize Your Future with the Top Benefits of a Research Coaching Program for Indian High Schoolers',
   description: 'Indian high school students face a huge competition in an academic environment where strong board scores and entrance exam ranks are only the first step.',
   alternates: {
-    canonical: "https://www.thecareerdiscovery.com/blog/india-high-school-research-coaching",
+    canonical: "https://www.thecareerdiscovery.com/india/india-high-school-research-coaching",
   },
 }
 

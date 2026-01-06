@@ -6,7 +6,7 @@ export const metadata = {
   title: 'Research Mentors for Students in India Academic Guidance Program',
   description: 'Experienced research mentors for students in India providing personalized academic guidance, project supervision, and mentorship for long-term academic success.',
   alternates: {
-    canonical: "https://www.thecareerdiscovery.com/blog/research-mentors-students-india",
+    canonical: "https://www.thecareerdiscovery.com/india/research-mentors-students-india",
   },
 }
 
@@ -21,7 +21,7 @@ export default function ResearchMentorsIndia() {
         />
         <link
           rel="canonical"
-          href="https://www.thecareerdiscovery.com/blog/research-mentors-students-india"
+          href="https://www.thecareerdiscovery.com/india/research-mentors-students-india"
         />
       </Head>
 

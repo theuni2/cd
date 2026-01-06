@@ -6,7 +6,7 @@ export const metadata = {
   title: 'Best Corporate Internship India for Teens in 2026',
   description: 'Corporate internship India for teens by The Career Discovery offers structured professional exposure, skill development, and career clarity for Indian high school students.',
   alternates: {
-    canonical: "https://www.thecareerdiscovery.com/blog/corporate-internship-india-teens",
+    canonical: "https://www.thecareerdiscovery.com/india/corporate-internship-india-teens",
   },
 }
 
@@ -21,7 +21,7 @@ export default function CorporateInternshipIndia() {
         />
         <link
           rel="canonical"
-          href="https://www.thecareerdiscovery.com/blog/corporate-internship-india-teens"
+          href="https://www.thecareerdiscovery.com/india/corporate-internship-india-teens"
         />
       </Head>
 
