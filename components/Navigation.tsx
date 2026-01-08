@@ -330,8 +330,6 @@
 
 
 
-
-
 'use client'
 
 import { useState, useEffect } from 'react'
@@ -378,8 +376,7 @@ const Navigation = () => {
     { href: '/internship', label: 'Internships' },
     {
       href: '', 
-      // ERROR FIX: Renamed from 'Blogs' to 'Programs' to match the render logic below
-      label: 'Career Library', 
+      label: 'Career Library', // Matches the check below now
       subItems: [
         {
           label: 'Dubai Programs',
@@ -407,10 +404,15 @@ const Navigation = () => {
       href: '/launchpad',
       label: 'Launchpad',
       subItems: [
-        // { href: '/tedx', label: 'Be a TEDx Speaker' },
         { href: '/podcast', label: 'Podcast Launchpad' },
-        // { href: '/startup_launchpad', label: 'Startup Launchpad' },
-        // { href: '/service_launchpad', label: 'Service Launchpad' }
+      ]
+    },
+    {
+      href: '',
+      label: 'Blogs',
+      subItems: [
+        { href: '/blogs/benefits-of-research-coaching-for-indian-high-schoolers', label: 'Top Benefits of a Research Coaching Program for Indian High Schoolers' },
+        { href: '/blogs/research-mentors-global-admissions', label: 'Research Mentors Help Indian Students Stand Out in Global Admissions' },
       ]
     },
     { href: '/claimit', label: 'Claim It' },
@@ -429,12 +431,12 @@ const Navigation = () => {
         <div className="flex items-center">
 
           {/* ===================== LOGO ===================== */}
-          <Link href="/" className="flex items-center">
-            <Image
-              src="https://i.imgur.com/YrXWWrk.png"
-              alt="Career Discovery Logo"
-              width={32}
-              height={32}
+           <Link href="/" className="flex items-center">
+            <Image 
+              src="https://i.imgur.com/YrXWWrk.png" 
+              alt="Career Discovery Logo" 
+              width={32} 
+              height={32} 
               className="mr-3"
             />
             <span className={`text-2xl font-bold ${linkClass}`}>
@@ -445,7 +447,7 @@ const Navigation = () => {
           {/* ===================== DESKTOP MENU ===================== */}
           <div className="hidden md:flex items-center justify-center flex-1 space-x-8">
             {navItems.map((item) => {
-              // 1. COMPLEX DROPDOWN (Programs)
+              // 1. COMPLEX DROPDOWN (Career Library)
               if (item.subItems && item.label === "Career Library") {
                 return (
                   <div key={item.label} className="relative group">
@@ -475,11 +477,11 @@ const Navigation = () => {
                 )
               }
 
-              // 2. SIMPLE DROPDOWN (Launchpad)
+              // 2. SIMPLE DROPDOWN (Launchpad, Blogs)
               if (item.subItems) {
                 return (
                   <div key={item.label} className="relative group">
-                    <Link href={item.href} className={`flex items-center gap-1 ${linkClass}`}>
+                    <Link href={item.href || '#'} className={`flex items-center gap-1 ${linkClass}`}>
                       {item.label}
                       <ChevronDown className="w-4 h-4 transition-transform group-hover:rotate-180" />
                     </Link>
@@ -532,15 +534,16 @@ const Navigation = () => {
 
               <div className="flex flex-col space-y-4 mt-6">
                 {navItems.map(item => {
-                  // Mobile Programs Logic
-                  if (item.label === "Programs") {
+                  
+                  // FIXED: Changed from "Programs" to "Career Library" to match navItems data
+                  if (item.label === "Career Library") {
                     return (
                       <div key={item.label}>
                         <div
                           className="flex items-center justify-between text-xl py-2 cursor-pointer"
                           onClick={() => setOpenMobilePrograms(!openMobilePrograms)}
                         >
-                          <span className={openMobilePrograms ? "text-blue-600 font-semibold" : ""}>Programs</span>
+                          <span className={openMobilePrograms ? "text-blue-600 font-semibold" : ""}>{item.label}</span>
                           <ChevronDown className={`w-5 h-5 transition-transform ${openMobilePrograms ? "rotate-180 text-blue-600" : ""}`} />
                         </div>
 
