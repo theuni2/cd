@@ -146,8 +146,10 @@ const PodcastOutcomes = () => {
           </div>
 
          <p className="mt-6 text-sm text-gray-500">
-            Next cohort starts: <span className="text-gray-300">January 15th, 2026</span> • Limited spots available
-          </p>
+  Next cohort starts: <span className="text-gray-300">February 1st, 2026</span> • 
+  Register by: <span className="text-gray-300">January 15th</span> • 
+  Limited spots available
+</p>
         </motion.div>
 
       </div>

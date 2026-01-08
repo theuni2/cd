@@ -189,27 +189,51 @@ const PodcastHero = () => {
           variants={itemVariants}
           className="text-lg md:text-xl text-gray-200 mb-8 max-w-2xl mx-auto leading-relaxed"
         >
-          Launch your own professional podcast in 8 weeks. 
-          Build your network, interview industry leaders, and create a digital asset that sets your career apart.
+          Launch Your Own Podcast in ~10 Weeks. Build your network, interview industry leaders, and create a digital asset that sets your career apart.
+          {/* Launch your own professional podcast in 8 weeks.  */}
+      
         </motion.p>
         
         {/* NEW: Cohort & Status Info (Purple Theme) */}
-    <motion.div 
+    {/* <motion.div 
           variants={itemVariants}
           className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6 mb-12"
-        >
+        > */}
           {/* Start Date Badge */}
-          <div className="flex items-center gap-3 px-6 py-3 rounded-full bg-slate-800/80 backdrop-blur-md border border-purple-500/30 text-purple-100 text-base md:text-lg shadow-lg">
+          {/* <div className="flex items-center gap-3 px-6 py-3 rounded-full bg-slate-800/80 backdrop-blur-md border border-purple-500/30 text-purple-100 text-base md:text-lg shadow-lg">
             <span className="flex items-center justify-center w-8 h-8 rounded-full bg-purple-500/20 text-purple-300 text-xl">📅</span>
             <span>Start Date: <span className="text-white font-bold tracking-wide">January 15th, 2026</span></span>
-          </div>
+          </div> */}
 
           {/* Status Badge */}
-          <div className="flex items-center gap-3 px-6 py-3 rounded-full bg-slate-800/80 backdrop-blur-md border border-pink-500/30 text-pink-100 text-base md:text-lg shadow-lg">
+          {/* <div className="flex items-center gap-3 px-6 py-3 rounded-full bg-slate-800/80 backdrop-blur-md border border-pink-500/30 text-pink-100 text-base md:text-lg shadow-lg">
             <span className="flex items-center justify-center w-8 h-8 rounded-full bg-pink-500/20 text-pink-300 text-xl">⚠️</span>
             <span>Status: <span className="text-white font-bold tracking-wide">Limited Slots Available</span></span>
-          </div>
-        </motion.div>
+          </div> */}
+        {/* </motion.div> */}
+
+        <motion.div 
+  variants={itemVariants}
+  className="flex flex-wrap items-center justify-center gap-4 sm:gap-6 mb-12"
+>
+  {/* Deadline Badge */}
+  <div className="flex items-center gap-3 px-6 py-3 rounded-full bg-slate-800/80 backdrop-blur-md border border-amber-500/30 text-amber-100 text-base md:text-lg shadow-lg">
+    <span className="flex items-center justify-center w-8 h-8 rounded-full bg-amber-500/20 text-amber-300 text-xl">⏳</span>
+    <span>Deadline: <span className="text-white font-bold tracking-wide">January 15th, 2026</span></span>
+  </div>
+
+  {/* Start Date Badge */}
+  <div className="flex items-center gap-3 px-6 py-3 rounded-full bg-slate-800/80 backdrop-blur-md border border-purple-500/30 text-purple-100 text-base md:text-lg shadow-lg">
+    <span className="flex items-center justify-center w-8 h-8 rounded-full bg-purple-500/20 text-purple-300 text-xl">📅</span>
+    <span>Start Date: <span className="text-white font-bold tracking-wide">February 1st, 2026</span></span>
+  </div>
+
+  {/* Status Badge */}
+  <div className="flex items-center gap-3 px-6 py-3 rounded-full bg-slate-800/80 backdrop-blur-md border border-pink-500/30 text-pink-100 text-base md:text-lg shadow-lg">
+    <span className="flex items-center justify-center w-8 h-8 rounded-full bg-pink-500/20 text-pink-300 text-xl">⚠️</span>
+    <span>Status: <span className="text-white font-bold tracking-wide">Limited Slots Available</span></span>
+  </div>
+</motion.div>
 
         {/* CTA Buttons */}
         <motion.div 

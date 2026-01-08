@@ -21,7 +21,7 @@ const timelineSteps = [
   },
   {
     phase: "Phase 3: The Execution Cycle",
-    weeks: "Weeks 4–8",
+    weeks: "Weeks 4–10",
     description: "The 4-week sprint. This is an ongoing, dynamic process where we handle Recording, Editing, and Publishing simultaneously. You won't just wait for the end to launch; we will be rolling out episodes, gathering feedback, and optimizing your presence in real-time.",
     color: "bg-indigo-100 text-indigo-600",
     borderColor: "border-indigo-200"
