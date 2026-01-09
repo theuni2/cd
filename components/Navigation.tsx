@@ -408,12 +408,12 @@ const Navigation = () => {
       ]
     },
     {
-      href: '',
+      href: '/blogs',
       label: 'Blogs',
-      subItems: [
-        { href: '/blogs/benefits-of-research-coaching-for-indian-high-schoolers', label: 'Top Benefits of a Research Coaching Program for Indian High Schoolers' },
-        { href: '/blogs/research-mentors-global-admissions', label: 'Research Mentors Help Indian Students Stand Out in Global Admissions' },
-      ]
+      // subItems: [
+      //   { href: '/blogs/benefits-of-research-coaching-for-indian-high-schoolers', label: 'Top Benefits of a Research Coaching Program for Indian High Schoolers' },
+      //   { href: '/blogs/research-mentors-global-admissions', label: 'Research Mentors Help Indian Students Stand Out in Global Admissions' },
+      // ]
     },
     { href: '/claimit', label: 'Claim It' },
   ]
