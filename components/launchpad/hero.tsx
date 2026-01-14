@@ -76,7 +76,7 @@ export default function ClaimItHero() {
                 </span>
               </Button>
               <Button
-                href="#elite-programs"
+                href="#programs"
                 variant="primary-outline"
                 className="group border border-gray-400 text-gray-700 hover:border-indigo-600 hover:text-indigo-900 transition-all duration-300"
               >

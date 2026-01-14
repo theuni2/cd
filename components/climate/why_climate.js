@@ -315,8 +315,8 @@ const WhyClimateAction = () => {
              </p>
              <div className="flex gap-2">
                 {/* Visual tags */}
-                <span className="text-xs px-2 py-1 rounded border border-white/20 text-white/60">Multi-year</span>
-                <span className="text-xs px-2 py-1 rounded border border-white/20 text-white/60">Scalable</span>
+                <span className="text-xs px-2 py-1 rounded border border-white/20 " style={{ color: 'white' }}>Multi-year</span>
+                <span className="text-xs px-2 py-1 rounded border border-white/20 " style={{ color: 'white' }}>Scalable</span>
              </div>
           </motion.div>
 

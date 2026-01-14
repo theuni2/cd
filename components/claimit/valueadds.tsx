@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import Image from 'next/image';
+import { ArrowRight } from 'lucide-react';
 
 export default function ClaimItValueAdds() {
   return (
@@ -21,7 +22,7 @@ export default function ClaimItValueAdds() {
 
         <div className="grid md:grid-cols-3 gap-12">
           {/* Block 1 */}
-          <motion.div
+          {/* <motion.div
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
@@ -43,7 +44,53 @@ export default function ClaimItValueAdds() {
             <p className="text-gray-600 text-sm text-center">
               A rigorous essay contest for high schoolers promoting critical thinking and writing in philosophy, politics, economics, and more.
             </p>
-          </motion.div>
+          </motion.div> */}
+
+<motion.div
+      initial={{ opacity: 0, y: 40 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5 }}
+      viewport={{ once: true }}
+      className="bg-white shadow-xl rounded-2xl p-6 border flex flex-col h-full" // Added flex-col to push button to bottom
+      style={{ borderColor: 'rgba(0,0,0,0.05)' }}
+    >
+      <div className="flex justify-center mb-4">
+        <Image
+          src="/claimit/essay.png"
+          alt="Essay Competitions"
+          width={160}
+          height={60}
+          className="object-contain"
+        />
+      </div>
+      
+      <h3 className="text-lg font-semibold text-center text-gray-800 mb-2">
+        Essays for International Competitions
+      </h3>
+      
+      <p className="text-gray-600 text-sm text-center mb-6">
+        A rigorous essay contest for high schoolers promoting critical thinking and writing in philosophy, politics, economics, and more.
+      </p>
+
+      {/* --- NEW LEARN MORE BUTTON --- */}
+      <div className="mt-auto flex justify-center">
+        <a href="/essay_comp"> {/* Change link as needed */}
+          <button 
+            className="group flex items-center gap-2 px-6 py-2.5 rounded-full font-semibold text-sm transition-all hover:shadow-md"
+            style={{ 
+              backgroundColor: 'rgba(251, 191, 36, 0.1)', // Light Amber tint
+              color: '#d97706', // Dark Amber Text
+              border: '1px solid rgba(251, 191, 36, 0.3)'
+            }}
+          >
+            Learn More
+            <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
+          </button>
+        </a>
+      </div>
+
+    </motion.div>
+
 
           {/* Block 2 */}
           <motion.div

@@ -405,6 +405,8 @@ const Navigation = () => {
       label: 'Launchpad',
       subItems: [
         { href: '/podcast', label: 'Podcast Launchpad' },
+        { href: '/startup', label: 'Startup Launchpad' },
+        { href: '/service_project', label: 'Service Launchpad' },
       ]
     },
     {
@@ -445,7 +447,7 @@ const Navigation = () => {
           </Link>
 
           {/* ===================== DESKTOP MENU ===================== */}
-          <div className="hidden md:flex items-center justify-center flex-1 space-x-8">
+          <div className="hidden md:flex items-center justify-center flex-1 space-x-8 ">
             {navItems.map((item) => {
               // 1. COMPLEX DROPDOWN (Career Library)
               if (item.subItems && item.label === "Career Library") {

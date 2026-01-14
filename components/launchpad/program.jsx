@@ -341,6 +341,156 @@
 //   );
 // }"use client";
 
+
+
+// "use client";
+
+// import { motion } from "framer-motion";
+// import Link from "next/link";
+// import { Calendar, AlertCircle, ArrowRight } from "lucide-react";
+
+// const items = [
+//   {
+//     title: "Podcast Launchpad",
+//     description:
+//       "An 8-10 week accelerator to launch your own show on Spotify and Apple. Master interviewing, audio engineering, and build your digital influence.",
+//     href: "/podcast",
+//     imageSrc:
+//       "https://images.unsplash.com/photo-1590602847861-f357a9332bbc?q=80&w=2070&auto=format&fit=crop",
+//     brandColor: "purple",
+//     cohortDate: "Starts Feb 1st, 2026",
+//     status: "Limited Slots",
+//   },
+//   {
+//     title: " Service Launchpad",
+//   description: "A 10-week incubator to launch your own social service initiative. Master grassroots leadership, partnership building, and project management to deliver real community impact.",
+//    href: "/podcast",
+//     imageSrc:
+//       "https://images.unsplash.com/photo-1590602847861-f357a9332bbc?q=80&w=2070&auto=format&fit=crop",
+//     brandColor: "purple",
+//     cohortDate: "Starts Feb 1st, 2026",
+//     status: "Limited Slots",
+//   },
+//   {
+//     title: " Startup Launchpad",
+//     description: "A 10-week incubator to launch your own AI-backed startup. Master no-code tools, product strategy, and go-to-market execution to ship a real MVP.",
+//      href: "/podcast",
+//     imageSrc:
+//       "https://images.unsplash.com/photo-1590602847861-f357a9332bbc?q=80&w=2070&auto=format&fit=crop",
+//     brandColor: "purple",
+//     cohortDate: "Starts Feb 1st, 2026",
+//     status: "Limited Slots",
+//   },
+// ];
+
+// export default function LaunchpadImpactSection() {
+//   return (
+//     <section
+//       className="relative w-full bg-slate-50 py-24 overflow-hidden"
+//       id="programs"
+//     >
+//       {/* Decorative background blob */}
+//       <div className="pointer-events-none absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[800px] rounded-full bg-blue-100/30 blur-[120px] -z-10" />
+
+//       <div className="mx-auto max-w-6xl px-6">
+//         {/* Header */}
+//         <motion.div
+//           initial={{ opacity: 0, y: 20 }}
+//           whileInView={{ opacity: 1, y: 0 }}
+//           viewport={{ once: true }}
+//           transition={{ duration: 0.6 }}
+//           className="mb-16 text-center"
+//         >
+//           <span className="mb-4 inline-block rounded-full border border-blue-100 bg-white px-3 py-1 text-xs font-bold uppercase tracking-wider text-blue-700 shadow-sm">
+//             Choose Your Path
+//           </span>
+//           <h2 className="mb-4 text-3xl font-bold tracking-tight text-gray-900 md:text-5xl">
+//             Signature Programs
+//           </h2>
+//           <p className="mx-auto max-w-2xl text-lg leading-relaxed text-gray-600">
+//             Select a specialized track to build your personal brand and gain
+//             real-world experience before you graduate.
+//           </p>
+//         </motion.div>
+
+//         {/* Updated Container: Changed grid to flex and added justify-center */}
+//     {/* 1. Changed Parent to Grid for 3-column layout */}
+//     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full max-w-7xl mx-auto px-4">
+//           {items.map((item, index) => {
+//             const isRed = item.brandColor === "red";
+//             const borderColor = isRed ? "border-t-red-500" : "border-t-purple-500";
+//             const buttonColor = isRed
+//               ? "bg-red-600 hover:bg-red-700 shadow-red-200"
+//               : "bg-purple-600 hover:bg-purple-700 shadow-purple-200";
+
+//             return (
+//               <motion.div
+//                 key={item.title}
+//                 initial={{ opacity: 0, y: 30 }}
+//                 whileInView={{ opacity: 1, y: 0 }}
+//                 viewport={{ once: true }}
+//                 transition={{ delay: index * 0.1, duration: 0.5 }}
+//                 // 2. Removed 'max-w-[150px]' and added 'h-full' so cards stretch evenly
+//                 className="h-full" 
+//               >
+//                 <Link
+//                   href={item.href}
+//                   // 3. Added 'h-full' here so the card background fills the grid cell height
+//                   className={`group relative flex h-full flex-col overflow-hidden rounded-[2rem] border-t-[8px] bg-white ring-1 ring-gray-100 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl ${borderColor}`}
+//                 >
+//                   {/* Image */}
+//                   <div className="relative h-64 overflow-hidden">
+//                     <img
+//                       src={item.imageSrc}
+//                       alt={item.title}
+//                       className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
+//                     />
+//                     <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
+
+//                     <div className="absolute right-5 top-5 my-5">
+//                       <span className="inline-flex items-center gap-1.5 rounded-full border border-orange-100 bg-white/95 px-3 py-1.5 text-xs font-bold uppercase tracking-wide text-orange-700 backdrop-blur-md shadow-sm">
+//                         <AlertCircle className="h-3.5 w-3.5" />
+//                         {item.status}
+//                       </span>
+//                     </div> 
+//                    </div>
+
+//                   {/* Content */}
+//                   <div className="flex flex-grow flex-col p-8">
+//                     <h3 className="mb-4 text-2xl font-bold text-gray-900 transition-colors group-hover:text-blue-900 md:text-3xl">
+//                       {item.title}
+//                     </h3>
+
+//                     <p className="mb-8 flex-grow text-base font-medium leading-relaxed text-gray-600">
+//                       {item.description}
+//                     </p>
+
+//                     {/* Footer */}
+//                     <div className="mt-auto w-full border-t border-gray-100 pt-6">
+//                       <div className="mb-6 flex w-fit items-center gap-2 rounded-lg bg-gray-50 px-3 py-1 text-sm font-semibold text-gray-500">
+//                         <Calendar className="h-4 w-4 text-gray-400" />
+//                         <span>{item.cohortDate}</span>
+//                       </div>
+
+//                       <div
+//                         className={`flex w-full items-center justify-center gap-2 rounded-xl py-4 px-6 font-bold tracking-wide text-white shadow-lg transition-all ${buttonColor}`}
+//                       >
+//                         View Program Details
+//                         <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
+//                       </div>
+//                     </div>
+//                   </div>
+//                 </Link>
+//               </motion.div>
+//             );
+//           })}
+//         </div>
+//       </div>
+//     </section>
+//   );
+// }
+
+
 "use client";
 
 import { motion } from "framer-motion";
@@ -349,14 +499,36 @@ import { Calendar, AlertCircle, ArrowRight } from "lucide-react";
 
 const items = [
   {
-    title: "Student Podcast Incubator",
+    title: "Podcast Launchpad",
     description:
-      "An 8-week accelerator to launch your own show on Spotify and Apple. Master interviewing, audio engineering, and build your digital influence.",
-    href: "/podcast",
+      "An 8-10 week accelerator to launch your own show on Spotify and Apple. Master interviewing, audio engineering, and build your digital influence.",
+    href: "/podcast", // Updated Link
     imageSrc:
-      "https://images.unsplash.com/photo-1590602847861-f357a9332bbc?q=80&w=2070&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1590602847861-f357a9332bbc?q=80&w=2070&auto=format&fit=crop", // Podcast/Mic Image
     brandColor: "purple",
-    cohortDate: "Starts Jan 15th, 2026",
+    cohortDate: "Starts Feb 1st, 2026",
+    status: "Limited Slots",
+  },
+  {
+    title: "Service Launchpad",
+    description:
+      "A 10-week incubator to launch your own social service initiative. Master grassroots leadership, partnership building, and project management.",
+    href: "/service_project", // Updated Link
+    imageSrc:
+      "https://images.unsplash.com/photo-1593113598332-cd288d649433?q=80&w=2070&auto=format&fit=crop", // Volunteer/Hands Image
+    brandColor: "purple",
+    cohortDate: "Starts Feb 1st, 2026",
+    status: "Limited Slots",
+  },
+  {
+    title: "Startup Launchpad",
+    description:
+      "A 10-week incubator to launch your own AI-backed startup. Master no-code tools, product strategy, and go-to-market execution to ship a real MVP.",
+    href: "/startup", // Updated Link
+    imageSrc:
+      "https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=2070&auto=format&fit=crop", // Startup/Team Image
+    brandColor: "purple",
+    cohortDate: "Starts Feb 1st, 2026",
     status: "Limited Slots",
   },
 ];
@@ -391,11 +563,13 @@ export default function LaunchpadImpactSection() {
           </p>
         </motion.div>
 
-        {/* Updated Container: Changed grid to flex and added justify-center */}
-        <div className="flex flex-wrap justify-center gap-8">
+        {/* Cards Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full max-w-7xl mx-auto px-4">
           {items.map((item, index) => {
             const isRed = item.brandColor === "red";
-            const borderColor = isRed ? "border-t-red-500" : "border-t-purple-500";
+            const borderColor = isRed
+              ? "border-t-red-500"
+              : "border-t-purple-500";
             const buttonColor = isRed
               ? "bg-red-600 hover:bg-red-700 shadow-red-200"
               : "bg-purple-600 hover:bg-purple-700 shadow-purple-200";
@@ -407,29 +581,28 @@ export default function LaunchpadImpactSection() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1, duration: 0.5 }}
-                // Added a fixed max-width for the card so it doesn't stretch too wide when centered
-                className="w-full max-w-[150px]" 
+                className="h-full"
               >
                 <Link
                   href={item.href}
                   className={`group relative flex h-full flex-col overflow-hidden rounded-[2rem] border-t-[8px] bg-white ring-1 ring-gray-100 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl ${borderColor}`}
                 >
                   {/* Image */}
-                  {/* <div className="relative h-64 overflow-hidden"> */}
-                    {/* <img
+                  <div className="relative h-64 overflow-hidden">
+                    <img
                       src={item.imageSrc}
                       alt={item.title}
                       className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
-                    /> */}
-                    {/* <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" /> */}
-{/* 
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
+
                     <div className="absolute right-5 top-5 my-5">
                       <span className="inline-flex items-center gap-1.5 rounded-full border border-orange-100 bg-white/95 px-3 py-1.5 text-xs font-bold uppercase tracking-wide text-orange-700 backdrop-blur-md shadow-sm">
                         <AlertCircle className="h-3.5 w-3.5" />
                         {item.status}
                       </span>
-                    </div> */}
-                  {/* </div> */}
+                    </div>
+                  </div>
 
                   {/* Content */}
                   <div className="flex flex-grow flex-col p-8">
@@ -448,13 +621,20 @@ export default function LaunchpadImpactSection() {
                         <span>{item.cohortDate}</span>
                       </div>
 
-                      {/* Changed to div to avoid nested button error */}
                       <div
-                        className={`flex w-full items-center justify-center gap-2 rounded-xl py-4 px-6 font-bold tracking-wide text-white shadow-lg transition-all ${buttonColor}`}
+                        className={`flex w-full items-center justify-center gap-2 mb-3 rounded-xl py-4 px-6 font-bold tracking-wide text-white shadow-lg transition-all ${buttonColor}`}
                       >
                         View Program Details
                         <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
                       </div>
+                      <a href="/#contact">
+                      <div
+                        className={`flex w-full items-center justify-center gap-2 rounded-xl py-4 px-6 font-bold tracking-wide text-black shadow-lg transition-all border-2 border-gray-300 `}
+                      >
+                        Secure Your Spot
+                        <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
+                      </div>
+                      </a>
                     </div>
                   </div>
                 </Link>

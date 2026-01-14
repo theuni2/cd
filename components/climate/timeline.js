@@ -532,7 +532,7 @@ const ProgramSyllabus = () => {
     // SAFE MODE: Hardcoded Dark Green Background
     <section 
       className="relative py-24 px-6 font-sans overflow-hidden"
-      style={{ backgroundColor: '#022c22' }} 
+      style={{ backgroundColor: '#022c22' }} id ="syllabus"
     >
       <div className="container mx-auto max-w-3xl relative z-10">
         

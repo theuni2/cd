@@ -28,7 +28,11 @@ const faqs = [
   {
     question: "Who owns the rights to the podcast?",
     answer: "You do. You own 100% of your content, your brand, and your subscriber list. We are here to launch you, not to own your IP."
-  },
+  },    {
+      question: "Is this a group program or a one-to-one program?",
+      answer: "This is a one-to-one (1:1) program, where each student receives personalized guidance and dedicated mentorship throughout the journey."
+    },
+    
 //   {
 //     question: "Can I do this with a friend (Co-host)?",
 //     answer: "Absolutely. Many successful podcasts have two hosts. You and a friend can enroll together, share the workload, and build the brand as a duo."

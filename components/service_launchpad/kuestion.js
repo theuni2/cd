@@ -28,7 +28,11 @@ const faqs = [
   {
     question: "Will the sessions be recorded?",
     answer: "No, sessions are not recorded. Since the format is 1:1 and highly interactive, active participation during the scheduled time is essential for the learning process."
-  }
+  },
+      {
+      question: "Is this a group program or a one-to-one program?",
+      answer: "This is a one-to-one (1:1) program, where each student receives personalized guidance and dedicated mentorship throughout the journey."
+    },
 ];
 
 const ProgramFAQ = () => {
