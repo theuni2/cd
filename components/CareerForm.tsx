@@ -451,14 +451,15 @@ export default function CareerForm() {
              <option value="Writing Competition">Writing Competition</option>
              <option value="BE TEDX SPEAKER">BE TEDX SPEAKER</option>
             <option value="START A PODCAST">START A <b>PODCAST</b></option>
+            <option value="DIGITAL WEBSITE"> WEBSITE</option>
+            <option value="newsletter">START YOUR NEWSLETTER</option>
+            <option value="BUILD AN AI CHATBOT">BUILD A STARTUP</option>
+            <option value="ONLINE BUSINESS">E-COMMERCE/D2C BRAND</option>
             <option value="PUBLISH A BOOK">Publish A BOOK</option>
             <option value="LAUNCH YOUR OWN SOCIAL SERVICE">Launch Your Own Social Service Project</option>
-            <option value="BUILD AN AI CHATBOT">BUILD AN AI Startup</option>
             <option value="BECOME AN INFLUENCER">BECOME AN INFLUENCER</option>
             <option value="BUILD A ROBOT">BUILD A ROBOT</option>
             <option value="MARKETING AGENCY">MARKETING AGENCY</option>
-            <option value="ONLINE BUSINESS">ONLINE BUSINESS</option>
-            <option value="DIGITAL WEBSITE">DIGITAL WEBSITE</option>
             <option value="LAUNCH NPO">LAUNCH NPO</option>
             <option value="ALL of the Above">ALL OF THE ABOVE</option>
         
