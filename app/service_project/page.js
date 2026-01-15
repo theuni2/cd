@@ -1,5 +1,5 @@
 import React from 'react'
-// import Navigation from '../../components/Navigation';
+import Navigation from '../../components/Navigation';
 import Footer from '../../components/Footer';
 import SocialProjectHero from '../../components/service_launchpad/hero';
 import ImpactProjectsSection from '../../components/service_launchpad/impact_project';
@@ -10,7 +10,7 @@ import ServiceCards from '../../components/service_launchpad/service';
 export default function Page() {
   return (
     <div>
-        {/* <Navigation/> */}
+        <Navigation/>
         <SocialProjectHero/>
         <ImpactProjectsSection/>
         <ServiceCards/>
