@@ -448,8 +448,8 @@ export default function CareerForm() {
                 <option value="WRITE A RESEARCH PAPER UNDER WORLD’S BEST COLLEGE PROFESSOR">
               WRITE A RESEARCH PAPER UNDER WORLD’S BEST COLLEGE PROFESSOR
             </option>
-             <option value="Writing Competition">Writing Competition</option>
-             <option value="BE TEDX SPEAKER">BE TEDX SPEAKER</option>
+            <option value="Writing Competition">Writing Competition</option>
+            <option value="BE TEDX SPEAKER">BE TEDX SPEAKER</option>
             <option value="START A PODCAST">START A <b>PODCAST</b></option>
             <option value="DIGITAL WEBSITE"> WEBSITE</option>
             <option value="newsletter">START YOUR NEWSLETTER</option>

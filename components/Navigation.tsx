@@ -673,17 +673,19 @@ const Navigation = () => {
         {
           label: 'Dubai Programs',
           children: [
-            { href: '/dubai/dubai-research-bootcamp-for-high-school', label: 'Dubai Research Bootcamp for High School' },
-            { href: '/dubai/dubai-high-school-internship-placement', label: 'Dubai High School Internship Placement' },
-            { href: '/dubai/uae-corporate-internships-for-teens', label: 'Best UAE Corporate Internships for Teens in 2026' },
-            { href: '/dubai/dubai-internship-training-for-teenagers', label: 'Best Dubai Internship Training for Teenagers in 2026' },
+            { href: '/dubai-research-bootcamp-for-high-school', label: 'Dubai Research Bootcamp for High School' },
+            { href: '/dubai-high-school-internship-placement', label: 'Dubai High School Internship Placement' },
+            { href: '/uae-corporate-internships-for-teens', label: 'Best UAE Corporate Internships for Teens in 2026' },
+            { href: '/dubai-internship-training-for-teenagers', label: 'Best Dubai Internship Training for Teenagers in 2026' },
+            { href: '/professor-sessionsfor-dubai-students', label: 'Best Professor Sessions for Dubai Students in 2026' },
+            { href: '/dubai-student-university-prep-research', label: 'Best Dubai Student University Prep Research in 2026' },
           ]
         },
         {
           label: 'India Programs',
           children: [
-            { href: '/india/benefits-of-research-coaching-for-indian-high-schoolers', label: 'Benefits of a Research Coaching Program for Indian High Schoolers' },
-            { href: '/india/research-mentors-students-india', label: 'Research Mentors for Students in India' },
+            // { href: '/india/benefits-of-research-coaching-for-indian-high-schoolers', label: 'Benefits of a Research Coaching Program for Indian High Schoolers' },
+            // { href: '/india/research-mentors-students-india', label: 'Research Mentors for Students in India' },
             { href: '/india/india-high-schoolers-internship-program', label: 'India High Schoolers Internship Program' },
             { href: '/india/india-high-school-research-coaching', label: 'Best India High School Research Coaching in 2026' },
             { href: '/india/research-mentors-students-india-2', label: 'Best Research Mentors for Students in India in 2026' },

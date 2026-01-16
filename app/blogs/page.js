@@ -29,6 +29,36 @@ const BLOG_POSTS = [
     image: "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?q=80&w=2070&auto=format&fit=crop",
     slug: "/blogs/research-mentors-global-admissions",
   },
+  {
+    id: 3,
+    title: "Why Mentorship Is the Fastest Way to Succeed as a Student",
+    excerpt: "Students today face a constant mix of academic expectations, career confusion, and competition that feels never-ending. Mentorship offers the fastest path to clarity and success.",
+    category: "Mentorship",
+    date: "16 Jan 2026",
+    readTime: "4 min read",
+    image: "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?q=80&w=2070&auto=format&fit=crop",
+    slug: "/blogs/why-mentorship-is-the-fastest-way-to-succeed-as-a-student",
+  },
+  {
+    id: 4,
+    title: "STEM vs Non-STEM! How to Choose the Right Career Path in 2026",
+    excerpt: "Confused between STEM and non-STEM fields? Understand the key differences, career scope, required skills, and how to choose the path that matches your interests and goals.",
+    category: "Mentorship",
+    date: "16 Jan 2026",
+    readTime: "4 min read",
+    image: "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?q=80&w=2070&auto=format&fit=crop",
+    slug: "/blogs/stem-vs-non-stem-how-to-decide",
+  },
+  {
+    id: 5,
+    title: "How to Discover Your Ideal Career Path Before College in 2026",
+    excerpt: 'Learn how to identify your strengths, explore career options, and gain practical experience before college. Discover your ideal career path with expert guidance and personalized mentorship.',
+    category: "Mentorship",
+    date: "16 Jan 2026",
+    readTime: "4 min read",
+    image: "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?q=80&w=2070&auto=format&fit=crop",
+    slug: "/blogs/how-to-discover-your-ideal-career-path-before-college",
+  },
 ];
 
 const BlogCard = ({ post }) => {
