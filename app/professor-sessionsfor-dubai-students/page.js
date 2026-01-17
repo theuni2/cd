@@ -6,7 +6,7 @@ export const metadata = {
   title: 'Best Professor Sessions for Dubai Students in 2026',
   description: 'Professor sessions for Dubai students by The Career Discovery offer one to one research guidance, project supervision, and academic support to strengthen university applications.',
   alternates: {
-    canonical: "https://www.thecareerdiscovery.com/dubai/professor-sessions-for-dubai-students",
+    canonical: "https://www.thecareerdiscovery.com/professor-sessionsfor-dubai-students",
   },
 }
 
@@ -21,7 +21,7 @@ export default function ProfessorSessionsDubai() {
         />
         <link
           rel="canonical"
-          href="https://www.thecareerdiscovery.com/dubai/professor-sessions-for-dubai-students"
+          href="https://www.thecareerdiscovery.com/professor-sessionsfor-dubai-students"
         />
       </Head>
 
@@ -43,7 +43,7 @@ export default function ProfessorSessionsDubai() {
 
             {/* Hero Image */}
             <img
-              src="/blog/professor-sessions-for-dubai-students.png"
+              src="/blog/tutor-teach-young-student.jpg"
               alt="Professor Sessions for Dubai Students"
               className="w-full h-72 object-cover rounded-2xl mb-4 mt-8"
             />

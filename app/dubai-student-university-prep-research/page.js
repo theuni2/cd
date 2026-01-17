@@ -43,7 +43,7 @@ export default function DubaiStudentPrepResearch() {
 
             {/* Hero Image */}
             <img
-              src="/blog/dubai-student-university-prep-research.png"
+              src="/blog/pge_img_one.png"
               alt="Dubai Student University Prep Research"
               className="w-full h-72 object-cover rounded-2xl mb-4 mt-8"
             />

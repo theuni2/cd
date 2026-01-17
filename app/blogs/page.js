@@ -41,7 +41,7 @@ const BLOG_POSTS = [
   },
   {
     id: 4,
-    title: "STEM vs Non-STEM! How to Choose the Right Career Path in 2026",
+    title: "STEM vs Non STEM: How to Decide What Fits You Best",
     excerpt: "Confused between STEM and non-STEM fields? Understand the key differences, career scope, required skills, and how to choose the path that matches your interests and goals.",
     category: "Mentorship",
     date: "16 Jan 2026",
@@ -51,7 +51,7 @@ const BLOG_POSTS = [
   },
   {
     id: 5,
-    title: "How to Discover Your Ideal Career Path Before College in 2026",
+    title: "How to Discover Your Ideal Career Path Before College",
     excerpt: 'Learn how to identify your strengths, explore career options, and gain practical experience before college. Discover your ideal career path with expert guidance and personalized mentorship.',
     category: "Mentorship",
     date: "16 Jan 2026",
