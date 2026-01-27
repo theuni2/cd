@@ -84,6 +84,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // Claim It
     '/essay_comp',
 
+//blogs_pge
+'/blogs/stem-vs-non-stem-how-to-decide',
+'/blogs/why-mentorship-is-the-fastest-way-to-succeed-as-a-student',
+"/blogs/research-mentors-global-admissions",
+"/blogs/benefits-of-research-coaching-for-indian-high-schoolers",
+"/blogs/how-to-discover-your-ideal-career-path-before-college",
+
     // Dubai Programs
     '/dubai-research-bootcamp-for-high-school',
     '/dubai-student-university-prep-research',
