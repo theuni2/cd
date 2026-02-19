@@ -383,7 +383,7 @@ const StartupHero = () => {
           >
             AI-Backed Startup
           </span>
-          <br /> in 10 Weeks.
+          <br /> 
         </motion.h1>
 
         {/* Sub-headline */}
@@ -400,37 +400,41 @@ const StartupHero = () => {
         </motion.p>
         
         {/* DYNAMIC INFO BADGES */}
-        <motion.div 
+        {/* <motion.div 
           variants={itemVariants}
           className="flex flex-wrap items-center justify-center gap-4 sm:gap-6 mb-12"
-        >
+        > */}
           {/* Deadline Badge */}
-          <div 
+
+          {/* <div 
             className="flex items-center gap-3 px-5 py-3 rounded-full backdrop-blur-md shadow-lg transition-transform hover:scale-105 cursor-default"
             style={{ backgroundColor: 'rgba(2, 6, 23, 0.6)', border: '1px solid rgba(239, 68, 68, 0.4)' }}
           >
             <span className="flex items-center justify-center w-6 h-6 rounded-full text-sm" style={{ backgroundColor: 'rgba(239, 68, 68, 0.2)' }}>⏳</span>
             <span style={{ color: '#fca5a5' }}>Deadline: <span className="font-bold text-white">{dates.deadline}</span></span>
-          </div>
+          </div> */}
 
           {/* Start Date Badge */}
-          <div 
+          {/* <div 
             className="flex items-center gap-3 px-5 py-3 rounded-full backdrop-blur-md shadow-lg transition-transform hover:scale-105 cursor-default"
             style={{ backgroundColor: 'rgba(2, 6, 23, 0.6)', border: '1px solid rgba(6, 182, 212, 0.4)' }}
           >
             <span className="flex items-center justify-center w-6 h-6 rounded-full text-sm" style={{ backgroundColor: 'rgba(6, 182, 212, 0.2)' }}>🚀</span>
             <span style={{ color: '#67e8f9' }}>Starts: <span className="font-bold text-white">{dates.start}</span></span>
-          </div>
+          </div> */}
 
           {/* Outcome Badge (Dynamic!) */}
-          <div 
+          {/* <div 
             className="flex items-center gap-3 px-5 py-3 rounded-full backdrop-blur-md shadow-lg transition-transform hover:scale-105 cursor-default"
             style={{ backgroundColor: 'rgba(2, 6, 23, 0.6)', border: '1px solid rgba(139, 92, 246, 0.4)' }}
           >
             <span className="flex items-center justify-center w-6 h-6 rounded-full text-sm" style={{ backgroundColor: 'rgba(139, 92, 246, 0.2)' }}>💎</span>
             <span style={{ color: '#c4b5fd' }}>Launch MVP: <span className="font-bold text-white">{dates.outcome}</span></span>
-          </div>
-        </motion.div>
+          </div> */}
+
+
+
+        {/* </motion.div> */}
 
         {/* CTA Buttons */}
         <motion.div 

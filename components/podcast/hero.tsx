@@ -598,22 +598,22 @@ const Hero = () => {
         </motion.p>
         
         {/* DYNAMIC DATE BADGES - Flex Wrap */}
-        <motion.div 
+        {/* <motion.div 
           variants={itemVariants}
           className="flex flex-wrap items-center justify-center gap-4 mb-12"
         >
-          <div className="flex items-center gap-2 px-4 py-2 rounded-full bg-slate-800/80 backdrop-blur-md border border-amber-500/30 text-amber-100 text-sm shadow-lg">
+          {/* <div className="flex items-center gap-2 px-4 py-2 rounded-full bg-slate-800/80 backdrop-blur-md border border-amber-500/30 text-amber-100 text-sm shadow-lg">
             <span>Deadline: <span className="text-white font-bold tracking-wide">{dates.deadline}</span></span>
           </div>
 
           <div className="flex items-center gap-2 px-4 py-2 rounded-full bg-slate-800/80 backdrop-blur-md border border-purple-500/30 text-purple-100 text-sm shadow-lg">
             <span>Start Date: <span className="text-white font-bold tracking-wide">{dates.start}</span></span>
-          </div>
+          </div> */}
 
-          <div className="flex items-center gap-2 px-4 py-2 rounded-full bg-slate-800/80 backdrop-blur-md border border-pink-500/30 text-pink-100 text-sm shadow-lg">
+          {/* <div className="flex items-center gap-2 px-4 py-2 rounded-full bg-slate-800/80 backdrop-blur-md border border-pink-500/30 text-pink-100 text-sm shadow-lg">
             <span>Status: <span className="text-white font-bold tracking-wide">Limited Slots</span></span>
-          </div>
-        </motion.div>
+          </div> */}
+        {/* </motion.div> */} 
 
         {/* CTA Buttons - Mobile Stack */}
         <motion.div 

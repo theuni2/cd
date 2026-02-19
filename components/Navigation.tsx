@@ -716,7 +716,7 @@ const Navigation = () => {
       href: '/claimit', 
       label: 'Claim It',
       subItems: [
-        { href: '/essay_comp', label: 'John Locke Essay Competition' }
+        { href: '/essay_comp', label: 'Writing Competition' }
       ]
     },
     // --- UPDATED SECTION END ---

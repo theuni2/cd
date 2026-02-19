@@ -449,6 +449,7 @@ export default function CareerForm() {
               WRITE A RESEARCH PAPER UNDER WORLD’S BEST COLLEGE PROFESSOR
             </option>
             <option value="Writing Competition">Writing Competition</option>
+            <option value="Internship">INTERNSHIP</option>
             <option value="BE TEDX SPEAKER">BE TEDX SPEAKER</option>
             <option value="START A PODCAST">START A <b>PODCAST</b></option>
             <option value="DIGITAL WEBSITE"> WEBSITE</option>

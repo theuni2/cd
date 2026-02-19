@@ -347,7 +347,7 @@ const ProjectCard = ({ project, index, dates }) => {
         <div className="mt-auto bg-slate-950/50 rounded-xl p-4 border border-white/5 space-y-3">
           
           {/* Urgency Row */}
-          <div className="flex items-center justify-between pb-3 border-b border-white/5">
+          <div className="flex items-center justify-between pb-3  border-white/5">
             <div className="flex items-center gap-2 text-amber-400">
               <span className="relative flex h-2 w-2">
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-amber-400 opacity-75"></span>
@@ -361,7 +361,7 @@ const ProjectCard = ({ project, index, dates }) => {
           </div>
 
           {/* Dates Row - DYNAMICALLY RENDERED */}
-          <div className="grid grid-cols-2 gap-2 text-xs">
+          {/* <div className="grid grid-cols-2 gap-2 text-xs">
             <div>
               <p className="text-slate-500 mb-1">Registration Ends</p>
               <div className="flex items-center gap-1.5 text-rose-400 font-semibold">
@@ -376,7 +376,7 @@ const ProjectCard = ({ project, index, dates }) => {
                 <span>{dates.start}</span>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
 
         {/* CTA Button (appears on hover) */}
