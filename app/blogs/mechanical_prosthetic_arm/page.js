@@ -31,11 +31,11 @@ export default function ProjectSpotlightBlog() {
           </h1>
 
           {/* Hero Image Placeholder */}
-          <img
+          {/* <img
             src="/blog/prosthetic-hero.png" // Replace with your actual hero image path
             alt="Mechanical Prosthetic Arm Project"
             className="w-full h-[400px] object-cover rounded-2xl mb-12 shadow-lg"
-          />
+          /> */}
 
           {/* Table of Contents Box */}
           <div className="bg-gray-50 border border-gray-100 p-6 rounded-xl mb-10">
@@ -109,11 +109,11 @@ export default function ProjectSpotlightBlog() {
 
             {/* Build Progress Image Grid Placeholder */}
             <div className="my-12 p-6 bg-gray-50 rounded-xl border border-gray-100 text-center">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
-                {/* Replace these with actual progress images */}
+              {/* <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+               
                 <div className="h-48 bg-gray-200 rounded-lg flex items-center justify-center text-gray-400 font-medium">[Progress Image 1]</div>
                 <div className="h-48 bg-gray-200 rounded-lg flex items-center justify-center text-gray-400 font-medium">[Progress Image 2]</div>
-              </div>
+              </div> */}
               <p className="text-sm text-gray-500 italic">Build progress and early prototypes of the mechanical arm.</p>
             </div>
 

@@ -58,6 +58,15 @@ const BLOG_POSTS = [
     readTime: "4 min read",
     image: "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?q=80&w=2070&auto=format&fit=crop",
     slug: "/blogs/how-to-discover-your-ideal-career-path-before-college",
+  },{
+    id: 6,
+    title: "Code That Cares: Armilli | Student Project Spotlight",
+    excerpt: 'Discover how a Career Discovery student built Armilli, an AI-assisted diagnosis and monitoring platform designed for early detection of animal health issues.',
+    category: "Projects",
+    date: " 14 Feb 2026",
+    readTime: "4 min read",
+    image: "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?q=80&w=2070&auto=format&fit=crop",
+    slug: "/blogs/code_that_cares",
   },
 ];
 

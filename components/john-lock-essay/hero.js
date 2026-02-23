@@ -1449,36 +1449,42 @@ const CompetitionHero = () => {
         </motion.p>
         
         {/* --- LOGO STRIP (Added Here) --- */}
-        <motion.div 
-          variants={itemVariants}
-          className="flex flex-wrap justify-center items-center gap-8 md:gap-12 mb-12 opacity-80"
-        >
-             {/* Logo 1: John Locke */}
-             <div className="h-12 w-auto flex items-center justify-center bg-white/10 px-4 rounded-lg backdrop-blur-sm hover:bg-white/20 transition-all duration-300">
-                <span className="text-white font-serif font-bold tracking-wide">John Locke</span>
-                <span className="text-[10px] text-gray-300 ml-1 mt-1 block">INSTITUTE</span>
-             </div>
+ <motion.div 
+  variants={itemVariants}
+  className="flex flex-wrap justify-center items-center gap-8 md:gap-12 mb-12 opacity-80"
+>
+  {/* 1. John Locke Institute */}
+  <div className="h-12 w-auto flex items-center justify-center bg-white/10 px-4 rounded-lg backdrop-blur-sm hover:bg-white/20 transition-all duration-300">
+    <div className="flex flex-col items-start">
+      <span className="text-white font-serif font-bold tracking-wide leading-none">John Locke</span>
+      <span className="text-[9px] text-gray-400 tracking-[0.2em] mt-1">INSTITUTE</span>
+    </div>
+  </div>
 
-             {/* Logo 2: Adroit Journal */}
-             <div className="h-12 w-auto flex items-center justify-center bg-white/10 px-4 rounded-lg backdrop-blur-sm hover:bg-white/20 transition-all duration-300">
-                <span className="text-white font-serif italic text-xl">The Adroit Journal</span>
-             </div>
+  {/* 2. The Concord Review */}
+  <div className="h-12 w-auto flex items-center justify-center bg-white/10 px-4 rounded-lg backdrop-blur-sm hover:bg-white/20 transition-all duration-300">
+    <span className="text-white font-serif italic text-lg border-b border-white/30">The Concord Review</span>
+  </div>
 
-             {/* Logo 3: Columbia Law */}
-             <div className="h-12 w-auto flex items-center justify-center bg-white/10 px-4 rounded-lg backdrop-blur-sm hover:bg-white/20 transition-all duration-300">
-                <span className="text-white font-bold tracking-tighter">COLUMBIA</span>
-                <span className="text-[10px] text-gray-300 ml-2 border-l border-gray-400 pl-2 leading-tight">UNDERGRAD<br/>LAW REVIEW</span>
-             </div>
+  {/* 3. Marshall Society (Cambridge) */}
+  <div className="h-12 w-auto flex items-center justify-center bg-white/10 px-4 rounded-lg backdrop-blur-sm hover:bg-white/20 transition-all duration-300">
+    <div className="flex flex-col items-center">
+      <span className="text-white font-bold tracking-widest text-sm uppercase">Marshall Society</span>
+      <span className="text-[8px] text-gray-400 uppercase tracking-tighter">University of Cambridge</span>
+    </div>
+  </div>
 
-             {/* Logo 4: Oxford Scholastica */}
-             <div className="h-12 w-auto flex items-center justify-center bg-white/10 px-4 rounded-lg backdrop-blur-sm hover:bg-white/20 transition-all duration-300">
-                <div className="w-6 h-6 border-2 border-white rounded-full mr-2"></div>
-                <div className="text-left">
-                    <span className="text-white font-bold text-sm block leading-none">Oxford</span>
-                    <span className="text-gray-300 text-[10px] block leading-none mt-0.5">Scholastica</span>
-                </div>
-             </div>
-        </motion.div>
+  {/* 4. Harvard International Review (HIR) */}
+  <div className="h-12 w-auto flex items-center justify-center bg-white/10 px-4 rounded-lg backdrop-blur-sm hover:bg-white/20 transition-all duration-300">
+    <div className="flex items-center gap-2">
+      <div className="h-6 w-[2px] bg-red-600"></div>
+      <div className="flex flex-col">
+        <span className="text-white font-bold text-sm leading-none">HARVARD</span>
+        <span className="text-gray-300 text-[9px] tracking-widest leading-none mt-1">INTERNATIONAL REVIEW</span>
+      </div>
+    </div>
+  </div>
+</motion.div>
 
         {/* CTA Buttons (Updated Alignment) */}
         <motion.div 
