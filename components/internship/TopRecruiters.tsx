@@ -92,7 +92,7 @@ const recruiters = [
   },
   {
     name: "Protiviti Inc.",
-    logo: "/company/proviti.png",
+    logo: "/company/protiviti.png",
     description: "Protiviti India is a global business consulting firm providing IT consulting, Risk & Compliance, Digital Transformation, Internal Audit services.",
     link: "https://swarajvikas.1ngo.in/"
   },
