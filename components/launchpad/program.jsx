@@ -616,10 +616,10 @@ export default function LaunchpadImpactSection() {
 
                     {/* Footer */}
                     <div className="mt-auto w-full border-t border-gray-100 pt-6">
-                      <div className="mb-6 flex w-fit items-center gap-2 rounded-lg bg-gray-50 px-3 py-1 text-sm font-semibold text-gray-500">
+                      {/* <div className="mb-6 flex w-fit items-center gap-2 rounded-lg bg-gray-50 px-3 py-1 text-sm font-semibold text-gray-500">
                         <Calendar className="h-4 w-4 text-gray-400" />
                         <span>{item.cohortDate}</span>
-                      </div>
+                      </div> */}
 
                       <div
                         className={`flex w-full items-center justify-center gap-2 mb-3 rounded-xl py-4 px-6 font-bold tracking-wide text-white shadow-lg transition-all ${buttonColor}`}
