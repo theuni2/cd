@@ -405,7 +405,7 @@ export default function RulesSection() {
 
             </p>
             <p>
-                  Final results will be officially declared on <span className="highlight-text">20th July 2026</span> via our website and email notification.
+                  Final results will be officially declared on <span className="highlight-text">10th August 2026</span> via our website and email notification.
                 </p>
           </div>
 

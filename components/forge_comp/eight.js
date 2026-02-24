@@ -10,7 +10,7 @@ export default function FaqSection() {
   faqs: [
     { 
       q: "How strict are the age eligibility criteria?", 
-      a: "You must be under 19 years old as of the regular submission deadline (31 May 2026). If you turn 19 on 1 June 2026 or later, you are eligible to compete. There are no minimum age requirements—students of any age under 19 may participate." 
+      a: "You must be under 19 years old as of the regular submission deadline (31st May 2026). If you turn 19 on 1 June 2026 or later, you are eligible to compete. There are no minimum age requirements students of any age under 19 may participate." 
     },
     { 
       q: "Am I too young to participate in the Essay Prize competition?", 
@@ -22,7 +22,7 @@ export default function FaqSection() {
     },
     { 
       q: "When does registration close?", 
-      a: "Registration closes on 31 May 2026. Late entries will be accepted until 10 July 2026." 
+      a: "Registration closes on 31st May 2026. Late entries will be accepted until 10th July 2026." 
     },
     // { 
     //   q: "When will the final results be announced?", 
@@ -48,7 +48,7 @@ export default function FaqSection() {
       faqs: [
         { q: "How should I format my essay's file name?", a: "Your file must be named using the format: FirstName-LastName-Category-QuestionNumber.pdf. Essays with incorrect filenames will be rejected." },
         { q: "May I submit more than one essay?", a: "Yes, you may submit as many essays as you please in any or all categories." },
-        { q: "When will the winners be announced?", a: "Official results will be released on 20 July 2026. All participants will receive an email update, and the winning essays will be featured on our global gallery." }, // Added this
+        { q: "When will the winners be announced?", a: "Official results will be released on  10th August 2026. All participants will receive an email update, and the winning essays will be featured on our global gallery." }, // Added this
         { q: "May I use AI software, such as ChatGPT?", a: "Yes, but be warned: overreliance on AI often results in less original work. Since AI use can negatively affect our assessment of your unique 'voice,' we recommend using it sparingly or not at all." },
         { q: "I uploaded the wrong draft. What should I do?", a: "Rre-upload any time before the final deadline." },
       ]

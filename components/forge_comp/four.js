@@ -257,6 +257,8 @@
 //   );
 // }
 
+
+
 "use client";
 
 import React from "react";
@@ -427,8 +429,8 @@ export default function PrizesSection() {
             <div className="prize-card">
               <Award size={48} color="#c5a059" style={{ marginBottom: '20px' }} />
               <h3 className="prize-name">Runner Up</h3>
-              <span className="prize-amount">80K Value</span>
-              <p className="prize-desc">Direct Mentorship with PhD Scholars to accelerate your writing and academic journey.</p>
+              <span className="prize-amount">$750 Value</span>
+              <p className="prize-desc">Custom Profile Roadmap + Exclusive Merchandise + Official Certificate of Winner.</p>
             </div>
 
             {/* 1st Place */}
@@ -436,16 +438,16 @@ export default function PrizesSection() {
               <div style={{ position: 'absolute', top: 0, background: '#c5a059', color: '#0a2342', padding: '5px 15px', fontSize: '10px', fontWeight: 'bold', textTransform: 'uppercase', transform: 'translateY(-50%)' }}>Winner</div>
               <Trophy size={60} color="#0a2342" style={{ marginBottom: '20px' }} />
               <h3 className="prize-name">Grand Prize</h3>
-              <span className="prize-amount">1.2L Value</span>
-              <p className="prize-desc" style={{ color: '#444' }}>Media Publication + 1-on-1 PhD Mentorship for ultimate academic prestige and global exposure.</p>
+              <span className="prize-amount">$1000 Value</span>
+              <p className="prize-desc" style={{ color: '#444' }}>Media Coverage + Championship Trophy + Exclusive Merchandise + Custom Profile Roadmap + Official Certificate of Winner to recognize your achievement.</p>
             </div>
 
             {/* 3rd Place */}
             <div className="prize-card">
               <Star size={48} color="#c5a059" style={{ marginBottom: '20px' }} />
               <h3 className="prize-name">Third Prize</h3>
-              <span className="prize-amount">40K Value</span>
-              <p className="prize-desc">Professional Editorial Review of your manuscript + Exclusive Competition Merchandise.</p>
+              <span className="prize-amount">$500 Value</span>
+              <p className="prize-desc">Custom Profile Roadmap + Official Certificate of Winner to recognize your achievement.</p>
             </div>
           </div>
 

@@ -9,7 +9,10 @@ export default function SubmitModal({ isOpen, onClose }) {
     firstName: "",
     lastName: "",
     email: "",
+    school:"",
     category: "",
+    contactNumber: "",
+    idDriveLink:"",
     docLink: "",
   });
 
@@ -163,6 +166,17 @@ export default function SubmitModal({ isOpen, onClose }) {
               />
             </div>
 
+                 <div className="mb-6">
+              <label className="block text-sm font-bold text-[#0a2342] uppercase tracking-wider mb-2">School *</label>
+              <input 
+                type="text" 
+                name="school"
+                required
+                onChange={handleChange}
+                className="w-full px-4 py-3 bg-gray-50 border border-gray-200 focus:border-[#c5a059] focus:ring-1 focus:ring-[#c5a059] outline-none transition-all rounded-sm"
+              />
+            </div>
+
             {/* Category Dropdown */}
             <div className="mb-6">
               <label className="block text-sm font-bold text-[#0a2342] uppercase tracking-wider mb-2">Essay Category *</label>
@@ -184,6 +198,18 @@ export default function SubmitModal({ isOpen, onClose }) {
               </select>
             </div>
 
+        <div className="mb-6">
+              <label className="block text-sm font-bold text-[#0a2342] uppercase tracking-wider mb-2">Phone Number *</label>
+              <input 
+                type="text" 
+                name="contactNumber"
+                required
+                onChange={handleChange}
+                className="w-full px-4 py-3 bg-gray-50 border border-gray-200 focus:border-[#c5a059] focus:ring-1 focus:ring-[#c5a059] outline-none transition-all rounded-sm"
+              />
+            </div>
+
+
             {/* Google Doc Link */}
             <div className="mb-8">
               <label className="block text-sm font-bold text-[#0a2342] uppercase tracking-wider mb-2">Google Document Link *</label>
@@ -191,6 +217,20 @@ export default function SubmitModal({ isOpen, onClose }) {
               <input 
                 type="url" 
                 name="docLink"
+                required
+                placeholder="https://docs.google.com/document/d/..."
+                onChange={handleChange}
+                className="w-full px-4 py-3 bg-gray-50 border border-gray-200 focus:border-[#c5a059] focus:ring-1 focus:ring-[#c5a059] outline-none transition-all rounded-sm"
+              />
+            </div>
+
+            {/* Google Doc Link */}
+            <div className="mb-8">
+              <label className="block text-sm font-bold text-[#0a2342] uppercase tracking-wider mb-2">ID Drive Link *</label>
+              <p className="text-xs text-gray-500 mb-2">Ensure link sharing is set to "Anyone with the link can view".</p>
+              <input 
+                type="url" 
+                name="idDriveLink"
                 required
                 placeholder="https://docs.google.com/document/d/..."
                 onChange={handleChange}

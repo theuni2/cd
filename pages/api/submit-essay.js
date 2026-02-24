@@ -8,7 +8,16 @@ export default async function handler(req, res) {
 
   try {
     // 2. Get the data from the frontend modal
-    const { firstName, lastName, email, category, docLink } = req.body;
+    const { firstName, lastName, email,school, category,contactNumber,idDriveLink,docLink } = req.body;
+
+    // firstName: "",
+    // lastName: "",
+    // email: "",
+    // school:"",
+    // category: "",
+    // contactNumber: "",
+    // idDriveLink:"",
+    // docLink: "",
 
     // 3. Use your exact existing transporter setup
     const transporter = nodemailer.createTransport({
@@ -40,6 +49,18 @@ export default async function handler(req, res) {
               <td style="padding: 10px; font-weight: bold; border: 1px solid #ddd;">Email Address</td>
               <td style="padding: 10px; border: 1px solid #ddd;">${email}</td>
             </tr>
+            <tr>
+              <td style="padding: 10px; font-weight: bold; border: 1px solid #ddd;">School Name</td>
+              <td style="padding: 10px; border: 1px solid #ddd;">${school}</td>
+            </tr>
+            <tr>
+              <td style="padding: 10px; font-weight: bold; border: 1px solid #ddd;">ID Drive Link</td>
+              <td style="padding: 10px; border: 1px solid #ddd;">${idDriveLink}</td>
+            </tr>
+            <tr style="background-color: #f4f4f4;">
+              <td style="padding: 10px; font-weight: bold; border: 1px solid #ddd;">Phone Number</td>
+              <td style="padding: 10px; border: 1px solid #ddd;">${contactNumber}</td>
+            </tr>
             <tr style="background-color: #f4f4f4;">
               <td style="padding: 10px; font-weight: bold; border: 1px solid #ddd;">Category</td>
               <td style="padding: 10px; border: 1px solid #ddd; font-weight: bold; color: #0a2342;">${category}</td>
@@ -53,7 +74,7 @@ export default async function handler(req, res) {
               </td>
             </tr>
           </table>
-          <p style="margin-top: 30px; font-size: 12px; color: #888;">Submitted via The Career Discovery Landing Page</p>
+          <p style="margin-top: 30px; font-size: 12px; color: #888;">Submitted via The Career Discovery Forge Essay Submission Form</p>
         </div>
       `,
     };
