@@ -68,7 +68,17 @@ const BLOG_POSTS = [
     image: "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?q=80&w=2070&auto=format&fit=crop",
     slug: "/blogs/code_that_cares",
   },
-];
+  ,{
+    id: 7,
+    title: "Engineering Impact in Motion: Meteor 350 Crash Guard | Project Spotlight",
+    excerpt: 'Discover how a Career Discovery student designed and developed a custom crash guard for the Royal Enfield Meteor 350, from CAD simulations to real-world fabrication.',
+    category: "Projects",
+    date: " 14 Feb 2026",
+    readTime: "4 min read",
+    image: "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?q=80&w=2070&auto=format&fit=crop",
+    slug: "/blogs/crash_guard",
+  },
+]
 
 const BlogCard = ({ post }) => {
   return (

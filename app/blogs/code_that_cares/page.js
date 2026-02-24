@@ -193,17 +193,30 @@ export default function ArmilliProjectBlog() {
                 Explore Our Programs
               </button>
             </div> */}
-            <div className="mt-12 p-8 bg-[#0a2342] text-white rounded-xl shadow-2xl text-center">
-  <h3 className="text-3xl font-serif font-bold text-[#c5a059] mb-4">Build What Matters</h3>
+<div 
+  className="mt-12 p-8 rounded-xl shadow-2xl text-center"
+  style={{ backgroundColor: '#0a2342', color: 'white' }}
+>
+  <h3 
+    className="text-3xl font-serif font-bold mb-4"
+    style={{ color: '#c5a059' }}
+  >
+    Build What Matters
+  </h3>
   
-  {/* FIXED: Changed text-gray-700 to text-gray-200 so it is highly visible */}
-  <p className="text-gray-200 mb-8 max-w-2xl mx-auto leading-relaxed">
-    If you’re a student who wants to go beyond hypothetical assignments and work on problems that exist in the real world, Career Discovery is where that journey begins. Armilli started as an idea. With mentorship, structure, and curiosity, it became a platform with purpose. <strong className="text-white">Your project could be next.</strong>
+  <p className="mb-8 max-w-2xl mx-auto leading-relaxed text-gray-200">
+    If you’re a student who wants to go beyond hypothetical assignments and work on problems that exist in the real world, Career Discovery is where that journey begins. Armilli started as an idea. With mentorship, structure, and curiosity, it became a platform with purpose. <strong style={{ color: 'white' }}>Your project could be next.</strong>
   </p>
   
-  <button className="px-8 py-4 bg-[#c5a059] text-[#0a2342] font-bold tracking-wider hover:bg-white hover:scale-105 transition-all duration-300 rounded shadow-lg uppercase text-sm">
+  <a href='https://www.thecareerdiscovery.com/launchpad'>
+  <button 
+
+    className="px-8 py-4 font-bold tracking-wider hover:scale-105 transition-all duration-300 rounded shadow-lg uppercase text-sm hover:bg-white"
+    style={{ backgroundColor: '#c5a059', color: '#0a2342' }}
+  >
     Explore Our Programs
   </button>
+  </a>
 </div>
 
           </article>

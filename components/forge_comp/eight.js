@@ -5,16 +5,35 @@ import { ChevronDown } from "lucide-react";
 
 export default function FaqSection() {
   const faqCategories = [
-    {
-      title: "Eligibility & Registration",
-      faqs: [
-        { q: "How strict are the age eligibility criteria?", a: "You must be under 19 years old as of the regular submission deadline (31 May, 2026). If you turn 19 on 1 June 2026 or later, you are eligible to compete. There are no minimum age requirements—students of any age under 19 may participate." },
-        { q: "Am I too young to participate in the Essay Prize competition?", a: "No! The competition is open to students of any age under 19 as of the regular submission deadline of 31 May, 2026." },
-        { q: "How can I enter the Junior or Senior Category?", a: "Your category is determined solely by your age on the submission deadline. Students who are under the age of 15 as of 31 May will be judged in the Junior Category. All other eligible students will be judged in the Senior Category. You do not need to apply separately for a category." },
-        { q: "Is there an entry fee?", a: "No. There is no charge to enter our global essay competition unless you submit your essay after the normal deadline, in which case there is a fee of 25.00 GBP (for the seven day extension) or 75.00 GBP (for the twenty-one day extension)." },
-        { q: "I missed the registration deadline. May I still register or submit an essay?", a: "No. Only contestants who registered before the registration deadline, or who purchased the late registration option, will be able to submit an essay." },
-      ]
+ {
+  title: "Eligibility & Registration",
+  faqs: [
+    { 
+      q: "How strict are the age eligibility criteria?", 
+      a: "You must be under 19 years old as of the regular submission deadline (31 May 2026). If you turn 19 on 1 June 2026 or later, you are eligible to compete. There are no minimum age requirements—students of any age under 19 may participate." 
     },
+    { 
+      q: "Am I too young to participate in the Essay Prize competition?", 
+      a: "No. The competition is open to students of any age under 19 as of the regular submission deadline (31 May 2026)." 
+    },
+    { 
+      q: "How can I enter the Junior or Senior Category?", 
+      a: "Your category is determined solely by your age on the submission deadline. Students who are under 15 years old as of 31 May 2026 will be judged in the Junior Category. All other eligible students will be judged in the Senior Category. You do not need to apply separately for a category." 
+    },
+    { 
+      q: "When does registration close?", 
+      a: "Registration closes on 31 May 2026. Late entries will be accepted until 10 July 2026." 
+    },
+    // { 
+    //   q: "When will the final results be announced?", 
+    //   a: "Final results will be officially declared on 20 July 2026 via our website and email notification." 
+    // },
+    { 
+      q: "Is there an entry fee?", 
+      a: "There is no fee to enter our global essay competition. Participation is completely free." 
+    }
+  ]
+},
     {
       title: "Formatting & Rules",
       faqs: [
@@ -31,7 +50,7 @@ export default function FaqSection() {
         { q: "May I submit more than one essay?", a: "Yes, you may submit as many essays as you please in any or all categories." },
         { q: "When will the winners be announced?", a: "Official results will be released on 20 July 2026. All participants will receive an email update, and the winning essays will be featured on our global gallery." }, // Added this
         { q: "May I use AI software, such as ChatGPT?", a: "Yes, but be warned: overreliance on AI often results in less original work. Since AI use can negatively affect our assessment of your unique 'voice,' we recommend using it sparingly or not at all." },
-        { q: "I uploaded the wrong draft. What should I do?", a: "You may delete your submission and re-upload any time before the final deadline." },
+        { q: "I uploaded the wrong draft. What should I do?", a: "Rre-upload any time before the final deadline." },
       ]
     }
   ];

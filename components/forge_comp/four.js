@@ -428,7 +428,7 @@ export default function PrizesSection() {
               <Award size={48} color="#c5a059" style={{ marginBottom: '20px' }} />
               <h3 className="prize-name">Runner Up</h3>
               <span className="prize-amount">80K Value</span>
-              <p className="prize-desc">Direct Mentorship with PhD Scholars to accelerate your research and academic journey.</p>
+              <p className="prize-desc">Direct Mentorship with PhD Scholars to accelerate your writing and academic journey.</p>
             </div>
 
             {/* 1st Place */}
@@ -454,7 +454,7 @@ export default function PrizesSection() {
             <ScrollText size={40} color="#c5a059" />
             <div className="participation-text">
               <h4>Certificate of Participation</h4>
-              <p>Every participant will receive a verified digital certificate acknowledging their research contribution.</p>
+              <p>Every participant will receive a verified digital certificate acknowledging their writing contribution.</p>
             </div>
           </div>
         </div>
