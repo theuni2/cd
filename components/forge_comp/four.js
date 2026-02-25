@@ -430,7 +430,7 @@ export default function PrizesSection() {
               <Award size={48} color="#c5a059" style={{ marginBottom: '20px' }} />
               <h3 className="prize-name">Runner Up</h3>
               <span className="prize-amount">$750 Value</span>
-              <p className="prize-desc">Custom Profile Roadmap + Exclusive Merchandise + Official Certificate of Winner.</p>
+              <p className="prize-desc"> One-on-One Personalised Global Profile Roadmap Designed with an Education Strategist + Exclusive Merchandise + Official Certificate of Winner.</p>
             </div>
 
             {/* 1st Place */}
@@ -439,7 +439,7 @@ export default function PrizesSection() {
               <Trophy size={60} color="#0a2342" style={{ marginBottom: '20px' }} />
               <h3 className="prize-name">Grand Prize</h3>
               <span className="prize-amount">$1000 Value</span>
-              <p className="prize-desc" style={{ color: '#444' }}>Media Coverage + Championship Trophy + Exclusive Merchandise + Custom Profile Roadmap + Official Certificate of Winner to recognize your achievement.</p>
+              <p className="prize-desc" style={{ color: '#444' }}>Media Coverage + Championship Trophy + Exclusive Merchandise + One-on-One Personalised Global Profile Roadmap Designed with an Founder + Official Certificate of Winner to recognize your achievement.</p>
             </div>
 
             {/* 3rd Place */}
@@ -447,7 +447,7 @@ export default function PrizesSection() {
               <Star size={48} color="#c5a059" style={{ marginBottom: '20px' }} />
               <h3 className="prize-name">Third Prize</h3>
               <span className="prize-amount">$500 Value</span>
-              <p className="prize-desc">Custom Profile Roadmap + Official Certificate of Winner to recognize your achievement.</p>
+              <p className="prize-desc">One-on-One Personalised Global Profile Roadmap Designed with an Education Strategist + Official Certificate of Winner to recognize your achievement.</p>
             </div>
           </div>
 

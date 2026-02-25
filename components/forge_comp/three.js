@@ -566,7 +566,7 @@ export default function CategoriesSection() {
         @media (max-width: 768px) { .grid { grid-template-columns: 1fr; } }
       `}</style>
 
-      <section className="categories-section">
+      <section className="categories-section" id="topic">
         <div className="container">
           <div className="section-header">
             <span className="section-subtitle">2024 Essay Prompts</span>

@@ -2,7 +2,7 @@
 
 import React from "react";
 import { useState } from "react";
-import { ChevronRight, Download } from "lucide-react";
+import { ChevronRight, Download,BookOpen} from "lucide-react";
 import SubmitModal from "./form"; 
 
 
@@ -198,10 +198,11 @@ export default function HeroSection() {
 
               REGISTER NOW <ChevronRight size={16} />
             </button>
-            
-            <button className="btn btn-secondary">
-              DOWNLOAD TOPICS <Download size={16} />
+            <a href="#topic">
+            <button className="btn btn-secondary" >
+              VIEW TOPICS <BookOpen size={16} />
             </button>
+            </a>
           </div>
 
         </div>

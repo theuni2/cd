@@ -24,10 +24,6 @@ export default function FaqSection() {
       q: "When does registration close?", 
       a: "Registration closes on 31st May 2026. Late entries will be accepted until 10th July 2026." 
     },
-    // { 
-    //   q: "When will the final results be announced?", 
-    //   a: "Final results will be officially declared on 20 July 2026 via our website and email notification." 
-    // },
     { 
       q: "Is there an entry fee?", 
       a: "There is no fee to enter our global essay competition. Participation is completely free." 

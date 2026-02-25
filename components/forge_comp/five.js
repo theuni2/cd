@@ -173,7 +173,7 @@ export default function JudgesSection() {
                   className="judge-img"
                 />
               </div>
-              <h3 className="judge-name">Dr. Alistair Sterling</h3>
+              <h3 className="judge-name">Dr. Sterling</h3>
               <span className="judge-role">Chairman of Examiners</span>
               <p className="judge-bio">
                 Former Dean of Philosophy at Oxford. Dr. Sterling oversees the academic rigor of the FORGE Prize.
@@ -189,7 +189,7 @@ export default function JudgesSection() {
                   className="judge-img"
                 />
               </div>
-              <h3 className="judge-name">Prof. Elara Vance</h3>
+              <h3 className="judge-name">Prof. Vance</h3>
               <span className="judge-role">Senior Fellow, Economics</span>
               <p className="judge-bio">
                 Visiting Professor at Princeton University. Specializes in behavioral economics and game theory.
