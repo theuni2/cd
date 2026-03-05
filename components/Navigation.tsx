@@ -662,7 +662,68 @@ const Navigation = () => {
 
   /* ===================== NAV DATA ===================== */
 
-  const navItems = [
+  // const navItems = [
+  //   { href: '/', label: 'Home' },
+  //   { href: '/research', label: 'Research' },
+  //   { href: '/internship', label: 'Internships' },
+  //   {
+  //     href: '', 
+  //     label: 'Career Library',
+  //     subItems: [
+  //       {
+  //         label: 'Dubai Programs',
+  //         children: [
+  //           { href: '/dubai-research-bootcamp-for-high-school', label: 'Dubai Research Bootcamp for High School' },
+  //           { href: '/dubai-student-university-prep-research', label: 'Dubai Student University Prep Research' },
+  //           { href: '/professor-sessionsfor-dubai-students', label: 'Professor Sessions for Dubai Students' },
+  //           { href: '/dubai-high-school-internship-placement', label: 'Dubai High School Internship Placement' },
+  //           { href: '/dubai-internship-training-for-teenagers', label: 'Dubai Internship Training for Teenagers' },
+  //           { href: '/uae-corporate-internships-for-teens', label: 'UAE Corporate Internships for Teens' },
+  //         ]
+  //       },
+  //       {
+  //         label: 'India Programs',
+  //         children: [
+  //           // { href: '/india/benefits-of-research-coaching-for-indian-high-schoolers', label: 'Benefits of a Research Coaching Program for Indian High Schoolers' },
+  //           // { href: '/india/research-mentors-students-india', label: 'Research Mentors for Students in India' },
+  //           { href: '/india-high-schoolers-internship-program', label: 'India High Schoolers Internship Program' },
+  //           { href: '/india-high-school-research-coaching', label: 'India High School Research Coaching' },
+  //           { href: '/research-mentors-students-india', label: 'Research Mentors for Students in India' },
+  //           { href: '/corporate-internship-india-teens', label: 'Corporate Internship India for Teens' },
+  //         ]
+  //       }
+  //     ]
+  //   },
+  //   {
+  //     href: '/launchpad',
+  //     label: 'Launchpad',
+  //     subItems: [
+  //       { href: '/podcast', label: 'Podcast Launchpad' },
+  //       { href: '/startup', label: 'Startup Launchpad' },
+  //       { href: '/service_project', label: 'Service Launchpad' },
+  //     ]
+  //   },
+  //   {
+  //     href: '/blogs',
+  //     label: 'Blogs',
+  //     // subItems: [
+  //     //   { href: '/blogs/benefits-of-research-coaching-for-indian-high-schoolers', label: 'Top Benefits of a Research Coaching Program for Indian High Schoolers' },
+  //     //   { href: '/blogs/research-mentors-global-admissions', label: 'Research Mentors Help Indian Students Stand Out in Global Admissions' },
+  //     // ]
+  //   },
+  //   // --- UPDATED SECTION START ---
+  //   { 
+  //     href: '/claimit', 
+  //     label: 'Claim It',
+  //     subItems: [
+  //       { href: '/essay_comp', label: 'Writing Competition' }
+  //     ]
+  //   },
+  //   // --- UPDATED SECTION END ---
+  // ]
+
+
+const navItems = [
     { href: '/', label: 'Home' },
     { href: '/research', label: 'Research' },
     { href: '/internship', label: 'Internships' },
@@ -684,8 +745,6 @@ const Navigation = () => {
         {
           label: 'India Programs',
           children: [
-            // { href: '/india/benefits-of-research-coaching-for-indian-high-schoolers', label: 'Benefits of a Research Coaching Program for Indian High Schoolers' },
-            // { href: '/india/research-mentors-students-india', label: 'Research Mentors for Students in India' },
             { href: '/india-high-schoolers-internship-program', label: 'India High Schoolers Internship Program' },
             { href: '/india-high-school-research-coaching', label: 'India High School Research Coaching' },
             { href: '/research-mentors-students-india', label: 'Research Mentors for Students in India' },
@@ -703,23 +762,11 @@ const Navigation = () => {
         { href: '/service_project', label: 'Service Launchpad' },
       ]
     },
-    {
-      href: '/blogs',
-      label: 'Blogs',
-      // subItems: [
-      //   { href: '/blogs/benefits-of-research-coaching-for-indian-high-schoolers', label: 'Top Benefits of a Research Coaching Program for Indian High Schoolers' },
-      //   { href: '/blogs/research-mentors-global-admissions', label: 'Research Mentors Help Indian Students Stand Out in Global Admissions' },
-      // ]
-    },
-    // --- UPDATED SECTION START ---
-    { 
-      href: '/claimit', 
-      label: 'Claim It',
-      subItems: [
-        { href: '/essay_comp', label: 'Writing Competition' }
-      ]
-    },
-    // --- UPDATED SECTION END ---
+    // --- INDEPENDENT ESSAY COMPETITION LINK ---
+    
+    
+    { href: '/blogs', label: 'Blogs' },
+    { href: '/claimit', label: 'Claim It' },
   ]
 
   const handleContactClick = () => {
@@ -815,11 +862,12 @@ const Navigation = () => {
               )
             })}
           </div>
+          {/* { href: '/forge_writing_competition', label: 'FORGE Essay Competition' }, */}
 
           {/* ===================== DESKTOP CTA ===================== */}
           <div className="hidden md:block">
-            <Button href="/#contact" variant={isScrolled ? "primary" : "white"}>
-              Contact Us
+            <Button href="/forge_writing_competition" variant={isScrolled ? "primary" : "white"}>
+              FORGE Essay Competition
             </Button>
           </div>
 
