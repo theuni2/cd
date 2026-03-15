@@ -451,6 +451,7 @@ export default function CareerForm() {
             <option value="Writing Competition">Writing Competition</option>
             <option value="Internship">INTERNSHIP</option>
             <option value="BE TEDX SPEAKER">BE TEDX SPEAKER</option>
+            <option value="Debater">DEBATER</option>
             <option value="START A PODCAST">START A <b>PODCAST</b></option>
             <option value="DIGITAL WEBSITE"> WEBSITE</option>
             <option value="newsletter">START YOUR NEWSLETTER</option>
@@ -462,6 +463,7 @@ export default function CareerForm() {
             <option value="BUILD A ROBOT">BUILD A ROBOT</option>
             <option value="MARKETING AGENCY">MARKETING AGENCY</option>
             <option value="LAUNCH NPO">LAUNCH NPO</option>
+            <option value="other">OTHER</option>
             <option value="ALL of the Above">ALL OF THE ABOVE</option>
         
           </SelectField>
