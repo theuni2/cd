@@ -33,7 +33,7 @@ export default function Home() {
       <section id="about">
         <WhoWeAre />
       </section>
-      <SignatureProgramsSection/>
+      {/* <SignatureProgramsSection/> */}
       <section id="how-it-works">
         <HowItWorks />
       </section>

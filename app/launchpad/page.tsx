@@ -10,7 +10,9 @@ import Plans from '../components/Plans'
 import MobilePlans from '../components/MobilePlans'
 import NGOImpactSection from '@/components/launchpad/showcase';
 import LaunchpadImpactSection from '@/components/launchpad/program';
-
+import ComparisonMatrix from '@/components/launchpad/aboutus';
+import AlternativeComparisonList from '@/components/launchpad/difference';
+import CompetitionsTimeline from '@/components/launchpad/keycompetition'
 
 export const metadata: Metadata = {
   title: 'Launchpad | Career Discovery',
@@ -24,8 +26,11 @@ export default function Launchpad() {
   return (
     <main className="scroll-smooth">
      <Hero/>
-     <LaunchpadSection/>
-     <LaunchpadImpactSection/>
+     {/* <LaunchpadSection/> */}
+     <ComparisonMatrix/>
+     <AlternativeComparisonList/>
+     <CompetitionsTimeline/>
+     {/* <LaunchpadImpactSection/> */}
      <NGOImpactSection/>
      {/* <CapstoneSection/> */}
      {/* <TimelineSection/> */}

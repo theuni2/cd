@@ -1462,9 +1462,9 @@ const CompetitionHero = () => {
   </div>
 
   {/* 2. The Concord Review */}
-  <div className="h-12 w-auto flex items-center justify-center bg-white/10 px-4 rounded-lg backdrop-blur-sm hover:bg-white/20 transition-all duration-300">
-    <span className="text-white font-serif italic text-lg border-b border-white/30">The Concord Review</span>
-  </div>
+  {/* <div className="h-12 w-auto flex items-center justify-center bg-white/10 px-4 rounded-lg backdrop-blur-sm hover:bg-white/20 transition-all duration-300">
+    {/* <span className="text-white font-serif italic text-lg border-b border-white/30">The Concord Review</span> */}
+  {/* </div> */} 
 
   {/* 3. Marshall Society (Cambridge) */}
   <div className="h-12 w-auto flex items-center justify-center bg-white/10 px-4 rounded-lg backdrop-blur-sm hover:bg-white/20 transition-all duration-300">

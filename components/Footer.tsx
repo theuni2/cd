@@ -74,7 +74,7 @@ const handleContactClick = () => {
             </p>
             <div className="mt-4">
               <p className="text-gray-600"><strong>Email:</strong> info@thecareerdiscovery.com</p>
-              <p className="text-gray-600"><strong>Phone:</strong> +91 97177 71969</p>
+              <p className="text-gray-600"><strong>Phone:</strong> +91 9888661618</p>
             </div>
             <div className="flex space-x-4 mt-6">
               <SocialIcon Icon={Facebook} href="https://www.facebook.com/profile.php?id=61569468055193&mibextid=ZbWKwL" />

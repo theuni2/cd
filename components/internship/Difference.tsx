@@ -18,7 +18,7 @@ const IgniteExperienceSection: React.FC = () => {
           transition={{ duration: 0.5 }}
           className="flex items-center justify-center gap-4 mb-4"
         >
-          <h3 className="text-4xl md:text-5xl font-bold text-gray-900">IGNITE</h3>
+          <h3 className="text-4xl md:text-5xl font-bold text-gray-900">Internship/ Shadowship</h3>
 
           <Image
             src="/ignite.png" 
@@ -31,7 +31,7 @@ const IgniteExperienceSection: React.FC = () => {
 
 
         <p className="mt-4 text-lg text-gray-600">
-          Fast-track your future with prestigious internships, apprenticeships, and mentor-led projects—organize TEDx events, collaborate with PhD researchers, or intern with global brands.
+          Fast-track your future with prestigious internships, apprenticeships, and mentor-led projects—organize with global brands.
         </p>
       </div>
 

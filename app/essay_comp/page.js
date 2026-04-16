@@ -10,6 +10,8 @@ import WhyUniversitiesLove from '../../components/john-lock-essay/why';
 import MentorshipModel from '../../components/john-lock-essay/mentorshipmodel';
 import SuccessShowcase from '../../components/john-lock-essay/show';
 import ProgramSnapshot from '../../components/john-lock-essay/snapshot';
+// import ProgramPillars from '../../components/jhon-lock-essay/deadline';
+import CompetitionDeadlines from '../../components/john-lock-essay/deadline';
 
 // import Navigation from '../../components/navigation';
 
@@ -21,9 +23,11 @@ export default function Page() {
 {/* <Navigation/> */}
 <CompetitionHero/>
 <ProgramSnapshot/>
+<CompetitionDeadlines/>
 {/* <CompetitionDetails/> */}
 {/* <CompetitionTimeline/> */}
 <MentorshipModel/>
+
 <WhyUniversitiesLove/>
 {/* <WhyCollegesLoveThis/> */}
 <SimpleCurriculum/>

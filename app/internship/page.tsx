@@ -5,9 +5,12 @@ import TopFields from '@/components/internship/TopFields'
 import TopRecruiters from '@/components/internship/TopRecruiters'
 import GuaranteeSection from '@/components/internship/GuaranteeSection'
 import PlacementTimelineSection from '@/components/internship/PlacementTimelineSection'
-import InternshipComparisonSection from '@/components/internship/compare'
+import ComparisonSection from '@/components/internship/compare'
+// import InternshipComparisonSection from '@/components/internship/compare'
 import IgniteExperienceSection from '@/components/internship/Difference'
 import IgniteAchievementsSection from '@/components/internship/IgniteAchievementsSection'
+import DiscoveryShowcase from '@/components/internship/why'
+// import ComparisonSection from '@/components/internship/C'
 
 export const metadata: Metadata = {
   title: 'Internship | Career Discovery',
@@ -24,12 +27,13 @@ export default function Internship() {
     <main className="scroll-smooth">
       <InternshipHero />
       <section id="top-fields">
+        <DiscoveryShowcase />
+      <TopRecruiters />
         <IgniteExperienceSection/>
         <PlacementTimelineSection/>
       <TopFields />
       </section>
-      <InternshipComparisonSection/>
-      <TopRecruiters />
+      <ComparisonSection/>
       <GuaranteeSection />
       <IgniteAchievementsSection />
       <Footer />

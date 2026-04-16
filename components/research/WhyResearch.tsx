@@ -373,7 +373,7 @@ export default function WhyResearch() {
           className="flex items-center justify-center gap-4 mb-4"
         >
            <h2 className="text-4xl md:text-5xl font-bold text-gray-900">
-            Why Thinktank? 
+            Why Research? 
           </h2>
           <Image
             src="/thinktank.png" // ✅ Update path to your actual logo

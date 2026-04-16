@@ -51,7 +51,7 @@ export default function InternshipHero() {
                     </span>
                     <br />
                      <span className="text-3xl">
-                     Build Your Future with the Ignite Internship Programme! 🔥
+                     Build Your Future with the Shadowed Internship Programme! 🔥
                      </span>
                   </h1>
                   <p className="text-xl text-gray-400 max-w-xl">

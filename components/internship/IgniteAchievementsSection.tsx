@@ -28,7 +28,8 @@ export default function IgniteAchievementsSection() {
   return (
     <section className="bg-yellow-50 py-20 px-6 md:px-20">
       <div className="text-center mb-16">
-        <h2 className="text-4xl md:text-5xl font-bold text-gray-900">Ignite Achievements</h2>
+        <h2 className="text-4xl md:text-5xl font-bold text-gray-900"> Achievements</h2>
+        {/* <h2 className="text-4xl md:text-5xl font-bold text-gray-900">Ignite Achievements</h2> */}
         <p className="mt-4 text-lg text-gray-700">
           Real stories. Real impact. Here’s how Ignite students are creating meaningful change.
         </p>

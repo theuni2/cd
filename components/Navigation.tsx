@@ -757,18 +757,18 @@ const navItems = [
     },
     {
       href: '/launchpad',
-      label: 'Launchpad',
-      subItems: [
-        { href: '/podcast', label: 'Podcast Launchpad' },
-        { href: '/startup', label: 'Startup Launchpad' },
-        { href: '/service_project', label: 'Service Launchpad' },
-      ]
+      label: 'Social Project',
+      // subItems: [
+      //   { href: '/podcast', label: 'Podcast Launchpad' },
+      //   { href: '/startup', label: 'Startup Launchpad' },
+      //   { href: '/service_project', label: 'Service Launchpad' },
+      // ]
     },
     // --- INDEPENDENT ESSAY COMPETITION LINK ---
     
     
     { href: '/blogs', label: 'Blogs' },
-    { href: '/claimit', label: 'Claim It' },
+    { href: '/writing_competition', label: 'Writing Programs' },
   ]
 
   const handleContactClick = () => {
