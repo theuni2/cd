@@ -73,7 +73,7 @@ const handleContactClick = () => {
               Empowering students to discover and pursue their dream careers through personalized guidance and support.
             </p>
             <div className="mt-4">
-              <p className="text-gray-600"><strong>Email:</strong> info@thecareerdiscovery.com</p>
+              <p className="text-gray-600"><strong>Email:</strong> contact@thecareerdiscovery.com</p>
               <p className="text-gray-600"><strong>Phone:</strong> +91 9888661618</p>
             </div>
             <div className="flex space-x-4 mt-6">
