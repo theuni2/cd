@@ -792,7 +792,7 @@ const navItems = [
               height={32} 
               className="mr-3"
             />
-            <span className={`text-2xl font-bold ${linkClass}`}>
+            <span className={`text-xl font-bold ${linkClass}`}>
               Career Discovery
             </span>
           </Link>
@@ -869,7 +869,7 @@ const navItems = [
           {/* ===================== DESKTOP CTA ===================== */}
           <div className="hidden md:block">
             <Button href="/forge_writing_competition" variant={isScrolled ? "primary" : "white"}>
-              FORGE Essay Competition
+              FORGE Essay Comp
             </Button>
           </div>
 
