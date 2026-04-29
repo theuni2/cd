@@ -768,7 +768,7 @@ const navItems = [
     
     
     { href: '/blogs', label: 'Blogs' },
-    { href: '/writing_competition', label: 'Writing Programs' },
+    // { href: '/writing_competition', label: 'Writing Programs' },
   ]
 
   const handleContactClick = () => {
@@ -958,12 +958,27 @@ const navItems = [
                   )
                 })}
 
-                <button
+                {/* <button
                   onClick={handleContactClick}
                   className="mt-6 rounded-full px-8 py-3 text-base font-medium bg-[#356bff] text-white hover:bg-[#2e5ee6]"
                 >
                   Contact Us
-                </button>
+                </button> */}
+                 {/* <div className="hidden md:block">
+            <Button href="/forge_writing_competition" variant={isScrolled ? "primary" : "white"}>
+              FORGE Essay Comp
+            </Button>
+          </div> */}
+
+          <div className="mt-6">
+  <Button 
+    href="/forge_writing_competition" 
+    variant="primary"
+    onClick={() => setIsMobileMenuOpen(false)}
+  >
+    FORGE Essay Comp
+  </Button>
+</div>
               </div>
             </SheetContent>
           </Sheet>

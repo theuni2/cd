@@ -109,6 +109,11 @@ const handleContactClick = () => {
                   Contact Us
                 </button>
                 </a>
+                <Link href="/forge_writing_competition">
+    <button className="mt-4 w-full md:w-auto inline-flex items-center justify-center rounded-full px-8 py-3 text-base font-medium border border-[#356bff] text-[#356bff] hover:bg-[#356bff] hover:text-white transition">
+      FORGE Essay Comp
+    </button>
+  </Link>
           </div> 
         </div> 
         
