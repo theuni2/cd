@@ -184,7 +184,7 @@ export default function Footer() {
               <h4>Contact</h4>
               <ul className="footer-links">
                 <li style={{ display: 'flex', gap: '10px', alignItems: 'center' }}>
-                  <Mail size={16} /> info@careerdiscovery.com
+                  <Mail size={16} /> contact@thecareerdiscovery.com
                 </li>
                 {/* <li>London, UK</li> */}
               </ul>
