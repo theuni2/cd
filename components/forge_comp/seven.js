@@ -152,12 +152,12 @@ export default function Footer() {
               <p>
                 Cultivating independent thought and academic rigor in the next generation of global leaders.
               </p>
-              <div className="social-links">
+              {/* <div className="social-links">
                 <Twitter size={20} className="social-icon" />
                 <Facebook size={20} className="social-icon" />
                 <Instagram size={20} className="social-icon" />
                 <Linkedin size={20} className="social-icon" />
-              </div>
+              </div> */}
             </div>
 
             {/* <div className="footer-col">
