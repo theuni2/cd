@@ -49,18 +49,6 @@ const getOrdinalSuffix = (num: number): string => {
   return "th";
 };
 
-// interface FormState {
-//   fullName: string;
-//   email: string;
-//   phone: string;
-//   userType: string;
-//   grade: string;
-//   schoolName: string;
-//   desiredOutcome: string;
-//   comments: string;
-//   consent: boolean;
-// }
-
 interface FormState {
   firstName: string;
   lastName: string;
@@ -379,6 +367,8 @@ export default function CareerForm() {
       formData.append("Last Name", lastName);
       formData.append("Email", values.email);
       formData.append("Phone", values.phone);
+
+      formData.append("Company", "Career Discovery"); // ✅ ADD THIS
 
       formData.append("LEADCF3", values.grade);
       formData.append("LEADCF4", values.schoolName);
