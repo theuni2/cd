@@ -6,7 +6,7 @@ import Navigation from '@/components/Navigation';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'Career Discovery: Find Your Perfect Career Path',
+  title: 'Career Discovery: Build Real Projects, Get Mentored, and Stand Out for Top Colleges',
   description:
     'Career Discovery is the ultimate guide for ages 13 to 20, empowering young minds to navigate the complex world of career choices, explore their options, make informed decisions, and excel in their professional journeys.',
   keywords: [

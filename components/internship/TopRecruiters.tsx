@@ -196,25 +196,25 @@ import SectionHeading from '../SectionHeading'
 const recruiters = [
   {
     name: "Google",
-    logo: "https://static.vecteezy.com/system/resources/previews/011/598/471/original/google-logo-icon-illustration-free-vector.jpg",
+    logo: "https://t3.ftcdn.net/jpg/03/88/07/84/360_F_388078454_mKtbdXYF9cyQovCCTsjqI0gbfu7gCcSp.jpg",
     description: "Global leader in technology and innovation",
     link: "https://www.google.com"
   },
   {
     name: "Goldman Sachs",
-    logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Goldman_Sachs.svg/1200px-Goldman_Sachs.svg.png",
+    logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsQ3wiP4Z5JhTqmhMeh6cu0S6cgci9blapLw&s",
     description: "Leading global investment banking and management firm",
     link: "https://www.goldmansachs.com"
   },
   {
     name: "Microsoft",
-    logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Microsoft_logo.svg/2048px-Microsoft_logo.svg.png",
+    logo: "https://dmsiworks.com/wp-content/uploads/Who-owns-Dynamics-365-Business-Central.jpg",
     description: "Empowering every person and organization to achieve more",
     link: "https://www.microsoft.com"
   },
   {
     name: "PwC",
-    logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/PricewaterhouseCoopers_Logo.svg/1200px-PricewaterhouseCoopers_Logo.svg.png",
+    logo: "https://www.instech.co/wp-content/uploads/2021/05/PwC-600x600.png",
     description: "Global professional services network",
     link: "https://www.pwc.in/"
   },
@@ -226,7 +226,7 @@ const recruiters = [
   },
   {
     name: "EY",
-    logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/EY_logo_2019.svg/1200px-EY_logo_2019.svg.png",
+    logo: "https://www.pngitem.com/pimgs/m/181-1814457_ey-logo-png-transparent-png.png",
     description: "Building a better working world through consulting and audit",
     link: "https://www.ey.com/en_in"
   },

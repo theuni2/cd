@@ -768,7 +768,7 @@ const navItems = [
     
     
     { href: '/blogs', label: 'Blogs' },
-    // { href: '/writing_competition', label: 'Writing Programs' },
+    { href: '/essay_comp', label: 'Writing Programs' },
   ]
 
   const handleContactClick = () => {
