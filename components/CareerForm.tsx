@@ -356,11 +356,11 @@ export default function CareerForm() {
 
       formData.append(
         "xnQsjsdp",
-        "14d751f97bb352542018d8abcbfb486d616775294c3f2ef8abf00d96b0c28ca9"
+        "f587189afbde5f7fa2bb46ca262bbac10a1f1136aa1923cd68b578dcd7a11bf8"
       );
       formData.append(
         "xmIwtLD",
-        "b2e3854a550cc0685cce86f2fde8a37db110a72aa9b917880c5b0a1837bbbf5bbd6d5dca18aaaa4ec03c94446f6e1468"
+        "8ff0d80dcefab0b87772195e9c156ed93880d8a6dc838dfa11073547f78d35e285bf919358ef753378bed2c331bbbe0e"
       );
       formData.append("actionType", "TGVhZHM=");
 
@@ -368,6 +368,7 @@ export default function CareerForm() {
       formData.append("Last Name", lastName);
       formData.append("Email", values.email);
       formData.append("Phone", values.phone);
+      formData.append("Lead Status", "New Lead");
 
       formData.append("Company", "Career Discovery"); // ✅ ADD THIS
 
@@ -390,9 +391,6 @@ export default function CareerForm() {
       });
 
       const [apiRes, zohoRes] = await Promise.all([apiPromise, zohoPromise]);
-
-      // console.log("API status:", apiRes.status);
-      // console.log("Zoho status:", zohoRes.status);
 
       const contentType = apiRes.headers.get("content-type");
 
