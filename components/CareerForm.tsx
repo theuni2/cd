@@ -369,6 +369,7 @@ export default function CareerForm() {
       formData.append("Email", values.email);
       formData.append("Phone", values.phone);
       formData.append("Lead Status", "New Lead");
+      formData.append("Lead Source", "Website"); // ✅ ADD THIS
 
       formData.append("Company", "Career Discovery"); // ✅ ADD THIS
 
