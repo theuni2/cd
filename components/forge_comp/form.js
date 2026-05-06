@@ -212,7 +212,7 @@ export default function SubmitModal({ isOpen, onClose }) {
 
             {/* Google Doc Link */}
             <div className="mb-8">
-              <label className="block text-sm font-bold text-[#0a2342] uppercase tracking-wider mb-2">Google Document Link *</label>
+              <label className="block text-sm font-bold text-[#0a2342] uppercase tracking-wider mb-2">Essay Google Document Link *</label>
               <p className="text-xs text-gray-500 mb-2">Ensure link sharing is set to "Anyone with the link can view".</p>
               <input 
                 type="url" 
