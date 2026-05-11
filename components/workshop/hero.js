@@ -601,7 +601,7 @@ const HeroSection = () => {
             onMouseOver={(e) => e.currentTarget.style.transform = 'scale(1.05)'}
             onMouseOut={(e) => e.currentTarget.style.transform = 'scale(1)'}
           >
-            Explore 12 Workshops <ArrowRight size={20} />
+            Explore Workshops <ArrowRight size={20} />
           </button>
 </a>
           {/* <button 
@@ -630,7 +630,7 @@ const HeroSection = () => {
             { label: "Total Workshops", val: "12" },
             { label: "Hands-on Work", val: "2 Days" },
             { label: "Output", val: "Portfolio Piece" },
-            { label: "Phase 1", val: "7 Live" }
+            { label: "Phase 1", val: "4 Live" }
           ].map((stat, idx) => (
             <div key={idx} style={{ textAlign: 'center' }}>
               <div style={{ fontSize: '1.5rem', fontWeight: 900 }}>{stat.val}</div>

@@ -30,7 +30,7 @@ const faqCategories = [
         a: "No. It’s a one-time weekend experience with no ongoing workload or long-term homework." 
       },
       { 
-        q: "Does it help with JEE/NEET?", 
+        q: "Does it help with JEE/ NEET?", 
         a: "It has no direct rank impact, but it helps with mental clarity, stream selection, and interview confidence[cite: 1]." 
       }
     ]
@@ -131,7 +131,7 @@ const FAQSection = () => {
       </div>
       
       {/* Dynamic CTA for specific questions */}
-      <motion.div 
+      {/* <motion.div 
         whileHover={{ scale: 1.02 }}
         style={{
           marginTop: '60px',
@@ -144,10 +144,10 @@ const FAQSection = () => {
           width: '100%'
         }}
       >
-        <p style={{ margin: 0, color: '#d1d5db', fontSize: '14px' }}>
+        {/* <p style={{ margin: 0, color: '#d1d5db', fontSize: '14px' }}>
           Have more questions? Every answer must be true, verifiable, and deliverable.
-        </p>
-        <button style={{ 
+        </p> */}
+        {/* <button style={{ 
           marginTop: '16px', 
           background: 'none', 
           border: 'none', 
@@ -157,8 +157,8 @@ const FAQSection = () => {
           cursor: 'pointer' 
         }}>
           Talk to a Counselor
-        </button>
-      </motion.div>
+        </button> */}
+      {/* </motion.div> */} 
     </section>
   );
 };

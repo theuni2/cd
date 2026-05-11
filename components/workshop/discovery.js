@@ -292,7 +292,7 @@ const MasteryCard = ({ workshop, index }) => {
           borderRadius: '99px',
           letterSpacing: '0.05em'
         }}>
-          GRADES {workshop.grades}
+         Phase 1
         </span>
       </div>
 
