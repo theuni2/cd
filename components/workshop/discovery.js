@@ -297,7 +297,7 @@ const MasteryCard = ({ workshop, index }) => {
       </div>
 
       {/* Title Area */}
-      <h3 style={{ color: '#fff', fontSize: '26px', fontWeight: '800', marginBottom: '10px' }}>{workshop.title}</h3>
+      <h3 style={{ color: '#fff', fontSize: '26px', fontWeight: '800', marginBottom: '10px' }} id="pro">{workshop.title}</h3>
       <p style={{ color: '#6b7280', fontSize: '15px', lineHeight: '1.5', margin: 0 }}>{workshop.tagline}</p>
 
       {/* Hover Reveal Content */}
@@ -320,7 +320,7 @@ const MasteryCard = ({ workshop, index }) => {
                   {item}
                 </div>
               ))}
-              <div style={{ fontSize: '22px', fontWeight: '900', color: '#fff', marginTop: '12px' }}>{workshop.price}</div>
+              {/* <div style={{ fontSize: '22px', fontWeight: '900', color: '#fff', marginTop: '12px' }}>{workshop.price}</div> */}
             </motion.div>
           ) : (
             <motion.div

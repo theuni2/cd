@@ -108,13 +108,13 @@ const programs = [
     href: '/claimit',
     color: "from-green-50 to-green-100"
   },
-  // {
-  //   src: '/mcl.png',
-  //   title: "Mobile Career Lab",
-  //   description: "Hands-on, cohort-based workshops teaching 21st-century skills such as AI x Law, Medicine, and Journalism.",
-  //   href: '/workshops',
-  //   color: "from-pink-50 to-pink-100"
-  // },
+  {
+    src: '/mcl.png',
+    title: "Mobile Career Lab",
+    description: "Hands-on, cohort-based workshops teaching 21st-century skills such as AI x Law, Medicine, and Journalism.",
+    href: '/workshop',
+    color: "from-pink-50 to-pink-100"
+  },
 ];
 
 export default function SignatureProgramsSection() {

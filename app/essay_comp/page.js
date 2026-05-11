@@ -12,6 +12,7 @@ import SuccessShowcase from '../../components/john-lock-essay/show';
 import ProgramSnapshot from '../../components/john-lock-essay/snapshot';
 // import ProgramPillars from '../../components/jhon-lock-essay/deadline';
 import CompetitionDeadlines from '../../components/john-lock-essay/deadline';
+import TestimonialGrid from '../../components/john-lock-essay/testimonial'
 
 // import Navigation from '../../components/navigation';
 
@@ -32,6 +33,7 @@ export default function Page() {
 {/* <WhyCollegesLoveThis/> */}
 <SimpleCurriculum/>
 <SuccessShowcase/>
+<TestimonialGrid/>
 <Footer/>
 
 

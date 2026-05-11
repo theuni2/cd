@@ -595,6 +595,7 @@ const HeroSection = () => {
           custom={3}
           style={styles.buttonContainer}
         >
+          <a href="#pro">
           <button 
             style={styles.primaryBtn}
             onMouseOver={(e) => e.currentTarget.style.transform = 'scale(1.05)'}
@@ -602,8 +603,8 @@ const HeroSection = () => {
           >
             Explore 12 Workshops <ArrowRight size={20} />
           </button>
-
-          <button 
+</a>
+          {/* <button 
             style={styles.outlineBtn}
             onMouseOver={(e) => {
               e.currentTarget.style.borderColor = '#fff';
@@ -616,7 +617,7 @@ const HeroSection = () => {
           >
             <Download size={20} />
             Download Brochure
-          </button>
+          </button> */}
         </motion.div>
 
         <motion.div 
