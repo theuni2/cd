@@ -17,7 +17,8 @@ const Hero = () => {
         </h1>
         <div className="mb-8">
           <p className="text-base md:text-xl text-gray-600 text-center">
-            Career Discovery is the ultimate guide for ages 13 to 20, empowering young minds to navigate the complex world of career choices, explore their options, make informed decisions, and excel in their professional journeys.
+            {/* Career Discovery is the ultimate guide for ages 13 to 20, empowering young minds to navigate the complex world of career choices, explore their options, make informed decisions, and excel in their professional journeys. */}
+          Career Discovery is a profile building and competitions preparation platform that gets students into the top most universities around the world.
           </p>
         </div>
         <div className="mb-8 flex justify-center">

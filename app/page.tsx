@@ -31,9 +31,9 @@ export default function Home() {
         <Hero />
       </section>
       <section id="about">
-        <WhoWeAre />
+        {/* <WhoWeAre /> */}
       </section>
-      {/* <SignatureProgramsSection/> */}
+      <SignatureProgramsSection/>
       <section id="how-it-works">
         <HowItWorks />
       </section>
