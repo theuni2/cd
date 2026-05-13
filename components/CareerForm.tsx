@@ -996,7 +996,8 @@ export default function CareerForm() {
                             <PhoneInput
                               country={"in"}
                               value={values.phone}
-                              onChange={(val) => handlePhoneChange(val)}
+
+                              onChange={(val) => handlePhoneChange(`+${val}`)}
                               containerClass="!w-full !h-12"
                               inputClass="!w-full !h-full !bg-gray-50 !border !border-gray-300 !rounded-lg !pl-12 focus:!ring-2 focus:!ring-primary focus:!border-primary transition-all"
                               buttonClass="!bg-transparent !border-none !rounded-l-lg"
