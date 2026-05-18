@@ -573,7 +573,7 @@ const HeroSection = () => {
           custom={1}
           style={styles.headline}
         >
-          Argue a Case. <br />
+          Workshop <br />
           <span style={styles.gradientText}>Build a Future.</span>
         </motion.h1>
 
@@ -604,20 +604,26 @@ const HeroSection = () => {
             Explore Workshops <ArrowRight size={20} />
           </button>
 </a>
-          {/* <button 
-            style={styles.outlineBtn}
-            onMouseOver={(e) => {
-              e.currentTarget.style.borderColor = '#fff';
-              e.currentTarget.style.backgroundColor = 'rgba(255,255,255,0.05)';
-            }}
-            onMouseOut={(e) => {
-              e.currentTarget.style.borderColor = 'rgba(255,255,255,0.2)';
-              e.currentTarget.style.backgroundColor = 'transparent';
-            }}
-          >
-            <Download size={20} />
-            Download Brochure
-          </button> */}
+         <button
+  style={styles.outlineBtn}
+  onClick={() => {
+    const link = document.createElement('a');
+    link.href = '/brochure/CD Workshop Brochure.pdf'; // path to your brochure file
+    link.download = 'Brochure.pdf';
+    link.click();
+  }}
+  onMouseOver={(e) => {
+    e.currentTarget.style.borderColor = '#fff';
+    e.currentTarget.style.backgroundColor = 'rgba(255,255,255,0.05)';
+  }}
+  onMouseOut={(e) => {
+    e.currentTarget.style.borderColor = 'rgba(255,255,255,0.2)';
+    e.currentTarget.style.backgroundColor = 'transparent';
+  }}
+>
+  <Download size={20} />
+  Download Upcoming Workshop Brochure
+</button>
         </motion.div>
 
         <motion.div 

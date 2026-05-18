@@ -5,6 +5,7 @@ import { motion } from 'framer-motion';
 import { Clock, Users, Play, Award } from 'lucide-react';
 
 const steps = [
+ 
   {
     time: "10:30 AM - Day 1",
     title: "The Framing",
@@ -12,13 +13,14 @@ const steps = [
     icon: <Users size={20} />,
     img: "https://images.unsplash.com/photo-1515187029135-18ee286d815b?auto=format&fit=crop&q=80&w=800",
   },
-  {
+     {
     time: "1:15 PM - Day 1",
     title: "The Build Sprint",
     desc: "Hands-on project work using AI tools and professional frameworks.",
     icon: <Play size={20} />,
     img: "https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?auto=format&fit=crop&q=80&w=800",
   },
+
   {
     time: "3:00 PM - Day 2",
     title: "Demo Day",

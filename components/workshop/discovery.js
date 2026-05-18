@@ -154,33 +154,45 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Rocket, Brain, Gavel, TrendingUp, Palette, PenTool, Stethoscope, ChevronRight } from 'lucide-react';
 
 const workshops = [
+  // {
+  //   title: "AI & The Future",
+  //   tagline: "Use AI to build something real",
+  //   icon: <Brain size={24} />,
+  //   color: "#3b82f6", // Blue
+  //   grades: "7–12",
+  //   price: "₹8,000",
+  //   outcomes: ["AI prototype (live)", "5-slide deck", "Demo recording"],
+  //   cite: ""
+  // },
+  {
+  title: "AI & The Future",
+  tagline: "Use AI to build something real",
+  icon: <Brain size={24} />,
+  color: "#3b82f6",
+  grades: "7–12",
+  price: "₹8,000",
+  originalPrice: "₹15,000",
+  brochure: "/brochure/CD Workshop Brochure.pdf",
+  outcomes: ["AI prototype (live)", "5-slide deck", "Demo recording"],
+},
   {
     title: "Startup Launch",
     tagline: "Build a business in 2 days",
     icon: <Rocket size={24} />,
     color: "#f97316", // Orange
     grades: "7–12",
-    price: "₹10,000",
+    price: "₹15,000",
     outcomes: ["6-slide pitch deck", "Live landing page", "Brand kit"],
     cite: ""
   },
-  {
-    title: "AI & The Future",
-    tagline: "Use AI to build something real",
-    icon: <Brain size={24} />,
-    color: "#3b82f6", // Blue
-    grades: "7–12",
-    price: "₹10,000",
-    outcomes: ["AI prototype (live)", "5-slide deck", "Demo recording"],
-    cite: ""
-  },
+  
   {
     title: "Law & Justice",
     tagline: "Argue a real case in 2 days",
     icon: <Gavel size={24} />,
     color: "#10b981", // Emerald
     grades: "8–12",
-    price: "₹9,000",
+    price: "₹15,000",
     outcomes: ["Case brief", "Courtroom recording", "Certificate"],
     cite: ""
   },
@@ -190,7 +202,7 @@ const workshops = [
     icon: <TrendingUp size={24} />,
     color: "#8b5cf6", // Purple
     grades: "9–12",
-    price: "₹10,000",
+    price: "₹15,000",
     outcomes: ["Valuation model", "Deal memo", "Pitch deck"],
     cite: ""
   }
@@ -246,22 +258,131 @@ const WorkshopGrid = () => {
   );
 };
 
+// const MasteryCard = ({ workshop, index }) => {
+//   const [isHovered, setIsHovered] = useState(false);
+
+//   const cardStyle = {
+//     position: 'relative',
+//     height: '440px',
+//     backgroundColor: '#0d0d0d',
+//     borderRadius: '32px',
+//     border: `1px solid ${isHovered ? workshop.color : 'rgba(255,255,255,0.08)'}`,
+//     padding: '40px',
+//     display: 'flex',
+//     flexDirection: 'column',
+//     cursor: 'pointer',
+//     transition: 'all 0.4s cubic-bezier(0.2, 1, 0.3, 1)',
+//     overflow: 'hidden',
+//     boxShadow: isHovered ? `0 20px 40px -15px ${workshop.color}44` : 'none',
+//   };
+
+//   return (
+//     <motion.div
+//       initial={{ opacity: 0, y: 30 }}
+//       whileInView={{ opacity: 1, y: 0 }}
+//       transition={{ delay: index * 0.1 }}
+//       onMouseEnter={() => setIsHovered(true)}
+//       onMouseLeave={() => setIsHovered(false)}
+//       style={cardStyle}
+//     >
+//       {/* Grade Badge */}
+//       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: '32px' }}>
+//         <div style={{ 
+//           backgroundColor: `${workshop.color}22`, 
+//           padding: '12px', 
+//           borderRadius: '16px', 
+//           color: workshop.color 
+//         }}>
+//           {workshop.icon}
+//         </div>
+//         <span style={{ 
+//           fontSize: '11px', 
+//           fontWeight: '800', 
+//           color: '#9ca3af', 
+//           border: '1px solid rgba(255,255,255,0.1)', 
+//           padding: '6px 14px', 
+//           borderRadius: '99px',
+//           letterSpacing: '0.05em'
+//         }}>
+//          Phase 1
+//         </span>
+//       </div>
+
+//       {/* Title Area */}
+//       <h3 style={{ color: '#fff', fontSize: '26px', fontWeight: '800', marginBottom: '10px' }} id="pro">{workshop.title}</h3>
+//       <p style={{ color: '#6b7280', fontSize: '15px', lineHeight: '1.5', margin: 0 }}>{workshop.tagline}</p>
+
+//       {/* Hover Reveal Content */}
+//       <div style={{ marginTop: 'auto' }}>
+//         <AnimatePresence mode="wait">
+//           {isHovered ? (
+//             <motion.div
+//               key="outcomes"
+//               initial={{ opacity: 0, y: 10 }}
+//               animate={{ opacity: 1, y: 0 }}
+//               exit={{ opacity: 0, y: 10 }}
+//               style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}
+//             >
+//               <div style={{ fontSize: '10px', fontWeight: '900', color: workshop.color, letterSpacing: '0.1em', textTransform: 'uppercase' }}>
+//                 Tangible Outcomes
+//               </div>
+//               {workshop.outcomes.map((item, i) => (
+//                 <div key={i} style={{ display: 'flex', alignItems: 'center', gap: '8px', color: '#e5e7eb', fontSize: '13px' }}>
+//                   <div style={{ width: '4px', height: '4px', borderRadius: '50%', backgroundColor: workshop.color }} />
+//                   {item}
+//                 </div>
+//               ))}
+//               {/* <div style={{ fontSize: '22px', fontWeight: '900', color: '#fff', marginTop: '12px' }}>{workshop.price}</div> */}
+//             </motion.div>
+//           ) : (
+//             <motion.div
+//               key="cta"
+//               initial={{ opacity: 0 }}
+//               animate={{ opacity: 1 }}
+//               style={{ display: 'flex', alignItems: 'center', gap: '6px', color: workshop.color, fontSize: '14px', fontWeight: '700' }}
+//             >
+//               See Project Details <ChevronRight size={16} />
+//             </motion.div>
+//           )}
+//         </AnimatePresence>
+//       </div>
+
+//       {/* Decorative Gradient Glow (Invisible until hover) */}
+//       <div style={{ 
+//         position: 'absolute', 
+//         bottom: '-20%', 
+//         right: '-20%', 
+//         width: '200px', 
+//         height: '200px', 
+//         background: `radial-gradient(circle, ${workshop.color}22 0%, transparent 70%)`,
+//         opacity: isHovered ? 1 : 0,
+//         transition: 'opacity 0.4s ease'
+//       }} />
+//     </motion.div>
+//   );
+// };
+
+
 const MasteryCard = ({ workshop, index }) => {
   const [isHovered, setIsHovered] = useState(false);
 
   const cardStyle = {
     position: 'relative',
-    height: '440px',
+    minHeight: '520px',
     backgroundColor: '#0d0d0d',
     borderRadius: '32px',
-    border: `1px solid ${isHovered ? workshop.color : 'rgba(255,255,255,0.08)'}`,
+    border: `1px solid ${
+      isHovered ? workshop.color : 'rgba(255,255,255,0.08)'
+    }`,
     padding: '40px',
     display: 'flex',
     flexDirection: 'column',
     cursor: 'pointer',
     transition: 'all 0.4s cubic-bezier(0.2, 1, 0.3, 1)',
     overflow: 'hidden',
-    boxShadow: isHovered ? `0 20px 40px -15px ${workshop.color}44` : 'none',
+    boxShadow: isHovered
+      ? `0 20px 40px -15px ${workshop.color}44`
+      : 'none',
   };
 
   return (
@@ -273,34 +394,115 @@ const MasteryCard = ({ workshop, index }) => {
       onMouseLeave={() => setIsHovered(false)}
       style={cardStyle}
     >
-      {/* Grade Badge */}
-      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: '32px' }}>
-        <div style={{ 
-          backgroundColor: `${workshop.color}22`, 
-          padding: '12px', 
-          borderRadius: '16px', 
-          color: workshop.color 
-        }}>
+      {/* Header */}
+      <div
+        style={{
+          display: 'flex',
+          justifyContent: 'space-between',
+          alignItems: 'flex-start',
+          marginBottom: '32px',
+        }}
+      >
+        <div
+          style={{
+            backgroundColor: `${workshop.color}22`,
+            padding: '12px',
+            borderRadius: '16px',
+            color: workshop.color,
+          }}
+        >
           {workshop.icon}
         </div>
-        <span style={{ 
-          fontSize: '11px', 
-          fontWeight: '800', 
-          color: '#9ca3af', 
-          border: '1px solid rgba(255,255,255,0.1)', 
-          padding: '6px 14px', 
-          borderRadius: '99px',
-          letterSpacing: '0.05em'
-        }}>
-         Phase 1
+
+        <span
+          style={{
+            fontSize: '11px',
+            fontWeight: '800',
+            color: '#9ca3af',
+            border: '1px solid rgba(255,255,255,0.1)',
+            padding: '6px 14px',
+            borderRadius: '99px',
+            letterSpacing: '0.05em',
+          }}
+        >
+          Phase 1
         </span>
       </div>
 
-      {/* Title Area */}
-      <h3 style={{ color: '#fff', fontSize: '26px', fontWeight: '800', marginBottom: '10px' }} id="pro">{workshop.title}</h3>
-      <p style={{ color: '#6b7280', fontSize: '15px', lineHeight: '1.5', margin: 0 }}>{workshop.tagline}</p>
+      {/* Title */}
+      <h3
+        style={{
+          color: '#fff',
+          fontSize: '26px',
+          fontWeight: '800',
+          marginBottom: '10px',
+        }}
+      >
+        {workshop.title}
+      </h3>
 
-      {/* Hover Reveal Content */}
+      <p
+        style={{
+          color: '#6b7280',
+          fontSize: '15px',
+          lineHeight: '1.5',
+          marginBottom: '24px',
+        }}
+      >
+        {workshop.tagline}
+      </p>
+
+      {/* Pricing */}
+      <div style={{ marginBottom: '24px' }}>
+        <div
+          style={{
+            display: 'flex',
+            alignItems: 'center',
+            gap: '10px',
+            flexWrap: 'wrap',
+          }}
+        >
+          <span
+            style={{
+              color: '#6b7280',
+              textDecoration: 'line-through',
+              fontSize: '16px',
+              fontWeight: '600',
+            }}
+          >
+            {workshop.originalPrice}
+          </span>
+
+          <span
+            style={{
+              color: '#fff',
+              fontSize: '30px',
+              fontWeight: '900',
+            }}
+          >
+            {workshop.price}
+          </span>
+        </div>
+
+        <div
+          style={{
+            marginTop: '10px',
+            display: 'inline-block',
+            backgroundColor: `${workshop.color}22`,
+            color: workshop.color,
+            padding: '6px 12px',
+            borderRadius: '999px',
+            fontSize: '11px',
+            fontWeight: '800',
+            letterSpacing: '0.05em',
+            textTransform: 'uppercase',
+          }}
+        >
+          Early Offer
+        </div>
+      </div>
+
+      {/* Outcomes */}
       <div style={{ marginTop: 'auto' }}>
         <AnimatePresence mode="wait">
           {isHovered ? (
@@ -309,25 +511,96 @@ const MasteryCard = ({ workshop, index }) => {
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: 10 }}
-              style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}
+              style={{
+                display: 'flex',
+                flexDirection: 'column',
+                gap: '10px',
+              }}
             >
-              <div style={{ fontSize: '10px', fontWeight: '900', color: workshop.color, letterSpacing: '0.1em', textTransform: 'uppercase' }}>
+              <div
+                style={{
+                  fontSize: '10px',
+                  fontWeight: '900',
+                  color: workshop.color,
+                  letterSpacing: '0.1em',
+                  textTransform: 'uppercase',
+                }}
+              >
                 Tangible Outcomes
               </div>
+
               {workshop.outcomes.map((item, i) => (
-                <div key={i} style={{ display: 'flex', alignItems: 'center', gap: '8px', color: '#e5e7eb', fontSize: '13px' }}>
-                  <div style={{ width: '4px', height: '4px', borderRadius: '50%', backgroundColor: workshop.color }} />
+                <div
+                  key={i}
+                  style={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    gap: '8px',
+                    color: '#e5e7eb',
+                    fontSize: '13px',
+                  }}
+                >
+                  <div
+                    style={{
+                      width: '4px',
+                      height: '4px',
+                      borderRadius: '50%',
+                      backgroundColor: workshop.color,
+                    }}
+                  />
+
                   {item}
                 </div>
               ))}
-              {/* <div style={{ fontSize: '22px', fontWeight: '900', color: '#fff', marginTop: '12px' }}>{workshop.price}</div> */}
+
+              {/* Download Brochure */}
+              {workshop.brochure && (
+                <button
+                  onClick={() => {
+                    const link = document.createElement('a');
+                    link.href = workshop.brochure;
+                    link.download = `${workshop.title}-Brochure.pdf`;
+                    link.click();
+                  }}
+                  style={{
+                    marginTop: '20px',
+                    width: '100%',
+                    padding: '14px',
+                    borderRadius: '14px',
+                    border: `1px solid ${workshop.color}`,
+                    background: 'transparent',
+                    color: '#fff',
+                    fontWeight: '700',
+                    fontSize: '14px',
+                    cursor: 'pointer',
+                    transition: '0.3s ease',
+                  }}
+                  onMouseOver={(e) => {
+                    e.currentTarget.style.backgroundColor =
+                      workshop.color;
+                  }}
+                  onMouseOut={(e) => {
+                    e.currentTarget.style.backgroundColor =
+                      'transparent';
+                  }}
+                >
+                  Download Brochure
+                </button>
+              )}
             </motion.div>
           ) : (
             <motion.div
               key="cta"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
-              style={{ display: 'flex', alignItems: 'center', gap: '6px', color: workshop.color, fontSize: '14px', fontWeight: '700' }}
+              style={{
+                display: 'flex',
+                alignItems: 'center',
+                gap: '6px',
+                color: workshop.color,
+                fontSize: '14px',
+                fontWeight: '700',
+              }}
             >
               See Project Details <ChevronRight size={16} />
             </motion.div>
@@ -335,19 +608,22 @@ const MasteryCard = ({ workshop, index }) => {
         </AnimatePresence>
       </div>
 
-      {/* Decorative Gradient Glow (Invisible until hover) */}
-      <div style={{ 
-        position: 'absolute', 
-        bottom: '-20%', 
-        right: '-20%', 
-        width: '200px', 
-        height: '200px', 
-        background: `radial-gradient(circle, ${workshop.color}22 0%, transparent 70%)`,
-        opacity: isHovered ? 1 : 0,
-        transition: 'opacity 0.4s ease'
-      }} />
+      {/* Glow */}
+      <div
+        style={{
+          position: 'absolute',
+          bottom: '-20%',
+          right: '-20%',
+          width: '200px',
+          height: '200px',
+          background: `radial-gradient(circle, ${workshop.color}22 0%, transparent 70%)`,
+          opacity: isHovered ? 1 : 0,
+          transition: 'opacity 0.4s ease',
+        }}
+      />
     </motion.div>
   );
 };
+
 
 export default WorkshopGrid;
