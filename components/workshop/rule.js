@@ -87,7 +87,7 @@ const ImprovedPhilosophy = () => {
             }}
           >
             <div style={{ width: '32px', height: '1px', backgroundColor: '#3b82f6' }} />
-            The Workshop DNA[cite: 1]
+            The Workshop DNA
           </motion.div>
           
           <h2 style={{ 

@@ -173,7 +173,7 @@ const workshops = [
   price: "₹8,000",
   originalPrice: "₹15,000",
   brochure: "/brochure/CD Workshop Brochure.pdf",
-  outcomes: ["AI prototype (live)", "5-slide deck", "Demo recording"],
+  outcomes: ["AI prototype (live)", "5-slide deck", "Demo day"],
 },
   {
     title: "Startup Launch",

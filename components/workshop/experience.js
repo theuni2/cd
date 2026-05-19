@@ -63,7 +63,7 @@ const ExperienceSection = () => {
           Behind the Scenes
         </motion.span>
         <h2 style={{ fontSize: 'clamp(2rem, 5vw, 3.5rem)', fontWeight: '800', marginTop: '10px' }}>
-          48 Hours. No Textbooks.
+          2 Days. No Textbooks.
         </h2>
       </div>
 
