@@ -584,7 +584,7 @@ const HeroSection = () => {
           custom={2}
           style={styles.subtext}
         >
-          Ditch the textbooks. Spend 48 hours with industry experts to build startups, 
+          Ditch the textbooks. Spend 2 days with industry experts to build startups, 
           draft policies, or diagnose cases. <span style={{color: '#fff', fontWeight: 700}}>Real tools, real outcomes.</span>
         </motion.p>
 
@@ -595,13 +595,14 @@ const HeroSection = () => {
           custom={3}
           style={styles.buttonContainer}
         >
-          <a href="#pro">
+          <a href="/#contact">
+        
           <button 
             style={styles.primaryBtn}
             onMouseOver={(e) => e.currentTarget.style.transform = 'scale(1.05)'}
             onMouseOut={(e) => e.currentTarget.style.transform = 'scale(1)'}
           >
-            Explore Workshops <ArrowRight size={20} />
+            Register Workshops <ArrowRight size={20} />
           </button>
 </a>
          <button

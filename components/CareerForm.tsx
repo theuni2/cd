@@ -698,7 +698,7 @@ const outcomeOptions = [
   { id: "writing", label: "Writing Competition" },
   { id: "internship", label: "Internship" },
   { id: "social", label: "Launch your own Social Service Project" },
-  { id: "workshop", label: "Workshop"},
+  { id: "workshop", label: "AI Workshop"},
    { id: "other", label: "Other" },
 ];
 
