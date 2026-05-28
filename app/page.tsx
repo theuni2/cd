@@ -11,6 +11,7 @@ import SuccessStories from '../components/SuccessStories'
 import CareerForm from '../components/CareerForm'
 import Footer from '../components/Footer'
 import SignatureProgramsSection from '../components/signature_program';
+import CampusAmbassador from '../components/campusmbassador';
 import { useEffect } from 'react'
 
 export default function Home() {
@@ -46,6 +47,7 @@ export default function Home() {
       <section id="success-stories">
         <SuccessStories />
       </section>
+      <CampusAmbassador/>
       <section id="contact">
         <CareerForm />
       </section>

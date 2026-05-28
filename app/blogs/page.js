@@ -78,6 +78,16 @@ const BLOG_POSTS = [
     image: "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?q=80&w=2070&auto=format&fit=crop",
     slug: "/blogs/crash_guard",
   },
+  ,{
+    id: 8,
+    title: "ClaimIt: Why Writing and Debating Are the Most Underrated Skills in Your Child's University Application",
+    excerpt: `Discover how Career Discovery's ClaimIt program uses argumentative writing, structured debate, and PhD-level mentorship to help Indian high schoolers stand out in elite global university applications.`,
+    category: "Projects",
+    date: "27 May 2026",
+    readTime: "4 min read",
+    image: "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?q=80&w=2070&auto=format&fit=crop",
+    slug: "/blogs/writing-debating-program-students-university-application-india",
+  },
 ]
 
 const BlogCard = ({ post }) => {
