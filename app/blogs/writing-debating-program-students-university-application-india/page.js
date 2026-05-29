@@ -49,7 +49,7 @@ export default function ClaimItArticle() {
             </p>
 
             <p>
-              <strong>ClaimIt</strong>, Career Discovery's writing and communication program, is specifically engineered to close this exact training gap. Through a highly structured combination of advanced analytical essay writing, competitive debating, and international competition preparation fully supported by PhD mentors from elite global universities—it transforms high schoolers into deep thinkers who can communicate with absolute clarity and conviction.
+              <strong>ClaimIt</strong>, Career Discovery's writing and communication program, is specifically engineered to close this exact training gap. Through a highly structured combination of advanced analytical essay writing, competitive debating, and international competition preparation fully supported by PhD mentors from elite global universities it transforms high schoolers into deep thinkers who can communicate with absolute clarity and conviction.
             </p>
 
             <hr className="my-8 border-gray-200" />
@@ -76,7 +76,7 @@ export default function ClaimItArticle() {
               Pillar 2: Structured Format Debate
             </h3>
             <p>
-              Excellent writing requires deep reflection, but real-world leadership requires intellectual agility. The debate component of ClaimIt trains high schoolers to think critically on their feet, cross-examine opposing viewpoints, and defend complex public policy or philosophical ideas under intense time constraints.
+              Excellent writing requires deep reflection, but real world leadership requires intellectual agility. The debate component of ClaimIt trains high schoolers to think critically on their feet, cross-examine opposing viewpoints, and defend complex public policy or philosophical ideas under intense time constraints.
             </p>
             <p>
               Our curriculum focuses heavily on the World Schools Style and Parliamentary debate formats the exact standards used at top international university championships like Oxford, Cambridge, and Yale. This training strips away superficial fluff or theatrical hand gestures, teaching students to value structural logic, impact framing, and systematic refutation over empty rhetoric.
@@ -103,7 +103,7 @@ export default function ClaimItArticle() {
             </p>
             
             <p>
-              The level of scrutiny a PhD candidate applies to an academic claim—examining the quality of evidence, exposing hidden logical fallacies, and enforcing intellectual honesty regarding data limitations—is precisely the kind of intellectual framework that top global universities search for in prospective undergraduate applicants.
+              The level of scrutiny a PhD candidate applies to an academic claim examining the quality of evidence, exposing hidden logical fallacies, and enforcing intellectual honesty regarding data limitations is precisely the kind of intellectual framework that top global universities search for in prospective undergraduate applicants.
             </p>
 
             <blockquote>
@@ -146,7 +146,7 @@ export default function ClaimItArticle() {
             </ul>
 
             <p>
-              Because our writing debating program maps directly onto the strict evaluation metrics used by these international juries, our students do not simply participate—they enter these global arenas with a deep understanding of how to win.
+              Because our writing debating program maps directly onto the strict evaluation metrics used by these international juries, our students do not simply participate they enter these global arenas with a deep understanding of how to win.
             </p>
 
             <hr className="my-8 border-gray-200" />
@@ -203,7 +203,7 @@ export default function ClaimItArticle() {
             </p>
 
             <p>
-              Ultimately, ClaimIt is designed for parents who want their children to become the kind of young leaders who can comfortably walk into any room—whether it is a highly competitive university seminar, an executive corporate boardroom, or a global conference stage—and naturally command respect through the sheer power of their ideas and voice.
+              Ultimately, ClaimIt is designed for parents who want their children to become the kind of young leaders who can comfortably walk into any room whether it is a highly competitive university seminar, an executive corporate boardroom, or a global conference stage and naturally command respect through the sheer power of their ideas and voice.
             </p>
 
             <hr className="my-8 border-gray-200" />
