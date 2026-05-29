@@ -569,7 +569,7 @@ export default function CategoriesSection() {
       <section className="categories-section" id="topic">
         <div className="container">
           <div className="section-header">
-            <span className="section-subtitle">2024 Essay Prompts</span>
+            <span className="section-subtitle">2026 Essay Prompts</span>
             <h2 className="section-title">Select Your Discipline</h2>
             <div className="title-underline"></div>
           </div>

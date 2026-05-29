@@ -549,35 +549,7 @@ const CampusAmbassador = () => {
                 </button>
               </div>
             </div>
-{/* <div className="bg-black rounded-2xl p-6 shadow-md text-white space-y-4 relative overflow-hidden border border-zinc-800/50">
-  {/* Ambient background glow — added bg-blue-500/10 to give a subtle premium back-tint on the solid black */}
-  <div className="absolute right-0 bottom-0 translate-x-10 translate-y-10 w-40 h-40 bg-blue-500/10 rounded-full blur-2xl pointer-events-none" />
-  
-  {/* Fixed badge layout to prevent full-width stretching */}
-  <div className="flex items-center gap-2 text-amber-400 bg-amber-400/10 border border-amber-400/20 rounded-lg px-3 py-1.5 text-xs font-semibold w-fit">
-    <Clock className="w-3.5 h-3.5" /> 
-    <span>Only 4 spots remaining in current cohort</span>
-  </div>
-  
-  <p className="text-xs text-zinc-300 max-w-xl leading-relaxed">
-    Applications are reviewed on a rolling basis but strictly capped. We only onboard 25 new ambassadors at a time to maintain high-quality mentorship access.
-  </p>
-  
-  <div className="flex flex-wrap items-center gap-5 pt-2">
-    <button 
-      onClick={() => setActiveModal('apply')}
-      className="inline-flex items-center gap-1.5 bg-white hover:bg-zinc-100 text-zinc-950 font-semibold text-sm px-5 py-3 rounded-xl transition-all shadow-sm transform active:scale-95"
-    >
-      Apply Now — takes 5 mins <ArrowUpRight className="w-4 h-4" />
-    </button>
-    <button 
-      onClick={() => setActiveModal('waitlist')}
-      className="text-zinc-300 hover:text-white underline font-medium text-sm transition-colors py-2"
-    >
-      Join the Waitlist
-    </button>
-  </div>
-{/* </div> */} 
+
           </div>
 
           {/* Right Block (5 Cols): Premium Visual Asset & Peers Showcase */}
