@@ -70,7 +70,7 @@ const Hero = () => {
         </div>
         <div className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
           <Button href="#contact" variant="secondary" className="group">
-            Start Career Assessment
+            Book a Free Consultation
             <ArrowUpRight className="w-4 h-4 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />
           </Button>
           <Button href="#services" variant="primary" shimmer={true} className="min-w-[180px]">
