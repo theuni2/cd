@@ -1033,7 +1033,7 @@ const Navigation = () => {
     { href: '/internship', label: 'Internships' },
     { href: '/launchpad', label: 'Social Project' },
     { href: '/essay_comp', label: 'Writing Programs' },
-    { href: '/workshop', label: 'Workshops' },
+    // { href: '/workshop', label: 'Workshops' },
     { 
       href: '#', 
       label: 'Competitions', 

@@ -372,12 +372,11 @@
 //   );
 // }
 
-
 "use client";
 
 import React from "react";
 import { motion } from "framer-motion";
-import { ArrowRight, Sparkles, Globe, Users, Code, Heart } from "lucide-react";
+import { ArrowRight, Sparkles, Globe, Users, Lightbulb, Trophy, Layers } from "lucide-react";
 
 export default function SolveHeroAnimated({ onOpenRegister }) {
   // Animation presets for sequential fade-in elements
@@ -400,32 +399,18 @@ export default function SolveHeroAnimated({ onOpenRegister }) {
       padding: "80px 24px",
       fontFamily: "'Plus Jakarta Sans', system-ui, -apple-system, sans-serif",
     },
-    // Left-side background image container (Tech Track)
-    techBg: {
+    // Unified high-energy innovation canvas background
+    innovationBg: {
       position: "absolute" ,
       top: 0,
       left: 0,
-      width: "50%",
+      width: "100%",
       height: "100%",
       backgroundImage: `url('https://img.magnific.com/free-vector/abstract-wavy-background-digital-technology-futuristic-vector-line-design_314614-1624.jpg?semt=ais_hybrid&w=740&q=80')`,
       backgroundSize: "cover",
       backgroundPosition: "center",
-      opacity: 0.12,
-      mixBlendMode: "screen" ,
-      pointerEvents: "none" ,
-    },
-    // Right-side background image container (Social Impact Track)
-    impactBg: {
-      position: "absolute" ,
-      top: 0,
-      right: 0,
-      width: "50%",
-      height: "100%",
-      backgroundImage: `url('https://media.istockphoto.com/id/2208901213/vector/group-of-diverse-people-talking-chatting-bonding.jpg?s=612x612&w=0&k=20&c=syhPCQmGhtqlGWrxfDRQDeX7fzT4qoa_gkZStCdQEQk=')`,
-      backgroundSize: "cover",
-      backgroundPosition: "center",
       opacity: 0.08,
-      mixBlendMode: "color-dodge" ,
+      mixBlendMode: "screen" ,
       pointerEvents: "none" ,
     },
     gridOverlay: {
@@ -449,6 +434,13 @@ export default function SolveHeroAnimated({ onOpenRegister }) {
       flexDirection: "column" ,
       alignItems: "center",
     },
+    badgeGroup: {
+      display: "flex",
+      flexDirection: "column" ,
+      alignItems: "center",
+      gap: "12px",
+      marginBottom: "32px",
+    },
     badge: {
       display: "inline-flex",
       alignItems: "center",
@@ -461,9 +453,20 @@ export default function SolveHeroAnimated({ onOpenRegister }) {
       fontWeight: 600,
       letterSpacing: "0.08em",
       color: "#e4e4e7",
-      marginBottom: "40px",
       backdropFilter: "blur(12px)",
       WebkitBackdropFilter: "blur(12px)",
+    },
+    teamPill: {
+      display: "inline-flex",
+      alignItems: "center",
+      gap: "6px",
+      padding: "6px 16px",
+      borderRadius: "9999px",
+      backgroundColor: "rgba(34, 211, 238, 0.1)",
+      border: "1px solid rgba(34, 211, 238, 0.2)",
+      fontSize: "12px",
+      fontWeight: 600,
+      color: "#22d3ee",
     },
     mainTitle: {
       fontSize: "clamp(4rem, 10vw, 8rem)",
@@ -482,11 +485,11 @@ export default function SolveHeroAnimated({ onOpenRegister }) {
       backgroundSize: "200% auto",
     },
     description: {
-      maxWidth: "680px",
+      maxWidth: "720px",
       color: "#a1a1aa",
       fontSize: "clamp(1rem, 2.2vw, 1.25rem)",
       lineHeight: 1.6,
-      margin: "0 0 48px 0",
+      margin: "0 0 40px 0",
       textBalance: "balance" ,
     },
     ctaGroup: {
@@ -495,7 +498,7 @@ export default function SolveHeroAnimated({ onOpenRegister }) {
       gap: "20px",
       justifyContent: "center",
       width: "100%",
-      marginBottom: "80px",
+      marginBottom: "64px",
     },
     primaryCta: {
       padding: "16px 36px",
@@ -523,13 +526,12 @@ export default function SolveHeroAnimated({ onOpenRegister }) {
       backdropFilter: "blur(8px)",
       WebkitBackdropFilter: "blur(8px)",
     },
-    // Decorative floating tags mimicking premium platform dashboards
     floatingTagLeft: {
       position: "absolute" ,
       left: "-60px",
       top: "35%",
-      backgroundColor: "rgba(124, 58, 237, 0.1)",
-      border: "1px solid rgba(124, 58, 237, 0.2)",
+      backgroundColor: "rgba(168, 85, 247, 0.1)",
+      border: "1px solid rgba(168, 85, 247, 0.2)",
       padding: "10px 16px",
       borderRadius: "12px",
       display: "flex",
@@ -546,8 +548,8 @@ export default function SolveHeroAnimated({ onOpenRegister }) {
       position: "absolute" ,
       right: "-60px",
       top: "45%",
-      backgroundColor: "rgba(6, 182, 212, 0.1)",
-      border: "1px solid rgba(6, 182, 212, 0.2)",
+      backgroundColor: "rgba(34, 211, 238, 0.1)",
+      border: "1px solid rgba(34, 211, 238, 0.2)",
       padding: "10px 16px",
       borderRadius: "12px",
       display: "flex",
@@ -558,7 +560,7 @@ export default function SolveHeroAnimated({ onOpenRegister }) {
       color: "#22d3ee",
       backdropFilter: "blur(6px)",
       WebkitBackdropFilter: "blur(6px)",
-      animation: "floatSlow 6s ease-in-out infinite 3s", // staggered delay
+      animation: "floatSlow 6s ease-in-out infinite 3s",
     },
     footerGrid: {
       display: "grid",
@@ -589,7 +591,6 @@ export default function SolveHeroAnimated({ onOpenRegister }) {
 
   return (
     <section style={styles.section}>
-      {/* Vanilla CSS Keyframe Animations Injection */}
       <style dangerouslySetInnerHTML={{__html: `
         @keyframes shimmerGradient {
           0% { background-position: 0% 50%; }
@@ -601,51 +602,55 @@ export default function SolveHeroAnimated({ onOpenRegister }) {
           50% { transform: translateY(-12px) rotate(1deg); }
           100% { transform: translateY(0px) rotate(0deg); }
         }
-        @keyframes pulseSoft {
-          0%, 100% { opacity: 0.3; }
-          50% { opacity: 0.7; }
-        }
       `}} />
 
-      {/* Track Background Images splitting the canvas layout */}
-      <div style={styles.techBg} />
-      <div style={styles.impactBg} />
-      
-      {/* Dynamic Structural Grid lines */}
+      <div style={styles.innovationBg} />
       <div style={styles.gridOverlay} />
 
-      {/* Radial ambient background glows */}
+      {/* Ambient glows */}
       <div style={{
         position: "absolute", top: "20%", left: "25%", width: "400px", height: "400px",
-        background: "radial-gradient(circle, rgba(139,92,246,0.12) 0%, transparent 70%)", pointerEvents: "none"
+        background: "radial-gradient(circle, rgba(168,85,247,0.12) 0%, transparent 70%)", pointerEvents: "none"
       }} />
       <div style={{
         position: "absolute", bottom: "20%", right: "25%", width: "450px", height: "450px",
-        background: "radial-gradient(circle, rgba(6,182,212,0.1) 0%, transparent 70%)", pointerEvents: "none"
+        background: "radial-gradient(circle, rgba(34,211,238,0.1) 0%, transparent 70%)", pointerEvents: "none"
       }} />
 
       <div style={styles.container}>
         
-        {/* Dynamic Context Floating Tags (Hidden on narrow viewports via standard layouts) */}
+        {/* Context Floating Tags */}
         <div className="hidden lg:flex" style={styles.floatingTagLeft}>
-          <Code size={16} />
-          <span>Tech Innovation</span>
+          <Lightbulb size={16} />
+          <span>Social Architecture</span>
         </div>
         <div className="hidden lg:flex" style={styles.floatingTagRight}>
-          <Heart size={16} />
-          <span>Social Impact</span>
+          <Trophy size={16} />
+          <span>Tech Advancements</span>
         </div>
 
-        {/* Global Pill Badge */}
-        <motion.div
-          initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, ease: "easeOut" }}
-          style={styles.badge}
-        >
-          <Sparkles size={13} color="#22d3ee" />
-          <span>YOUTH INNOVATION & SOCIAL IMPACT CHALLENGE</span>
-        </motion.div>
+        {/* Global Pill Badge + Participation Alert */}
+        <div style={styles.badgeGroup}>
+          <motion.div
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7, ease: "easeOut" }}
+            style={styles.badge}
+          >
+            <Sparkles size={13} color="#22d3ee" />
+            <span>YOUTH INNOVATION CHALLENGE</span>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            style={styles.teamPill}
+          >
+            <Users size={14} />
+            <span>Open to Individuals & Teams (2-5 members)</span>
+          </motion.div>
+        </div>
 
         {/* Brand Master Title */}
         <motion.h1
@@ -666,12 +671,12 @@ export default function SolveHeroAnimated({ onOpenRegister }) {
           transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
           style={{
             ...styles.gradientSubtitle,
-            background: "linear-gradient(to right, #c084fc, #e879f9, #22d3ee, #6366f1)",
+            background: "linear-gradient(to right, #a855f7, #e879f9, #22d3ee, #6366f1)",
             WebkitBackgroundClip: "text",
             WebkitTextFillColor: "transparent",
           }}
         >
-          Shape the future. From Day One.
+          One Track. Infinite Solutions.
         </motion.h2>
 
         {/* Mission Positioning Statement */}
@@ -682,10 +687,10 @@ export default function SolveHeroAnimated({ onOpenRegister }) {
           transition={{ duration: 0.8, delay: 0.3, ease: "easeOut" }}
           style={styles.description}
         >
-          A global youth platform for students aged <span style={{ color: "#ffffff", fontWeight: 600 }}>14–18</span> to pitch innovative technology and social impact ideas addressing real-world challenges.
+          A global youth platform for students aged <span style={{ color: "#ffffff", fontWeight: 600 }}>13–18</span> to pitch breakthroughs under a single, unified <span style={{ color: "#22d3ee", fontWeight: 600 }}>Innovation Track</span>. Solve critical real-world barriers either through direct social design or systemic technology frameworks across industries like <span style={{ color: "#ffffff", fontWeight: 500 }}>Education, Finance, DeepTech, HealthTech, and ClimateTech</span>.
         </motion.p>
 
-        {/* CTA Buttons with Framer Motion hover mechanics */}
+        {/* CTA Buttons */}
         <motion.div
           variants={fadeInUp}
           initial="hidden"
@@ -693,14 +698,13 @@ export default function SolveHeroAnimated({ onOpenRegister }) {
           transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
           style={styles.ctaGroup}
         >
-          {/* 🚀 Connected onOpenRegister to click trigger */}
           <motion.button 
             whileHover={{ scale: 1.03, boxShadow: "0 15px 35px rgba(168, 85, 247, 0.3)" }}
             whileTap={{ scale: 0.98 }}
             onClick={onOpenRegister}
             style={styles.primaryCta}
           >
-            Submit Your Pitch
+            Submit Your Innovation
             <ArrowRight size={16} />
           </motion.button>
 
@@ -709,7 +713,7 @@ export default function SolveHeroAnimated({ onOpenRegister }) {
             whileTap={{ scale: 0.98 }}
             style={styles.secondaryCta}
           >
-            Explore Tracks
+            View Industries
           </motion.button>
         </motion.div>
 
@@ -723,23 +727,23 @@ export default function SolveHeroAnimated({ onOpenRegister }) {
           <div>
             <p style={styles.footerLabel}>Eligibility</p>
             <p style={styles.footerValue}>
-              <Users size={16} color="#c084fc" /> Age 14–18
+              <Users size={16} color="#c084fc" /> Age 13–18
             </p>
           </div>
           <div>
-            <p style={styles.footerLabel}>Initial Focus</p>
+            <p style={styles.footerLabel}>Focus Track</p>
             <p style={{ ...styles.footerValue, color: "#22d3ee" }}>
-              2 Core Tracks
+              <Layers size={16} color="#22d3ee" /> Unified Innovation
             </p>
           </div>
           <div>
-            <p style={styles.footerLabel}>Format</p>
-            <p style={styles.footerValue}>Slides + 3 Min Video</p>
+            <p style={styles.footerLabel}>Required Deliverables</p>
+            <p style={styles.footerValue}>10-Page Deck + 1-Min Video</p>
           </div>
           <div>
-            <p style={styles.footerLabel}>Global Scope</p>
+            <p style={styles.footerLabel}>Scope</p>
             <p style={styles.footerValue}>
-              <Globe size={16} color="#a78bfa" /> Digital Intake
+              <Globe size={16} color="#a78bfa" /> Online Submission
             </p>
           </div>
         </motion.div>

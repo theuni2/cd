@@ -59,6 +59,7 @@ import SolveFAQSection from '@/components/solve_eg_component/fa';
 import SolveRegistrationForm from '@/components/solve_eg_component/form';
 import SolveFooterCTA from '@/components/solve_eg_component/footer';
 import SolveRegistrationModal from '@/components/solveregistrationmodal';
+import SolveAwardSection from '@/components/solve_eg_component/award';
 
 export default function Page() {
   // 1. Fixed duplicate hook definitions 
@@ -75,13 +76,14 @@ export default function Page() {
       
       {/* Core Structural Information Ecosystem */}
       <SolveTracksAndRequirements />
-      <SolveCriteriaSection />
+      {/* <SolveCriteriaSection /> */}
       <SolveTimelineSection />
       <SolveValueProp />
+      <SolveAwardSection />
       <SolveFAQSection />
       
       {/* Inline Section-based Form view wrapper */}
-      <SolveRegistrationForm />
+      {/* <SolveRegistrationForm /> */}
       
       {/* 3. Added onOpenRegister prop mapping down to the footer CTA section */}
       <SolveFooterCTA onOpenRegister={openModal} />
