@@ -622,11 +622,11 @@ export default function SolveHeroAnimated({ onOpenRegister }) {
         {/* Context Floating Tags */}
         <div className="hidden lg:flex" style={styles.floatingTagLeft}>
           <Lightbulb size={16} />
-          <span>Social Architecture</span>
+          <span>Innovation </span>
         </div>
         <div className="hidden lg:flex" style={styles.floatingTagRight}>
           <Trophy size={16} />
-          <span>Tech Advancements</span>
+          <span>Impact</span>
         </div>
 
         {/* Global Pill Badge + Participation Alert */}
@@ -708,13 +708,13 @@ export default function SolveHeroAnimated({ onOpenRegister }) {
             <ArrowRight size={16} />
           </motion.button>
 
-          <motion.button 
+          {/* <motion.button 
             whileHover={{ scale: 1.03, borderColor: "rgba(255,255,255,0.25)", color: "#ffffff" }}
             whileTap={{ scale: 0.98 }}
             style={styles.secondaryCta}
           >
             View Industries
-          </motion.button>
+          </motion.button> */}
         </motion.div>
 
         {/* Core Metadata Grid */}

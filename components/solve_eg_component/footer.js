@@ -440,13 +440,13 @@ export default function SolveFooterCTA({ onOpenRegister }) {
 
           <div style={styles.ctaLabel}>
             <Sparkles size={14} />
-            <span>Year 1 Applications are Live</span>
+            <span>Applications are Live</span>
           </div>
 
           <h2 style={styles.ctaTitle}>Got an Idea?<br />Let’s SOLVE It.</h2>
           
           <p style={styles.ctaSubtitle}>
-            Bring your pitch deck and your 3-minute video to our global evaluation arena. No mentorship clutter. No logistical complications. Just absolute impact.
+            Bring your pitch deck and your 1-minute video to our global evaluation arena. No mentorship clutter. No logistical complications. Just absolute impact.
           </p>
 
           {/* 🚀 Connected onOpenRegister trigger to card action button */}
