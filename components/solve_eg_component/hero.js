@@ -526,42 +526,41 @@ export default function SolveHeroAnimated({ onOpenRegister }) {
       backdropFilter: "blur(8px)",
       WebkitBackdropFilter: "blur(8px)",
     },
-    floatingTagLeft: {
-      position: "absolute" ,
-      left: "-60px",
-      top: "35%",
-      backgroundColor: "rgba(168, 85, 247, 0.1)",
-      border: "1px solid rgba(168, 85, 247, 0.2)",
-      padding: "10px 16px",
-      borderRadius: "12px",
-      display: "flex",
-      alignItems: "center",
-      gap: "8px",
-      fontSize: "13px",
-      fontWeight: 600,
-      color: "#c084fc",
-      backdropFilter: "blur(6px)",
-      WebkitBackdropFilter: "blur(6px)",
-      animation: "floatSlow 6s ease-in-out infinite",
-    },
-    floatingTagRight: {
-      position: "absolute" ,
-      right: "-60px",
-      top: "45%",
-      backgroundColor: "rgba(34, 211, 238, 0.1)",
-      border: "1px solid rgba(34, 211, 238, 0.2)",
-      padding: "10px 16px",
-      borderRadius: "12px",
-      display: "flex",
-      alignItems: "center",
-      gap: "8px",
-      fontSize: "13px",
-      fontWeight: 600,
-      color: "#22d3ee",
-      backdropFilter: "blur(6px)",
-      WebkitBackdropFilter: "blur(6px)",
-      animation: "floatSlow 6s ease-in-out infinite 3s",
-    },
+floatingTagLeft: {
+  position: "absolute",
+  left: "-60px",
+  top: "35%",
+  backgroundColor: "rgba(168, 85, 247, 0.1)",
+  border: "1px solid rgba(168, 85, 247, 0.2)",
+  padding: "10px 16px",
+  borderRadius: "12px",
+  alignItems: "center",
+  gap: "8px",
+  fontSize: "13px",
+  fontWeight: 600,
+  color: "#c084fc",
+  backdropFilter: "blur(6px)",
+  WebkitBackdropFilter: "blur(6px)",
+  animation: "floatSlow 6s ease-in-out infinite",
+},
+
+floatingTagRight: {
+  position: "absolute",
+  right: "-60px",
+  top: "45%",
+  backgroundColor: "rgba(34, 211, 238, 0.1)",
+  border: "1px solid rgba(34, 211, 238, 0.2)",
+  padding: "10px 16px",
+  borderRadius: "12px",
+  alignItems: "center",
+  gap: "8px",
+  fontSize: "13px",
+  fontWeight: 600,
+  color: "#22d3ee",
+  backdropFilter: "blur(6px)",
+  WebkitBackdropFilter: "blur(6px)",
+  animation: "floatSlow 6s ease-in-out infinite 3s",
+},
     footerGrid: {
       display: "grid",
       gridTemplateColumns: "repeat(auto-fit, minmax(180px, 1fr))",
@@ -620,14 +619,26 @@ export default function SolveHeroAnimated({ onOpenRegister }) {
       <div style={styles.container}>
         
         {/* Context Floating Tags */}
-        <div className="hidden lg:flex" style={styles.floatingTagLeft}>
+        {/* <div className="hidden lg:flex" style={styles.floatingTagLeft}>
           <Lightbulb size={16} />
           <span>Innovation </span>
         </div>
         <div className="hidden lg:flex" style={styles.floatingTagRight}>
           <Trophy size={16} />
           <span>Impact</span>
-        </div>
+        </div> */}
+
+<div className="hidden lg:flex" style={styles.floatingTagLeft}>
+  <Lightbulb size={16} />
+  <span>Innovation</span>
+</div>
+
+<div className="hidden lg:flex" style={styles.floatingTagRight}>
+  <Trophy size={16} />
+  <span>Impact</span>
+</div>
+
+
 
         {/* Global Pill Badge + Participation Alert */}
         <div style={styles.badgeGroup}>

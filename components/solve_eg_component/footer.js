@@ -472,45 +472,45 @@ export default function SolveFooterCTA({ onOpenRegister }) {
             </p>
             
             {/* Social Interplay Matrix */}
-            <div style={{ display: "flex", gap: "12px", marginTop: "8px" }}>
+            {/* <div style={{ display: "flex", gap: "12px", marginTop: "8px" }}>
               <a href="#" className="social-icon-btn" style={{ padding: "10px", borderRadius: "10px", backgroundColor: "rgba(255,255,255,0.02)", color: "#a1a1aa", display: "inline-flex", transition: "all 0.2s" }}>
                 <Linkedin size={18} />
               </a>
               <a href="#" className="social-icon-btn" style={{ padding: "10px", borderRadius: "10px", backgroundColor: "rgba(255,255,255,0.02)", color: "#a1a1aa", display: "inline-flex", transition: "all 0.2s" }}>
                 <Instagram size={18} />
               </a>
-            </div>
+            </div> */}
           </div>
 
           {/* Column 2: Structural Verticals */}
-          <div>
+          {/* <div>
             <h4 style={styles.linkHeader}>Competition Tracks</h4>
             <ul style={styles.linkList}>
               <li><a href="#" className="footer-interactive-link" style={styles.footerLink}>Tech Innovation</a></li>
               <li><a href="#" className="footer-interactive-link" style={styles.footerLink}>Social Impact Vertical</a></li>
               <li><a href="#" className="footer-interactive-link" style={styles.footerLink}>Eligibility Metrics</a></li>
             </ul>
-          </div>
+          </div> */}
 
           {/* Column 3: Submission Resources */}
-          <div>
+          {/* <div>
             <h4 style={styles.linkHeader}>Deliverables</h4>
             <ul style={styles.linkList}>
               <li><a href="#" className="footer-interactive-link" style={styles.footerLink}>Pitch Deck Blueprint</a></li>
               <li><a href="#" className="footer-interactive-link" style={styles.footerLink}>Video Guidelines</a></li>
               <li><a href="#" className="footer-interactive-link" style={styles.footerLink}>Judging Criteria</a></li>
             </ul>
-          </div>
+          </div> */}
 
           {/* Column 4: Long Term Vision */}
-          <div>
+          {/* <div>
             <h4 style={styles.linkHeader}>Future Vision</h4>
             <ul style={styles.linkList}>
               <li><a href="#" className="footer-interactive-link" style={styles.footerLink}>Year 2 Incubator</a></li>
               <li><a href="#" className="footer-interactive-link" style={styles.footerLink}>Startup Fellowships</a></li>
               <li><a href="#" className="footer-interactive-link" style={styles.footerLink}>School Partnerships</a></li>
             </ul>
-          </div>
+          </div> */}
 
         </footer>
 
