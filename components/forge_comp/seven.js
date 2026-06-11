@@ -148,7 +148,7 @@ export default function Footer() {
           <div className="footer-content">
             
             <div className="brand-col">
-              <h4 style={{ color: '#c5a059' }}>Forge Organised Career Discovery</h4>
+              <h4 style={{ color: '#c5a059' }}>Forge Organised by Career Discovery</h4>
               <p>
                 Cultivating independent thought and academic rigor in the next generation of global leaders.
               </p>

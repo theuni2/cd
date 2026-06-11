@@ -60,6 +60,7 @@ import SolveRegistrationForm from '@/components/solve_eg_component/form';
 import SolveFooterCTA from '@/components/solve_eg_component/footer';
 import SolveRegistrationModal from '@/components/solveregistrationmodal';
 import SolveAwardSection from '@/components/solve_eg_component/award';
+import SolveDeckBlueprint from '@/components/solve_eg_component/solvedeck';
 
 export default function Page() {
   // 1. Fixed duplicate hook definitions 
@@ -77,6 +78,7 @@ export default function Page() {
       {/* Core Structural Information Ecosystem */}
       <SolveTracksAndRequirements />
       {/* <SolveCriteriaSection /> */}
+      <SolveDeckBlueprint/>
       <SolveTimelineSection />
       <SolveValueProp />
       <SolveAwardSection />
