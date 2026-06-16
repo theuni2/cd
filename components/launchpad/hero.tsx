@@ -176,13 +176,13 @@ export default function ClaimItHero() {
             {/* Trust Logos (Diana & Blue Ocean) */}
             <div className="flex items-center gap-8 pt-2 opacity-70 grayscale hover:grayscale-0 transition-all duration-500">
                 <div className="flex flex-col items-center gap-1">
-                    <img src="https://upload.wikimedia.org/wikipedia/en/3/30/The_Diana_Award_Logo.png" alt="Diana Award" className="h-10 w-auto" />
-                    <span className="text-[10px] font-bold text-gray-500">DIANA AWARD</span>
+                    <img src="/launchpad/blue.png" alt="Blue Ocean Award" className="h-10 w-auto" />
+                    <span className="text-[10px] font-bold text-gray-500">BLUE OCEAN</span>
                 </div>
                 <div className="w-[1px] h-10 bg-gray-300"></div>
                 <div className="flex flex-col items-center gap-1">
                     <img src="https://cdn.prod.website-files.com/6332fa86146bf38f803b66c2/6334424d05aebb6f70349302_Logo-Banner-Nav-p-500.webp" alt="Blue Ocean" className="h-8 w-auto" />
-                    <span className="text-[10px] font-bold text-gray-500">BLUE OCEAN</span>
+                    <span className="text-[10px] font-bold text-gray-500">DIANA AWARD</span>
                 </div>
             </div>
 
@@ -203,13 +203,13 @@ export default function ClaimItHero() {
                   <ArrowRight className="w-5 h-5 ml-2 transition-transform group-hover:translate-x-1" />
                 </span>
               </Button>
-              <Button
+              {/* <Button
                 href="#programs"
                 variant="primary-outline"
                 className="group border border-gray-400 text-gray-700 hover:border-indigo-600 hover:text-indigo-900 transition-all duration-300"
               >
                 Explore Opportunities
-              </Button>
+              </Button> */}
             </motion.div>
 
           </motion.div>
@@ -234,10 +234,10 @@ export default function ClaimItHero() {
             </div>
             
             {/* Floating Achievement Card */}
-            <div className="absolute -bottom-6 -left-6 bg-white p-6 rounded-2xl shadow-2xl z-20 border border-indigo-50">
+            {/* <div className="absolute -bottom-6 -left-6 bg-white p-6 rounded-2xl shadow-2xl z-20 border border-indigo-50">
                 <p className="text-indigo-600 font-black text-2xl">100%</p>
                 <p className="text-gray-500 text-xs font-bold uppercase tracking-tighter">Publication Success</p>
-            </div>
+            </div> */}
           </motion.div>
         </div>
       </div>

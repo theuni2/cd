@@ -1484,6 +1484,17 @@ const CompetitionHero = () => {
       </div>
     </div>
   </div>
+
+  {/* 4. Harvard International Review (HIR) */}
+  <div className="h-12 w-auto flex items-center justify-center bg-white/10 px-4 rounded-lg backdrop-blur-sm hover:bg-white/20 transition-all duration-300">
+    <div className="flex items-center gap-2">
+      <div className="h-6 w-[2px] bg-red-600"></div>
+      <div className="flex flex-col">
+        <span className="text-white font-bold text-sm leading-none">FORGE</span>
+        <span className="text-gray-300 text-[9px] tracking-widest leading-none mt-1">Essay Comp</span>
+      </div>
+    </div>
+  </div>
 </motion.div>
 
         {/* CTA Buttons (Updated Alignment) */}

@@ -1031,7 +1031,7 @@ const Navigation = () => {
     { href: '/', label: 'Home' },
     { href: '/research', label: 'Research' },
     { href: '/internship', label: 'Internships' },
-    { href: '/launchpad', label: 'Social Project' },
+    { href: '/launchpad', label: 'Passion Project' },
     { href: '/essay_comp', label: 'Writing Programs' },
     // { href: '/workshop', label: 'Workshops' },
     { 

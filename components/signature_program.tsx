@@ -294,14 +294,14 @@ const programs = [
   {
     src: '/lp.png',
     title: "LaunchPad",
-    description: "Launching startups and self-driven social projects for participation across Blue Ocean Competition, Diana Awards etc.",
+    description: "Launch your passion projects for participation across Blue Ocean Competition, Diana Awards etc.",
     href: "/launchpad",
     color: "from-orange-50 to-orange-100"
   },
   {
     src: '/thinktank.png',
     title: "ThinkTank",
-    description: "A direct research experience under professors from Brown University, the IITs, and other global institutions.",
+    description: "A direct research experience under professors & PhDs from Brown University, the IITs, and other global institutions.",
     href: "/research",
     color: "from-blue-50 to-blue-100"
   },

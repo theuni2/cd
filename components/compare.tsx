@@ -838,10 +838,267 @@
 
 
 
+// 'use client';
+
+// import React, { useState, useEffect } from 'react';
+// import { motion, AnimatePresence } from 'framer-motion';
+// import { 
+//   ChevronLeft, 
+//   ChevronRight, 
+//   Clock, 
+//   Users, 
+//   Mic, 
+//   Rocket,
+//   ArrowRight
+// } from 'lucide-react';
+
+// // --- DATA CONFIGURATION ---
+// const features = [
+//   {
+//     id: 1,
+//     category: "Format & Duration",
+//     title: "Flexible & Intensive",
+//     icon: <Clock size={24} />,
+//     launchpad: "1:1 entrepreneurship program. 10 Weeks Long.",
+//     whyUs: "Emphasis on real-world scaling, funding, and tangible prototypes—not just theory.",
+//     gif: "https://images.unsplash.com/photo-1506784983877-45594efa4cbe?q=80&w=2068&auto=format&fit=crop", 
+//     color: "#0891b2", // Cyan-700
+//     cta: "View Syllabus"
+//   },
+//   {
+//     id: 2,
+//     category: "Mentorship",
+//     title: "Elite Network Access",
+//     icon: <Users size={24} />,
+//     launchpad: "Personalized guidance from CEOs, founders, and domain experts with regular check-ins.",
+//     whyUs: "We don't just teach; we connect you directly to top professionals for hands-on experience.",
+//     gif: "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=2084&auto=format&fit=crop",
+//     color: "#4f46e5", // Indigo-600
+//     cta: "Meet Mentors"
+//   },
+//   {
+//     id: 3,
+//     category: "Media Presence",
+//     title: "Build Your Brand",
+//     icon: <Mic size={24} />,
+//     launchpad: "Full PR support: Magazine features, video scripts, social media strategy, and interviews.",
+//     whyUs: "We document your entire journey from ideation to execution to showcase your real impact.",
+//     gif: "https://images.unsplash.com/photo-1557804506-669a67965ba0?q=80&w=2074&auto=format&fit=crop",
+//     color: "#9333ea", // Purple-600
+//     cta: "See Press Kits"
+//   },
+//   {
+//     id: 4,
+//     category: "Outcome",
+//     title: "Launch Real Startups",
+//     icon: <Rocket size={24} />,
+//     launchpad: "Launch a startup, nonprofit, or product with measurable real-world outcomes.",
+//     whyUs: "Focus on execution and results. Walk away with a company, not just a certificate.",
+//     gif: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2015&auto=format&fit=crop",
+//     color: "#d97706", // Amber-600
+//     cta: "Start Building"
+//   }
+// ];
+
+// const LaunchpadSlideshow = () => {
+//   const [currentIndex, setCurrentIndex] = useState(0);
+//   const [direction, setDirection] = useState(0);
+
+//   useEffect(() => {
+//     const timer = setInterval(() => {
+//       nextSlide();
+//     }, 8000);
+//     return () => clearInterval(timer);
+//   }, [currentIndex]);
+
+//   const nextSlide = () => {
+//     setDirection(1);
+//     setCurrentIndex((prev) => (prev === features.length - 1 ? 0 : prev + 1));
+//   };
+
+//   const prevSlide = () => {
+//     setDirection(-1);
+//     setCurrentIndex((prev) => (prev === 0 ? features.length - 1 : prev - 1));
+//   };
+
+//   const variants = {
+//     enter: (direction) => ({
+//       x: direction > 0 ? 50 : -50,
+//       opacity: 0,
+//       filter: "blur(10px)"
+//     }),
+//     center: {
+//       x: 0,
+//       opacity: 1,
+//       filter: "blur(0px)",
+//       transition: { duration: 0.5, ease: "easeOut" }
+//     },
+//     exit: (direction) => ({
+//       x: direction > 0 ? -50 : 50,
+//       opacity: 0,
+//       filter: "blur(10px)",
+//       transition: { duration: 0.3, ease: "easeIn" }
+//     })
+//   };
+
+//   const currentFeature = features[currentIndex];
+
+//   return (
+//     <section className="py-24 bg-gradient-to-br from-[#90CAF9] via-[#C5CAE9] to-white relative overflow-hidden font-sans">
+      
+//       {/* Background Shapes */}
+//       <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
+//         <div className="absolute top-[-10%] right-[-5%] w-[500px] h-[500px] bg-white/30 rounded-full blur-[80px]" />
+//         <div className="absolute bottom-[-10%] left-[-10%] w-[600px] h-[600px] bg-blue-200/30 rounded-full blur-[80px]" />
+//       </div>
+
+//       <div className="container mx-auto px-6 max-w-6xl relative z-10">
+        
+//         {/* Header */}
+//         <div className="text-center mb-12">
+//           <motion.h2 
+//             initial={{ opacity: 0, y: 20 }}
+//             whileInView={{ opacity: 1, y: 0 }}
+//             className="text-3xl md:text-5xl font-bold text-slate-900 mb-4"
+//           >
+//             Why LaunchPad <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">Stands Out</span>
+//           </motion.h2>
+//         </div>
+
+//         {/* --- SLIDESHOW CONTAINER --- */}
+//         <div className="relative bg-white/40 border border-white/60 backdrop-blur-xl rounded-3xl overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.1)] min-h-[600px] md:min-h-[500px]">
+          
+//           <AnimatePresence mode="wait" custom={direction}>
+//             <motion.div
+//               key={currentIndex}
+//               custom={direction}
+//               variants={variants}
+//               initial="enter"
+//               animate="center"
+//               exit="exit"
+//               className="grid md:grid-cols-2 h-full"
+//             >
+              
+//               {/* LEFT SIDE: CONTENT */}
+//               <div className="p-8 md:p-12 flex flex-col justify-center relative">
+                
+//                 {/* Decorative Index */}
+//                 <div className="absolute top-4 right-6 text-8xl font-bold text-white/50 select-none pointer-events-none">
+//                   0{currentFeature.id}
+//                 </div>
+
+//                 {/* Badge */}
+//                 <div className="inline-flex items-center gap-2 mb-6 relative z-10">
+//                   <div className="p-2 rounded-lg bg-white shadow-sm text-slate-700 border border-white/50">
+//                     {currentFeature.icon}
+//                   </div>
+//                   <span className="text-xs font-bold uppercase tracking-widest text-slate-600">
+//                     {currentFeature.category}
+//                   </span>
+//                 </div>
+
+//                 <h3 className="text-3xl md:text-4xl font-bold text-slate-900 mb-6 leading-tight relative z-10">
+//                   {currentFeature.title}
+//                 </h3>
+
+//                 <div className="space-y-6 relative z-10 mb-8">
+//                   {/* Launchpad Feature */}
+//                   <div className="pl-4 border-l-2 border-slate-300">
+//                     <p className="text-xs text-slate-500 uppercase font-bold mb-1">The Program</p>
+//                     <p className="text-slate-700 leading-relaxed font-medium">
+//                       {currentFeature.launchpad}
+//                     </p>
+//                   </div>
+
+//                   {/* Why Us Advantage */}
+//                   <div 
+//                     className="pl-4 border-l-4"
+//                     style={{ borderColor: currentFeature.color }}
+//                   >
+//                     <p className="text-xs uppercase font-bold mb-1" style={{ color: currentFeature.color }}>The Advantage</p>
+//                     <p className="text-slate-800 font-bold leading-relaxed">
+//                       {currentFeature.whyUs}
+//                     </p>
+//                   </div>
+//                 </div>
+
+//                 {/* --- ADDED CTA BUTTON --- */}
+//                 <div className="relative z-10">
+//                   <a href="/#contact">
+//                     <button 
+//                       className="px-8 py-3 rounded-full text-white font-bold shadow-lg transition-all hover:-translate-y-1 hover:shadow-xl hover:brightness-110 flex items-center gap-2"
+//                       style={{ backgroundColor: currentFeature.color }}
+//                     >
+//                       {currentFeature.cta} <ArrowRight size={18} />
+//                     </button>
+//                   </a>
+//                 </div>
+
+//               </div>
+
+//               {/* RIGHT SIDE: VISUAL */}
+//               <div className="relative h-64 md:h-auto overflow-hidden">
+//                 <div className="absolute inset-0 bg-indigo-900/10 mix-blend-multiply z-10 pointer-events-none" />
+//                 <img 
+//                   src={currentFeature.gif} 
+//                   alt={currentFeature.title}
+//                   className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-1000"
+//                 />
+//                 <div className="absolute top-6 right-6 z-20 px-3 py-1 rounded-full bg-white/80 border border-white backdrop-blur-md flex items-center gap-2 shadow-lg">
+//                   <div className="w-2 h-2 rounded-full bg-green-500 animate-pulse" />
+//                   <span className="text-xs font-bold text-slate-800">Live Impact</span>
+//                 </div>
+//               </div>
+
+//             </motion.div>
+//           </AnimatePresence>
+
+//           {/* --- NAVIGATION --- */}
+//           <div className="absolute bottom-6 left-8 md:left-12 z-30 flex items-center gap-4">
+//             <div className="flex gap-2">
+//               <button 
+//                 onClick={prevSlide}
+//                 className="p-3 rounded-full bg-white/60 text-slate-800 hover:bg-white transition-all border border-white shadow-sm backdrop-blur-md hover:scale-105"
+//               >
+//                 <ChevronLeft size={20} />
+//               </button>
+//               <button 
+//                 onClick={nextSlide}
+//                 className="p-3 rounded-full bg-white/60 text-slate-800 hover:bg-white transition-all border border-white shadow-sm backdrop-blur-md hover:scale-105"
+//               >
+//                 <ChevronRight size={20} />
+//               </button>
+//             </div>
+            
+//             <div className="flex gap-2 ml-4 items-center">
+//               {features.map((_, idx) => (
+//                 <button
+//                   key={idx}
+//                   onClick={() => {
+//                     setDirection(idx > currentIndex ? 1 : -1);
+//                     setCurrentIndex(idx);
+//                   }}
+//                   className={`h-2 rounded-full transition-all duration-300 shadow-sm ${
+//                     idx === currentIndex ? 'w-8 bg-blue-600' : 'w-2 bg-white/80'
+//                   }`}
+//                 />
+//               ))}
+//             </div>
+//           </div>
+
+//         </div>
+
+//       </div>
+//     </section>
+//   );
+// }
+
+// export default LaunchpadSlideshow;
+
 'use client';
 
 import React, { useState, useEffect } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion, AnimatePresence, Variants } from 'framer-motion';
 import { 
   ChevronLeft, 
   ChevronRight, 
@@ -852,8 +1109,18 @@ import {
   ArrowRight
 } from 'lucide-react';
 
-// --- DATA CONFIGURATION ---
-const features = [
+interface FeatureItem {
+  id: number;
+  category: string;
+  title: string;
+  icon: React.ReactNode;
+  launchpad: string;
+  whyUs: string;
+  gif: string;
+  color: string;
+}
+
+const features: FeatureItem[] = [
   {
     id: 1,
     category: "Format & Duration",
@@ -862,8 +1129,7 @@ const features = [
     launchpad: "1:1 entrepreneurship program. 10 Weeks Long.",
     whyUs: "Emphasis on real-world scaling, funding, and tangible prototypes—not just theory.",
     gif: "https://images.unsplash.com/photo-1506784983877-45594efa4cbe?q=80&w=2068&auto=format&fit=crop", 
-    color: "#0891b2", // Cyan-700
-    cta: "View Syllabus"
+    color: "#0891b2"
   },
   {
     id: 2,
@@ -873,8 +1139,7 @@ const features = [
     launchpad: "Personalized guidance from CEOs, founders, and domain experts with regular check-ins.",
     whyUs: "We don't just teach; we connect you directly to top professionals for hands-on experience.",
     gif: "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=2084&auto=format&fit=crop",
-    color: "#4f46e5", // Indigo-600
-    cta: "Meet Mentors"
+    color: "#4f46e5"
   },
   {
     id: 3,
@@ -884,8 +1149,7 @@ const features = [
     launchpad: "Full PR support: Magazine features, video scripts, social media strategy, and interviews.",
     whyUs: "We document your entire journey from ideation to execution to showcase your real impact.",
     gif: "https://images.unsplash.com/photo-1557804506-669a67965ba0?q=80&w=2074&auto=format&fit=crop",
-    color: "#9333ea", // Purple-600
-    cta: "See Press Kits"
+    color: "#9333ea"
   },
   {
     id: 4,
@@ -895,14 +1159,13 @@ const features = [
     launchpad: "Launch a startup, nonprofit, or product with measurable real-world outcomes.",
     whyUs: "Focus on execution and results. Walk away with a company, not just a certificate.",
     gif: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2015&auto=format&fit=crop",
-    color: "#d97706", // Amber-600
-    cta: "Start Building"
+    color: "#d97706"
   }
 ];
 
-const LaunchpadSlideshow = () => {
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const [direction, setDirection] = useState(0);
+const LaunchpadSlideshow: React.FC = () => {
+  const [currentIndex, setCurrentIndex] = useState<number>(0);
+  const [direction, setDirection] = useState<number>(0);
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -911,19 +1174,20 @@ const LaunchpadSlideshow = () => {
     return () => clearInterval(timer);
   }, [currentIndex]);
 
-  const nextSlide = () => {
+  const nextSlide = (): void => {
     setDirection(1);
     setCurrentIndex((prev) => (prev === features.length - 1 ? 0 : prev + 1));
   };
 
-  const prevSlide = () => {
+  const prevSlide = (): void => {
     setDirection(-1);
     setCurrentIndex((prev) => (prev === 0 ? features.length - 1 : prev - 1));
   };
 
-  const variants = {
-    enter: (direction) => ({
-      x: direction > 0 ? 50 : -50,
+  // Fixed the syntax parenthesis typo below:
+  const variants: Variants = {
+    enter: (dir: number) => ({
+      x: dir > 0 ? 50 : -50,
       opacity: 0,
       filter: "blur(10px)"
     }),
@@ -933,8 +1197,8 @@ const LaunchpadSlideshow = () => {
       filter: "blur(0px)",
       transition: { duration: 0.5, ease: "easeOut" }
     },
-    exit: (direction) => ({
-      x: direction > 0 ? -50 : 50,
+    exit: (dir: number) => ({
+      x: dir > 0 ? -50 : 50,
       opacity: 0,
       filter: "blur(10px)",
       transition: { duration: 0.3, ease: "easeIn" }
@@ -966,7 +1230,7 @@ const LaunchpadSlideshow = () => {
         </div>
 
         {/* --- SLIDESHOW CONTAINER --- */}
-        <div className="relative bg-white/40 border border-white/60 backdrop-blur-xl rounded-3xl overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.1)] min-h-[600px] md:min-h-[500px]">
+        <div className="relative bg-white/40 border border-white/60 backdrop-blur-xl rounded-3xl overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.1)] min-h-[600px] md:min-h-[550px] pb-24 md:pb-28">
           
           <AnimatePresence mode="wait" custom={direction}>
             <motion.div
@@ -1001,7 +1265,7 @@ const LaunchpadSlideshow = () => {
                   {currentFeature.title}
                 </h3>
 
-                <div className="space-y-6 relative z-10 mb-8">
+                <div className="space-y-6 relative z-10">
                   {/* Launchpad Feature */}
                   <div className="pl-4 border-l-2 border-slate-300">
                     <p className="text-xs text-slate-500 uppercase font-bold mb-1">The Program</p>
@@ -1020,18 +1284,6 @@ const LaunchpadSlideshow = () => {
                       {currentFeature.whyUs}
                     </p>
                   </div>
-                </div>
-
-                {/* --- ADDED CTA BUTTON --- */}
-                <div className="relative z-10">
-                  <a href="/#contact">
-                    <button 
-                      className="px-8 py-3 rounded-full text-white font-bold shadow-lg transition-all hover:-translate-y-1 hover:shadow-xl hover:brightness-110 flex items-center gap-2"
-                      style={{ backgroundColor: currentFeature.color }}
-                    >
-                      {currentFeature.cta} <ArrowRight size={18} />
-                    </button>
-                  </a>
                 </div>
 
               </div>
@@ -1053,37 +1305,53 @@ const LaunchpadSlideshow = () => {
             </motion.div>
           </AnimatePresence>
 
-          {/* --- NAVIGATION --- */}
-          <div className="absolute bottom-6 left-8 md:left-12 z-30 flex items-center gap-4">
-            <div className="flex gap-2">
-              <button 
-                onClick={prevSlide}
-                className="p-3 rounded-full bg-white/60 text-slate-800 hover:bg-white transition-all border border-white shadow-sm backdrop-blur-md hover:scale-105"
-              >
-                <ChevronLeft size={20} />
-              </button>
-              <button 
-                onClick={nextSlide}
-                className="p-3 rounded-full bg-white/60 text-slate-800 hover:bg-white transition-all border border-white shadow-sm backdrop-blur-md hover:scale-105"
-              >
-                <ChevronRight size={20} />
-              </button>
-            </div>
+          {/* --- BOTTOM CONTROLS & CONTACT PANEL --- */}
+          <div className="absolute bottom-6 left-0 right-0 z-30 px-8 md:px-12 flex flex-col sm:flex-row items-center justify-between gap-6 border-t border-white/20 pt-4 bg-white/10 backdrop-blur-md">
             
-            <div className="flex gap-2 ml-4 items-center">
-              {features.map((_, idx) => (
-                <button
-                  key={idx}
-                  onClick={() => {
-                    setDirection(idx > currentIndex ? 1 : -1);
-                    setCurrentIndex(idx);
-                  }}
-                  className={`h-2 rounded-full transition-all duration-300 shadow-sm ${
-                    idx === currentIndex ? 'w-8 bg-blue-600' : 'w-2 bg-white/80'
-                  }`}
-                />
-              ))}
+            {/* Slider Navigation Dots & Arrows */}
+            <div className="flex items-center gap-4 w-full sm:w-auto justify-between sm:justify-start">
+              <div className="flex gap-2">
+                <button 
+                  onClick={prevSlide}
+                  className="p-3 rounded-full bg-white/60 text-slate-800 hover:bg-white transition-all border border-white shadow-sm backdrop-blur-md hover:scale-105"
+                >
+                  <ChevronLeft size={20} />
+                </button>
+                <button 
+                  onClick={nextSlide}
+                  className="p-3 rounded-full bg-white/60 text-slate-800 hover:bg-white transition-all border border-white shadow-sm backdrop-blur-md hover:scale-105"
+                >
+                  <ChevronRight size={20} />
+                </button>
+              </div>
+              
+              <div className="flex gap-2 items-center">
+                {features.map((_, idx) => (
+                  <button
+                    key={idx}
+                    onClick={() => {
+                      setDirection(idx > currentIndex ? 1 : -1);
+                      setCurrentIndex(idx);
+                    }}
+                    className={`h-2 rounded-full transition-all duration-300 shadow-sm ${
+                      idx === currentIndex ? 'w-8 bg-blue-600' : 'w-2 bg-white/80'
+                    }`}
+                  />
+                ))}
+              </div>
             </div>
+
+            {/* --- SINGLE UNIFIED CONTACT BUTTON --- */}
+            <div className="w-full sm:w-auto flex justify-center sm:justify-end">
+              <a href="/#contact" className="w-full sm:w-auto">
+                <button 
+                  className="w-full sm:w-auto px-8 py-3.5 rounded-full text-white font-bold bg-gradient-to-r from-blue-600 to-indigo-600 shadow-xl transition-all hover:-translate-y-1 hover:shadow-2xl hover:brightness-110 flex items-center justify-center gap-2"
+                >
+                  Get In Touch <ArrowRight size={18} />
+                </button>
+              </a>
+            </div>
+
           </div>
 
         </div>

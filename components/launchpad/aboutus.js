@@ -191,8 +191,8 @@ const ComparisonMatrix = () => {
             <div style={{ display: 'flex', flexDirection: 'column', gap: '40px' }}>
               {[
                 { icon: <Users color="#FFD700" />, title: "Hyper-Personalized 1:1", desc: "Your unique roadmap, built specifically for your goals." },
-                { icon: <Target color="#FFD700" />, title: "Outcome-First Strategy", desc: "Build high-impact papers and case studies that get noticed." },
-                { icon: <Rocket color="#FFD700" />, title: "Global Industry Leads", desc: "Access mentors from Google, Microsoft, and Ivy League networks." }
+                { icon: <Target color="#FFD700" />, title: "Outcome-First Strategy", desc: "Build high-impact passion projects and case studies that get noticed." },
+                { icon: <Rocket color="#FFD700" />, title: "Global Industry Leads", desc: "Access mentors from top companies and Ivy League networks." }
               ].map((item, i) => (
                 <motion.div 
                   key={i}

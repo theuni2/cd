@@ -1,7 +1,270 @@
+// 'use client'
+
+// import { motion } from 'framer-motion'
+// import { ArrowRight, Sparkles } from 'lucide-react'
+// import Button from '../Button'
+// import Image from 'next/image'
+
+// const universities = [
+//   { name: "Harvard University", logo: "https://i.imgur.com/FdZN6PL.png" },
+//   { name: "Columbia University", logo: "https://i.imgur.com/4Y84nmv.png" },
+//   { name: "Stanford University", logo: "https://i.imgur.com/gFgSuiZ.png" },
+//   { name: "IIM Bangalore", logo: "https://i.imgur.com/nxOvzp1.png" },
+//   { name: "Oxford University", logo: "https://i.imgur.com/lnwtjkh.png" },
+//   { name: "Cambridge University", logo: "https://i.imgur.com/OYEnU8V.png" },
+//   { name: "MIT", logo: "https://i.imgur.com/i9aAzh8.png" },
+//   { name: "Yale University", logo: "https://i.imgur.com/lXj6Rsf.png" }
+// ]
+
+// export default function ResearchHero() {
+//   const isMobile = typeof window !== 'undefined' && window.innerWidth < 768
+
+//   return (
+//     <section className="relative min-h-screen flex items-center bg-transparent overflow-hidden">
+//       {/* Background gradient like landing page */}
+//       <div
+//         className="absolute top-0 left-0 right-0 h-[500px] -z-10 overflow-hidden"
+//       >
+//         <div
+//           className="absolute inset-0 animate-fastest-aura"
+//           style={{
+//             background:
+//               'linear-gradient(135deg, rgba(250, 204, 21, 0.7) 0%, rgba(59, 130, 246, 1) 30%, rgba(37, 99, 235, 1) 70%, rgba(147, 197, 253, 1) 100%)',
+//             opacity: 0.9,
+//           }}
+//         />
+//         <div
+//           className="absolute inset-0"
+//           style={{
+//             background:
+//               'linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(255,255,255,0.2) 20%, rgba(255,255,255,0.4) 40%, rgba(255,255,255,0.8) 60%, rgba(255,255,255,1) 80%)',
+//           }}
+//         />
+//       </div>
+
+//       <div className="container relative mx-auto px-4 py-20">
+//         <div className="max-w-7xl mx-auto">
+//           <div className="grid lg:grid-cols-2 gap-12 items-center">
+//             {/* Left Column - Content */}
+//             <div className="relative z-10">
+//               <motion.div 
+//                 initial={{ opacity: 0, y: 20 }}
+//                 animate={{ opacity: 1, y: 0 }}
+//                 transition={{ duration: 0.5 }}
+//                 className="space-y-8"
+//               >
+//                 {/* Badge - Hidden on Mobile */}
+//                 <motion.div
+//                   initial={{ opacity: 0, scale: 0.8 }}
+//                   animate={{ opacity: 1, scale: 1 }}
+//                   transition={{ delay: 0.2 }}
+//                   className="hidden md:inline-flex items-center px-3 py-1 space-x-2 rounded-full bg-white/80 backdrop-blur-sm shadow-md"
+//                 >
+//                   <Sparkles className="w-4 h-4 text-blue-500" />
+//                   <span className="text-sm font-medium bg-gradient-to-r from-blue-600 to-violet-600 text-transparent bg-clip-text">Research Excellence Program</span>
+//                 </motion.div>
+
+//                 {/* Heading */}
+//                 <div className="space-y-4">
+//                   <h1 className="text-4xl md:text-6xl font-bold leading-tight">
+//                   Research. Empower Your Future.
+//                     <span className="block text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-violet-600 mt-2">
+//                     Explore, Innovate, Excel!
+//                     </span>
+//                   </h1>
+//                   <p className="text-base md:text-xl text-gray-600 max-w-xl">
+//                   Research under the best professors from top universities like Columbia University, Brown University, IIT and many more.
+//                   </p>
+//                 </div>
+
+//                 {/* Mobile Image - Shown only on mobile */}
+//                 <motion.div
+//                   initial={{ opacity: 0, y: 20 }}
+//                   animate={{ opacity: 1, y: 0 }}
+//                   transition={{ delay: 0.4 }}
+//                   className="lg:hidden relative w-full h-48 rounded-xl overflow-hidden shadow-lg"
+//                 >
+//                   <Image
+//                     src="https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg"
+//                     alt="Research Excellence"
+//                     fill
+//                     className="object-cover"
+//                     priority
+//                   />
+//                   <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
+//                 </motion.div>
+
+//                 {/* CTA Buttons */}
+//                 <motion.div
+//                   initial={{ opacity: 0, y: 20 }}
+//                   animate={{ opacity: 1, y: 0 }}
+//                   transition={{ delay: 0.6 }}
+//                   className="flex flex-col sm:flex-row gap-4 pt-4"
+//                 >
+//                   <Button
+//                     href="/#contact"
+//                     variant="primary"
+//                     className="group relative overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300"
+//                   >
+//                     <span className="relative z-10 flex items-center">
+//                       Start Your Research Journey
+//                       <ArrowRight className="w-5 h-5 ml-2 transition-transform group-hover:translate-x-1" />
+//                     </span>
+//                   </Button>
+//                   <Button
+//                     href="#why-research"
+//                     variant="primary-outline"
+//                     className="group border border-gray-400 text-gray-700 hover:border-blue-600 hover:text-blue-900 transition-all duration-300"
+//                   >
+//                     Explore More
+//                   </Button>
+//                 </motion.div>
+
+//                 {/* Stats Card - Mobile Only */}
+//                 <motion.div
+//                   initial={{ opacity: 0, y: 20 }}
+//                   animate={{ opacity: 1, y: 0 }}
+//                   transition={{ delay: 0.8 }}
+//                   className="lg:hidden bg-white/90 backdrop-blur-sm rounded-xl shadow-lg p-6"
+//                 >
+//                   <div className="flex items-center justify-around gap-6">
+//                     <div className="text-center">
+//                       <div className="text-2xl font-bold text-blue-600">100+</div>
+//                       <div className="text-sm text-gray-600">Research Papers</div>
+//                     </div>
+//                     <div className="text-center">
+//                       <div className="text-2xl font-bold text-blue-600">50+</div>
+//                       <div className="text-sm text-gray-600">Global Mentors</div>
+//                     </div>
+//                   </div>
+//                 </motion.div>
+//               </motion.div>
+//             </div>
+
+//             {/* Right Column - Image */}
+//             <motion.div
+//               initial={{ opacity: 0, x: 20 }}
+//               animate={{ opacity: 1, x: 0 }}
+//               transition={{ duration: 0.5, delay: 0.3 }}
+//               className="relative hidden lg:block"
+//             >
+//               <div className="relative">
+//                 {/* Main Image */}
+//                 <div className="relative z-10 rounded-2xl overflow-hidden shadow-2xl">
+//                   <Image
+//                     src="https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg"
+//                     alt="Research Excellence"
+//                     width={800}
+//                     height={600}
+//                     className="object-cover rounded-2xl transform hover:scale-105 transition-transform duration-700"
+//                     priority
+//                   />
+//                   <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent" />
+//                 </div>
+
+//                 {/* Floating Stats Card */}
+//                 <motion.div
+//                   initial={{ opacity: 0, y: 20 }}
+//                   animate={{ opacity: 1, y: 0 }}
+//                   transition={{ delay: 0.6 }}
+//                   className="absolute -bottom-6 -right-6 bg-white rounded-xl shadow-lg p-6 backdrop-blur-sm"
+//                 >
+//                   <div className="flex items-center gap-6">
+//                     <div className="text-center">
+//                       <div className="text-2xl font-bold text-blue-600">100+</div>
+//                       <div className="text-sm text-gray-600">Research Papers</div>
+//                     </div>
+//                     <div className="text-center">
+//                       <div className="text-2xl font-bold text-blue-600">50+</div>
+//                       <div className="text-sm text-gray-600">Global Mentors</div>
+//                     </div>
+//                   </div>
+//                 </motion.div>
+
+//                 {/* Decorative Elements */}
+//                 <div className="absolute -top-6 -right-6 w-24 h-24 bg-gradient-to-br from-blue-500 to-violet-500 rounded-full opacity-20 blur-2xl"></div>
+//                 <div className="absolute -bottom-8 -left-8 w-32 h-32 bg-gradient-to-br from-violet-500 to-pink-500 rounded-full opacity-20 blur-2xl"></div>
+//               </div>
+//             </motion.div>
+//           </div>
+//         </div>
+
+//         {/* University Logos Marquee */}
+//         <div className="mt-32 relative">
+//           {/* Fade gradient masks */}
+//           <div className="absolute left-0 top-0 bottom-0 w-32 bg-gradient-to-r from-white to-transparent z-10" />
+//           <div className="absolute right-0 top-0 bottom-0 w-32 bg-gradient-to-l from-white to-transparent z-10" />
+          
+//           {/* Desktop Marquee */}
+//           <div className="hidden md:block overflow-hidden">
+//             <motion.div
+//               className="flex gap-8 py-4"
+//               animate={{
+//                 x: ["0%", "-50%"],
+//               }}
+//               transition={{
+//                 x: {
+//                   duration: 60,
+//                   repeat: Infinity,
+//                   ease: "linear",
+//                 }
+//               }}
+//             >
+//               {[...Array(2)].flatMap(() => universities).map((uni, index) => (
+//                 <div key={`desktop-${index}`} className="flex items-center space-x-2 flex-shrink-0">
+//                   <Image
+//                     src={uni.logo}
+//                     alt={uni.name}
+//                     width={32}
+//                     height={32}
+//                     className="grayscale hover:grayscale-0 transition-all duration-300"
+//                   />
+//                   <span className="text-gray-600 text-sm whitespace-nowrap">{uni.name}</span>
+//                 </div>
+//               ))}
+//             </motion.div>
+//           </div>
+
+//           {/* Mobile Marquee (Faster) */}
+//           <div className="md:hidden overflow-hidden">
+//             <motion.div
+//               className="flex gap-8 py-4"
+//               animate={{
+//                 x: ["0%", "-50%"],
+//               }}
+//               transition={{
+//                 x: {
+//                   duration: 15, // Even faster speed for mobile
+//                   repeat: Infinity,
+//                   ease: "linear",
+//                 }
+//               }}
+//             >
+//               {[...Array(2)].flatMap(() => universities).map((uni, index) => (
+//                 <div key={`mobile-${index}`} className="flex items-center space-x-2 flex-shrink-0">
+//                   <Image
+//                     src={uni.logo}
+//                     alt={uni.name}
+//                     width={24} // Slightly smaller for mobile
+//                     height={24}
+//                     className="grayscale hover:grayscale-0 transition-all duration-300"
+//                   />
+//                   <span className="text-gray-600 text-xs whitespace-nowrap">{uni.name}</span>
+//                 </div>
+//               ))}
+//             </motion.div>
+//           </div>
+//         </div>
+//       </div>
+//     </section>
+//   )
+// }
+
+
 'use client'
 
 import { motion } from 'framer-motion'
-import { ArrowRight, Sparkles } from 'lucide-react'
+import { ArrowRight, Sparkles, Calendar } from 'lucide-react'
 import Button from '../Button'
 import Image from 'next/image'
 
@@ -17,27 +280,23 @@ const universities = [
 ]
 
 export default function ResearchHero() {
-  const isMobile = typeof window !== 'undefined' && window.innerWidth < 768
-
   return (
-    <section className="relative min-h-screen flex items-center bg-transparent overflow-hidden">
+    <section className="relative min-h-screen flex items-center bg-slate-50/50 overflow-hidden">
       {/* Background gradient like landing page */}
-      <div
-        className="absolute top-0 left-0 right-0 h-[500px] -z-10 overflow-hidden"
-      >
+      <div className="absolute top-0 left-0 right-0 h-[600px] -z-10 overflow-hidden">
         <div
           className="absolute inset-0 animate-fastest-aura"
           style={{
             background:
-              'linear-gradient(135deg, rgba(250, 204, 21, 0.7) 0%, rgba(59, 130, 246, 1) 30%, rgba(37, 99, 235, 1) 70%, rgba(147, 197, 253, 1) 100%)',
-            opacity: 0.9,
+              'linear-gradient(135deg, rgba(250, 204, 21, 0.4) 0%, rgba(59, 130, 246, 0.8) 30%, rgba(37, 99, 235, 0.9) 70%, rgba(147, 197, 253, 0.5) 100%)',
+            opacity: 0.6,
           }}
         />
         <div
           className="absolute inset-0"
           style={{
             background:
-              'linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(255,255,255,0.2) 20%, rgba(255,255,255,0.4) 40%, rgba(255,255,255,0.8) 60%, rgba(255,255,255,1) 80%)',
+              'linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(255,255,255,0.2) 20%, rgba(255,255,255,0.5) 50%, rgba(255,255,255,0.9) 80%, rgba(255,255,255,1) 100%)',
           }}
         />
       </div>
@@ -53,28 +312,56 @@ export default function ResearchHero() {
                 transition={{ duration: 0.5 }}
                 className="space-y-8"
               >
-                {/* Badge - Hidden on Mobile */}
-                <motion.div
-                  initial={{ opacity: 0, scale: 0.8 }}
-                  animate={{ opacity: 1, scale: 1 }}
-                  transition={{ delay: 0.2 }}
-                  className="hidden md:inline-flex items-center px-3 py-1 space-x-2 rounded-full bg-white/80 backdrop-blur-sm shadow-md"
-                >
-                  <Sparkles className="w-4 h-4 text-blue-500" />
-                  <span className="text-sm font-medium bg-gradient-to-r from-blue-600 to-violet-600 text-transparent bg-clip-text">Research Excellence Program</span>
-                </motion.div>
+                {/* Badges Container */}
+                <div className="flex flex-wrap gap-3">
+                  {/* 2P Advantage Badge */}
+                  <motion.div
+                    initial={{ opacity: 0, scale: 0.8 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    transition={{ delay: 0.1 }}
+                    className="inline-flex items-center px-3 py-1 space-x-2 rounded-full bg-blue-50 border border-blue-200/60 shadow-sm"
+                  >
+                    <Sparkles className="w-4 h-4 text-blue-600" />
+                    <span className="text-xs md:text-sm font-semibold text-blue-700">
+                      2P Advantage: Professors + PhDs from Top UNIs
+                    </span>
+                  </motion.div>
+
+                  {/* Research Excellence Badge - Hidden on Mobile */}
+                  <motion.div
+                    initial={{ opacity: 0, scale: 0.8 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    transition={{ delay: 0.2 }}
+                    className="hidden md:inline-flex items-center px-3 py-1 space-x-2 rounded-full bg-white/90 backdrop-blur-sm shadow-sm border border-gray-100"
+                  >
+                    <span className="text-sm font-medium bg-gradient-to-r from-blue-600 to-indigo-600 text-transparent bg-clip-text">
+                      Research Excellence Program
+                    </span>
+                  </motion.div>
+                </div>
 
                 {/* Heading */}
                 <div className="space-y-4">
-                  <h1 className="text-4xl md:text-6xl font-bold leading-tight">
-                  Research. Empower Your Future.
-                    <span className="block text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-violet-600 mt-2">
-                    Explore, Innovate, Excel!
+                  <h1 className="text-4xl md:text-6xl font-bold leading-tight tracking-tight text-gray-900">
+                    Research. Empower Your Future.
+                    <span className="block text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600 mt-2">
+                      Explore, Innovate, Excel!
                     </span>
                   </h1>
-                  <p className="text-base md:text-xl text-gray-600 max-w-xl">
-                  Research under the best professors from top universities like Columbia University, Brown University, IIT and many more.
+                  <p className="text-base md:text-xl text-gray-600 max-w-xl leading-relaxed">
+                    Research under the best professors & PhDs from top universities like Columbia University, Brown University, IIT and many more.
                   </p>
+
+                  {/* 8-12 Week Commitment Highlight */}
+                  <motion.div 
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{ delay: 0.4 }}
+                    className="flex items-center gap-2 pt-2 text-indigo-600 font-medium text-sm md:text-base"
+                  >
+                    <Calendar className="w-5 h-5" />
+                    <span>8-12 week commitment</span>
+                  </motion.div>
                 </div>
 
                 {/* Mobile Image - Shown only on mobile */}
@@ -82,7 +369,7 @@ export default function ResearchHero() {
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.4 }}
-                  className="lg:hidden relative w-full h-48 rounded-xl overflow-hidden shadow-lg"
+                  className="lg:hidden relative w-full h-56 rounded-xl overflow-hidden shadow-lg"
                 >
                   <Image
                     src="https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg"
@@ -91,7 +378,7 @@ export default function ResearchHero() {
                     className="object-cover"
                     priority
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
                 </motion.div>
 
                 {/* CTA Buttons */}
@@ -99,14 +386,14 @@ export default function ResearchHero() {
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.6 }}
-                  className="flex flex-col sm:flex-row gap-4 pt-4"
+                  className="flex flex-col sm:flex-row gap-4 pt-2"
                 >
                   <Button
                     href="/#contact"
                     variant="primary"
-                    className="group relative overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300"
+                    className="group relative overflow-hidden bg-gradient-to-r from-blue-600 to-indigo-600 text-white shadow-md hover:shadow-xl transition-all duration-300"
                   >
-                    <span className="relative z-10 flex items-center">
+                    <span className="relative z-10 flex items-center justify-center">
                       Start Your Research Journey
                       <ArrowRight className="w-5 h-5 ml-2 transition-transform group-hover:translate-x-1" />
                     </span>
@@ -114,7 +401,7 @@ export default function ResearchHero() {
                   <Button
                     href="#why-research"
                     variant="primary-outline"
-                    className="group border border-gray-400 text-gray-700 hover:border-blue-600 hover:text-blue-900 transition-all duration-300"
+                    className="group border border-gray-300 bg-white/50 text-gray-700 hover:border-blue-600 hover:text-blue-700 transition-all duration-300 backdrop-blur-sm"
                   >
                     Explore More
                   </Button>
@@ -125,7 +412,7 @@ export default function ResearchHero() {
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.8 }}
-                  className="lg:hidden bg-white/90 backdrop-blur-sm rounded-xl shadow-lg p-6"
+                  className="lg:hidden bg-white/90 backdrop-blur-sm rounded-xl shadow-md p-6 border border-gray-100"
                 >
                   <div className="flex items-center justify-around gap-6">
                     <div className="text-center">
@@ -150,16 +437,16 @@ export default function ResearchHero() {
             >
               <div className="relative">
                 {/* Main Image */}
-                <div className="relative z-10 rounded-2xl overflow-hidden shadow-2xl">
+                <div className="relative z-10 rounded-2xl overflow-hidden shadow-2xl border border-white/20">
                   <Image
                     src="https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg"
                     alt="Research Excellence"
                     width={800}
                     height={600}
-                    className="object-cover rounded-2xl transform hover:scale-105 transition-transform duration-700"
+                    className="object-cover rounded-2xl transform hover:scale-103 transition-transform duration-700"
                     priority
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/10 via-transparent to-transparent" />
                 </div>
 
                 {/* Floating Stats Card */}
@@ -167,23 +454,24 @@ export default function ResearchHero() {
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.6 }}
-                  className="absolute -bottom-6 -right-6 bg-white rounded-xl shadow-lg p-6 backdrop-blur-sm"
+                  className="absolute -bottom-6 -right-6 bg-white/90 rounded-xl shadow-xl p-6 backdrop-blur-md border border-gray-100 z-20"
                 >
-                  <div className="flex items-center gap-6">
+                  <div className="flex items-center gap-8">
                     <div className="text-center">
-                      <div className="text-2xl font-bold text-blue-600">100+</div>
-                      <div className="text-sm text-gray-600">Research Papers</div>
+                      <div className="text-3xl font-bold bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">100+</div>
+                      <div className="text-xs font-medium text-gray-500 uppercase tracking-wider mt-1">Research Papers</div>
                     </div>
+                    <div className="h-8 w-px bg-gray-200" />
                     <div className="text-center">
-                      <div className="text-2xl font-bold text-blue-600">50+</div>
-                      <div className="text-sm text-gray-600">Global Mentors</div>
+                      <div className="text-3xl font-bold bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">50+</div>
+                      <div className="text-xs font-medium text-gray-500 uppercase tracking-wider mt-1">Global Mentors</div>
                     </div>
                   </div>
                 </motion.div>
 
                 {/* Decorative Elements */}
-                <div className="absolute -top-6 -right-6 w-24 h-24 bg-gradient-to-br from-blue-500 to-violet-500 rounded-full opacity-20 blur-2xl"></div>
-                <div className="absolute -bottom-8 -left-8 w-32 h-32 bg-gradient-to-br from-violet-500 to-pink-500 rounded-full opacity-20 blur-2xl"></div>
+                <div className="absolute -top-6 -right-6 w-32 h-32 bg-gradient-to-br from-blue-400 to-indigo-500 rounded-full opacity-20 blur-2xl"></div>
+                <div className="absolute -bottom-8 -left-8 w-40 h-40 bg-gradient-to-br from-indigo-400 to-pink-500 rounded-full opacity-20 blur-3xl"></div>
               </div>
             </motion.div>
           </div>
@@ -191,35 +479,32 @@ export default function ResearchHero() {
 
         {/* University Logos Marquee */}
         <div className="mt-32 relative">
-          {/* Fade gradient masks */}
-          <div className="absolute left-0 top-0 bottom-0 w-32 bg-gradient-to-r from-white to-transparent z-10" />
-          <div className="absolute right-0 top-0 bottom-0 w-32 bg-gradient-to-l from-white to-transparent z-10" />
+          <div className="absolute left-0 top-0 bottom-0 w-32 bg-gradient-to-r from-slate-50 via-slate-50/80 to-transparent z-10 pointer-events-none" />
+          <div className="absolute right-0 top-0 bottom-0 w-32 bg-gradient-to-l from-slate-50 via-slate-50/80 to-transparent z-10 pointer-events-none" />
           
           {/* Desktop Marquee */}
           <div className="hidden md:block overflow-hidden">
             <motion.div
-              className="flex gap-8 py-4"
-              animate={{
-                x: ["0%", "-50%"],
-              }}
+              className="flex gap-12 py-4"
+              animate={{ x: ["0%", "-50%"] }}
               transition={{
                 x: {
-                  duration: 60,
+                  duration: 50,
                   repeat: Infinity,
                   ease: "linear",
                 }
               }}
             >
               {[...Array(2)].flatMap(() => universities).map((uni, index) => (
-                <div key={`desktop-${index}`} className="flex items-center space-x-2 flex-shrink-0">
+                <div key={`desktop-${index}`} className="flex items-center space-x-3 flex-shrink-0 opacity-70 hover:opacity-100 transition-opacity duration-300">
                   <Image
                     src={uni.logo}
                     alt={uni.name}
-                    width={32}
-                    height={32}
-                    className="grayscale hover:grayscale-0 transition-all duration-300"
+                    width={28}
+                    height={28}
+                    className="grayscale hover:grayscale-0 transition-all duration-300 object-contain"
                   />
-                  <span className="text-gray-600 text-sm whitespace-nowrap">{uni.name}</span>
+                  <span className="text-gray-600 font-medium text-sm whitespace-nowrap">{uni.name}</span>
                 </div>
               ))}
             </motion.div>
@@ -229,12 +514,10 @@ export default function ResearchHero() {
           <div className="md:hidden overflow-hidden">
             <motion.div
               className="flex gap-8 py-4"
-              animate={{
-                x: ["0%", "-50%"],
-              }}
+              animate={{ x: ["0%", "-50%"] }}
               transition={{
                 x: {
-                  duration: 15, // Even faster speed for mobile
+                  duration: 18,
                   repeat: Infinity,
                   ease: "linear",
                 }
@@ -245,11 +528,11 @@ export default function ResearchHero() {
                   <Image
                     src={uni.logo}
                     alt={uni.name}
-                    width={24} // Slightly smaller for mobile
-                    height={24}
-                    className="grayscale hover:grayscale-0 transition-all duration-300"
+                    width={22}
+                    height={22}
+                    className="grayscale object-contain"
                   />
-                  <span className="text-gray-600 text-xs whitespace-nowrap">{uni.name}</span>
+                  <span className="text-gray-500 font-medium text-xs whitespace-nowrap">{uni.name}</span>
                 </div>
               ))}
             </motion.div>

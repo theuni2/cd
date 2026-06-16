@@ -21,13 +21,21 @@ const CompetitionsTimeline = () => {
       status: 'upcoming'
     },
     {
-      name: 'Ashoka Young Changemakers',
-      logoSrc: 'https://www.ashoka.org/sites/default/files/styles/small_800x600_no_crop/public/2020-02/ayc-logo.png?itok=6z_9g1pc',
+      name: 'SOLVE Challege',
+      logoSrc: '/launchpad/solve_logo.png',
       logoAlt: 'Ashoka Young Changemakers Logo',
       reg: 'Typically Rolling',
       deadline: 'Not Specified (Rolling)',
       status: 'rolling'
     },
+    // {
+    //   name: 'Ashoka Young Changemakers',
+    //   logoSrc: 'https://www.ashoka.org/sites/default/files/styles/small_800x600_no_crop/public/2020-02/ayc-logo.png?itok=6z_9g1pc',
+    //   logoAlt: 'Ashoka Young Changemakers Logo',
+    //   reg: 'Typically Rolling',
+    //   deadline: 'Not Specified (Rolling)',
+    //   status: 'rolling'
+    // },
     {
       name: 'Varkey Foundation',
       logoSrc: 'https://static.wixstatic.com/media/fd58a4_523642b9d79b4095b0152062eb4036e4~mv2.png/v1/fit/w_2500,h_1330,al_c/fd58a4_523642b9d79b4095b0152062eb4036e4~mv2.png',

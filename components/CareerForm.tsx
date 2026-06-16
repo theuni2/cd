@@ -694,12 +694,12 @@ const steps = [
 ];
 
 const outcomeOptions = [
-  { id: "research", label: "Write a Research Paper under world's best college professor" },
+  { id: "research", label: "Research and Publication" },
   { id: "writing", label: "Writing Competition" },
-  { id: "internship", label: "Internship" },
-  { id: "social", label: "Launch your own Social Service Project" },
-  { id: "workshop", label: "AI Workshop"},
-   { id: "other", label: "Other" },
+  { id: "internship", label: "Internship/ Shadowship" },
+  { id: "Passionp", label: "Passion Projects and Competitions" },
+  // { id: "workshop", label: "AI Workshop"},
+   { id: "other", label: "Other (Newsletter, Podcast, Blogs)" },
 ];
 
 interface FormState {
