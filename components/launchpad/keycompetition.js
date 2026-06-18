@@ -23,7 +23,7 @@ const CompetitionsTimeline = () => {
     {
       name: 'SOLVE Challege',
       logoSrc: '/launchpad/solve_logo.png',
-      logoAlt: 'Ashoka Young Changemakers Logo',
+      logoAlt: 'SOVLE Logo',
       reg: 'Typically Rolling',
       deadline: 'Not Specified (Rolling)',
       status: 'rolling'

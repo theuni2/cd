@@ -84,10 +84,10 @@ const achievements = [
     image: "/testimonial/professor.png", // Upload and replace with actual path
   },
   {
-    title: "Lupu B2B Growth Strategy",
+    title: "LupLu B2B Growth Strategy",
     description:
       "One of our students successfully collaborated with Lupu, a rising B2B firm, executing market entry tactics and optimization funnels for corporate clients.",
-    image: ""
+    image: "/ignite/b2b.png",
   },
 ];
 
@@ -113,10 +113,10 @@ export default function IgniteAchievementsSection() {
             className="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300"
           >
             <div className="relative h-60 w-full">
-              <Image
+              <img
                 src={item.image}
                 alt={item.title}
-                fill
+                // fill
                 className="object-cover"
               />
             </div>

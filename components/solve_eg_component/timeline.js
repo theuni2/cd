@@ -526,7 +526,7 @@ export default function SolveTimelineSection() {
   const milestones = [
     {
       step: "01",
-      date: "15 August 2026",
+      date: "Open",
       title: "Competition Launch & Kickoff",
       description: "The global platform goes live. Access prompt briefs and resource dossiers directly. Teams use this critical window to align on problem statements and build high-conviction prototypes.",
       icon: <Calendar size={18} />,

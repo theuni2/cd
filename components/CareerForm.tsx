@@ -695,7 +695,7 @@ const steps = [
 
 const outcomeOptions = [
   { id: "research", label: "Research and Publication" },
-  { id: "writing", label: "Writing Competition" },
+  { id: "writing", label: "Writing Program and Competitions" },
   { id: "internship", label: "Internship/ Shadowship" },
   { id: "Passionp", label: "Passion Projects and Competitions" },
   // { id: "workshop", label: "AI Workshop"},

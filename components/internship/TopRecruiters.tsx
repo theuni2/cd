@@ -282,7 +282,7 @@ const RecruiterCard = ({ recruiter, index }) => (
          <img
           src={recruiter.logo}
           alt={recruiter.name}
-          fill
+          
           className="object-contain transition-transform duration-500 group-hover:scale-110"
         />
       </div>

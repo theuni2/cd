@@ -112,12 +112,10 @@
 //   );
 // }
 
-
-
 'use client';
 
 import { motion } from 'framer-motion';
-import { Medal, ArrowRight, Trophy } from 'lucide-react';
+import { Medal, ArrowRight, Trophy, Clock } from 'lucide-react'; // Added Clock icon
 import Button from '../Button';
 import Image from 'next/image';
 
@@ -186,30 +184,31 @@ export default function ClaimItHero() {
                 </div>
             </div>
 
-            {/* Buttons */}
+            {/* Buttons & Commitment Text */}
            <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.6 }}
-              className="flex flex-col sm:flex-row gap-4 pt-4"
+              className="flex flex-col gap-3 pt-4"
             >
-              <Button
-                href="/#contact"
-                variant="primary"
-                className="group relative overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300"
-              >
-                <span className="relative z-10 flex items-center">
-                  Launch Your Idea
-                  <ArrowRight className="w-5 h-5 ml-2 transition-transform group-hover:translate-x-1" />
-                </span>
-              </Button>
-              {/* <Button
-                href="#programs"
-                variant="primary-outline"
-                className="group border border-gray-400 text-gray-700 hover:border-indigo-600 hover:text-indigo-900 transition-all duration-300"
-              >
-                Explore Opportunities
-              </Button> */}
+              <div className="flex flex-col sm:flex-row gap-4">
+                <Button
+                  href="/#contact"
+                  variant="primary"
+                  className="group relative overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300"
+                >
+                  <span className="relative z-10 flex items-center">
+                    Launch Your Idea
+                    <ArrowRight className="w-5 h-5 ml-2 transition-transform group-hover:translate-x-1" />
+                  </span>
+                </Button>
+              </div>
+
+              {/* Commitment microcopy */}
+              <div className="flex items-center space-x-2 text-sm text-gray-600 font-medium pl-1">
+                <Clock className="w-4 h-4 text-indigo-600" />
+                <span>Minimum commitment 10 weeks</span>
+              </div>
             </motion.div>
 
           </motion.div>
@@ -232,12 +231,6 @@ export default function ClaimItHero() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-indigo-900/20 to-transparent" />
             </div>
-            
-            {/* Floating Achievement Card */}
-            {/* <div className="absolute -bottom-6 -left-6 bg-white p-6 rounded-2xl shadow-2xl z-20 border border-indigo-50">
-                <p className="text-indigo-600 font-black text-2xl">100%</p>
-                <p className="text-gray-500 text-xs font-bold uppercase tracking-tighter">Publication Success</p>
-            </div> */}
           </motion.div>
         </div>
       </div>
