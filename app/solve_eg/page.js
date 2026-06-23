@@ -61,6 +61,7 @@ import SolveFooterCTA from '@/components/solve_eg_component/footer';
 import SolveRegistrationModal from '@/components/solveregistrationmodal';
 import SolveAwardSection from '@/components/solve_eg_component/award';
 import SolveDeckBlueprint from '@/components/solve_eg_component/solvedeck';
+import SolvePanelSection from '@/components/solve_eg_component/judge';
 
 export default function Page() {
   // 1. Fixed duplicate hook definitions 
@@ -82,6 +83,7 @@ export default function Page() {
       <SolveTimelineSection />
       <SolveValueProp />
       <SolveAwardSection />
+      <SolvePanelSection/>
       <SolveFAQSection />
       
       {/* Inline Section-based Form view wrapper */}

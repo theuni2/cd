@@ -24,7 +24,7 @@ export default function CareerPopup({ isOpen, onClose }) {
     const lastName = nameParts.slice(1).join(" ") || "Prospect";
 
     // Dynamic configuration for Career Discovery assets
-    const careerFreebieLink = "https://yourdomain.com/downloads/career-blueprint.pdf";
+    const careerFreebieLink = "https://docs.google.com/document/d/1G-UWGfYIkedtkaGYIr5U__TqLBNwNr5PE2E88wNruTk/edit?usp=sharing";
 
     const formData = new FormData();
     formData.append("First Name", firstName);
@@ -79,7 +79,7 @@ export default function CareerPopup({ isOpen, onClose }) {
             
             {!showSuccess ? (
               <form onSubmit={handleSubmit} className="flex flex-col gap-4">
-                <h2 className="text-xl font-bold">Download Career Roadmap Guide 🚀</h2>
+                <h2 className="text-xl font-bold">Top 10 Research Journals for High School Student 🚀</h2>
                 <p className="text-sm text-gray-500">Map your skills to fields of the future.</p>
                 
                 <div>
