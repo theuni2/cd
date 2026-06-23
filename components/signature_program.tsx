@@ -323,7 +323,7 @@ const programs = [
 
 export default function SignatureProgramsSection() {
   return (
-    <section className="relative min-h-screen flex items-center bg-[#fafafa] px-6 py-24 overflow-hidden">
+    <section className="relative min-h-screen flex items-center bg-[#fafafa] px-6 py-24 overflow-hidden" id='services'>
       {/* Background Decorative Blobs */}
       <div className="absolute top-0 -left-20 w-96 h-96 bg-blue-100 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob" />
       <div className="absolute bottom-0 -right-20 w-96 h-96 bg-purple-100 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob animation-delay-2000" />

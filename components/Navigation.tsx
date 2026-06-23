@@ -1039,6 +1039,7 @@ const Navigation = () => {
       label: 'Competitions', 
       subItems: [
         { href: '/forge_writing_competition', label: 'FORGE Essay Competition' },
+        { href: '/solve_eg', label: 'SOLVE Competition' },
        
       ] 
     },

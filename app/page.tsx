@@ -1,5 +1,7 @@
 'use client'
 
+
+import React, { useState } from "react";
 import Hero from '../components/Hero'
 import WhoWeAre from '../components/WhoWeAre'
 import HowItWorks from '../components/HowItWorks'
@@ -12,6 +14,7 @@ import CareerForm from '../components/CareerForm'
 import Footer from '../components/Footer'
 import SignatureProgramsSection from '../components/signature_program';
 import CampusAmbassador from '../components/campusmbassador';
+import CareerPopup from '../components/careerpopup';
 import { useEffect } from 'react'
 
 export default function Home() {
@@ -26,15 +29,17 @@ export default function Home() {
       }
     }
   }, [])
+
+  const [isCareerOpen, setIsCareerOpen] = useState(false);
   return (
     <main className="scroll-smooth">
       <section id="home">
-        <Hero />
+        <Hero onOpenPopup={() => setIsCareerOpen(true)}/>
       </section>
       <section id="about">
         {/* <WhoWeAre /> */}
       </section>
-      <SignatureProgramsSection/>
+      <SignatureProgramsSection />
       <section id="how-it-works">
         <HowItWorks />
       </section>
@@ -51,6 +56,10 @@ export default function Home() {
       <section id="contact">
         <CareerForm />
       </section>
+      <CareerPopup 
+      isOpen={isCareerOpen} 
+        onClose={() => setIsCareerOpen(false)}
+       />
       <Footer />
     </main>
   )

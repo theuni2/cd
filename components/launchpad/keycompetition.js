@@ -22,7 +22,7 @@ const CompetitionsTimeline = () => {
     },
     {
       name: 'SOLVE Challege',
-      logoSrc: '/launchpad/solve_logo.png',
+      logoSrc: '/company/solve.jpeg',
       logoAlt: 'SOVLE Logo',
       reg: 'Typically Rolling',
       deadline: 'Not Specified (Rolling)',
