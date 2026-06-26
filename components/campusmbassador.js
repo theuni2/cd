@@ -481,7 +481,7 @@ const CampusAmbassador = () => {
                 What you'll do
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed">
-                Share Career Discovery opportunities with students at your school who would benefit. <span className="font-semibold text-indigo-600">One to two hours a month</span>, on your own schedule, from wherever you are. We provide everything you need you handle the conversations.
+                Share Career Discovery opportunities with students at your school who would benefit. <span className="font-semibold text-indigo-600">On your own schedule</span>, from wherever you are. We provide everything you need you handle the conversations.
               </p>
             </div>
 
@@ -509,16 +509,17 @@ const CampusAmbassador = () => {
                   <div className="p-2.5 bg-indigo-50 text-indigo-600 rounded-xl w-fit mb-3">
                     <CheckCircle2 className="w-5 h-5" />
                   </div>
-                  <h4 className="text-sm font-bold text-gray-900 mb-1">Exclusive Guidance</h4>
-                  <p className="text-xs text-gray-500 leading-relaxed">Monthly breakdowns of global competitions and advanced career guidance pathways.</p>
-                </div>
+                <h4 className="text-sm font-bold text-gray-900 mb-1">Exclusive Media Coverage</h4>
+<p className="text-xs text-gray-500 leading-relaxed">
+  Get exclusive media coverage, featured stories, and visibility opportunities to showcase your achievements.
+</p> </div>
 
                 <div className="bg-white border border-gray-100 p-6 rounded-2xl shadow-sm hover:shadow-md transition-all">
                   <div className="p-2.5 bg-indigo-50 text-indigo-600 rounded-xl w-fit mb-3">
                     <CheckCircle2 className="w-5 h-5" />
                   </div>
                   <h4 className="text-sm font-bold text-gray-900 mb-1">Program Credits & LOR</h4>
-                  <p className="text-xs text-gray-500 leading-relaxed">Stackable reward credits plus a personalized Founder's LOR after 6 months.</p>
+                  <p className="text-xs text-gray-500 leading-relaxed">Stackable reward credits plus a personalized Founder's LOR.</p>
                 </div>
 
               </div>
