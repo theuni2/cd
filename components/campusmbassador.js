@@ -512,7 +512,7 @@ const CampusAmbassador = () => {
                 <h4 className="text-sm font-bold text-gray-900 mb-1">Exclusive Media Coverage</h4>
 <p className="text-xs text-gray-500 leading-relaxed">
   Get exclusive media coverage, featured stories, and visibility opportunities to showcase your achievements.
-</p> </div>
+</p>  </div>
 
                 <div className="bg-white border border-gray-100 p-6 rounded-2xl shadow-sm hover:shadow-md transition-all">
                   <div className="p-2.5 bg-indigo-50 text-indigo-600 rounded-xl w-fit mb-3">
