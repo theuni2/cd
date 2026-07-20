@@ -830,7 +830,7 @@ export default function SolveRegistrationModal({ isOpen, onClose }) {
                 </div>
 
                 <div style={styles.inputGroup}>
-                  <label style={styles.label}>Google Drive / Canva Pitch Deck URL (8-10 Slides)</label>
+                  <label style={styles.label}>Google Drive / Canva Pitch Deck URL (10 Slides)</label>
                   <div style={{ position: "relative" }}>
                     <Layers size={16} color="#52525b" style={{ position: "absolute", left: "14px", top: "16px" }} />
                     <input 
@@ -840,8 +840,8 @@ export default function SolveRegistrationModal({ isOpen, onClose }) {
                   </div>
                 </div>
 
-                <div style={styles.inputGroup}>
-                  <label style={styles.label}>YouTube Video Pitch URL (2-3 Minutes)</label>
+                {/* <div style={styles.inputGroup}>
+                  <label style={styles.label}>YouTube Video Pitch URL ( Minutes)</label>
                   <div style={{ position: "relative" }}>
                     <Link size={16} color="#52525b" style={{ position: "absolute", left: "14px", top: "16px" }} />
                     <input 
@@ -849,7 +849,23 @@ export default function SolveRegistrationModal({ isOpen, onClose }) {
                       style={{ ...styles.textInput, paddingLeft: "42px" }} value={videoLink} onChange={(e) => setVideoLink(e.target.value)}
                     />
                   </div>
-                </div>
+                </div> */}
+
+                <div style={styles.inputGroup}>
+  <label style={styles.label}>YouTube Video Pitch URL ( Minutes)</label>
+  {/* Sub-label instruction text */}
+  <small style={{ display: "block", color: "#71717a", fontSize: "12px", marginTop: "2px", marginBottom: "8px" }}>
+    Please ensure the YouTube video title is formatted as: <strong>Title | Solve Challenge</strong>
+  </small>
+  
+  <div style={{ position: "relative" }}>
+    <Link size={16} color="#52525b" style={{ position: "absolute", left: "14px", top: "16px" }} />
+    <input 
+      type="url" required placeholder="https://youtube.com/watch?v=..." className="solve-modal-input"
+      style={{ ...styles.textInput, paddingLeft: "42px" }} value={videoLink} onChange={(e) => setVideoLink(e.target.value)}
+    />
+  </div>
+</div>
 
                 <button type="submit" disabled={isSubmitting} style={styles.primaryBtn}>
                   <Send size={16} /> {isSubmitting ? "Processing Content..." : "Complete Registration"}

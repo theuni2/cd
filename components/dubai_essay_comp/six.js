@@ -210,12 +210,14 @@ export default function RulesSection() {
           <div className="icon-box">
             <CheckCircle size={22} />
           </div>
-          <div className="rule-content">
+        <div className="rule-content">
             <h3>Who Can Enter?</h3>
             <p>
               <strong>Senior Category:</strong> Students aged 15–18 years old.<br/>
               <strong>Junior Category:</strong> Students aged 14 and under.<br/>
-              Open exclusively to students currently enrolled in any school across Dubai, representing any academic curriculum.
+              <span className="rule-highlight">
+                Open exclusively to students of <strong>any nationality</strong> currently <strong>studying in Dubai</strong> (enrolled in any school or academic curriculum across the emirate).
+              </span>
             </p>
           </div>
         </div>
@@ -238,12 +240,15 @@ export default function RulesSection() {
               <div className="icon-box">
                 <AlertCircle size={22} />
               </div>
-              <div className="rule-content">
-                <h3>Citations & Integrity</h3>
-                <p>
-                  All source material must be meticulously cited (Chicago, MLA, or Harvard). Plagiarism or AI-generated work results in immediate disqualification.
-                </p>
-              </div>
+        <div className="rule-content">
+            <h3>Citations & Academic Integrity</h3>
+            <p>
+              Submissions must strictly follow the <strong>APA 7th Edition</strong> format. 
+              <span className="rule-warning-block">
+                Essays are screened using advanced plagiarism and AI-detection tools. The use of generative AI or uncredited sources results in immediate disqualification.
+              </span>
+            </p>
+          </div>
             </div>
 
             {/* ANONYMITY */}
@@ -264,10 +269,10 @@ export default function RulesSection() {
           {/* NOTICE BANNER */}
           <div className="note-box">
             <p className="note-text">
-              Registration closes on <strong className="highlight-gold">31st May 2026</strong>. Late entries with extenuating grounds will be accepted until <strong className="highlight-gold">10th July 2026</strong>.
+              Registration closes on <strong className="highlight-gold">15th September 2026</strong>. 
             </p>
             <p className="note-accent-text">
-              * Final results will be officially declared on <span className="highlight-gold">10th August 2026</span> via the portal and email notifications.
+              * Final results will be officially declared on <span className="highlight-gold">15th October 2026</span> via the portal and email notifications.
             </p>
           </div>
 

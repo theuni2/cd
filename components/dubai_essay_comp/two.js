@@ -234,7 +234,7 @@ export default function AboutSection() {
                 <span className="stat-desc">Word Limit</span>
               </div>
               <div className="stat-item">
-                <span className="stat-number">Under 19</span>
+                <span className="stat-number">Under 18</span>
                 <span className="stat-desc">Exclusive Age Range</span>
               </div>
             </div>

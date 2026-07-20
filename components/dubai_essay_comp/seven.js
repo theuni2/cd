@@ -4,53 +4,68 @@ import React, { useState } from "react";
 import { ChevronDown } from "lucide-react";
 
 export default function FaqSection() {
-  const faqCategories = [
-    {
-      title: "Eligibility & Registration",
-      faqs: [
-        { 
-          q: "How strict are the age eligibility criteria?", 
-          a: "You must be under 19 years old as of the regular submission deadline (31st May 2026). If you turn 19 on 1 June 2026 or later, you are eligible to compete. There are no minimum age requirements—students of any age under 19 may participate." 
-        },
-        { 
-          q: "Am I too young to participate in the Essay Prize competition?", 
-          a: "No. The competition is open to students of any age under 19 as of the regular submission deadline (31st May 2026)." 
-        },
-        { 
-          q: "How can I enter the Junior or Senior Category?", 
-          a: "Your category is determined solely by your age on the submission deadline. Students who are under 15 years old as of 31st May 2026 will be judged in the Junior Category. All other eligible students will be judged in the Senior Category. You do not need to apply separately for a category." 
-        },
-        { 
-          q: "When does registration close?", 
-          a: "Registration closes on 31st May 2026. Late entries will be accepted until 10th July 2026." 
-        },
-        { 
-          q: "Is there an entry fee?", 
-          a: "There is no fee to enter our global essay competition. Participation is completely free." 
-        }
-      ]
-    },
-    {
-      title: "Formatting & Rules",
-      faqs: [
-        { q: "Are footnotes, endnotes, a bibliography or references counted towards the word limit?", a: "No. Only the body of the essay is counted." },
-        { q: "Are in-text citations counted towards the word limit?", a: "If you are using an in-text based referencing format, such as APA, your in-text citations are included in the word limit." },
-        { q: "Is it necessary to include footnotes or endnotes in an essay?", a: "You may not include footnotes, but you may include in-text citations or endnotes. You should give your sources of any factual claims you make, and you should acknowledge any other authors on whom you rely." },
-        { q: "Should my essay be in American or Commonwealth (British) English?", a: "Either is acceptable. You may write your essay in American or Commonwealth (British) English—just be consistent throughout. Judges will not penalise you for your choice of variant." },
-      ]
-    },
-    {
-      title: "Submissions & AI Use",
-      faqs: [
-        { q: "How should I format my essay's file name?", a: "Your file must be named using the format: FirstName-LastName-Category-QuestionNumber.pdf. Essays with incorrect filenames will be rejected." },
-        { q: "May I submit more than one essay?", a: "Yes, you may submit as many essays as you please in any or all categories." },
-        { q: "When will the winners be announced?", a: "Official results will be released on 10th August 2026. All participants will receive an email update, and the winning essays will be featured on our global gallery." },
-        { q: "May I use AI software, such as ChatGPT?", a: "Yes, but be warned: overreliance on AI often results in less original work. Since AI use can negatively affect our assessment of your unique 'voice,' we recommend using it sparingly or not at all." },
-        { q: "I uploaded the wrong draft. What should I do?", a: "Re-upload any time before the final deadline." },
-      ]
-    }
-  ];
-
+const faqCategories = [
+  {
+    title: "Eligibility & Registration",
+    faqs: [
+      { 
+        q: "How strict are the age eligibility criteria?", 
+        a: "You must be under 18 years old as of the regular submission deadline (15th September 2026). If you turn 18 on 16th September 2026 or later, you are eligible to compete. There are no minimum age requirements—students of any age under 18 may participate." 
+      },
+      { 
+        q: "Am I too young to participate in the Essay Prize competition?", 
+        a: "No. The competition is open to students of any age under 18 as of the regular submission deadline (15th September 2026)." 
+      },
+      {
+        q: "How do I upload and submit my School ID?",
+        a: "First, upload a clear photo or scan of your school ID to your personal Google Drive. Next, update the file's sharing permissions so that 'Anyone with the link can view.' Finally, copy that generated share link and paste it directly into the 'ID Drive Link' field on the submission form."
+      },
+      { 
+        q: "When does registration close?", 
+        a: "Registration and final submissions close on 15th September 2026." 
+      },
+      { 
+        q: "Is there an entry fee?", 
+        a: "There is no fee to enter our global essay competition. Participation is completely free." 
+      }
+    ]
+  },
+  {
+    title: "Formatting & Rules",
+    faqs: [
+      { 
+        q: "Are the bibliography or references counted towards the word limit?", 
+        a: "No. The APA 7th Edition reference list at the end of your essay is completely excluded from the final word count. Only the main body text is counted." 
+      },
+      { 
+        q: "Are APA in-text citations counted towards the word limit?", 
+        a: "Yes. Because APA 7th Edition relies on parenthetical, author-date in-text citations (e.g., Smith, 2026), these short inline citations are included within the word limit." 
+      },
+      { 
+        q: "Can I use footnotes instead of in-text citations?", 
+        a: "No. To maintain objective academic standards, all submissions must strictly use APA 7th Edition parenthetical in-text citations rather than footnotes or endnotes for referencing sources." 
+      },
+      { 
+        q: "How strictly are essays screened for AI and plagiarism?", 
+        a: "Every submission undergoes rigorous screening through enterprise-grade plagiarism and AI-detection software. The use of generative AI tools or uncredited content results in immediate disqualification." 
+      },
+      { 
+        q: "Should my essay be written in American or British English?", 
+        a: "Either is perfectly acceptable. You are welcome to use American or Commonwealth (British) English variants—simply ensure your spelling and grammar choices remain entirely consistent throughout the piece." 
+      }
+    ]
+  },
+  {
+    title: "Submissions & AI Use",
+    faqs: [
+      { q: "How should I format my essay's file name?", a: "Your file must be named using the format: FirstName-LastName-Category-QuestionNumber.pdf. Essays with incorrect filenames will be rejected." },
+      { q: "May I submit more than one essay?", a: "Yes, you may submit as many essays as you please in any or all categories." },
+      { q: "When will the winners be announced?", a: "Official results will be released on 20th October 2026. All participants will receive an email update, and the winning essays will be featured on our global gallery." },
+      { q: "May I use AI software, such as ChatGPT?", a: "Yes, but be warned: overreliance on AI often results in less original work. Since AI use can negatively affect our assessment of your unique 'voice,' we recommend using it sparingly or not at all." },
+      { q: "I uploaded the wrong draft. What should I do?", a: "Re-upload any time before the final deadline." },
+    ]
+  }
+];
   // ==========================================
   // INDIVIDUAL FAQ ITEM (STRICTLY STYLED)
   // ==========================================

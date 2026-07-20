@@ -219,14 +219,14 @@ export default function SolveFAQSection() {
     setActiveIndex(activeIndex === index ? null : index);
   };
 
-  const faqData = [
+const faqData = [
     {
       question: "Who is eligible to participate in SOLVE?",
       answer: "The competition is globally open to all students aged 13 to 18. You can participate as an individual founder or gather a collaborative team of 2 to 5 members from your school to pitch together.",
     },
     {
       question: "What are the exact pitch deliverables we must submit?",
-      answer: "You are required to submit two core assets via our online portal: (1) A structured 10-page Pitch Deck outlining your problem space and business/social model, and (2) A highly engaging 1-minute pitch video (uploaded to YouTube as Public or Unlisted) summarizing your solution.",
+      answer: "You are required to submit two core assets via our online portal: (1) A structured 10-page Pitch Deck outlining your problem space and business/social model, and (2) A highly engaging 1-minute pitch video (uploaded to YouTube as Public) summarizing your solution. Please ensure your video title is formatted as 'Title | Solve Challenge' and that you include #solvechallenge in the video description.",
     },
     {
       question: "How does the Academic Teacher Coordinator validation work?",

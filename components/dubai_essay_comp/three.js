@@ -309,24 +309,88 @@
 "use client";
 
 import React, { useState } from "react";
-import { 
-  Brain, 
-  Scale, 
-  Landmark, 
-  Globe, 
-  BookOpen, 
-  Users, 
-  Lightbulb, 
-  TrendingUp, 
-  Dna,
-  ChevronDown, 
-  ChevronUp 
-} from "lucide-react";
+import { Brain, Globe, Scale, Landmark,Lightbulb, Users, TrendingUp, Dna, BookOpen, Cpu, ChevronDown } from "lucide-react";
 
 export default function CategoriesSection() {
   const [expandedIndex, setExpandedIndex] = useState(null);
 
- const categories = [
+//  const categories = [
+//     {
+//       title: "Philosophy",
+//       icon: <Brain size={24} className="icon-svg" color="#e6be64" />,
+//       prompts: [
+//         "The Digital Majlis: How does transforming traditional community spaces into virtual, decentralized platforms redefine collective responsibility and social consensus in the Middle East?",
+//         "Mind and Matter in Ibn Sina: How does the classical 'Flying Man' argument of Avicenna inform modern neural-engineering debates regarding human consciousness?",
+//         "Ethical Waterways: How can arid nations balance the energy-intensive demands of modern desalination with the ecological imperative of conserving marine and desert ecosystems for future generations?"
+//       ],
+//     },
+//     {
+//       title: "Global Relations & Urbanization",
+//       icon: <Globe size={24} className="icon-svg" color="#e6be64" />,
+//       prompts: [
+//         "The Post-Oil Diplomat: How are regional tech investments and sovereign wealth funds changing soft power dynamics for GCC states on the global stage?",
+//         "Hyper-Urbanization vs. Heritage: Can smart city megaprojects balance globalized modernization with historical preservation?",
+//         "The Knowledge Exchange: How is the strategic transition from resource-based economies to innovation-driven knowledge hubs reshaping collaboration between the Middle East and global technological centers?"
+//       ],
+//     },
+//     {
+//       title: "Jurisprudence & Tech Law",
+//       icon: <Scale size={24} className="icon-svg" color="#e6be64" />,
+//       prompts: [
+//         "Digital Jurisprudence: How can regional legal frameworks adapt to govern decentralized technologies, like smart contracts and AI, while ensuring consumer protection and economic trust?",
+//         "Intellectual Property in Open Source: How do evolving legal frameworks protect indigenous regional crafts and designs from digital exploitation by international corporations?",
+//         "The Architecture of Trade: How do international maritime laws adapt to protect marine biodiversity while facilitating global trade flows through key regional shipping channels?"
+//       ],
+//     },
+//     {
+//       title: "History & Heritage",
+//       icon: <Landmark size={24} className="icon-svg" color="#e6be64" />,
+//       prompts: [
+//         "The House of Wisdom 2.0: To what extent does the contemporary rise of translation and research hubs in the Middle East mirror Baghdad’s Golden Age?",
+//         "Silk Roads of Tomorrow: How do historical caravan trade route dynamics compare to modern logistics corridors connecting East and West?",
+//         "Preserving the Invisible: How can communities safeguard oral histories and intangible heritage amidst rapid urban development?"
+//       ],
+//     },
+//     {
+//       title: "Psychology & Modernity",
+//       icon: <Users size={24} className="icon-svg" color="#e6be64" />,
+//       prompts: [
+//         "The Multicultural Synthesis: How does living in hyper-diverse, cosmopolitan hubs foster cognitive flexibility and global citizenship among youth in the Middle East?",
+//         "The Screen and the Soul: How are rapid societal shifts and digital connectivity impacting familial structures and social cohesion?",
+//         "Cognitive Adaptability: How does rapid technological adoption across generations in the region shape family dynamics and communication patterns?"
+//       ],
+//     },
+//     {
+//       title: "Economics & Finance",
+//       icon: <TrendingUp size={24} className="icon-svg" color="#e6be64" />,
+//       prompts: [
+//         "Fintech vs. Tradition: How are regional digital currencies and peer-to-peer lending platforms redefining the accessibility of Islamic micro-finance?",
+//         "The Entrepreneurial Ecosystem: How can regional tech hubs optimize the synergy between global venture capital and local talent to build self-sustaining start-up ecosystems?",
+//         "The GCC Green Bond: How effective are green sukuk (Islamic bonds) in financing sustainable infrastructure across the Middle East?"
+//       ],
+//     },
+//     {
+//       title: "STEM & Bioethics",
+//       icon: <Dna size={24} className="icon-svg" color="#e6be64" />,
+//       prompts: [
+//         "Arid Agriculture: How can gene-editing technologies like CRISPR secure food safety in desert climates without triggering ecological imbalances?",
+//         "AI in Clinical Triage: What bioethical parameters should govern automated medical diagnostic tools in highly diverse, multilingual hospitals?",
+//         "The Genomic Frontier: How do regional personalized medicine initiatives balance public health breakthroughs with data privacy in the age of bio-banking?"
+//       ],
+//     },
+//     {
+//       title: "Theology & Ethics",
+//       icon: <BookOpen size={24} className="icon-svg" color="#e6be64" />,
+//       prompts: [
+//         "The Ethical Horizon of AI: How can classical Islamic ethical frameworks guide modern developers as they program autonomous, decision-making AI systems?",
+//         "The Preservation of Silence: In an era dominated by hyper-active algorithms, how does the preservation of spiritual reflection spaces challenge modern consumerism?",
+//         "Intergenerational Custodianship: How do traditional perspectives on ecological stewardship shape modern regional approaches to climate preservation?"
+//       ],
+//     },
+//  ];
+ 
+
+const categories = [
     {
       title: "Philosophy",
       icon: <Brain size={24} className="icon-svg" color="#e6be64" />,
@@ -391,6 +455,15 @@ export default function CategoriesSection() {
       ],
     },
     {
+      title: "Computer Science & Artificial Intelligence",
+      icon: <Cpu size={24} className="icon-svg" color="#e6be64" />,
+      prompts: [
+        "Sovereign LLMs: How does the development of natively trained Arabic Large Language Models (LLMs) challenge Western-centric algorithmic biases and redefine digital cultural autonomy?",
+        "Algorithmic Megacities: What are the computational limitations and privacy vectors of training predictive reinforcement learning systems to orchestrate real-time resource allocation in autonomous smart cities?",
+        "Quantum Cryptography on the Horizon: How must modern decentralized financial protocols adapt to remain secure against quantum computing threats within international emerging technology hubs?"
+      ],
+    },
+    {
       title: "Theology & Ethics",
       icon: <BookOpen size={24} className="icon-svg" color="#e6be64" />,
       prompts: [
@@ -399,8 +472,8 @@ export default function CategoriesSection() {
         "Intergenerational Custodianship: How do traditional perspectives on ecological stewardship shape modern regional approaches to climate preservation?"
       ],
     },
- ];
- 
+];
+
   const toggleExpand = (index) => {
     setExpandedIndex(expandedIndex === index ? null : index);
   };
@@ -623,7 +696,7 @@ export default function CategoriesSection() {
               </div>
             ))}
 
-            {/* Special Junior Card */}
+            {/* Special Junior Card
             <div className="card junior-card">
               <div className="icon-box" style={{ backgroundColor: 'rgba(230, 190, 100, 0.15)', borderColor: '#e6be64' }}>
                 <Lightbulb size={20} color="#e6be64" />
@@ -635,7 +708,7 @@ export default function CategoriesSection() {
               <span className="junior-meta">
                 * Note: Junior entrants also hold elite access to choose any prompt from the senior categories above.
               </span>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>

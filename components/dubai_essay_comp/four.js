@@ -235,7 +235,7 @@ export default function PrizesSection() {
               }}>
                 <Award size={24} color="#e6be64" />
               </div>
-              <h3 className="prize-name">Runner Up</h3>
+              <h3 className="prize-name">Runners Up</h3>
               <span className="prize-amount">AED 2,750</span>
               <span className="prize-value-sub">Est. Value ($750 USD)</span>
               <p className="prize-desc">
