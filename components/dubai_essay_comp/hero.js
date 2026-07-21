@@ -707,19 +707,15 @@
 //   );
 // }
 
-
-"use client"; // Required for the <style> tag to work in App Router
+"use client";
 
 import React from "react";
 import { BookOpen, Sparkles, Send } from "lucide-react";
 
-
 export default function HeroSection({ onSubmitClick }) {
   return (
     <>
-      {/* --- HARD CODED CSS (ISOLATED) --- */}
       <style jsx global>{`
-        /* IMPORT PREMIUM DESIGN FONTS */
         @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Plus+Jakarta+Sans:wght@300;400;600&display=swap');
 
         .hero-container {
@@ -731,11 +727,10 @@ export default function HeroSection({ onSubmitClick }) {
           align-items: center;
           justify-content: center;
           overflow: hidden;
-          background-color: #07080b; /* DEEP OBSIDIAN NIGHT */
+          background-color: #07080b;
           font-family: 'Plus Jakarta Sans', sans-serif;
         }
 
-        /* FUTURISTIC GLOW EFFECT */
         .hero-glow-orb {
           position: absolute;
           width: 600px;
@@ -748,7 +743,6 @@ export default function HeroSection({ onSubmitClick }) {
           pointer-events: none;
         }
 
-        /* DESERT LUXURY IMAGE LAYER */
         .hero-bg-image {
           position: absolute;
           top: 0;
@@ -756,12 +750,11 @@ export default function HeroSection({ onSubmitClick }) {
           width: 100%;
           height: 100%;
           object-fit: cover;
-          opacity: 0.25; /* Sleek, low-key background visibility */
+          opacity: 0.25;
           filter: grayscale(30%) contrast(110%);
           z-index: 0;
         }
 
-        /* SMOOTH GRADIENT OVERLAY */
         .hero-overlay {
           position: absolute;
           top: 0;
@@ -777,16 +770,14 @@ export default function HeroSection({ onSubmitClick }) {
           z-index: 2;
         }
 
-        /* CONTENT ARRANGEMENT */
         .hero-content {
           position: relative;
-          z-index: 10;
+          z-index: 3;
           text-align: center;
           padding: 0 24px;
           max-width: 1100px;
         }
 
-        /* HIGH-TECH LUXURY BADGE */
         .hero-badge {
           display: inline-flex;
           align-items: center;
@@ -801,14 +792,13 @@ export default function HeroSection({ onSubmitClick }) {
         }
         
         .hero-badge-text {
-          color: #e6be64; /* METALLIC CHAMPAGNE GOLD */
+          color: #e6be64;
           font-size: 11px;
           font-weight: 600;
           letter-spacing: 4px;
           text-transform: uppercase;
         }
 
-        /* HEADINGS WITH CINZEL ARCHITECTURAL FEEL */
         .hero-title {
           font-family: 'Cinzel', serif;
           font-size: 72px;
@@ -820,30 +810,27 @@ export default function HeroSection({ onSubmitClick }) {
           text-shadow: 0 0 40px rgba(230, 190, 100, 0.15);
         }
         
-        /* CHROMATIC DESERT GOLD GRADIENT */
         .hero-title-gold {
           background: linear-gradient(135deg, #ffffff 10%, #f3d082 50%, #c59b43 100%);
           -webkit-background-clip: text;
+          background-clip: text;
           -webkit-text-fill-color: transparent;
-          -webkit-display: block; /* Fixed prefix variant if using global styles */
           display: block;
           font-weight: 900;
           letter-spacing: 1px;
           margin-top: 5px;
         }
 
-        /* SUBTITLE */
         .hero-subtitle {
           color: #b3b9c1;
           font-size: 19px;
           font-weight: 300;
           line-height: 1.7;
-          max-width: 800px; /* Slightly widened to gracefully hold the text */
+          max-width: 800px;
           margin: 0 auto 55px auto;
           letter-spacing: 0.3px;
         }
 
-        /* BUTTON LAYOUT */
         .btn-container {
           display: flex;
           justify-content: center;
@@ -862,10 +849,9 @@ export default function HeroSection({ onSubmitClick }) {
           letter-spacing: 2px;
           text-transform: uppercase;
           transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-          border-radius: 4px; /* Sharp premium edges */
+          border-radius: 4px;
         }
 
-        /* PREMIUM SUBMIT ACTION BUTTON */
         .btn-primary {
           background-color: transparent;
           color: #ffffff;
@@ -881,7 +867,6 @@ export default function HeroSection({ onSubmitClick }) {
           box-shadow: 0 10px 30px rgba(255, 255, 255, 0.1);
         }
 
-        /* GLOWING ACTION BUTTON */
         .btn-secondary {
           background: linear-gradient(135deg, #e6be64 0%, #c59b43 100%);
           border: 1px solid #f3d082;
@@ -897,7 +882,6 @@ export default function HeroSection({ onSubmitClick }) {
           background: linear-gradient(135deg, #ffffff 0%, #e6be64 100%);
         }
 
-        /* RESPONSIVE DESIGN FOR SMARTPHONES */
         @media (max-width: 768px) {
           .hero-title { font-size: 42px; line-height: 1.25; }
           .hero-subtitle { font-size: 16px; }
@@ -907,24 +891,18 @@ export default function HeroSection({ onSubmitClick }) {
         }
       `}</style>
 
-      {/* --- COMPONENT LAYOUT --- */}
       <div className="hero-container">
-        {/* Futuristic Ambient Lighting */}
         <div className="hero-glow-orb"></div>
         
-        {/* Background Landscape */}
         <img 
           src="https://images.unsplash.com/photo-1582672060674-bc2bd808a8b5?q=85&w=2000&auto=format&fit=crop" 
           alt="Dubai Modern Architecture Background" 
           className="hero-bg-image"
         />
         
-        {/* Layer Gradients */}
         <div className="hero-overlay"></div>
 
-        {/* Hero Copy & Controls */}
         <div className="hero-content">
-          
           <div className="hero-badge">
             <Sparkles size={12} color="#e6be64" />
             <span className="hero-badge-text">The Career Discovery</span>
@@ -952,7 +930,6 @@ export default function HeroSection({ onSubmitClick }) {
               </button>
             </a>
           </div>
-
         </div>
       </div>
     </>
