@@ -221,7 +221,7 @@ export default function AboutSection() {
             </h2>
             
             <p className="about-text">
-              The Novus Essay Competition is an exclusive initiative designed solely for <span className="about-highlight">Dubai's outstanding young minds</span>. Structured after the rigorous tutorial systems of Oxford and Ivy League academies, this competition invites high school students to step onto the world stage as junior scholars.
+              The Novus Dubai Essay Competition is an exclusive initiative designed solely for <span className="about-highlight">Dubai's outstanding young minds</span>. Structured after the rigorous tutorial systems of Oxford and Ivy League academies, this competition invites high school students to step onto the world stage as junior scholars.
             </p>
             
             <p className="about-text">
