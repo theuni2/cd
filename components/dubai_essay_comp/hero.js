@@ -707,10 +707,240 @@
 //   );
 // }
 
+// "use client";
+
+// import React from "react";
+// import { BookOpen, Sparkles, Send } from "lucide-react";
+
+// export default function HeroSection({ onSubmitClick }) {
+//   return (
+//     <>
+//       <style jsx global>{`
+//         @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Plus+Jakarta+Sans:wght@300;400;600&display=swap');
+
+//         .hero-container {
+//           position: relative;
+//           width: 100%;
+//           height: 100vh;
+//           min-height: 700px;
+//           display: flex;
+//           align-items: center;
+//           justify-content: center;
+//           overflow: hidden;
+//           background-color: #07080b;
+//           font-family: 'Plus Jakarta Sans', sans-serif;
+//         }
+
+//         .hero-glow-orb {
+//           position: absolute;
+//           width: 600px;
+//           height: 600px;
+//           background: radial-gradient(circle, rgba(212, 175, 55, 0.08) 0%, rgba(7, 8, 11, 0) 70%);
+//           top: 20%;
+//           left: 50%;
+//           transform: translate(-50%, -50%);
+//           z-index: 1;
+//           pointer-events: none;
+//         }
+
+//         .hero-bg-image {
+//           position: absolute;
+//           top: 0;
+//           left: 0;
+//           width: 100%;
+//           height: 100%;
+//           object-fit: cover;
+//           opacity: 0.25;
+//           filter: grayscale(30%) contrast(110%);
+//           z-index: 0;
+//         }
+
+//         .hero-overlay {
+//           position: absolute;
+//           top: 0;
+//           left: 0;
+//           width: 100%;
+//           height: 100%;
+//           background: linear-gradient(
+//             to bottom, 
+//             #07080b 0%, 
+//             rgba(7, 8, 11, 0.6) 50%, 
+//             #07080b 100%
+//           );
+//           z-index: 2;
+//         }
+
+//         .hero-content {
+//           position: relative;
+//           z-index: 3;
+//           text-align: center;
+//           padding: 0 24px;
+//           max-width: 1100px;
+//         }
+
+//         .hero-badge {
+//           display: inline-flex;
+//           align-items: center;
+//           gap: 8px;
+//           padding: 8px 20px;
+//           margin-bottom: 35px;
+//           border: 1px solid rgba(230, 190, 100, 0.3);
+//           background: linear-gradient(135deg, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0.01) 100%);
+//           border-radius: 100px;
+//           backdrop-filter: blur(12px);
+//           box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4), inset 0 1px 1px rgba(255, 255, 255, 0.1);
+//         }
+        
+//         .hero-badge-text {
+//           color: #e6be64;
+//           font-size: 11px;
+//           font-weight: 600;
+//           letter-spacing: 4px;
+//           text-transform: uppercase;
+//         }
+
+//         .hero-title {
+//           font-family: 'Cinzel', serif;
+//           font-size: 72px;
+//           font-weight: 700;
+//           line-height: 1.15;
+//           color: #ffffff;
+//           margin: 0 0 24px 0;
+//           letter-spacing: -1px;
+//           text-shadow: 0 0 40px rgba(230, 190, 100, 0.15);
+//         }
+        
+//         .hero-title-gold {
+//           background: linear-gradient(135deg, #ffffff 10%, #f3d082 50%, #c59b43 100%);
+//           -webkit-background-clip: text;
+//           background-clip: text;
+//           -webkit-text-fill-color: transparent;
+//           display: block;
+//           font-weight: 900;
+//           letter-spacing: 1px;
+//           margin-top: 5px;
+//         }
+
+//         .hero-subtitle {
+//           color: #b3b9c1;
+//           font-size: 19px;
+//           font-weight: 300;
+//           line-height: 1.7;
+//           max-width: 800px;
+//           margin: 0 auto 55px auto;
+//           letter-spacing: 0.3px;
+//         }
+
+//         .btn-container {
+//           display: flex;
+//           justify-content: center;
+//           gap: 24px;
+//           flex-wrap: wrap;
+//         }
+
+//         .btn {
+//           display: flex;
+//           align-items: center;
+//           justify-content: center;
+//           gap: 12px;
+//           padding: 18px 40px;
+//           font-size: 13px;
+//           font-weight: 600;
+//           letter-spacing: 2px;
+//           text-transform: uppercase;
+//           transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+//           border-radius: 4px;
+//         }
+
+//         .btn-primary {
+//           background-color: transparent;
+//           color: #ffffff;
+//           border: 1px solid rgba(255, 255, 255, 0.2);
+//           cursor: pointer;
+//         }
+
+//         .btn-primary:hover {
+//           background-color: #ffffff;
+//           color: #07080b;
+//           border-color: #ffffff;
+//           transform: translateY(-3px);
+//           box-shadow: 0 10px 30px rgba(255, 255, 255, 0.1);
+//         }
+
+//         .btn-secondary {
+//           background: linear-gradient(135deg, #e6be64 0%, #c59b43 100%);
+//           border: 1px solid #f3d082;
+//           color: #07080b;
+//           font-weight: 700;
+//           cursor: pointer;
+//           box-shadow: 0 4px 25px rgba(197, 155, 67, 0.2);
+//         }
+        
+//         .btn-secondary:hover {
+//           transform: translateY(-3px);
+//           box-shadow: 0 12px 35px rgba(197, 155, 67, 0.4);
+//           background: linear-gradient(135deg, #ffffff 0%, #e6be64 100%);
+//         }
+
+//         @media (max-width: 768px) {
+//           .hero-title { font-size: 42px; line-height: 1.25; }
+//           .hero-subtitle { font-size: 16px; }
+//           .btn-container { flex-direction: column; gap: 16px; }
+//           .btn { width: 100%; padding: 16px 24px; }
+//           .hero-glow-orb { width: 300px; height: 300px; }
+//         }
+//       `}</style>
+
+//       <div className="hero-container">
+//         <div className="hero-glow-orb"></div>
+        
+//         <img 
+//           src="https://images.unsplash.com/photo-1582672060674-bc2bd808a8b5?q=85&w=2000&auto=format&fit=crop" 
+//           alt="Dubai Modern Architecture Background" 
+//           className="hero-bg-image"
+//         />
+        
+//         <div className="hero-overlay"></div>
+
+//         <div className="hero-content">
+//           <div className="hero-badge">
+//             <Sparkles size={12} color="#e6be64" />
+//             <span className="hero-badge-text">The Career Discovery</span>
+//           </div>
+
+//           <h1 className="hero-title">
+//             Novus Dubai Essay Competition 
+//             <span className="hero-title-gold">Dubai Prize 2026</span>
+//           </h1>
+
+//           <p className="hero-subtitle">
+//             Novus means a bright star—and that is exactly the kind of scholar we are preparing through this competition. 
+//             Cultivating independent thought in the next generation of leaders, we challenge your intellect against the 
+//             world's brightest minds in the city of the future.
+//           </p>
+
+//           <div className="btn-container">
+//             <button className="btn btn-primary" onClick={onSubmitClick}>
+//               Submit Essay <Send size={15} />
+//             </button>
+            
+//             <a href="#topic" style={{ textDecoration: 'none' }}>
+//               <button className="btn btn-secondary">
+//                 Explore Topics <BookOpen size={16} />
+//               </button>
+//             </a>
+//           </div>
+//         </div>
+//       </div>
+//     </>
+//   );
+// }
+
+
 "use client";
 
 import React from "react";
-import { BookOpen, Sparkles, Send } from "lucide-react";
+import { BookOpen, Sparkles, Send, MapPin } from "lucide-react";
 
 export default function HeroSection({ onSubmitClick }) {
   return (
@@ -778,24 +1008,37 @@ export default function HeroSection({ onSubmitClick }) {
           max-width: 1100px;
         }
 
+        .hero-badge-group {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 12px;
+          margin-bottom: 35px;
+          flex-wrap: wrap;
+        }
+
         .hero-badge {
           display: inline-flex;
           align-items: center;
           gap: 8px;
           padding: 8px 20px;
-          margin-bottom: 35px;
           border: 1px solid rgba(230, 190, 100, 0.3);
           background: linear-gradient(135deg, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0.01) 100%);
           border-radius: 100px;
           backdrop-filter: blur(12px);
           box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4), inset 0 1px 1px rgba(255, 255, 255, 0.1);
         }
+
+        .hero-badge-exclusive {
+          border-color: rgba(230, 190, 100, 0.6);
+          background: rgba(230, 190, 100, 0.1);
+        }
         
         .hero-badge-text {
           color: #e6be64;
           font-size: 11px;
           font-weight: 600;
-          letter-spacing: 4px;
+          letter-spacing: 3px;
           text-transform: uppercase;
         }
 
@@ -826,9 +1069,14 @@ export default function HeroSection({ onSubmitClick }) {
           font-size: 19px;
           font-weight: 300;
           line-height: 1.7;
-          max-width: 800px;
-          margin: 0 auto 55px auto;
+          max-width: 820px;
+          margin: 0 auto 40px auto;
           letter-spacing: 0.3px;
+        }
+
+        .hero-subtitle strong {
+          color: #e6be64;
+          font-weight: 600;
         }
 
         .btn-container {
@@ -882,6 +1130,14 @@ export default function HeroSection({ onSubmitClick }) {
           background: linear-gradient(135deg, #ffffff 0%, #e6be64 100%);
         }
 
+        .eligibility-note {
+          margin-top: 30px;
+          font-size: 12px;
+          color: #8a919e;
+          letter-spacing: 1px;
+          text-transform: uppercase;
+        }
+
         @media (max-width: 768px) {
           .hero-title { font-size: 42px; line-height: 1.25; }
           .hero-subtitle { font-size: 16px; }
@@ -903,9 +1159,15 @@ export default function HeroSection({ onSubmitClick }) {
         <div className="hero-overlay"></div>
 
         <div className="hero-content">
-          <div className="hero-badge">
-            <Sparkles size={12} color="#e6be64" />
-            <span className="hero-badge-text">The Career Discovery</span>
+          <div className="hero-badge-group">
+            <div className="hero-badge">
+              <Sparkles size={12} color="#e6be64" />
+              <span className="hero-badge-text">The Career Discovery</span>
+            </div>
+            <div className="hero-badge hero-badge-exclusive">
+              <MapPin size={12} color="#e6be64" />
+              <span className="hero-badge-text">Dubai Students Exclusive</span>
+            </div>
           </div>
 
           <h1 className="hero-title">
@@ -914,9 +1176,9 @@ export default function HeroSection({ onSubmitClick }) {
           </h1>
 
           <p className="hero-subtitle">
-            Novus means a bright star—and that is exactly the kind of scholar we are preparing through this competition. 
-            Cultivating independent thought in the next generation of leaders, we challenge your intellect against the 
-            world's brightest minds in the city of the future.
+            Novus means a bright star—and that is exactly the kind of scholar we are preparing. 
+            Exclusively open to <strong>students based in Dubai</strong>, this competition cultivates 
+            independent thought in the city’s next generation of future leaders.
           </p>
 
           <div className="btn-container">
@@ -929,6 +1191,10 @@ export default function HeroSection({ onSubmitClick }) {
                 Explore Topics <BookOpen size={16} />
               </button>
             </a>
+          </div>
+
+          <div className="eligibility-note">
+            * Open exclusively to students currently residing or studying in Dubai
           </div>
         </div>
       </div>
