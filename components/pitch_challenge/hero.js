@@ -500,15 +500,15 @@ export default function HeroSection() {
           transition={{ duration: 0.6, delay: 0.4 }}
           style={styles.btnGroup}
         >
-          <a href="/submit" style={styles.primaryBtn}>
+          <a href="#submit" style={styles.primaryBtn}>
             Submit Your Inventions
             <ArrowRight size={18} />
           </a>
-
+{/* 
           <a href="#sample-entries" style={styles.secondaryBtn}>
             <Play size={16} color="#06B6D4" fill="#06B6D4" />
             Watch Featured Showcases
-          </a>
+          </a> */}
         </motion.div>
 
         {/* 7. Hashtag Guidelines Banner */}

@@ -705,7 +705,7 @@ export default function HowItWorksAndPrizes() {
             <h4 style={styles.bannerTitle}>Ready to elevate your academic trajectory?</h4>
             <p style={styles.bannerText}>Submissions are open for students ages 13–18 globally.</p>
           </div>
-          <a href="/submit" style={styles.bannerBtn}>
+          <a href="#submit" style={styles.bannerBtn}>
             Enter the Challenge <ArrowRight size={18} />
           </a>
         </motion.div>
