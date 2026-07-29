@@ -1041,6 +1041,7 @@ const Navigation = () => {
         { href: '/forge_writing_competition', label: 'FORGE Essay Competition' },
         { href: '/solve_eg', label: 'SOLVE Competition' },
         { href: '/novus_comp', label: 'Novus Dubai Essay Competition' },
+        { href: '/pitch_competition', label: 'Apex Discovery Competition' },
        
       ] 
     },

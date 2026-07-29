@@ -504,11 +504,11 @@ export default function HeroSection() {
             Submit Your Inventions
             <ArrowRight size={18} />
           </a>
-{/* 
-          <a href="#sample-entries" style={styles.secondaryBtn}>
+
+          <a href="" style={styles.secondaryBtn}>
             <Play size={16} color="#06B6D4" fill="#06B6D4" />
-            Watch Featured Showcases
-          </a> */}
+           Last Date to Submit: Nov 15, 2026
+          </a>
         </motion.div>
 
         {/* 7. Hashtag Guidelines Banner */}

@@ -410,7 +410,7 @@ const partnerGroups = [
     category: "Media Partners",
     partners: [
       { name: "Financial Express", logoUrl: "/fe.jpeg" },
-      { name: "Bhaskar Live", logoUrl: "/bs.jpeg" }
+      // { name: "Bhaskar Live", logoUrl: "/bs.jpeg" }
     ]
   }
 ];
