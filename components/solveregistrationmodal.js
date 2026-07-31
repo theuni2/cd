@@ -1,8 +1,11 @@
+
+
+
 // "use client";
 
 // import React, { useState } from "react";
 // import { motion, AnimatePresence } from "framer-motion";
-// import { User, Users, Code, Heart, Link, Layers, Send, CheckCircle, X } from "lucide-react";
+// import { User, Users, Code, Heart, Link, Layers, Send, CheckCircle, X, ShieldCheck } from "lucide-react";
 
 // export default function SolveRegistrationModal({ isOpen, onClose }) {
 //   // Form step management: 1 = Profile Info, 2 = Pitch Links, 3 = Success View
@@ -14,6 +17,8 @@
 //   const [fullName, setFullName] = useState("");
 //   const [email, setEmail] = useState("");
 //   const [teamSize, setTeamSize] = useState("2");
+//   const [counselorName, setCounselorName] = useState("");
+//   const [counselorEmail, setCounselorEmail] = useState("");
 //   const [selectedTrack, setSelectedTrack] = useState("");
 //   const [projectTitle, setProjectTitle] = useState("");
 //   const [deckLink, setDeckLink] = useState("");
@@ -41,6 +46,8 @@
 //             fullName,
 //             email,
 //             teamSize: teamType === "team" ? teamSize : "1",
+//             counselorName,
+//             counselorEmail,
 //             selectedTrack,
 //             projectTitle,
 //             deckLink,
@@ -192,12 +199,16 @@
 //       display: "block",
 //       width: "100%",
 //       textAlign: "center",
+//     },
+//     dividerLine: {
+//       height: "1px",
+//       background: "linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,0.08), rgba(255,255,255,0))",
+//       margin: "32px 0 24px 0",
 //     }
 //   };
 
 //   return (
 //     <div style={styles.overlay}>
-//       {/* Global CSS Injectors for focus state glow transitions */}
 //       <style dangerouslySetInnerHTML={{__html: `
 //         .solve-modal-input:focus {
 //           border-color: rgba(255,255,255,0.2) !important;
@@ -207,7 +218,6 @@
 //         .solve-close-trigger:hover { color: #ffffff !important; }
 //       `}} />
 
-//       {/* MODAL FRAME LAYOUT CONTAINER */}
 //       <motion.div 
 //         initial={{ opacity: 0, scale: 0.95, y: 15 }}
 //         animate={{ opacity: 1, scale: 1, y: 0 }}
@@ -215,7 +225,6 @@
 //         transition={{ duration: 0.3, ease: "easeOut" }}
 //         style={styles.modalContainer}
 //       >
-//         {/* Top Floating Exit Button */}
 //         <button 
 //           onClick={handleCloseWrapper} 
 //           className="solve-close-trigger"
@@ -227,7 +236,7 @@
 //         <div style={styles.formBody}>
 //           <AnimatePresence mode="wait">
             
-//             {/* STEP 1: PERSONAL & TEAM PROFILING */}
+//             {/* STEP 1: PERSONAL, TEAM & ACADEMIC PROFILING */}
 //             {step === 1 && (
 //               <motion.form
 //                 key="step1"
@@ -243,7 +252,7 @@
 
 //                 <h3 style={{ fontSize: "24px", fontWeight: 800, margin: "0 0 8px 0", color: "#ffffff" }}>Register for SOLVE</h3>
 //                 <p style={{ fontSize: "14px", color: "#a1a1aa", margin: "0 0 32px 0", lineHeight: 1.5 }}>
-//                   Secure your entry path. Set up your tracking profile as an individual builder or as a collaborative team.
+//                   Secure your entry path. Set up your builder profile and provide your academic verification details.
 //                 </p>
 
 //                 <div style={styles.inputGroup}>
@@ -303,6 +312,30 @@
 //                     </select>
 //                   </motion.div>
 //                 )}
+
+//                 {/* Academic Endorsement Visual Section Divider */}
+//                 <div style={styles.dividerLine} />
+
+//                 <div style={{ display: "flex", alignItems: "center", gap: "8px", marginBottom: "16px" }}>
+//                   <ShieldCheck size={16} color="#34d399" />
+//                   <span style={{ fontSize: "12px", fontWeight: 700, letterSpacing: "0.05em", textTransform: "uppercase", color: "#34d399" }}>Academic Validation</span>
+//                 </div>
+
+//                 <div style={styles.inputGroup}>
+//                   <label style={styles.label}>Academic Teacher / Counselor Name</label>
+//                   <input 
+//                     type="text" required placeholder="e.g. Mrs. Sarah Jenkins" className="solve-modal-input"
+//                     style={styles.textInput} value={counselorName} onChange={(e) => setCounselorName(e.target.value)}
+//                   />
+//                 </div>
+
+//                 <div style={styles.inputGroup}>
+//                   <label style={styles.label}>Counselor Email</label>
+//                   <input 
+//                     type="email" required placeholder="teacher@school.edu" className="solve-modal-input"
+//                     style={styles.textInput} value={counselorEmail} onChange={(e) => setCounselorEmail(e.target.value)}
+//                   />
+//                 </div>
 
 //                 <button type="submit" style={styles.primaryBtn}>
 //                   Continue to Submission
@@ -366,7 +399,7 @@
 //                 </div>
 
 //                 <div style={styles.inputGroup}>
-//                   <label style={styles.label}>Google Drive / Canva Pitch Deck URL (8-10 Slides)</label>
+//                   <label style={styles.label}>Google Drive / Canva Pitch Deck URL (10 Slides)</label>
 //                   <div style={{ position: "relative" }}>
 //                     <Layers size={16} color="#52525b" style={{ position: "absolute", left: "14px", top: "16px" }} />
 //                     <input 
@@ -376,8 +409,8 @@
 //                   </div>
 //                 </div>
 
-//                 <div style={styles.inputGroup}>
-//                   <label style={styles.label}>YouTube Video Pitch URL (2-3 Minutes)</label>
+//                 {/* <div style={styles.inputGroup}>
+//                   <label style={styles.label}>YouTube Video Pitch URL ( Minutes)</label>
 //                   <div style={{ position: "relative" }}>
 //                     <Link size={16} color="#52525b" style={{ position: "absolute", left: "14px", top: "16px" }} />
 //                     <input 
@@ -385,7 +418,23 @@
 //                       style={{ ...styles.textInput, paddingLeft: "42px" }} value={videoLink} onChange={(e) => setVideoLink(e.target.value)}
 //                     />
 //                   </div>
-//                 </div>
+//                 </div> */}
+
+//                 <div style={styles.inputGroup}>
+//   <label style={styles.label}>YouTube Video Pitch URL ( Minutes)</label>
+//   {/* Sub-label instruction text */}
+//   <small style={{ display: "block", color: "#71717a", fontSize: "12px", marginTop: "2px", marginBottom: "8px" }}>
+//     Please ensure the YouTube video title is formatted as: <strong>Title | Solve Challenge</strong>
+//   </small>
+  
+//   <div style={{ position: "relative" }}>
+//     <Link size={16} color="#52525b" style={{ position: "absolute", left: "14px", top: "16px" }} />
+//     <input 
+//       type="url" required placeholder="https://youtube.com/watch?v=..." className="solve-modal-input"
+//       style={{ ...styles.textInput, paddingLeft: "42px" }} value={videoLink} onChange={(e) => setVideoLink(e.target.value)}
+//     />
+//   </div>
+// </div>
 
 //                 <button type="submit" disabled={isSubmitting} style={styles.primaryBtn}>
 //                   <Send size={16} /> {isSubmitting ? "Processing Content..." : "Complete Registration"}
@@ -414,22 +463,28 @@
 //                   Thank you, <span style={{ color: "#ffffff", fontWeight: 600 }}>{fullName}</span>. Your project entry <span style={{ color: "#ffffff", fontWeight: 600 }}>{projectTitle || "SOLVE Project"}</span> has been indexed successfully into our database ecosystem.
 //                 </p>
 
-//                 <div style={{ backgroundColor: "rgba(255,255,255,0.02)", border: "1px dashed rgba(255,255,255,0.08)", borderRadius: "16px", padding: "20px", fontSize: "13.5px", color: "#71717a", textAlign: "left", lineHeight: 1.5, marginBottom: "24px" }}>
-//                   <strong>Next Steps:</strong> A confirmation alert receipt has been routed to <span style={{ color: "#d4d4d8" }}>{email}</span>. You can modify your deck assets and video pitch links anytime before evaluation processes initialize.
+//                 <div style={{ backgroundColor: "rgba(255,255,255,0.02)", border: "1px dashed rgba(255, 255, 255, 0.1)", borderRadius: "16px", padding: "20px", textAlign: "left", marginBottom: "32px" }}>
+//                   <span style={{ fontSize: "12px", textTransform: "uppercase", letterSpacing: "0.05em", color: "#71717a", fontWeight: 700, display: "block", marginBottom: "8px" }}>Registered Tracks & Endorsements</span>
+//                   <div style={{ fontSize: "14px", color: "#e4e4e7", display: "flex", flexDirection: "column", gap: "6px" }}>
+//                     <div>• <strong>Track:</strong> {selectedTrack === "tech" ? "Tech Innovation" : "Social Impact"}</div>
+//                     <div>• <strong>Participant Email:</strong> {email}</div>
+//                     <div>• <strong>Assigned Counselor:</strong> {counselorName} ({counselorEmail})</div>
+//                     {teamType === "team" && <div>• <strong>Team Composition:</strong> {teamSize} Members</div>}
+//                   </div>
 //                 </div>
 
-//                 <button onClick={handleCloseWrapper} style={{ ...styles.primaryBtn, marginTop: 0 }}>
-//                   Close Window
+//                 <button type="button" onClick={handleCloseWrapper} style={styles.primaryBtn}>
+//                   Return to Dashboard
 //                 </button>
 //               </motion.div>
 //             )}
-
+            
 //           </AnimatePresence>
 //         </div>
 //       </motion.div>
 //     </div>
 //   );
-// }  
+// }
 
 
 "use client";
@@ -466,31 +521,36 @@ export default function SolveRegistrationModal({ isOpen, onClose }) {
       setIsSubmitting(true);
       
       try {
-        // Connected directly to your Next.js Pages Router Endpoint configuration
-        const response = await fetch('/api/submit-pitch', {
+        const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycby0NcCGHtKHKoNOl8iCtpdlJ3FPfhas6tZn4Aa2yYPmOx_qJyxh7f1q36fCM7_IUNtQ/exec";
+        const payload = {
+          teamType,
+          fullName,
+          email,
+          teamSize: teamType === "team" ? teamSize : "1",
+          counselorName,
+          counselorEmail,
+          selectedTrack,
+          projectTitle,
+          deckLink,
+          videoLink,
+          submittedAt: new Date().toISOString()
+        };
+
+        // Note: Google Apps Script Web Apps often do not support standard CORS headers for raw JSON POST preflights from web clients.
+        // Sending as text/plain or using standard URL form encoding prevents CORS preflight errors.
+        const response = await fetch(GOOGLE_SCRIPT_URL, {
           method: 'POST',
           headers: {
-            'Content-Type': 'application/json',
+            'Content-Type': 'text/plain;charset=utf-8',
           },
-          body: JSON.stringify({
-            teamType,
-            fullName,
-            email,
-            teamSize: teamType === "team" ? teamSize : "1",
-            counselorName,
-            counselorEmail,
-            selectedTrack,
-            projectTitle,
-            deckLink,
-            videoLink
-          }), 
+          body: JSON.stringify(payload), 
         });
 
         if (response.ok) {
           setIsSubmitted(true);
           setStep(3);
         } else {
-          console.error("Server execution loop failed to fire Nodemailer transits.");
+          console.error("Failed to submit data to Google Sheet endpoint.");
           alert("Something went wrong on our end. Please try again.");
         }
       } catch (error) {
@@ -744,7 +804,6 @@ export default function SolveRegistrationModal({ isOpen, onClose }) {
                   </motion.div>
                 )}
 
-                {/* Academic Endorsement Visual Section Divider */}
                 <div style={styles.dividerLine} />
 
                 <div style={{ display: "flex", alignItems: "center", gap: "8px", marginBottom: "16px" }}>
@@ -840,8 +899,12 @@ export default function SolveRegistrationModal({ isOpen, onClose }) {
                   </div>
                 </div>
 
-                {/* <div style={styles.inputGroup}>
-                  <label style={styles.label}>YouTube Video Pitch URL ( Minutes)</label>
+                <div style={styles.inputGroup}>
+                  <label style={styles.label}>YouTube Video Pitch URL</label>
+                  <small style={{ display: "block", color: "#71717a", fontSize: "12px", marginTop: "2px", marginBottom: "8px" }}>
+                    Please ensure the YouTube video title is formatted as: <strong>Title | Solve Challenge</strong>
+                  </small>
+                  
                   <div style={{ position: "relative" }}>
                     <Link size={16} color="#52525b" style={{ position: "absolute", left: "14px", top: "16px" }} />
                     <input 
@@ -849,23 +912,7 @@ export default function SolveRegistrationModal({ isOpen, onClose }) {
                       style={{ ...styles.textInput, paddingLeft: "42px" }} value={videoLink} onChange={(e) => setVideoLink(e.target.value)}
                     />
                   </div>
-                </div> */}
-
-                <div style={styles.inputGroup}>
-  <label style={styles.label}>YouTube Video Pitch URL ( Minutes)</label>
-  {/* Sub-label instruction text */}
-  <small style={{ display: "block", color: "#71717a", fontSize: "12px", marginTop: "2px", marginBottom: "8px" }}>
-    Please ensure the YouTube video title is formatted as: <strong>Title | Solve Challenge</strong>
-  </small>
-  
-  <div style={{ position: "relative" }}>
-    <Link size={16} color="#52525b" style={{ position: "absolute", left: "14px", top: "16px" }} />
-    <input 
-      type="url" required placeholder="https://youtube.com/watch?v=..." className="solve-modal-input"
-      style={{ ...styles.textInput, paddingLeft: "42px" }} value={videoLink} onChange={(e) => setVideoLink(e.target.value)}
-    />
-  </div>
-</div>
+                </div>
 
                 <button type="submit" disabled={isSubmitting} style={styles.primaryBtn}>
                   <Send size={16} /> {isSubmitting ? "Processing Content..." : "Complete Registration"}
