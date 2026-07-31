@@ -198,8 +198,6 @@ const pages = [
   '/blogs/success_story_aarav',
   '/blogs/writing-debating-program-students-university-application-india',
   '/blogs/research-program-for-high-school-student',
-
-  // Legal
   '/privacy',
   '/terms',
   '/cookies',

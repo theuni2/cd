@@ -96,7 +96,7 @@ const BLOG_POSTS = [
     date: "27 July 2026",
     readTime: "7 min read",
     image: "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?q=80&w=2070&auto=format&fit=crop",
-    slug: "/blogs/high-school-research-program-for-students",
+    slug: "/blogs/research-program-for-high-school-student",
   },
 ]
 
