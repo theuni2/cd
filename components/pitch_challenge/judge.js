@@ -521,7 +521,7 @@ export default function JudgesAndExemplars() {
 
       {/* ---------------- SECTION 2: EXEMPLAR VIDEOS & STANDARDS ---------------- */}
       <div style={styles.container}>
-        <motion.div
+        {/* <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -533,10 +533,10 @@ export default function JudgesAndExemplars() {
           <p style={styles.sectionDesc}>
             Explore benchmark submissions demonstrating how complex research concepts are demystified within the 120-second timeframe.
           </p>
-        </motion.div>
+        </motion.div> */}
 
         {/* Video Grid */}
-        <div style={styles.grid2}>
+        {/* <div style={styles.grid2}>
           {exemplars.map((video, idx) => (
             <motion.div
               key={idx}
@@ -572,9 +572,11 @@ export default function JudgesAndExemplars() {
               </div>
             </motion.div>
           ))}
-        </div>
+        </div> */}
 
         {/* Scoring Criteria Callout Box */}
+
+{/* 
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -613,7 +615,8 @@ export default function JudgesAndExemplars() {
               <strong>Note on Verification:</strong> Include <code style={styles.codeText}>#ApexDiscovery2026</code> in your upload title or description so judges can index your work.
             </span>
           </div> */}
-        </motion.div>
+        {/* </motion.div> */}
+ 
 
       </div>
     </section>
