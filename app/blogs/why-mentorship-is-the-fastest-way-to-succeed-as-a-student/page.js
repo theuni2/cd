@@ -6,7 +6,7 @@ export const metadata = {
   title: 'Why Mentorship Is the Fastest Way to Succeed as a Student',
   description: 'Students today face a constant mix of academic expectations, career confusion, and competition that feels never-ending. Mentorship offers the fastest path to clarity and success.',
   alternates: {
-    canonical: "https://www.thecareerdiscovery.com/blog/why-mentorship-is-the-fastest-way-to-succeed-as-a-student",
+    canonical: "https://www.thecareerdiscovery.com/blogs/why-mentorship-is-the-fastest-way-to-succeed-as-a-student",
   },
 }
 
@@ -21,7 +21,7 @@ export default function StudentMentorshipSuccess() {
         />
         <link
           rel="canonical"
-          href="https://www.thecareerdiscovery.com/blog/why-mentorship-is-the-fastest-way-to-succeed-as-a-student"
+          href="https://www.thecareerdiscovery.com/blogs/why-mentorship-is-the-fastest-way-to-succeed-as-a-student"
         />
       </Head>
 

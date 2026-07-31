@@ -88,6 +88,16 @@ const BLOG_POSTS = [
     image: "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?q=80&w=2070&auto=format&fit=crop",
     slug: "/blogs/writing-debating-program-students-university-application-india",
   },
+  {
+    id: 9,
+    title: "High School Research Program for Students",
+    excerpt:     "Work with professors and PhDs on real research projects. Build publishable work, strengthen college applications, and gain research mentorship for grades 8–12.",
+    category: "Research",
+    date: "27 July 2026",
+    readTime: "7 min read",
+    image: "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?q=80&w=2070&auto=format&fit=crop",
+    slug: "/blogs/high-school-research-program-for-students",
+  },
 ]
 
 const BlogCard = ({ post }) => {

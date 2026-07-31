@@ -6,7 +6,7 @@ export const metadata = {
   title: 'How to Discover Your Ideal Career Path Before College in 2026',
   description: 'Learn how to identify your strengths, explore career options, and gain practical experience before college. Discover your ideal career path with expert guidance and personalized mentorship.',
   alternates: {
-    canonical: "https://www.thecareerdiscovery.com/blog/how-to-discover-your-ideal-career-path-before-college",
+    canonical: "https://www.thecareerdiscovery.com/blogs/how-to-discover-your-ideal-career-path-before-college",
   },
 }
 
@@ -21,7 +21,7 @@ export default function DiscoverIdealCareerPath() {
         />
         <link
           rel="canonical"
-          href="https://www.thecareerdiscovery.com/blog/how-to-discover-your-ideal-career-path-before-college"
+          href="https://www.thecareerdiscovery.com/blogs/how-to-discover-your-ideal-career-path-before-college"
         />
       </Head>
 
