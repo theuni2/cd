@@ -197,7 +197,7 @@ const pages = [
   '/blogs/mechanical_prosthetic_arm',
   '/blogs/success_story_aarav',
   '/blogs/writing-debating-program-students-university-application-india',
-  'blogs/research-program-for-high-school-student'
+  '/blogs/research-program-for-high-school-student',
 
   // Legal
   '/privacy',
