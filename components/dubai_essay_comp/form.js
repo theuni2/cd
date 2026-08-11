@@ -578,7 +578,7 @@ export default function SubmitModal({ isOpen, onClose }) {
               </div>
 
               {/* SUBMIT BUTTON */}
-              <div className="pt-4 pb-2">
+              {/* <div className="pt-4 pb-2">
                 <button
                   type="submit"
                   disabled={isSubmitting}
@@ -590,8 +590,20 @@ export default function SubmitModal({ isOpen, onClose }) {
                 >
                   {isSubmitting ? "Submitting to Faculty..." : "Submit Essay"}
                 </button>
-              </div>
-
+              </div> */}
+<div className="pt-4 pb-2">
+  <button
+    type="submit"
+    disabled={isSubmitting}
+    className={`w-full py-3.5 font-bold tracking-widest uppercase text-xs flex justify-center items-center shadow-md transition-all ${
+      isSubmitting
+        ? "bg-amber-200/50 text-amber-800/60 cursor-not-allowed"
+        : "bg-gradient-to-r from-[#bf953f] via-[#aa771c] to-[#bf953f] hover:brightness-110 text-amber-950 cursor-pointer shadow-amber-900/20"
+    }`}
+  >
+    {isSubmitting ? "Submitting to Faculty..." : "Submit Essay"}
+  </button>
+</div>
             </form>
           )}
         </div>
