@@ -309,7 +309,22 @@
 "use client";
 
 import React, { useState } from "react";
-import { Brain, Globe, Scale, Landmark,Lightbulb, Users, TrendingUp, Dna, BookOpen, Cpu, ChevronDown } from "lucide-react";
+// import { Brain, Globe, Scale, Landmark,Lightbulb, Users, TrendingUp, Dna, BookOpen, Cpu, ChevronDown } from "lucide-react";
+
+import { 
+  Brain, 
+  Globe, 
+  Scale, 
+  Landmark, 
+  Users, 
+  TrendingUp, 
+  Dna, 
+  Cpu, 
+  BookOpen, 
+  ChevronUp, 
+  ChevronDown, 
+  Lightbulb 
+} from 'lucide-react';
 
 export default function CategoriesSection() {
   const [expandedIndex, setExpandedIndex] = useState(null);
