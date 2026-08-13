@@ -98,6 +98,17 @@ const BLOG_POSTS = [
     image: "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?q=80&w=2070&auto=format&fit=crop",
     slug: "/blogs/research-program-for-high-school-student",
   },
+
+  {
+    id: 10,
+    title: "Best STEM Journals for High School Students in 2026: Complete Publishing Guide",
+    excerpt:     "Compare the top peer-reviewed STEM research journals accepting high school student submissions. Includes acceptance rates, EBSCO indexing, review timelines, and official submission links.",
+    category: "Research",
+    date: "8 August 2026",
+    readTime: "7 min read",
+    image: "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?q=80&w=2070&auto=format&fit=crop",
+    slug: "/blogs/best-stem-journals-for-high-school-students",
+  },
 ]
 
 const BlogCard = ({ post }) => {
