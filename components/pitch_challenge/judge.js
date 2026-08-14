@@ -427,7 +427,7 @@ export default function JudgesAndExemplars() {
   // Subject-Specific PhD Judging Panel
   const judges = [
     {
-      name: 'Dr. Yogi Patel',
+      name: 'Dr. Patel',
       role: 'Aerospace Engineer',
       track: 'Computer Science & AI Track',
       institution: 'Argonne National Laboratory, Illinois, USA',
@@ -435,7 +435,7 @@ export default function JudgesAndExemplars() {
       badge: 'Track Chair',
     },
      {
-      name: 'Dr. Aalok Thakkar, PhD',
+      name: 'Dr. Thakkar, PhD',
       role: 'Assistant Professor of Computer Science',
       track: 'Earth & Space Sciences Track',
       institution: 'Ashoka University, India',
@@ -444,7 +444,7 @@ export default function JudgesAndExemplars() {
     
     },
     {
-      name: 'Dr. Shambhu Yadav, PhD',
+      name: 'Dr. Yadav, PhD',
       role: 'Neuroscientist and Stress Biologist',
       track: 'Chemistry & Materials Track',
       institution: 'Harvard Medical School',
