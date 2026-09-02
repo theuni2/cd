@@ -7,6 +7,8 @@ import { User, Film, ShieldCheck, CheckCircle2, ArrowRight, ArrowLeft, UploadClo
 export default function SubmissionPortal() {
   const [currentStep, setCurrentStep] = useState(1);
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [errorMessage, setErrorMessage] = useState('');
 
   // Form State
   const [formData, setFormData] = useState({
@@ -19,8 +21,8 @@ export default function SubmissionPortal() {
     category: 'Physics',
     videoUrl: '',
     videoDescription: '',
-    parentName: '',
-    parentEmail: '',
+    counselorName: '',
+    counselorEmail: '',
     agreedToTerms: false,
   });
 
@@ -41,15 +43,43 @@ export default function SubmissionPortal() {
     if (currentStep > 1) setCurrentStep((prev) => prev - 1);
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    setIsSubmitted(true);
+    if (currentStep < 4) {
+      setCurrentStep((prev) => prev + 1);
+      return;
+    }
+
+    setIsSubmitting(true);
+    setErrorMessage('');
+
+    try {
+      const response = await fetch('/api/submit-pitch', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        setIsSubmitted(true);
+      } else {
+        const data = await response.json();
+        setErrorMessage(data.error || 'Something went wrong on our end. Please try again.');
+      }
+    } catch (error) {
+      console.error('Error submitting form:', error);
+      setErrorMessage('An error occurred. Please check your internet connection and try again.');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const stepTitles = [
     { num: 1, label: 'Student Info', icon: <User size={18} /> },
     { num: 2, label: 'Video Details', icon: <Film size={18} /> },
-    { num: 3, label: 'Consent', icon: <ShieldCheck size={18} /> },
+    { num: 3, label: 'Counselor Info', icon: <ShieldCheck size={18} /> },
     { num: 4, label: 'Review', icon: <CheckCircle2 size={18} /> },
   ];
 
@@ -240,7 +270,7 @@ export default function SubmissionPortal() {
                   </motion.div>
                 )}
 
-                {/* STEP 3: PARENT CONSENT */}
+                {/* STEP 3: COUNSELOR / ACADEMIC VERIFICATION */}
                 {currentStep === 3 && (
                   <motion.div
                     key="step3"
@@ -250,33 +280,33 @@ export default function SubmissionPortal() {
                     transition={{ duration: 0.3 }}
                     style={styles.formGroup}
                   >
-                    <h3 style={styles.stepHeading}>Step 3: Parent / Guardian Verification</h3>
+                    <h3 style={styles.stepHeading}>Step 3: Academic Teacher / Counselor Verification</h3>
                     <p style={styles.stepSubDesc}>
-                      Required for all participants under 18 years of age.
+                      Provide your school teacher or counselor details for academic verification.
                     </p>
 
                     <div style={styles.fieldGrid}>
                       <div>
-                        <label style={styles.label}>Parent/Guardian Full Name *</label>
+                        <label style={styles.label}>Academic Teacher / Counselor Name *</label>
                         <input
                           type="text"
-                          name="parentName"
+                          name="counselorName"
                           required
-                          value={formData.parentName}
+                          value={formData.counselorName}
                           onChange={handleChange}
-                          placeholder="Parent or Guardian Name"
+                          placeholder="e.g. Mrs. Sarah Jenkins"
                           style={styles.input}
                         />
                       </div>
                       <div>
-                        <label style={styles.label}>Parent/Guardian Email *</label>
+                        <label style={styles.label}>Counselor Email *</label>
                         <input
                           type="email"
-                          name="parentEmail"
+                          name="counselorEmail"
                           required
-                          value={formData.parentEmail}
+                          value={formData.counselorEmail}
                           onChange={handleChange}
-                          placeholder="parent@example.com"
+                          placeholder="teacher@school.edu"
                           style={styles.input}
                         />
                       </div>
@@ -313,29 +343,37 @@ export default function SubmissionPortal() {
                     <p style={styles.stepSubDesc}>Please double-check your submission before finalizing.</p>
 
                     <div style={styles.reviewBox}>
-                      <div style={styles.reviewRow}><strong>Student:</strong> {formData.fullName || 'N/A'} ({formData.age} yrs)</div>
+                      <div style={styles.reviewRow}><strong>Student:</strong> {formData.fullName || 'N/A'} ({formData.age ? `${formData.age} yrs` : 'N/A'})</div>
                       <div style={styles.reviewRow}><strong>Email:</strong> {formData.email || 'N/A'}</div>
                       <div style={styles.reviewRow}><strong>School:</strong> {formData.schoolName || 'N/A'}</div>
                       <div style={styles.reviewRow}><strong>Video Title:</strong> {formData.videoTitle || 'N/A'}</div>
                       <div style={styles.reviewRow}><strong>Category:</strong> {formData.category}</div>
-                      <div style={styles.reviewRow}><strong>Link:</strong> {formData.videoUrl || 'N/A'}</div>
+                      <div style={styles.reviewRow}><strong>Video Link:</strong> {formData.videoUrl || 'N/A'}</div>
+                      <div style={styles.reviewRow}><strong>Counselor:</strong> {formData.counselorName || 'N/A'} ({formData.counselorEmail || 'N/A'})</div>
                     </div>
                   </motion.div>
                 )}
 
               </AnimatePresence>
 
+              {errorMessage && (
+                <div style={{ marginTop: '16px', padding: '12px 16px', borderRadius: '8px', backgroundColor: 'rgba(239, 68, 68, 0.15)', border: '1px solid #ef4444', color: '#f87171', fontSize: '14px', display: 'flex', alignItems: 'center', gap: '8px' }}>
+                  <AlertCircle size={18} />
+                  <span>{errorMessage}</span>
+                </div>
+              )}
+
               {/* Navigation Buttons */}
               <div style={styles.buttonRow}>
                 {currentStep > 1 && (
-                  <button type="button" onClick={handlePrev} style={styles.backBtn}>
+                  <button type="button" onClick={handlePrev} disabled={isSubmitting} style={styles.backBtn}>
                     <ArrowLeft size={16} /> Back
                   </button>
                 )}
 
-                <button type="submit" style={styles.nextBtn}>
+                <button type="submit" disabled={isSubmitting} style={{ ...styles.nextBtn, opacity: isSubmitting ? 0.7 : 1, cursor: isSubmitting ? 'not-allowed' : 'pointer' }}>
                   {currentStep === 4 ? (
-                    <>Submit Entry <UploadCloud size={18} /></>
+                    <>{isSubmitting ? 'Submitting Entry...' : 'Submit Entry'} <UploadCloud size={18} /></>
                   ) : (
                     <>Continue <ArrowRight size={18} /></>
                   )}
@@ -356,7 +394,7 @@ export default function SubmissionPortal() {
               Thank you, <strong>{formData.fullName}</strong>. We’ve sent a confirmation email to <strong>{formData.email}</strong>.
             </p>
             <div style={styles.successBadge}>
-              Submission ID: #DISCOVERY-2026-{Math.floor(1000 + Math.random() * 9000)}
+              Submission ID: #APEX-2026-{Math.floor(1000 + Math.random() * 9000)}
             </div>
           </motion.div>
         )}
