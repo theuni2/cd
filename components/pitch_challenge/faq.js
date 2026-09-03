@@ -36,7 +36,7 @@
 
 //   return (
 //     <footer style={styles.wrapper} id="faq">
-      
+
 //       {/* SECTION 1: FAQ ACCORDION */}
 //       <div style={styles.faqContainer}>
 //         <motion.div
@@ -99,7 +99,7 @@
 //       {/* SECTION 2: FOOTER NAVIGATION & CREDITS */}
 //       <div style={styles.footerContainer}>
 //         <div style={styles.footerGrid}>
-          
+
 //           {/* Brand Info Column */}
 //           <div style={styles.brandCol}>
 //             <div style={styles.logoRow}>
@@ -394,7 +394,7 @@ const faqs = [
   },
   {
     question: "When will the results be announced?",
-    answer: "Official results will be announced on 15 December 2026. Winners and honorable mentions will be notified via email and published on our website."
+    answer: "Official results will be announced on 15 Jan 2027. Winners and honorable mentions will be notified via email and published on our website."
   },
   {
     question: "Can I work in a team or must it be an individual entry?",
@@ -428,7 +428,7 @@ export default function FAQAndFooter() {
 
   return (
     <footer style={styles.wrapper} id="faq">
-      
+
       {/* SECTION 1: FAQ ACCORDION */}
       <div style={styles.faqContainer}>
         <motion.div
@@ -494,7 +494,7 @@ export default function FAQAndFooter() {
           <Handshake size={20} color="#06B6D4" />
           <span style={styles.partnerTitle}>Official Partners & Collaborators</span>
         </div>
-        
+
         <div style={styles.partnerGrid}>
           {partnerGroups.map((group, idx) => (
             <div key={idx} style={styles.partnerCol}>
@@ -503,11 +503,11 @@ export default function FAQAndFooter() {
                 {group.partners.map((partner, pIdx) => (
                   <div key={pIdx} style={styles.partnerLogoCard}>
                     {/* Replace src below with actual logo asset paths or keep fallback text */}
-                    <img 
-                      src={partner.logoUrl} 
+                    <img
+                      src={partner.logoUrl}
                       alt={partner.name}
                       onError={(e) => { e.currentTarget.style.display = 'none'; }}
-                      style={styles.partnerLogoImg} 
+                      style={styles.partnerLogoImg}
                     />
                     <span style={styles.partnerNameText}>{partner.name}</span>
                   </div>
@@ -523,7 +523,7 @@ export default function FAQAndFooter() {
       {/* SECTION 3: FOOTER NAVIGATION & CREDITS */}
       <div style={styles.footerContainer}>
         <div style={styles.footerGrid}>
-          
+
           {/* Brand Info Column */}
           <div style={styles.brandCol}>
             <div style={styles.logoRow}>
@@ -540,7 +540,7 @@ export default function FAQAndFooter() {
             </div>
           </div>
 
-     
+
           {/* Contact Column */}
           <div>
             <h4 style={styles.colTitle}>Contact & Rules</h4>
