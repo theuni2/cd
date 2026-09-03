@@ -393,6 +393,10 @@ const faqs = [
     answer: "Entries are reviewed by specialist research PhDs based on four core metrics: Scientific Rigor (30%), Analytical Clarity (30%), Visual Storytelling (20%), and Real-World Relevance (20%)."
   },
   {
+    question: "When will the results be announced?",
+    answer: "Official results will be announced on 15 December 2026. Winners and honorable mentions will be notified via email and published on our website."
+  },
+  {
     question: "Can I work in a team or must it be an individual entry?",
     answer: "Submissions are individual only. While peers or advisors can assist as camera operators or background support, the research focus, script, and presentation must be entirely led by a single student."
   }
