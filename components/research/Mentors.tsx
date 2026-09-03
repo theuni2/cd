@@ -83,75 +83,75 @@ const mentors = [
   //   "expertise": ["Public Health", "Implementation Science", "Global Health Research"],
   //   "quote": "Advancing public health through implementation research and cross-disciplinary collaborations."
   // },
+  // {
+  //   "name": "Dr. Jude",
+  //   "title": "Professor",
+  //   "institution": "Singapore Management University",
+  //   "institutionLogo": "/unilogo/smu.png",
+  //   "image": "/professor/jude.png",
+  //   "linkedin": "https://www.linkedin.com/in/piyushamajumdar/",
+  //   "expertise": ["Sustainability", "Governance"],
+  //   "quote": "Promoting sustainable development and responsible governance to shape a more equitable and resilient future."
+  // },
   {
-    "name": "Dr. Jude",
-    "title": "Professor",
-    "institution": "Singapore Management University",
-    "institutionLogo": "/unilogo/smu.png",
-    "image": "/professor/jude.png",
-    "linkedin": "https://www.linkedin.com/in/piyushamajumdar/",
-    "expertise": ["Sustainability", "Governance"],
-    "quote": "Promoting sustainable development and responsible governance to shape a more equitable and resilient future."
+    "name": "Mr. Barritt",
+    "title": "Chief Development Officer, Michigan Medicine",
+    "institution": "Michigan Medicine",
+    "institutionLogo": "/unilogo/universityofmichigan.png",
+    "image": "/unilogo/professor1.png",
+    "linkedin": "https://www.linkedin.com/in/ericbarritt/",
+    "expertise": [
+      "Philanthropy",
+      "Healthcare Fundraising",
+      "Major Gifts Strategy",
+      "Non-Profit Leadership"
+    ],
+    "quote": "Transforming healthcare through philanthropy—$1.5B+ raised and 200+ major gifts secured to fuel innovation and care."
   },
   {
-  "name": "Mr. Barritt",
-  "title": "Chief Development Officer, Michigan Medicine",
-  "institution": "Michigan Medicine",
-  "institutionLogo": "/unilogo/universityofmichigan.png",
-  "image": "/unilogo/professor1.png",
-  "linkedin": "https://www.linkedin.com/in/ericbarritt/",
-  "expertise": [
-    "Philanthropy",
-    "Healthcare Fundraising",
-    "Major Gifts Strategy",
-    "Non-Profit Leadership"
-  ],
-  "quote": "Transforming healthcare through philanthropy—$1.5B+ raised and 200+ major gifts secured to fuel innovation and care."
-},
+    "name": "Mr. Takyar",
+    "title": "Assistant Professor, University of Minnesota",
+    "institution": "University of Minnesota",
+    "institutionLogo": "/college/minn.png",
+    "image": "/professor/farjin.png",
+    "linkedin": "https://www.linkedin.com/in/ericbarritt/",
+    "expertise": [
+      "Medicine"
+    ],
+    "quote": "Advancing the frontiers of medicine through research, innovation, and compassionate care."
+  }
+  ,
   {
-  "name": "Mr. Takyar",
-  "title": "Assistant Professor, University of Minnesota",
-  "institution": "University of Minnesota",
-  "institutionLogo": "/college/minn.png",
-  "image": "/professor/farjin.png",
-  "linkedin": "https://www.linkedin.com/in/ericbarritt/",
-  "expertise": [
-    "Medicine"
-  ],
-  "quote": "Advancing the frontiers of medicine through research, innovation, and compassionate care."
-}
-,
- {
-  "name": "Mrs. Hajal",
-  "title": "",
-  "institution": "Professor, Northwestern University",
-  "institutionLogo": "/unilogo/universityofmichigan.png",
-  "image": "/professor/h.png",
-  "linkedin": "https://www.linkedin.com/in/ericbarritt/",
-  "expertise": [
-    "Philanthropy",
-    "Healthcare Fundraising",
-    "Major Gifts Strategy",
-    "Non-Profit Leadership"
-  ],
-  "quote": "Bridging compassion and innovation—driving lasting impact through transformative healthcare philanthropy."
-},
- 
- {
-  "name": "Mr. Arrazola",
-  "title": "PhD Research",
-  "institution": "University College London",
-  "institutionLogo": "/unilogo/ucl.png",
-  "image": "/professor/rebia.png",
-  "linkedin": "https://www.linkedin.com/in/ericbarritt/",
-  "expertise": [
-    "Science and Innovation",
-    "Sustainability",
-    "Corporate Social Responsibility",
-    "Environmental Engineering"
-  ],
-  "quote": "Bridging compassion and innovation—driving lasting impact through transformative healthcare philanthropy."
-}
+    "name": "Mrs. Hajal",
+    "title": "",
+    "institution": "Professor, Northwestern University",
+    "institutionLogo": "/unilogo/universityofmichigan.png",
+    "image": "/professor/h.png",
+    "linkedin": "https://www.linkedin.com/in/ericbarritt/",
+    "expertise": [
+      "Philanthropy",
+      "Healthcare Fundraising",
+      "Major Gifts Strategy",
+      "Non-Profit Leadership"
+    ],
+    "quote": "Bridging compassion and innovation—driving lasting impact through transformative healthcare philanthropy."
+  },
+
+  {
+    "name": "Mr. Arrazola",
+    "title": "PhD Research",
+    "institution": "University College London",
+    "institutionLogo": "/unilogo/ucl.png",
+    "image": "/professor/rebia.png",
+    "linkedin": "https://www.linkedin.com/in/ericbarritt/",
+    "expertise": [
+      "Science and Innovation",
+      "Sustainability",
+      "Corporate Social Responsibility",
+      "Environmental Engineering"
+    ],
+    "quote": "Bridging compassion and innovation—driving lasting impact through transformative healthcare philanthropy."
+  }
 
 
 ];
@@ -162,7 +162,7 @@ const CarouselProgress = ({ current, total }) => (
       {String(current + 1).padStart(2, '0')} / {String(total).padStart(2, '0')}
     </div>
     <div className="flex-1 h-[2px] bg-gray-200 rounded-full overflow-hidden">
-      <div 
+      <div
         className="h-full bg-[#478af6] transition-all duration-300"
         style={{ width: `${((current + 1) / total) * 100}%` }}
       />
@@ -175,7 +175,7 @@ const MentorCard = ({ mentor }) => (
     {/* Animated Background */}
     <div className="absolute inset-0 bg-gradient-to-br from-[#478af6]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
     <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(71,138,246,0.1),transparent_70%)] opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-    
+
     {/* Profile Section */}
     <div className="relative flex items-start gap-4 md:gap-6 mb-6 md:mb-8">
       <div className="relative w-16 h-16 md:w-20 md:h-20 rounded-2xl overflow-hidden shadow-lg transform transition-transform duration-300 group-hover:scale-105">
@@ -318,12 +318,12 @@ export default function Mentors() {
               >
                 <ChevronLeft className="w-6 h-6 text-gray-600 group-hover:text-[#478af6] transition-transform group-hover:-translate-x-1" />
               </button>
-              
-              <CarouselProgress 
-                current={current} 
-                total={mentors.length} 
+
+              <CarouselProgress
+                current={current}
+                total={mentors.length}
               />
-              
+
               <button
                 onClick={() => api?.scrollNext()}
                 className="group flex items-center justify-center w-12 h-12 rounded-full border border-gray-200 hover:border-[#478af6]/20 hover:bg-[#478af6]/5 transition-colors"
@@ -342,7 +342,7 @@ export default function Mentors() {
           viewport={{ once: true }}
           className="mt-12 md:mt-16 text-center"
         >
-          <a 
+          <a
             href="/#contact"
             className="inline-flex items-center px-6 md:px-8 py-3 md:py-4 bg-[#478af6] text-white rounded-full font-medium hover:bg-[#3870d8] transition-all duration-300 shadow-md hover:shadow-lg"
           >
