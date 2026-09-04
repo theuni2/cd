@@ -2,7 +2,7 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 
 export const metadata = {
-  title: '6 Elite Research Journals for High Schoolers No One Wants You to Know About',
+  title: '6 Top Peer-Reviewed Journals to Publish Your High School Research (2026)',
   description: 'Discover 6 selective, peer-reviewed research journals for high school students looking to publish original work, boost college applications, and showcase academic rigor.',
   alternates: {
     canonical: "https://www.thecareerdiscovery.com/blogs/elite-research-journals-for-high-schoolers",
@@ -18,7 +18,7 @@ export default function BlogArticle() {
 
           {/* Title */}
           <h1 className="text-4xl font-semibold text-gray-900 leading-tight">
-            6 Elite Research Journals for High Schoolers No One Wants You to Know About
+            6 Top Peer-Reviewed Journals to Publish Your High School Research (2026)
           </h1>
 
           {/* Meta */}
@@ -45,7 +45,7 @@ export default function BlogArticle() {
             </p>
 
             <p>
-              While most students struggle to find accessible platforms, here are **6 elite research journals for high schoolers that no one wants you to know about**:
+              While most students struggle to find accessible platforms, here are <strong>6 top peer-reviewed research journals to publish your high school research in 2026</strong>:
             </p>
 
             {/* 1. The Schola */}
