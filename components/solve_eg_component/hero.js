@@ -235,7 +235,7 @@
 //       {/* Track Background Images splitting the canvas layout */}
 //       <div style={styles.techBg} />
 //       <div style={styles.impactBg} />
-      
+
 //       {/* Dynamic Structural Grid lines */}
 //       <div style={styles.gridOverlay} />
 
@@ -250,7 +250,7 @@
 //       }} />
 
 //       <div style={styles.container}>
-        
+
 //         {/* Dynamic Context Floating Tags (Hidden on narrow viewports via standard layouts) */}
 //         <div className="hidden lg:flex" style={styles.floatingTagLeft}>
 //           <Code size={16} />
@@ -387,7 +387,7 @@ export default function SolveHeroAnimated({ onOpenRegister }) {
 
   const styles = {
     section: {
-      position: "relative" ,
+      position: "relative",
       minHeight: "95vh",
       width: "100%",
       backgroundColor: "#050507",
@@ -401,7 +401,7 @@ export default function SolveHeroAnimated({ onOpenRegister }) {
     },
     // Unified high-energy innovation canvas background
     innovationBg: {
-      position: "absolute" ,
+      position: "absolute",
       top: 0,
       left: 0,
       width: "100%",
@@ -410,33 +410,33 @@ export default function SolveHeroAnimated({ onOpenRegister }) {
       backgroundSize: "cover",
       backgroundPosition: "center",
       opacity: 0.08,
-      mixBlendMode: "screen" ,
-      pointerEvents: "none" ,
+      mixBlendMode: "screen",
+      pointerEvents: "none",
     },
     gridOverlay: {
-      position: "absolute" ,
+      position: "absolute",
       inset: 0,
       backgroundImage: "linear-gradient(to right, #121217 1px, transparent 1px), linear-gradient(to bottom, #121217 1px, transparent 1px)",
       backgroundSize: "5rem 5rem",
       maskImage: "radial-gradient(circle at 50% 50%, #000 60%, transparent 100%)",
       WebkitMaskImage: "radial-gradient(circle at 50% 50%, #000 60%, transparent 100%)",
       opacity: 0.4,
-      pointerEvents: "none" ,
+      pointerEvents: "none",
     },
     container: {
-      position: "relative" ,
+      position: "relative",
       maxWidth: "1000px",
       width: "100%",
       margin: "0 auto",
-      textAlign: "center" ,
+      textAlign: "center",
       zIndex: 10,
       display: "flex",
-      flexDirection: "column" ,
+      flexDirection: "column",
       alignItems: "center",
     },
     badgeGroup: {
       display: "flex",
-      flexDirection: "column" ,
+      flexDirection: "column",
       alignItems: "center",
       gap: "12px",
       marginBottom: "32px",
@@ -490,11 +490,11 @@ export default function SolveHeroAnimated({ onOpenRegister }) {
       fontSize: "clamp(1rem, 2.2vw, 1.25rem)",
       lineHeight: 1.6,
       margin: "0 0 40px 0",
-      textBalance: "balance" ,
+      textBalance: "balance",
     },
     ctaGroup: {
       display: "flex",
-      flexWrap: "wrap" ,
+      flexWrap: "wrap",
       gap: "20px",
       justifyContent: "center",
       width: "100%",
@@ -526,41 +526,41 @@ export default function SolveHeroAnimated({ onOpenRegister }) {
       backdropFilter: "blur(8px)",
       WebkitBackdropFilter: "blur(8px)",
     },
-floatingTagLeft: {
-  position: "absolute",
-  left: "-60px",
-  top: "35%",
-  backgroundColor: "rgba(168, 85, 247, 0.1)",
-  border: "1px solid rgba(168, 85, 247, 0.2)",
-  padding: "10px 16px",
-  borderRadius: "12px",
-  alignItems: "center",
-  gap: "8px",
-  fontSize: "13px",
-  fontWeight: 600,
-  color: "#c084fc",
-  backdropFilter: "blur(6px)",
-  WebkitBackdropFilter: "blur(6px)",
-  animation: "floatSlow 6s ease-in-out infinite",
-},
+    floatingTagLeft: {
+      position: "absolute",
+      left: "-60px",
+      top: "35%",
+      backgroundColor: "rgba(168, 85, 247, 0.1)",
+      border: "1px solid rgba(168, 85, 247, 0.2)",
+      padding: "10px 16px",
+      borderRadius: "12px",
+      alignItems: "center",
+      gap: "8px",
+      fontSize: "13px",
+      fontWeight: 600,
+      color: "#c084fc",
+      backdropFilter: "blur(6px)",
+      WebkitBackdropFilter: "blur(6px)",
+      animation: "floatSlow 6s ease-in-out infinite",
+    },
 
-floatingTagRight: {
-  position: "absolute",
-  right: "-60px",
-  top: "45%",
-  backgroundColor: "rgba(34, 211, 238, 0.1)",
-  border: "1px solid rgba(34, 211, 238, 0.2)",
-  padding: "10px 16px",
-  borderRadius: "12px",
-  alignItems: "center",
-  gap: "8px",
-  fontSize: "13px",
-  fontWeight: 600,
-  color: "#22d3ee",
-  backdropFilter: "blur(6px)",
-  WebkitBackdropFilter: "blur(6px)",
-  animation: "floatSlow 6s ease-in-out infinite 3s",
-},
+    floatingTagRight: {
+      position: "absolute",
+      right: "-60px",
+      top: "45%",
+      backgroundColor: "rgba(34, 211, 238, 0.1)",
+      border: "1px solid rgba(34, 211, 238, 0.2)",
+      padding: "10px 16px",
+      borderRadius: "12px",
+      alignItems: "center",
+      gap: "8px",
+      fontSize: "13px",
+      fontWeight: 600,
+      color: "#22d3ee",
+      backdropFilter: "blur(6px)",
+      WebkitBackdropFilter: "blur(6px)",
+      animation: "floatSlow 6s ease-in-out infinite 3s",
+    },
     footerGrid: {
       display: "grid",
       gridTemplateColumns: "repeat(auto-fit, minmax(180px, 1fr))",
@@ -572,7 +572,7 @@ floatingTagRight: {
     footerLabel: {
       fontSize: "11px",
       color: "#52525b",
-      textTransform: "uppercase" ,
+      textTransform: "uppercase",
       letterSpacing: "0.15em",
       margin: "0 0 8px 0",
     },
@@ -590,7 +590,8 @@ floatingTagRight: {
 
   return (
     <section style={styles.section}>
-      <style dangerouslySetInnerHTML={{__html: `
+      <style dangerouslySetInnerHTML={{
+        __html: `
         @keyframes shimmerGradient {
           0% { background-position: 0% 50%; }
           50% { background-position: 100% 50%; }
@@ -617,7 +618,7 @@ floatingTagRight: {
       }} />
 
       <div style={styles.container}>
-        
+
         {/* Context Floating Tags */}
         {/* <div className="hidden lg:flex" style={styles.floatingTagLeft}>
           <Lightbulb size={16} />
@@ -628,15 +629,15 @@ floatingTagRight: {
           <span>Impact</span>
         </div> */}
 
-<div className="hidden lg:flex" style={styles.floatingTagLeft}>
-  <Lightbulb size={16} />
-  <span>Innovation</span>
-</div>
+        <div className="hidden lg:flex" style={styles.floatingTagLeft}>
+          <Lightbulb size={16} />
+          <span>Innovation</span>
+        </div>
 
-<div className="hidden lg:flex" style={styles.floatingTagRight}>
-  <Trophy size={16} />
-  <span>Impact</span>
-</div>
+        <div className="hidden lg:flex" style={styles.floatingTagRight}>
+          <Trophy size={16} />
+          <span>Impact</span>
+        </div>
 
 
 
@@ -709,7 +710,7 @@ floatingTagRight: {
           transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
           style={styles.ctaGroup}
         >
-          <motion.button 
+          <motion.button
             whileHover={{ scale: 1.03, boxShadow: "0 15px 35px rgba(168, 85, 247, 0.3)" }}
             whileTap={{ scale: 0.98 }}
             onClick={onOpenRegister}
@@ -729,7 +730,7 @@ floatingTagRight: {
         </motion.div>
 
         {/* Core Metadata Grid */}
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1, delay: 0.6 }}
@@ -755,6 +756,12 @@ floatingTagRight: {
             <p style={styles.footerLabel}>Scope</p>
             <p style={styles.footerValue}>
               <Globe size={16} color="#a78bfa" /> Online Submission
+            </p>
+          </div>
+          <div>
+            <p style={styles.footerLabel}>Last Date</p>
+            <p style={styles.footerValue}>
+              <Globe size={16} color="#a78bfa" /> 15th Oct 2026
             </p>
           </div>
         </motion.div>

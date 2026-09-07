@@ -60,7 +60,7 @@ const faqCategories = [
     faqs: [
       { q: "How should I format my essay's file name?", a: "Your file must be named using the format: FirstName-LastName-Category-QuestionNumber.pdf. Essays with incorrect filenames will be rejected." },
       { q: "May I submit more than one essay?", a: "Yes, you may submit as many essays as you please in any or all categories." },
-      { q: "When will the winners be announced?", a: "Official results will be released on 20th October 2026. All participants will receive an email update, and the winning essays will be featured on our global gallery." },
+      { q: "When will the winners be announced?", a: "Official results will be released on 15th October 2026. All participants will receive an email update, and the winning essays will be featured on our global gallery." },
       { q: "May I use AI software, such as ChatGPT?", a: "Yes, but be warned: overreliance on AI often results in less original work. Since AI use can negatively affect our assessment of your unique 'voice,' we recommend using it sparingly or not at all." },
       { q: "I uploaded the wrong draft. What should I do?", a: "Re-upload any time before the final deadline." },
     ]

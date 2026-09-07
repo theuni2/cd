@@ -8,7 +8,7 @@ export default async function handler(req, res) {
 
   try {
     // 2. Get the data from the frontend modal
-    const { firstName, lastName, email,school, category,contactNumber,idDriveLink,docLink } = req.body;
+    const { firstName, lastName, email,school, category,contactNumber,counselorName,counselorEmail, idDriveLink, docLink } = req.body;
 
     // firstName: "",
     // lastName: "",
@@ -34,7 +34,7 @@ export default async function handler(req, res) {
       from: process.env.EMAIL_USER,
       to: 'unidiscoveryfiles@gmail.com', // Sends to your own email inbox
       replyTo: email, // If you hit "Reply" in your inbox, it replies to the student
-      subject: `🚨 New Essay Submission: ${category} - ${firstName} ${lastName}`,
+      subject: `🚨 New Novus Essay Submission: ${category} - ${firstName} ${lastName}`,
       html: `
         <div style="font-family: Arial, sans-serif; color: #0a2342; padding: 20px;">
           <h2 style="color: #c5a059;">New Global Essay Prize Submission</h2>
@@ -65,6 +65,14 @@ export default async function handler(req, res) {
               <td style="padding: 10px; font-weight: bold; border: 1px solid #ddd;">Category</td>
               <td style="padding: 10px; border: 1px solid #ddd; font-weight: bold; color: #0a2342;">${category}</td>
             </tr>
+            <tr style="background-color: #f4f4f4;">
+              <td style="padding: 10px; font-weight: bold; border: 1px solid #ddd;">Counselor Email</td>
+              <td style="padding: 10px; border: 1px solid #ddd; font-weight: bold; color: #0a2342;">${counselorEmail}</td>
+            </tr>
+            <tr style="background-color: #f4f4f4;">
+              <td style="padding: 10px; font-weight: bold; border: 1px solid #ddd;">Counselor Name</td>
+              <td style="padding: 10px; border: 1px solid #ddd; font-weight: bold; color: #0a2342;">${counselorName}</td>
+            </tr>
             <tr>
               <td style="padding: 10px; font-weight: bold; border: 1px solid #ddd;">Google Doc Link</td>
               <td style="padding: 10px; border: 1px solid #ddd;">
@@ -74,7 +82,7 @@ export default async function handler(req, res) {
               </td>
             </tr>
           </table>
-          <p style="margin-top: 30px; font-size: 12px; color: #888;">Submitted via The Career Discovery Forge Essay Submission Form</p>
+          <p style="margin-top: 30px; font-size: 12px; color: #888;">Submitted via The Career Discovery Novus Essay Submission Form</p>
         </div>
       `,
     };
