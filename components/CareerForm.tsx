@@ -1436,7 +1436,7 @@ export default function CareerForm() {
 
                       <div className="flex flex-col sm:flex-row items-center justify-center gap-4 max-w-lg mx-auto">
                         {/* Booking Link Button */}
-                        <a
+                        {/* <a
                           href={BOOKING_LINK}
                           target="_blank"
                           rel="noopener noreferrer"
@@ -1445,7 +1445,7 @@ export default function CareerForm() {
                           <Calendar size={18} />
                           Book 1:1 Session
                           <ExternalLink size={14} className="opacity-80" />
-                        </a>
+                        </a> */}
 
                         {/* WhatsApp Community Button */}
                         <a
