@@ -64,7 +64,7 @@
 //   return (
 //     // OVERLAY: Darkens the background and blurs it
 //     <div className="fixed inset-0 z-50 flex items-center justify-center bg-[#0a2342]/80 backdrop-blur-sm p-4">
-      
+
 //       {/* MODAL BOX */}
 //       <div 
 //         className="relative w-full max-w-2xl bg-white rounded-sm shadow-2xl overflow-hidden animate-in fade-in zoom-in-95 duration-300"
@@ -104,7 +104,7 @@
 //           <div className="p-12 text-center">
 //             <h3 className="text-2xl font-serif text-[#0a2342] mb-4">Submission Received</h3>
 //             <p className="text-gray-600 mb-8">Thank you, {formData.firstName}. Your essay has been securely submitted to the faculty for review.</p>
-            
+
 //             {/* HARD-CODED CLOSE BUTTON */}
 //             <button 
 //               onClick={onClose}
@@ -127,7 +127,7 @@
 //           </div>
 //         ) : (
 //           <form onSubmit={handleSubmit} className="p-8">
-            
+
 //             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
 //               {/* First Name */}
 //               <div>
@@ -291,7 +291,7 @@
 //             >
 //               {isSubmitting ? "Submitting to Faculty..." : "Submit Essay"}
 //             </button>
-            
+
 //           </form>
 //         )}
 //       </div>
@@ -354,17 +354,17 @@ export default function SubmitModal({ isOpen, onClose }) {
 
   return createPortal(
     /* OVERLAY: Inline zIndex: 999999 guarantees it forces over all page text */
-    <div 
+    <div
       style={{ zIndex: 999999 }}
       className="fixed inset-0 bg-black/80 backdrop-blur-md flex items-center justify-center p-4 md:p-6"
     >
-      
+
       {/* MODAL CARD: Height bounded to viewport with flex column */}
-      <div 
+      <div
         style={{ maxHeight: "88vh" }}
         className="relative w-full max-w-2xl bg-white rounded-xl shadow-2xl flex flex-col border border-gray-200 overflow-hidden my-auto"
       >
-        
+
         {/* CLOSE BUTTON */}
         <button
           onClick={onClose}
@@ -390,8 +390,8 @@ export default function SubmitModal({ isOpen, onClose }) {
         </div>
 
         {/* SCROLLABLE FORM BODY (minHeight: 0 enables flex scroll in all browsers) */}
-        <div 
-          style={{ minHeight: 0 }} 
+        <div
+          style={{ minHeight: 0 }}
           className="flex-1 overflow-y-auto p-5 md:p-8"
         >
           {submitStatus === "success" ? (
@@ -409,7 +409,7 @@ export default function SubmitModal({ isOpen, onClose }) {
             </div>
           ) : (
             <form onSubmit={handleSubmit} className="space-y-4 pb-2">
-              
+
               {/* First Name & Last Name */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div>
@@ -487,6 +487,8 @@ export default function SubmitModal({ isOpen, onClose }) {
                     <option value="Psychology">Psychology</option>
                     <option value="Theology">Theology</option>
                     <option value="Law">Law</option>
+                    <option value="STEM">STEM & Bioethics</option>
+                    <option value="CS & AI">CS & AI</option>
                     <option value="Junior Prize">Junior Prize (Under 14s)</option>
                   </select>
                   <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-4 text-gray-400">
@@ -591,19 +593,18 @@ export default function SubmitModal({ isOpen, onClose }) {
                   {isSubmitting ? "Submitting to Faculty..." : "Submit Essay"}
                 </button>
               </div> */}
-<div className="pt-4 pb-2">
-  <button
-    type="submit"
-    disabled={isSubmitting}
-    className={`w-full py-3.5 font-bold tracking-widest uppercase text-xs flex justify-center items-center shadow-md transition-all ${
-      isSubmitting
-        ? "bg-amber-200/50 text-amber-800/60 cursor-not-allowed"
-        : "bg-gradient-to-r from-[#bf953f] via-[#aa771c] to-[#bf953f] hover:brightness-110 text-amber-950 cursor-pointer shadow-amber-900/20"
-    }`}
-  >
-    {isSubmitting ? "Submitting to Faculty..." : "Submit Essay"}
-  </button>
-</div>
+              <div className="pt-4 pb-2">
+                <button
+                  type="submit"
+                  disabled={isSubmitting}
+                  className={`w-full py-3.5 font-bold tracking-widest uppercase text-xs flex justify-center items-center shadow-md transition-all ${isSubmitting
+                    ? "bg-amber-200/50 text-amber-800/60 cursor-not-allowed"
+                    : "bg-gradient-to-r from-[#bf953f] via-[#aa771c] to-[#bf953f] hover:brightness-110 text-amber-950 cursor-pointer shadow-amber-900/20"
+                    }`}
+                >
+                  {isSubmitting ? "Submitting to Faculty..." : "Submit Essay"}
+                </button>
+              </div>
             </form>
           )}
         </div>
