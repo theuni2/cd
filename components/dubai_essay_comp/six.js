@@ -269,7 +269,7 @@ export default function RulesSection() {
           {/* NOTICE BANNER */}
           <div className="note-box">
             <p className="note-text">
-              Registration closes on <strong className="highlight-gold">15th September 2026</strong>. 
+              Registration is now <strong className="highlight-gold">CLOSED</strong> (Deadline was 15th September 2026). 
             </p>
             <p className="note-accent-text">
               * Final results will be officially declared on <span className="highlight-gold">15th October 2026</span> via the portal and email notifications.

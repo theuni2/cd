@@ -1100,19 +1100,11 @@ export default function HeroSection({ onSubmitClick }) {
           border-radius: 4px;
         }
 
-        .btn-primary {
-          background-color: transparent;
-          color: #ffffff;
-          border: 1px solid rgba(255, 255, 255, 0.2);
-          cursor: pointer;
-        }
-
-        .btn-primary:hover {
-          background-color: #ffffff;
-          color: #07080b;
-          border-color: #ffffff;
-          transform: translateY(-3px);
-          box-shadow: 0 10px 30px rgba(255, 255, 255, 0.1);
+        .btn-closed {
+          background-color: rgba(255, 255, 255, 0.03);
+          color: rgba(255, 255, 255, 0.3);
+          border: 1px solid rgba(255, 255, 255, 0.08);
+          cursor: not-allowed;
         }
 
         .btn-secondary {
@@ -1182,8 +1174,8 @@ export default function HeroSection({ onSubmitClick }) {
           </p>
 
           <div className="btn-container">
-            <button className="btn btn-primary" onClick={onSubmitClick}>
-              Submit Essay <Send size={15} />
+            <button className="btn btn-closed" disabled>
+              REGISTRATION CLOSED
             </button>
             
             <a href="#topic" style={{ textDecoration: 'none' }}>
