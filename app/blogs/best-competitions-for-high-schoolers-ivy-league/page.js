@@ -3,13 +3,13 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 
 export const metadata = {
-  title: 'Top 6 High School Competitions for Ivy League Admissions (2026)',
+  title: '6 Prestigious High School Competitions for Ivy League Applicants (2026)',
   description: 'Discover 6 elite high school competitions that boost Ivy League & Tier-1 college applications: GENIUS Olympiad, M3 Challenge, SOLVE, Youth Citizen Entrepreneurship, NFTE, and Apex Discovery.',
   alternates: {
     canonical: "https://www.thecareerdiscovery.com/blogs/best-competitions-for-high-schoolers-ivy-league",
   },
   openGraph: {
-    title: 'Top 6 High School Competitions for Ivy League Applications | 2026 Guide',
+    title: '6 Prestigious High School Competitions for Ivy League Applicants (2026)',
     description: 'Detailed breakdown of high-impact global competitions for high schoolers: GENIUS Olympiad, M3 Challenge, SOLVE Youth Innovation, Youth Citizen Entrepreneurship, NFTE, and Apex Discovery.',
     type: 'article',
   }
@@ -24,7 +24,7 @@ export default function IvyLeagueCompetitionsBlog() {
 
           {/* Header & Title */}
           <h1 className="text-4xl font-extrabold text-gray-900 leading-tight">
-            These 6 Elite High School Competitions Are the Ultimate "Ivy League Cheat Code" for Tier-1 Admissions
+            6 Prestigious High School Competitions for Ivy League Applicants (2026)
           </h1>
 
           {/* Meta Information */}
