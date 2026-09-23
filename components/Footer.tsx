@@ -360,7 +360,7 @@
 import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
-import { Facebook, Instagram, Disc as Discord } from 'lucide-react'
+import { Facebook, Instagram } from 'lucide-react'
 
 const Blob = ({ className }: { className: string }) => (
   <div
@@ -471,11 +471,6 @@ const Footer = () => {
               <SocialIcon
                 Icon={Instagram}
                 href="https://www.instagram.com/thecareerdiscovery"
-              />
-
-              <SocialIcon
-                Icon={Discord}
-                href="https://discord.gg/28DFDfpXz"
               />
             </div>
           </div>
