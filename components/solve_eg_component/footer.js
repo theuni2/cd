@@ -540,7 +540,7 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import { ArrowRight, Sparkles, Mail, ArrowUp } from "lucide-react";
+import { ArrowRight, Sparkles, Mail, ArrowUp, Clock } from "lucide-react";
 
 export default function SolveFooterCTA({ onOpenRegister }) {
   const styles = {
@@ -716,20 +716,43 @@ export default function SolveFooterCTA({ onOpenRegister }) {
           </div>
 
           <h2 style={styles.ctaTitle}>Got an Idea?<br />Let’s SOLVE It.</h2>
+
+          <div style={{
+            display: "inline-flex",
+            alignItems: "center",
+            gap: "8px",
+            padding: "8px 18px",
+            borderRadius: "100px",
+            backgroundColor: "rgba(239, 68, 68, 0.12)",
+            border: "1px solid rgba(239, 68, 68, 0.35)",
+            color: "#fecaca",
+            fontSize: "13px",
+            fontWeight: 700,
+            marginBottom: "24px"
+          }}>
+            <Clock size={15} color="#ef4444" />
+            <span>SOLVE Competition will be closed 11:50pm IST on 15oct</span>
+          </div>
           
           <p style={styles.ctaSubtitle}>
             Bring your pitch deck and your 3-minute video to our global evaluation arena. No mentorship clutter. No logistical complications. Just absolute impact.
           </p>
 
-          <motion.button 
-            whileHover={{ scale: 1.03, boxShadow: "0 20px 40px rgba(197, 160, 89, 0.15)" }}
-            whileTap={{ scale: 0.98 }}
-            onClick={onOpenRegister}
-            style={styles.primaryBtn}
-          >
-            Submit Your Pitch
-            <ArrowRight size={18} />
-          </motion.button>
+          <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "10px" }}>
+            <motion.button 
+              whileHover={{ scale: 1.03, boxShadow: "0 20px 40px rgba(197, 160, 89, 0.15)" }}
+              whileTap={{ scale: 0.98 }}
+              onClick={onOpenRegister}
+              style={styles.primaryBtn}
+            >
+              Submit Your Pitch
+              <ArrowRight size={18} />
+            </motion.button>
+
+            <span style={{ fontSize: "13px", color: "#fca5a5", display: "flex", alignItems: "center", gap: "6px", fontWeight: 600 }}>
+              <Clock size={14} color="#ef4444" /> Closes at 11:50 PM IST on 15 Oct
+            </span>
+          </div>
         </div>
 
         {/* CORE PLATFORM FOOTER */}

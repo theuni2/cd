@@ -534,11 +534,11 @@ export default function SolveTimelineSection() {
     },
     {
       step: "02",
-      date: "15 October 2026 (Final Deadline)",
+      date: "15 October 2026 (Closes at 11:50 PM IST)",
       title: "Comprehensive Dossier Submission",
-      description: "The singular hard cutoff. Final 10-page Pitch Deck (PPT/PDF) and 1-minute video pitch must be finalized and submitted simultaneously with teacher credentials.",
+      description: "The singular hard cutoff. SOLVE Competition will be closed 11:50pm IST on 15oct. Final 10-page Pitch Deck (PPT/PDF) and 1-minute video pitch must be finalized and submitted simultaneously with teacher credentials.",
       icon: <Hourglass size={18} />,
-      accent: "#3b82f6", // Electric Blue
+      accent: "#ef4444", // Hard Cutoff Deadline
     },
     {
       step: "03",

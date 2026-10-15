@@ -61,18 +61,19 @@ export default function Research() {
   return (
     <main className="scroll-smooth">
       <ResearchHero />
-      <section id="why-research"> 
-      <WhyResearch />
+      <section id="why-research">
+        <WhyResearch />
       </section>
       <ValueProposition />
       {/* <ResearchOutcomes/> */}
       {/* <ProfessorsTimelineSection/> */}
-      <JournalMarquee/>
-   
+      <JournalMarquee />
+
       <Mentors />
-      
-      <IdeasToImpactSection/>
+
+      <IdeasToImpactSection />
       <ComparisonSection />
+      {/* <ResearchOutcomes /> */}
 
       <Footer />
     </main>

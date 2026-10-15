@@ -240,6 +240,10 @@ const faqData = [
       question: "Are there registration fees, and how will my submission be evaluated?",
       answer: "No, entering SOLVE is completely free from Day One. Your team's submission will be reviewed online by an expert panel of judges using our triple-alliteration evaluation standard: Innovation, Impact, and Implementation.",
     },
+    {
+      question: "When is the final deadline to submit our entry?",
+      answer: "SOLVE Competition will be closed 11:50pm IST on 15oct. All pitch decks (10 slides) and 1-minute video pitch links must be uploaded and submitted through the portal before this hard cutoff.",
+    },
   ];
 
   const styles = {

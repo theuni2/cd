@@ -333,7 +333,7 @@ export default function SignatureProgramsSection() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-center mb-16"
+          className="text-center mb-12"
         >
           <h2 className="text-4xl md:text-6xl font-extrabold text-gray-900 tracking-tight mb-4">
             Signature <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">Programs</span>
@@ -341,6 +341,39 @@ export default function SignatureProgramsSection() {
           <p className="text-gray-500 max-w-2xl mx-auto text-lg">
             Empowering the next generation of leaders through specialized, high-impact career and academic pathways.
           </p>
+        </motion.div>
+
+        {/* Featured Fellowship Spotlight Banner */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="mb-12 rounded-3xl bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900 text-white p-6 sm:p-8 border border-slate-700 shadow-2xl relative overflow-hidden flex flex-col md:flex-row items-center justify-between gap-6"
+        >
+          {/* Decorative Background Aura */}
+          <div className="absolute top-0 right-0 w-80 h-80 bg-emerald-500/10 rounded-full blur-3xl pointer-events-none" />
+
+          <div className="space-y-2 text-left z-10 max-w-2xl">
+            <span className="px-3.5 py-1 rounded-full bg-emerald-500/20 border border-emerald-500/40 text-emerald-300 text-xs font-bold uppercase tracking-wider inline-flex items-center gap-1.5">
+              <span className="w-2 h-2 rounded-full bg-emerald-400 animate-ping" />
+              Selective Research Fellowship • Grades 9–12
+            </span>
+            <h3 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+              The Applied Behavioral Economics Scholar Program
+            </h3>
+            <p className="text-slate-300 text-sm sm:text-base font-light leading-relaxed">
+              Taught directly by <strong>Dartmouth Professor Kimberly Rose Clark, Ph.D.</strong> (25-Yr CRO). Master choice architecture, diagnose commercial friction, and publish a consultancy-ready Behavioral Strategy Brief.
+            </p>
+          </div>
+          
+          <a
+            href="/applied-behavioral-economics-scholar"
+            className="z-10 flex-shrink-0 px-6 py-3.5 rounded-2xl bg-gradient-to-r from-emerald-500 via-teal-500 to-cyan-500 hover:from-emerald-400 hover:to-cyan-400 text-slate-950 font-extrabold text-sm shadow-xl shadow-emerald-500/20 transition-all flex items-center gap-2 group whitespace-nowrap"
+          >
+            Explore Fellowship
+            <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+          </a>
         </motion.div>
 
         {/* CSS Grid: 1 col on mobile, 2 cols on tablet, 4 cols on desktop */}

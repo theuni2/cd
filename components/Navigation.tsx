@@ -996,6 +996,7 @@
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
+import { usePathname } from 'next/navigation'
 import { Menu, ChevronDown } from 'lucide-react'
 import {
   Sheet,
@@ -1010,6 +1011,7 @@ const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
   const [mounted, setMounted] = useState(false)
+  const pathname = usePathname()
 
   useEffect(() => {
     setMounted(true)
@@ -1022,14 +1024,24 @@ const Navigation = () => {
 
   if (!mounted) return null
 
-  const linkClass = isScrolled
-    ? "text-gray-900 hover:text-gray-600"
-    : "text-white hover:text-gray-200"
+  const isDarkHeroPage = pathname === '/' || pathname === '/research' || pathname === '/internship' || pathname === '/launchpad' || pathname === '/tedx'
+  const isLightPage = !isDarkHeroPage
+
+  const linkClass = (isScrolled || isLightPage)
+    ? "text-gray-900 hover:text-gray-600 font-medium"
+    : "text-white hover:text-gray-200 font-medium"
 
   /* ===================== UPDATED NAV DATA ===================== */
   const navItems = [
     { href: '/', label: 'Home' },
-    { href: '/research', label: 'Research' },
+    { 
+      href: '/research', 
+      label: 'Research',
+      subItems: [
+        { href: '/research', label: 'ThinkTank Research' },
+        { href: '/applied-behavioral-economics-scholar', label: 'Behavioral Economics (Prof. Clark)' },
+      ]
+    },
     { href: '/internship', label: 'Internships' },
     { href: '/launchpad', label: 'Passion Project' },
     { href: '/essay_comp', label: 'Writing Programs' },
@@ -1046,10 +1058,17 @@ const Navigation = () => {
       ] 
     },
     { href: '/blogs', label: 'Blogs' },
+    { href: '/book', label: 'Book' },
   ]
 
   return (
-    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-white/80 backdrop-blur-md shadow-md' : ''}`}>
+    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+      isScrolled 
+        ? 'bg-white/90 backdrop-blur-md shadow-md border-b border-gray-100' 
+        : isLightPage 
+          ? 'bg-white/80 backdrop-blur-md border-b border-gray-200/60 shadow-sm' 
+          : 'bg-transparent'
+    }`}>
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
 
@@ -1101,6 +1120,29 @@ const Navigation = () => {
                 </Link>
               )
             })}
+
+            {/* Contact Button */}
+            {pathname === '/applied-behavioral-economics-scholar' ? (
+              <a
+                href="https://lms.thecareerdiscovery.com/home-programs/d73c70d8-1b5a-43a7-95c9-bb40db3a68d9"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-5 py-2.5 rounded-full bg-emerald-600 hover:bg-emerald-500 text-white text-sm font-semibold shadow-md transition-all whitespace-nowrap"
+              >
+                Contact & Apply
+              </a>
+            ) : (
+              <Link
+                href="/#contact"
+                className={`px-5 py-2.5 rounded-full text-sm font-semibold transition-all whitespace-nowrap ${
+                  isScrolled || isLightPage
+                    ? "bg-[#356bff] text-white hover:bg-[#2e5ee6]"
+                    : "bg-white text-gray-900 hover:bg-gray-100"
+                }`}
+              >
+                Contact Us
+              </Link>
+            )}
           </div>
 
           {/* ===================== MOBILE MENU ===================== */}
@@ -1150,6 +1192,29 @@ const Navigation = () => {
                     </Link>
                   )
                 })}
+
+                {/* Mobile Contact Button */}
+                <div className="pt-2">
+                  {pathname === '/applied-behavioral-economics-scholar' ? (
+                    <a
+                      href="https://lms.thecareerdiscovery.com/home-programs/d73c70d8-1b5a-43a7-95c9-bb40db3a68d9"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center justify-center w-full rounded-full px-6 py-3 text-base font-semibold bg-emerald-600 text-white hover:bg-emerald-500"
+                      onClick={() => setIsMobileMenuOpen(false)}
+                    >
+                      Contact & Apply
+                    </a>
+                  ) : (
+                    <Link
+                      href="/#contact"
+                      className="inline-flex items-center justify-center w-full rounded-full px-6 py-3 text-base font-semibold bg-[#356bff] text-white hover:bg-[#2e5ee6]"
+                      onClick={() => setIsMobileMenuOpen(false)}
+                    >
+                      Contact Us
+                    </Link>
+                  )}
+                </div>
               </div>
             </SheetContent>
           </Sheet>

@@ -83,6 +83,7 @@ const Footer = () => {
               { label: 'Services', href: '/services' },
               { label: 'How It Works', href: '/how-it-works' },
               { label: 'Success Stories', href: '/success-stories' },
+              { label: 'Our Book', href: '/book' },
               { label: 'Contact', href: '/contact' },
             ]}
           />

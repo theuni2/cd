@@ -376,7 +376,7 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import { ArrowRight, Sparkles, Globe, Users, Lightbulb, Trophy, Layers } from "lucide-react";
+import { ArrowRight, Sparkles, Globe, Users, Lightbulb, Trophy, Layers, Clock } from "lucide-react";
 
 export default function SolveHeroAnimated({ onOpenRegister }) {
   // Animation presets for sequential fade-in elements
@@ -440,6 +440,22 @@ export default function SolveHeroAnimated({ onOpenRegister }) {
       alignItems: "center",
       gap: "12px",
       marginBottom: "32px",
+    },
+    alertBanner: {
+      display: "inline-flex",
+      alignItems: "center",
+      gap: "10px",
+      padding: "10px 22px",
+      borderRadius: "9999px",
+      backgroundColor: "rgba(239, 68, 68, 0.15)",
+      border: "1px solid rgba(239, 68, 68, 0.45)",
+      fontSize: "13.5px",
+      fontWeight: 700,
+      letterSpacing: "0.01em",
+      color: "#fee2e2",
+      boxShadow: "0 4px 24px rgba(239, 68, 68, 0.25)",
+      backdropFilter: "blur(12px)",
+      WebkitBackdropFilter: "blur(12px)",
     },
     badge: {
       display: "inline-flex",
@@ -647,21 +663,41 @@ export default function SolveHeroAnimated({ onOpenRegister }) {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, ease: "easeOut" }}
-            style={styles.badge}
+            style={styles.alertBanner}
           >
-            <Sparkles size={13} color="#22d3ee" />
-            <span>YOUTH INNOVATION CHALLENGE</span>
+            <span style={{
+              display: "inline-block",
+              width: "8px",
+              height: "8px",
+              borderRadius: "50%",
+              backgroundColor: "#ef4444",
+              boxShadow: "0 0 10px #ef4444"
+            }} />
+            <Clock size={16} color="#f87171" />
+            <span>SOLVE Competition will be closed 11:50pm IST on 15oct</span>
           </motion.div>
 
-          <motion.div
-            initial={{ opacity: 0, scale: 0.9 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.5, delay: 0.2 }}
-            style={styles.teamPill}
-          >
-            <Users size={14} />
-            <span>Open to Individuals & Teams (2-5 members)</span>
-          </motion.div>
+          <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "center", gap: "10px" }}>
+            <motion.div
+              initial={{ opacity: 0, y: -20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.7, delay: 0.1, ease: "easeOut" }}
+              style={styles.badge}
+            >
+              <Sparkles size={13} color="#22d3ee" />
+              <span>YOUTH INNOVATION CHALLENGE</span>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, scale: 0.9 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+              style={styles.teamPill}
+            >
+              <Users size={14} />
+              <span>Open to Individuals & Teams (2-5 members)</span>
+            </motion.div>
+          </div>
         </div>
 
         {/* Brand Master Title */}
@@ -710,15 +746,21 @@ export default function SolveHeroAnimated({ onOpenRegister }) {
           transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
           style={styles.ctaGroup}
         >
-          <motion.button
-            whileHover={{ scale: 1.03, boxShadow: "0 15px 35px rgba(168, 85, 247, 0.3)" }}
-            whileTap={{ scale: 0.98 }}
-            onClick={onOpenRegister}
-            style={styles.primaryCta}
-          >
-            Submit Your Innovation
-            <ArrowRight size={16} />
-          </motion.button>
+          <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "10px" }}>
+            <motion.button
+              whileHover={{ scale: 1.03, boxShadow: "0 15px 35px rgba(168, 85, 247, 0.3)" }}
+              whileTap={{ scale: 0.98 }}
+              onClick={onOpenRegister}
+              style={styles.primaryCta}
+            >
+              Submit Your Innovation
+              <ArrowRight size={16} />
+            </motion.button>
+
+            <span style={{ fontSize: "13px", color: "#fca5a5", display: "flex", alignItems: "center", gap: "6px", fontWeight: 600 }}>
+              <Clock size={14} color="#ef4444" /> Closes at 11:50 PM IST on 15 Oct
+            </span>
+          </div>
 
           {/* <motion.button 
             whileHover={{ scale: 1.03, borderColor: "rgba(255,255,255,0.25)", color: "#ffffff" }}
@@ -758,12 +800,12 @@ export default function SolveHeroAnimated({ onOpenRegister }) {
               <Globe size={16} color="#a78bfa" /> Online Submission
             </p>
           </div>
-          <div>
-            <p style={styles.footerLabel}>Last Date</p>
-            <p style={styles.footerValue}>
-              <Globe size={16} color="#a78bfa" /> 15th Oct 2026
+          {/* <div>
+            <p style={styles.footerLabel}>Closing Deadline</p>
+            <p style={{ ...styles.footerValue, color: "#fca5a5" }}>
+              <Clock size={16} color="#ef4444" /> 15th Oct, 11:50 PM IST
             </p>
-          </div>
+          </div> */}
         </motion.div>
 
       </div>

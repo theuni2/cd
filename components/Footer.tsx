@@ -360,6 +360,7 @@
 import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
+import { usePathname } from 'next/navigation'
 import { Facebook, Instagram } from 'lucide-react'
 
 const Blob = ({ className }: { className: string }) => (
@@ -414,6 +415,7 @@ const SocialIcon = ({
 )
 
 const Footer = () => {
+  const pathname = usePathname()
   return (
     <footer className="relative overflow-hidden border-t border-gray-200 bg-gray-50">
       {/* Background Blobs */}
@@ -480,6 +482,7 @@ const Footer = () => {
             title="Programs"
             links={[
               { label: 'Research', href: '/research' },
+              { label: 'Behavioral Economics Scholar', href: '/applied-behavioral-economics-scholar' },
               { label: 'Internships', href: '/internship' },
               { label: 'Social Projects', href: '/launchpad' },
               { label: 'Writing Programs', href: '/essay_comp' },
@@ -496,6 +499,7 @@ const Footer = () => {
                 href: '/forge_writing_competition',
               },
               { label: 'Blogs', href: '/blogs' },
+              { label: 'Our Book', href: '/book' },
               { label: 'Cookie Policy', href: '/cookies' },
             ]}
           />
@@ -512,11 +516,22 @@ const Footer = () => {
             </p>
 
             <div className="flex flex-col gap-4">
-              <Link href="/#contact">
-                <button className="w-full rounded-full bg-[#356bff] px-6 py-3 text-white font-medium hover:bg-[#2e5ee6] transition-all duration-300">
-                  Contact Us
-                </button>
-              </Link>
+              {pathname === '/applied-behavioral-economics-scholar' ? (
+                <a
+                  href="https://lms.thecareerdiscovery.com/home-programs/d73c70d8-1b5a-43a7-95c9-bb40db3a68d9"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full text-center rounded-full bg-emerald-600 hover:bg-emerald-500 px-6 py-3 text-white font-medium transition-all duration-300 shadow-md"
+                >
+                  Contact & Apply
+                </a>
+              ) : (
+                <Link href="/#contact">
+                  <button className="w-full rounded-full bg-[#356bff] px-6 py-3 text-white font-medium hover:bg-[#2e5ee6] transition-all duration-300">
+                    Contact Us
+                  </button>
+                </Link>
+              )}
 
               <Link href="/forge_writing_competition">
                 <button className="w-full rounded-full border border-[#356bff] px-6 py-3 text-[#356bff] font-medium hover:bg-[#356bff] hover:text-white transition-all duration-300">

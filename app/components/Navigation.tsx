@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
+import { usePathname } from 'next/navigation'
 import { Menu } from 'lucide-react'
 import Button from './Button'
 import {
@@ -16,6 +17,7 @@ import {
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
+  const pathname = usePathname()
 
   useEffect(() => {
     const handleScroll = () => {
@@ -26,7 +28,10 @@ const Navigation = () => {
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
-  const linkClass = isScrolled ? "text-gray-900 hover:text-gray-600" : "text-white hover:text-gray-200"
+  const isDarkHeroPage = pathname === '/' || pathname === '/research' || pathname === '/internship' || pathname === '/launchpad' || pathname === '/tedx'
+  const isLightPage = !isDarkHeroPage
+
+  const linkClass = (isScrolled || isLightPage) ? "text-gray-900 hover:text-gray-600 font-medium" : "text-white hover:text-gray-200 font-medium"
 
   const navItems = [
     { href: '/', label: 'Home' },
@@ -34,10 +39,17 @@ const Navigation = () => {
     { href: '/internship', label: 'Internship' },
     { href: '#services', label: 'Career Pathways' },
     { href: '#success-stories', label: 'Success Stories' },
+    { href: '/book', label: 'Book' },
   ]
 
   return (
-    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-white/80 backdrop-blur-md shadow-md' : ''}`}>
+    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+      isScrolled 
+        ? 'bg-white/90 backdrop-blur-md shadow-md border-b border-gray-100' 
+        : isLightPage 
+          ? 'bg-white/80 backdrop-blur-md border-b border-gray-200/60 shadow-sm' 
+          : 'bg-transparent'
+    }`}>
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}

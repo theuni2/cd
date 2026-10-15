@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 export default function SolveTimelineInline() {
   const timelineStages = [
     { phase: "Stage 01", title: "Applications Open", detail: "Portal opens for international registration and structural draft alignments." },
-    { phase: "Stage 02", title: "Submission Deadline", detail: "Final collection of your 8—10 slide Pitch Deck and 2—3 min YouTube Pitch Video frame." },
+    { phase: "Stage 02", title: "Submission Deadline (15 Oct, 11:50 PM IST)", detail: "SOLVE Competition will be closed 11:50pm IST on 15oct. Final collection of your Pitch Deck and YouTube Pitch Video." },
     { phase: "Stage 03", title: "Judging Round", detail: "Panel review processes based on our core analytical breakdown matrices." },
     { phase: "Stage 04", title: "Finalists Announcement", detail: "Top tier strategic innovation frameworks published globally." },
     { phase: "Stage 05", title: "Virtual Finale / Awards", detail: "Live digital presentations, networking framework rollouts, and prize assignments." }

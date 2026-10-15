@@ -141,8 +141,10 @@ const pages = [
   '/research',
   '/internship',
   '/launchpad',
+  '/book',
   '/blogs',
   '/claimit',
+  '/applied-behavioral-economics-scholar',
 
   // LaunchPad
   '/podcast',
@@ -153,6 +155,7 @@ const pages = [
   '/essay_comp',
 
   // Competition Pages
+  '/isip',
   '/solve_challenge',
   '/solve_eg',
   '/writing_competition',

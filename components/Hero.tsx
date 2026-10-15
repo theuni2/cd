@@ -101,11 +101,19 @@ const Hero: React.FC<HeroProps> = ({ onOpenPopup }) => {
   return (
     <div className="bg-transparent min-h-screen flex items-center">
       <div className="container max-w-4xl mx-auto px-6 py-32 text-center">
-        <div className="mb-8 inline-block rounded-full bg-white/30 px-4 py-2 backdrop-blur-md">
-          <span className="text-sm font-medium text-gray-800">
-            Turning Ambition into Achievement
-          </span>
-        </div>
+        {/* <a
+          href="/applied-behavioral-economics-scholar"
+          className="mb-8 inline-flex items-center gap-2 rounded-full bg-white/60 hover:bg-white/90 border border-emerald-500/30 px-5 py-2 backdrop-blur-md transition-all shadow-sm group"
+        >
+          {/* <span className="relative flex h-2 w-2">
+            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+            <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+          </span> */}
+        {/* <span className="text-xs sm:text-sm font-semibold text-slate-800">
+            Featured Fellowship: <strong className="text-emerald-700">Applied Behavioral Economics Scholar</strong> (Taught by Dartmouth Prof. Kimberly Rose Clark, Ph.D.)
+          </span> */}
+        {/* <ArrowUpRight className="w-4 h-4 text-emerald-600 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" /> */}
+        {/* </a>  */}
         <h1 className="mb-8 text-4xl font-bold leading-tight text-gray-900 md:text-5xl lg:text-6xl">
           Discover Your Perfect<br />Career Path 🚀
         </h1>
@@ -118,41 +126,41 @@ const Hero: React.FC<HeroProps> = ({ onOpenPopup }) => {
           <div className="flex items-center space-x-2">
             <div className="flex -space-x-4">
               <div className="relative w-8 h-8 md:w-10 md:h-10 overflow-hidden rounded-full border-2 border-white">
-                <Image 
+                <Image
                   src="https://images.pexels.com/photos/1040880/pexels-photo-1040880.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                  alt="Trusted user 1" 
+                  alt="Trusted user 1"
                   fill
                   style={{ objectFit: 'cover' }}
                 />
               </div>
               <div className="relative w-8 h-8 md:w-10 md:h-10 overflow-hidden rounded-full border-2 border-white">
-                <Image 
+                <Image
                   src="https://images.pexels.com/photos/1674752/pexels-photo-1674752.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                  alt="Trusted user 2" 
+                  alt="Trusted user 2"
                   fill
                   style={{ objectFit: 'cover' }}
                 />
               </div>
               <div className="relative w-8 h-8 md:w-10 md:h-10 overflow-hidden rounded-full border-2 border-white">
-                <Image 
+                <Image
                   src="https://images.pexels.com/photos/2423537/pexels-photo-2423537.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                  alt="Trusted user 3" 
+                  alt="Trusted user 3"
                   fill
                   style={{ objectFit: 'cover' }}
                 />
               </div>
               <div className="relative w-8 h-8 md:w-10 md:h-10 overflow-hidden rounded-full border-2 border-white">
-                <Image 
+                <Image
                   src="https://images.pexels.com/photos/1310522/pexels-photo-1310522.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750"
-                  alt="Trusted user 4" 
+                  alt="Trusted user 4"
                   fill
                   style={{ objectFit: 'cover' }}
                 />
               </div>
               <div className="relative w-8 h-8 md:w-10 md:h-10 overflow-hidden rounded-full border-2 border-white">
-                <Image 
+                <Image
                   src="https://images.pexels.com/photos/9665015/pexels-photo-9665015.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750"
-                  alt="Trusted user 5" 
+                  alt="Trusted user 5"
                   fill
                   style={{ objectFit: 'cover' }}
                 />
@@ -161,22 +169,22 @@ const Hero: React.FC<HeroProps> = ({ onOpenPopup }) => {
             <span className="text-xs md:text-sm font-medium text-gray-600">Trusted already by 20k people</span>
           </div>
         </div>
-        
+
         <div className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
           <Button href="#contact" variant="secondary" className="group">
             Book Consultation
             <ArrowUpRight className="w-4 h-4 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />
           </Button>
-          
-          <Button 
+
+          <Button
             onClick={(e: React.MouseEvent<HTMLButtonElement>) => {
               if (onOpenPopup) {
                 e.preventDefault();
                 onOpenPopup();
               }
             }}
-            variant="primary" 
-            shimmer={true} 
+            variant="primary"
+            shimmer={true}
             className="min-w-[180px]"
           >
             Get Top 10 Research Journals 📩

@@ -977,7 +977,7 @@
 
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { User, Users, Code, Heart, Link, Layers, Send, CheckCircle, X, ShieldCheck } from "lucide-react";
+import { User, Users, Code, Heart, Link, Layers, Send, CheckCircle, X, ShieldCheck, Clock } from "lucide-react";
 
 export default function SolveRegistrationModal({ isOpen, onClose }) {
   // Form step management: 1 = Profile Info, 2 = Pitch Links, 3 = Success View
@@ -1228,9 +1228,26 @@ export default function SolveRegistrationModal({ isOpen, onClose }) {
                 </div>
 
                 <h3 style={{ fontSize: "24px", fontWeight: 800, margin: "0 0 8px 0", color: "#ffffff" }}>Register for SOLVE</h3>
-                <p style={{ fontSize: "14px", color: "#a1a1aa", margin: "0 0 32px 0", lineHeight: 1.5 }}>
+                <p style={{ fontSize: "14px", color: "#a1a1aa", margin: "0 0 16px 0", lineHeight: 1.5 }}>
                   Secure your entry path. Set up your builder profile and provide your academic verification details.
                 </p>
+
+                <div style={{
+                  display: "flex",
+                  alignItems: "center",
+                  gap: "10px",
+                  padding: "10px 14px",
+                  backgroundColor: "rgba(239, 68, 68, 0.12)",
+                  border: "1px solid rgba(239, 68, 68, 0.35)",
+                  borderRadius: "10px",
+                  color: "#fee2e2",
+                  fontSize: "13px",
+                  fontWeight: 600,
+                  marginBottom: "24px",
+                }}>
+                  <Clock size={16} color="#ef4444" style={{ flexShrink: 0 }} />
+                  <span>SOLVE Competition will be closed 11:50pm IST on 15oct</span>
+                </div>
 
                 <div style={styles.inputGroup}>
                   <label style={styles.label}>Participation Dynamic</label>
@@ -1334,9 +1351,26 @@ export default function SolveRegistrationModal({ isOpen, onClose }) {
                 </div>
 
                 <h3 style={{ fontSize: "24px", fontWeight: 800, margin: "0 0 8px 0", color: "#ffffff" }}>Project Verification</h3>
-                <p style={{ fontSize: "14px", color: "#a1a1aa", margin: "0 0 32px 0", lineHeight: 1.5 }}>
+                <p style={{ fontSize: "14px", color: "#a1a1aa", margin: "0 0 16px 0", lineHeight: 1.5 }}>
                   Link your presentation and media assets directly below. You can update these links anytime before the formal cutoff deadline.
                 </p>
+
+                <div style={{
+                  display: "flex",
+                  alignItems: "center",
+                  gap: "10px",
+                  padding: "10px 14px",
+                  backgroundColor: "rgba(239, 68, 68, 0.12)",
+                  border: "1px solid rgba(239, 68, 68, 0.35)",
+                  borderRadius: "10px",
+                  color: "#fee2e2",
+                  fontSize: "13px",
+                  fontWeight: 600,
+                  marginBottom: "24px",
+                }}>
+                  <Clock size={16} color="#ef4444" style={{ flexShrink: 0 }} />
+                  <span>SOLVE Competition will be closed 11:50pm IST on 15oct</span>
+                </div>
 
                 <div style={styles.inputGroup}>
                   <label style={styles.label}>Target Competition Track</label>
