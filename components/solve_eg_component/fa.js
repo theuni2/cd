@@ -241,8 +241,8 @@ const faqData = [
       answer: "No, entering SOLVE is completely free from Day One. Your team's submission will be reviewed online by an expert panel of judges using our triple-alliteration evaluation standard: Innovation, Impact, and Implementation.",
     },
     {
-      question: "When is the final deadline to submit our entry?",
-      answer: "SOLVE Competition will be closed 11:50pm IST on 15oct. All pitch decks (10 slides) and 1-minute video pitch links must be uploaded and submitted through the portal before this hard cutoff.",
+      question: "When was the final deadline to submit our entry?",
+      answer: "Registrations and submissions for the SOLVE Competition officially closed at 11:50 PM IST on 15 October 2026. The portal is now closed to new entries while our evaluation panel reviews all submitted project dossiers.",
     },
   ];
 

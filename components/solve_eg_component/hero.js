@@ -376,7 +376,7 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import { ArrowRight, Sparkles, Globe, Users, Lightbulb, Trophy, Layers, Clock } from "lucide-react";
+import { ArrowRight, Sparkles, Globe, Users, Lightbulb, Trophy, Layers, Clock, Lock } from "lucide-react";
 
 export default function SolveHeroAnimated({ onOpenRegister }) {
   // Animation presets for sequential fade-in elements
@@ -673,8 +673,8 @@ export default function SolveHeroAnimated({ onOpenRegister }) {
               backgroundColor: "#ef4444",
               boxShadow: "0 0 10px #ef4444"
             }} />
-            <Clock size={16} color="#f87171" />
-            <span>SOLVE Competition will be closed 11:50pm IST on 15oct</span>
+            <Lock size={15} color="#f87171" />
+            <span>REGISTRATION CLOSED — SUBMISSIONS ARE NOW LOCKED</span>
           </motion.div>
 
           <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "center", gap: "10px" }}>
@@ -747,18 +747,23 @@ export default function SolveHeroAnimated({ onOpenRegister }) {
           style={styles.ctaGroup}
         >
           <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "10px" }}>
-            <motion.button
-              whileHover={{ scale: 1.03, boxShadow: "0 15px 35px rgba(168, 85, 247, 0.3)" }}
-              whileTap={{ scale: 0.98 }}
-              onClick={onOpenRegister}
-              style={styles.primaryCta}
+            <button
+              disabled
+              style={{
+                ...styles.primaryCta,
+                backgroundColor: "rgba(255, 255, 255, 0.08)",
+                color: "rgba(255, 255, 255, 0.4)",
+                border: "1px solid rgba(255, 255, 255, 0.15)",
+                cursor: "not-allowed",
+                boxShadow: "none",
+              }}
             >
-              Submit Your Innovation
-              <ArrowRight size={16} />
-            </motion.button>
+              <Lock size={16} />
+              Registration Closed
+            </button>
 
-            <span style={{ fontSize: "13px", color: "#fca5a5", display: "flex", alignItems: "center", gap: "6px", fontWeight: 600 }}>
-              <Clock size={14} color="#ef4444" /> Closes at 11:50 PM IST on 15 Oct
+            <span style={{ fontSize: "13px", color: "#f87171", display: "flex", alignItems: "center", gap: "6px", fontWeight: 600 }}>
+              Portal closed at 11:50 PM IST on 15 Oct. Submissions are under evaluation.
             </span>
           </div>
 
@@ -800,12 +805,12 @@ export default function SolveHeroAnimated({ onOpenRegister }) {
               <Globe size={16} color="#a78bfa" /> Online Submission
             </p>
           </div>
-          {/* <div>
-            <p style={styles.footerLabel}>Closing Deadline</p>
-            <p style={{ ...styles.footerValue, color: "#fca5a5" }}>
-              <Clock size={16} color="#ef4444" /> 15th Oct, 11:50 PM IST
+          <div>
+            <p style={styles.footerLabel}>Status</p>
+            <p style={{ ...styles.footerValue, color: "#f87171" }}>
+              <Lock size={16} color="#ef4444" /> Registration Closed
             </p>
-          </div> */}
+          </div>
         </motion.div>
 
       </div>

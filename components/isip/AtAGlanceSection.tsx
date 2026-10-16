@@ -1,195 +1,135 @@
 "use client";
 
 import React from "react";
+import Image from "next/image";
 import { motion } from "framer-motion";
 import {
-  Users,
-  CreditCard,
-  Laptop,
-  Layers,
-  GraduationCap,
-  Trophy,
-  Scale,
   Sparkles,
+  Trophy,
+  Users,
+  GraduationCap,
   ShieldCheck,
   CheckCircle2,
-  Globe2
+  ArrowRight
 } from "lucide-react";
 
 export default function AtAGlanceSection() {
-  const glanceCards = [
+  const stats = [
     {
-      icon: Users,
-      title: "Who Can Enter",
-      value: "Grades 8–12",
-      description: "Open to school students globally. Compete solo as an individual founder or in collaborative teams of up to 3.",
-      color: "from-blue-500/20 to-cyan-500/10",
-      accent: "text-cyan-400",
-      borderColor: "border-cyan-500/30",
+      number: "$8,500",
+      label: "Seed Grant Pool",
+      subtext: "1st: $5,000 • 2nd: $2,500 • 3rd: $1,000",
     },
     {
-      icon: CreditCard,
-      title: "Registration Fee",
-      value: "₹5,000 / Student",
-      description: "Accessible, transparent pricing covering 9 weeks of faculty-led masterclasses, office hours, and AI feedback.",
-      color: "from-emerald-500/20 to-teal-500/10",
-      accent: "text-emerald-400",
-      borderColor: "border-emerald-500/30",
+      number: "1,000",
+      label: "Global Builders",
+      subtext: "Grades 8–12 • Solo or Teams of 3",
     },
     {
-      icon: Laptop,
-      title: "Program Format",
-      value: "9 Weeks • Fully Online",
-      description: "6 weeks of venture building for everyone, followed by Top 100 Accelerator, Top 20 Finalist prep, and Week 9 Demo Day.",
-      color: "from-indigo-500/20 to-purple-500/10",
-      accent: "text-indigo-400",
-      borderColor: "border-indigo-500/30",
+      number: "4 Lead",
+      label: "University Faculty",
+      subtext: "IIT, IISc, Ashoka & Global Mentors",
     },
     {
-      icon: Layers,
-      title: "Two Dual Tracks",
-      value: "Tech & Social Impact",
-      description: "Solve a real problem using AI/software concepts or design a high-leverage community/social enterprise blueprint.",
-      color: "from-amber-500/20 to-orange-500/10",
-      accent: "text-amber-400",
-      borderColor: "border-amber-500/30",
-    },
-    {
-      icon: GraduationCap,
-      title: "Faculty Mentorship",
-      value: "4 Lead + 3 Global Mentors",
-      description: "Guided by active and former faculty (IIT, IISc, Ashoka, Plaksha) plus international operator masterclasses.",
-      color: "from-purple-500/20 to-pink-500/10",
-      accent: "text-purple-400",
-      borderColor: "border-purple-500/30",
-    },
-    {
-      icon: Trophy,
-      title: "Cash & Seed Grants",
-      value: "$8,500 Cash Pool",
-      description: "1st: $5,000 • 2nd: $2,500 • 3rd: $1,000 paid in milestone tranches, plus cloud/AI credits & Uni Discovery sessions.",
-      color: "from-yellow-500/20 to-amber-500/10",
-      accent: "text-yellow-400",
-      borderColor: "border-yellow-500/30",
+      number: "100%",
+      label: "Student IP Ownership",
+      subtext: "Zero Equity Claimed by ISIP",
     },
   ];
 
   return (
-    <section className="relative py-24 bg-[#070a14] text-white border-t border-slate-900 overflow-hidden">
-      {/* Background radial accent */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[400px] bg-blue-600/5 blur-[140px] pointer-events-none" />
+    <section className="relative py-28 bg-[#07101E] text-white border-t border-white/5 overflow-hidden">
+      {/* Background radial glow */}
+      <div className="absolute top-1/2 left-0 w-[500px] h-[500px] bg-[#c5a059]/5 blur-[160px] pointer-events-none" />
 
       <div className="container relative z-10 mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
-        {/* Section Header */}
-        <div className="max-w-3xl mx-auto text-center mb-16">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+          
+          {/* Left Column: FORGE-Style Editorial Narrative & Gold-Bar Stats */}
           <motion.div
-            initial={{ opacity: 0, y: 15 }}
-            whileInView={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0, x: -30 }}
+            whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-900 border border-slate-800 text-xs font-semibold text-slate-300 uppercase tracking-widest mb-4"
+            transition={{ duration: 0.7 }}
+            className="lg:col-span-6 space-y-6"
           >
-            <Sparkles className="w-3.5 h-3.5 text-cyan-400" />
-            <span>Executive Overview</span>
-          </motion.div>
+            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full border border-[#c5a059]/40 bg-[#0a192f] text-xs font-bold uppercase tracking-[0.2em] text-[#c5a059]">
+              <Sparkles className="w-3.5 h-3.5 text-[#c5a059]" />
+              <span>Incubator Advantage</span>
+            </div>
 
-          <motion.h2
-            initial={{ opacity: 0, y: 15 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.1 }}
-            className="text-3xl sm:text-5xl font-extrabold tracking-tight mb-4 text-white"
-          >
-            ISIP At A Glance
-          </motion.h2>
+            <h2 className="font-serif-luxury text-3xl sm:text-5xl font-bold tracking-tight text-white leading-[1.15]">
+              Academic Rigor Meets <br />
+              <span className="text-[#c5a059] italic font-normal">Real-World Venture Building.</span>
+            </h2>
 
-          <motion.p
-            initial={{ opacity: 0, y: 15 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.2 }}
-            className="text-base sm:text-lg text-slate-400 font-light leading-relaxed"
-          >
-            Designed from the ground up for high school thinkers. No boring quizzes, no coding prerequisites, and no borrowed names — every milestone is anchored in your own venture.
-          </motion.p>
-        </div>
+            <p className="text-base sm:text-lg text-slate-300 font-light leading-relaxed">
+              Most student hackathons test pre-existing coding skills or reward whoever has access to private labs. <strong className="text-white font-semibold">ISIP is fundamentally different.</strong>
+            </p>
 
-        {/* 6 Grid Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
-          {glanceCards.map((card, idx) => {
-            const Icon = card.icon;
-            return (
-              <motion.div
-                key={card.title}
-                initial={{ opacity: 0, y: 25 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: idx * 0.08 }}
-                className={`relative group rounded-2xl bg-gradient-to-b from-slate-900/90 to-slate-950/90 border border-slate-800/80 p-6 sm:p-7 backdrop-blur-md hover:border-slate-700 transition-all duration-300 hover:-translate-y-1`}
-              >
-                <div className="flex items-start justify-between mb-4">
-                  <div
-                    className={`p-3 rounded-xl bg-gradient-to-br ${card.color} border ${card.borderColor}`}
-                  >
-                    <Icon className={`w-6 h-6 ${card.accent}`} />
-                  </div>
-                  <span className="text-[11px] font-mono text-slate-500 uppercase tracking-wider">
-                    0{idx + 1}
+            <p className="text-sm sm:text-base text-slate-400 font-light leading-relaxed">
+              Over 9 structured weeks, university faculty and global venture leaders guide you step-by-step from discovering an authentic problem to building a tested venture blueprint. Zero built code required — you are judged purely on framework depth, problem validation, and strategic conviction.
+            </p>
+
+            {/* Stats Grid with Gold Left-Borders (FORGE Signature Layout) */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-6 border-t border-white/10">
+              {stats.map((stat, idx) => (
+                <div
+                  key={idx}
+                  className="border-l-[3px] border-[#c5a059] pl-4 py-1"
+                >
+                  <span className="font-serif-luxury text-3xl font-bold text-white block">
+                    {stat.number}
+                  </span>
+                  <span className="text-xs uppercase tracking-widest text-[#c5a059] font-bold block mt-1">
+                    {stat.label}
+                  </span>
+                  <span className="text-[11px] text-slate-400 block mt-0.5">
+                    {stat.subtext}
                   </span>
                 </div>
+              ))}
+            </div>
+          </motion.div>
 
-                <p className="text-xs uppercase tracking-wider font-semibold text-slate-400 mb-1">
-                  {card.title}
+          {/* Right Column: Visual Showcase Card with Gold Framing */}
+          <motion.div
+            initial={{ opacity: 0, x: 30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.7 }}
+            className="lg:col-span-6 relative"
+          >
+            <div className="relative rounded-3xl overflow-hidden border border-[#c5a059]/30 shadow-2xl shadow-black/60 group">
+              <Image
+                src="/images/isip_tech_track.jpg"
+                alt="Students collaborating in modern venture incubator"
+                width={800}
+                height={600}
+                className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-700"
+              />
+
+              {/* Gradient Vignette */}
+              <div className="absolute inset-0 bg-gradient-to-t from-[#050B14] via-[#050B14]/20 to-transparent opacity-80" />
+
+              {/* Floating Overlay Card */}
+              <div className="absolute bottom-6 left-6 right-6 p-5 rounded-2xl bg-[#0a192f]/90 border border-[#c5a059]/30 backdrop-blur-xl shadow-xl">
+                <div className="flex items-center justify-between mb-2">
+                  <span className="text-xs uppercase tracking-[0.15em] text-[#c5a059] font-bold">
+                    Faculty-Led Masterclasses
+                  </span>
+                  <span className="text-[11px] font-semibold text-emerald-400 bg-emerald-500/10 px-2.5 py-0.5 rounded-full border border-emerald-500/20">
+                    4 Lead Mentors
+                  </span>
+                </div>
+                <p className="text-xs sm:text-sm text-slate-200 font-light">
+                  Direct guidance from IIT, IISc & global university academics, paired with continuous formative AI feedback on every brief.
                 </p>
+              </div>
+            </div>
+          </motion.div>
 
-                <h3 className="text-xl sm:text-2xl font-bold text-white mb-3">
-                  {card.value}
-                </h3>
-
-                <p className="text-sm text-slate-400 leading-relaxed font-light">
-                  {card.description}
-                </p>
-              </motion.div>
-            );
-          })}
         </div>
-
-        {/* Prestige & Credibility Banner */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="rounded-2xl bg-gradient-to-r from-blue-950/40 via-slate-900/80 to-indigo-950/40 border border-blue-500/20 p-6 sm:p-8 backdrop-blur-xl"
-        >
-          <div className="grid grid-cols-1 md:grid-cols-12 gap-6 items-center">
-            <div className="md:col-span-8 space-y-2">
-              <div className="inline-flex items-center gap-2 text-cyan-400 text-xs font-bold uppercase tracking-wider">
-                <ShieldCheck className="w-4 h-4" />
-                <span>Our Credibility Covenant</span>
-              </div>
-              <h4 className="text-lg sm:text-xl font-bold text-white">
-                Prestige comes from real associations, not borrowed names.
-              </h4>
-              <p className="text-sm text-slate-300 font-light leading-relaxed">
-                Every judge, mentor, and academic partner is named with direct, verified permission. We do not license logo walls or inflate credentials: you work directly with young and former university faculty from India and leading diaspora institutions.
-              </p>
-            </div>
-
-            <div className="md:col-span-4 flex flex-col gap-2.5 bg-slate-950/70 p-4 rounded-xl border border-slate-800 text-xs">
-              <div className="flex items-center gap-2 text-slate-300">
-                <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />
-                <span>IITs, IISc, Ashoka, Plaksha & Krea Faculty</span>
-              </div>
-              <div className="flex items-center gap-2 text-slate-300">
-                <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />
-                <span>Columbia Diaspora Global Mentors</span>
-              </div>
-              <div className="flex items-center gap-2 text-slate-300">
-                <Globe2 className="w-4 h-4 text-cyan-400 shrink-0" />
-                <span>Edition 2 Dubai Finals Announced</span>
-              </div>
-            </div>
-          </div>
-        </motion.div>
       </div>
     </section>
   );

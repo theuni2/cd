@@ -26,6 +26,8 @@ export const routes = [
   '/dubai-internship-training-for-teenagers',
   '/uae-corporate-internships-for-teens',
 
+  '/isip',
+  '/isip-competition',
   '/solve_challenge',
   '/solve_eg',
   '/writing_competition',

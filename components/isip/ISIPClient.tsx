@@ -36,12 +36,33 @@ export default function ISIPClient() {
   };
 
   return (
-    <div className="relative min-h-screen bg-[#05070e] text-slate-100 font-sans selection:bg-cyan-500 selection:text-black">
-      {/* 1. Hero Section */}
-      <HeroSection
-        onRegisterClick={() => handleOpenRegister()}
-        onExploreCalendarClick={handleScrollToCalendar}
-      />
+    <>
+      <style jsx global>{`
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+
+        .font-serif-luxury {
+          font-family: 'Playfair Display', Georgia, serif;
+        }
+
+        .text-gold-accent {
+          color: #c5a059;
+        }
+
+        .border-gold-accent {
+          border-color: rgba(197, 160, 89, 0.35);
+        }
+
+        .bg-gold-gradient {
+          background: linear-gradient(135deg, #c5a059 0%, #e5c07b 50%, #b38947 100%);
+        }
+      `}</style>
+
+      <div className="relative min-h-screen bg-[#050B14] text-slate-100 font-sans selection:bg-[#c5a059] selection:text-black">
+        {/* 1. Hero Section */}
+        <HeroSection
+          onRegisterClick={() => handleOpenRegister()}
+          onExploreCalendarClick={handleScrollToCalendar}
+        />
 
       {/* 2. At A Glance Executive Dashboard */}
       <AtAGlanceSection />
@@ -74,9 +95,9 @@ export default function ISIPClient() {
       {/* 10. Frequently Asked Questions */}
       <FaqSection />
 
-      {/* 11. Final High-Impact Call to Action Banner */}
-      <section className="relative py-24 bg-gradient-to-b from-[#070a14] to-[#04060c] text-white border-t border-slate-900 overflow-hidden text-center">
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[350px] bg-cyan-600/10 blur-[160px] pointer-events-none" />
+      {/* 11. Final High-Impact Call to Action Banner (FORGE Style) */}
+      <section className="relative py-28 bg-[#050B14] text-white border-t border-white/5 overflow-hidden text-center">
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[350px] bg-[#c5a059]/10 blur-[160px] pointer-events-none" />
 
         <div className="container relative z-10 mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
           <motion.div
@@ -86,13 +107,14 @@ export default function ISIPClient() {
             transition={{ duration: 0.6 }}
             className="space-y-6"
           >
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-cyan-500/10 border border-cyan-500/30 text-cyan-400 text-xs font-mono uppercase tracking-wider">
-              <Sparkles className="w-4 h-4" />
-              <span>Inaugural Cohort • Limited Seats</span>
+            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-[#c5a059]/40 bg-[#0a192f] text-xs font-bold uppercase tracking-[0.2em] text-[#c5a059]">
+              <Sparkles className="w-3.5 h-3.5" />
+              <span>Inaugural Cohort • Summer 2027</span>
             </div>
 
-            <h2 className="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-tight">
-              Start Your Venture Journey with Top Faculty.
+            <h2 className="font-serif-luxury text-3xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-white leading-tight">
+              Start Your Venture Journey <br />
+              <span className="text-[#c5a059] italic font-normal">With Premier University Faculty.</span>
             </h2>
 
             <p className="text-base sm:text-lg text-slate-300 font-light max-w-2xl mx-auto leading-relaxed">
@@ -103,30 +125,30 @@ export default function ISIPClient() {
               <button
                 onClick={() => handleOpenRegister()}
                 id="footer-cta-register-btn"
-                className="w-full sm:w-auto px-9 py-4 rounded-xl bg-gradient-to-r from-cyan-500 via-blue-600 to-indigo-600 hover:from-cyan-400 hover:to-indigo-500 text-white font-bold text-base shadow-2xl shadow-blue-500/30 transition-all cursor-pointer flex items-center justify-center gap-2.5 hover:scale-[1.02] active:scale-[0.98]"
+                className="w-full sm:w-auto px-10 py-4 rounded-full bg-gradient-to-r from-[#c5a059] via-[#e5c07b] to-[#b38947] hover:brightness-110 text-[#050B14] font-extrabold text-sm sm:text-base tracking-wider uppercase shadow-xl shadow-[#c5a059]/25 transition-all cursor-pointer flex items-center justify-center gap-2.5 hover:scale-[1.02] active:scale-[0.98]"
               >
-                <span>Register for ISIP (₹5,000 / Student)</span>
-                <ArrowRight className="w-5 h-5" />
+                <span>Register for ISIP (₹5,000)</span>
+                <ArrowRight className="w-4 h-4" />
               </button>
 
               <a
                 href="#tracks"
-                className="w-full sm:w-auto px-7 py-4 rounded-xl bg-slate-900 border border-slate-800 hover:border-slate-700 text-slate-300 font-semibold text-base transition-colors"
+                className="w-full sm:w-auto px-8 py-4 rounded-full bg-[#0a192f]/70 hover:bg-[#0a192f] text-slate-200 border border-white/15 hover:border-[#c5a059]/50 font-semibold text-sm sm:text-base transition-all"
               >
                 Review Tracks
               </a>
             </div>
 
-            <div className="pt-6 flex flex-wrap items-center justify-center gap-6 text-xs text-slate-400">
-              <span className="flex items-center gap-1.5">
-                <GraduationCap className="w-4 h-4 text-cyan-400" />
-                Faculty-Led Support
+            <div className="pt-8 flex flex-wrap items-center justify-center gap-6 text-xs text-slate-400 border-t border-white/5 max-w-xl mx-auto">
+              <span className="flex items-center gap-1.5 font-medium text-slate-300">
+                <GraduationCap className="w-4 h-4 text-[#c5a059]" />
+                Faculty-Led Mentorship
               </span>
-              <span className="flex items-center gap-1.5">
-                <Trophy className="w-4 h-4 text-amber-400" />
-                $8,500 Cash Seed Pool
+              <span className="flex items-center gap-1.5 font-medium text-slate-300">
+                <Trophy className="w-4 h-4 text-[#c5a059]" />
+                $8,500 Seed Pool
               </span>
-              <span className="flex items-center gap-1.5">
+              <span className="flex items-center gap-1.5 font-medium text-slate-300">
                 <ShieldCheck className="w-4 h-4 text-emerald-400" />
                 100% Student IP Retained
               </span>
@@ -148,5 +170,6 @@ export default function ISIPClient() {
       {/* Global Site Footer */}
       <Footer />
     </div>
+    </>
   );
 }

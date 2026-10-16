@@ -977,7 +977,7 @@
 
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { User, Users, Code, Heart, Link, Layers, Send, CheckCircle, X, ShieldCheck, Clock } from "lucide-react";
+import { User, Users, Code, Heart, Link, Layers, Send, CheckCircle, X, ShieldCheck, Clock, Lock } from "lucide-react";
 
 export default function SolveRegistrationModal({ isOpen, onClose }) {
   // Form step management: 1 = Profile Info, 2 = Pitch Links, 3 = Success View
@@ -1183,6 +1183,148 @@ export default function SolveRegistrationModal({ isOpen, onClose }) {
       margin: "32px 0 24px 0",
     }
   };
+
+  // Portal is closed past the 15 Oct 11:50 PM IST deadline
+  const isPortalClosed = true;
+
+  if (isPortalClosed) {
+    return (
+      <div style={styles.overlay}>
+        <motion.div 
+          initial={{ opacity: 0, scale: 0.95, y: 15 }}
+          animate={{ opacity: 1, scale: 1, y: 0 }}
+          exit={{ opacity: 0, scale: 0.95, y: 15 }}
+          transition={{ duration: 0.3, ease: "easeOut" }}
+          style={styles.modalContainer}
+        >
+          <button 
+            onClick={handleCloseWrapper} 
+            className="solve-close-trigger"
+            style={styles.closeButton}
+          >
+            <X size={20} />
+          </button>
+
+          <div style={styles.formBody}>
+            <div style={{ textAlign: "center", padding: "12px 4px" }}>
+              <div style={{
+                width: "68px",
+                height: "68px",
+                borderRadius: "50%",
+                backgroundColor: "rgba(239, 68, 68, 0.12)",
+                border: "1px solid rgba(239, 68, 68, 0.3)",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                margin: "0 auto 20px auto",
+                color: "#ef4444"
+              }}>
+                <Lock size={32} />
+              </div>
+
+              <div style={{
+                display: "inline-flex",
+                alignItems: "center",
+                gap: "6px",
+                padding: "4px 14px",
+                borderRadius: "100px",
+                backgroundColor: "rgba(239, 68, 68, 0.1)",
+                border: "1px solid rgba(239, 68, 68, 0.25)",
+                color: "#f87171",
+                fontSize: "12px",
+                fontWeight: 700,
+                textTransform: "uppercase",
+                letterSpacing: "0.1em",
+                marginBottom: "16px"
+              }}>
+                <Lock size={12} />
+                Portal Closed
+              </div>
+
+              <h3 style={{ fontSize: "24px", fontWeight: 800, margin: "0 0 10px 0", color: "#ffffff" }}>
+                Registration Has Closed
+              </h3>
+
+              <p style={{ fontSize: "14px", color: "#a1a1aa", lineHeight: 1.6, margin: "0 0 24px 0" }}>
+                Submissions for the SOLVE Competition officially closed on <strong style={{ color: "#ffffff" }}>15 October 2026 at 11:50 PM IST</strong>. The portal is now closed to new entries and dossiers are locked for jury evaluation.
+              </p>
+
+              <div style={{
+                backgroundColor: "rgba(255, 255, 255, 0.02)",
+                border: "1px solid rgba(255, 255, 255, 0.08)",
+                borderRadius: "16px",
+                padding: "20px",
+                textAlign: "left",
+                marginBottom: "24px"
+              }}>
+                <span style={{
+                  fontSize: "11px",
+                  textTransform: "uppercase",
+                  letterSpacing: "0.15em",
+                  color: "#22d3ee",
+                  fontWeight: 700,
+                  display: "block",
+                  marginBottom: "12px"
+                }}>
+                  Current Milestone & Next Steps
+                </span>
+
+                <div style={{ display: "flex", flexDirection: "column", gap: "10px", fontSize: "13.5px", color: "#d4d4d8" }}>
+                  <div style={{ display: "flex", gap: "10px", alignItems: "flex-start" }}>
+                    <span style={{ color: "#34d399", fontWeight: 700 }}>✓</span>
+                    <span><strong>Phase 01 & 02 Complete:</strong> Submissions and teacher verification details are indexed.</span>
+                  </div>
+                  <div style={{ display: "flex", gap: "10px", alignItems: "flex-start" }}>
+                    <span style={{ color: "#22d3ee", fontWeight: 700 }}>•</span>
+                    <span><strong>Triple-'I' Evaluation:</strong> Panel actively reviewing Innovation, Impact, and Implementation.</span>
+                  </div>
+                  <div style={{ display: "flex", gap: "10px", alignItems: "flex-start" }}>
+                    <span style={{ color: "#a78bfa", fontWeight: 700 }}>•</span>
+                    <span><strong>Shortlist & Results:</strong> Direct email updates sent to registered candidates and schools.</span>
+                  </div>
+                </div>
+              </div>
+
+              <div style={{
+                padding: "12px 16px",
+                backgroundColor: "rgba(255, 255, 255, 0.02)",
+                border: "1px solid rgba(255, 255, 255, 0.05)",
+                borderRadius: "12px",
+                fontSize: "13px",
+                color: "#a1a1aa",
+                marginBottom: "20px",
+                textAlign: "center"
+              }}>
+                Need assistance regarding an existing submission? Contact{" "}
+                <a href="mailto:info@thecareerdiscovery.com" style={{ color: "#22d3ee", textDecoration: "none" }}>
+                  info@thecareerdiscovery.com
+                </a>
+              </div>
+
+              <button
+                type="button"
+                onClick={handleCloseWrapper}
+                style={{
+                  width: "100%",
+                  padding: "14px",
+                  backgroundColor: "#ffffff",
+                  color: "#000000",
+                  fontWeight: 700,
+                  fontSize: "15px",
+                  borderRadius: "12px",
+                  border: "none",
+                  cursor: "pointer",
+                  boxShadow: "0 10px 25px rgba(255,255,255,0.1)"
+                }}
+              >
+                Close Window
+              </button>
+            </div>
+          </div>
+        </motion.div>
+      </div>
+    );
+  }
 
   return (
     <div style={styles.overlay}>

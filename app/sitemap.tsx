@@ -156,6 +156,7 @@ const pages = [
 
   // Competition Pages
   '/isip',
+  '/isip-competition',
   '/solve_challenge',
   '/solve_eg',
   '/writing_competition',

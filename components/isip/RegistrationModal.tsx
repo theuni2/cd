@@ -527,7 +527,7 @@ export default function RegistrationModal({
                   <button
                     type="submit"
                     disabled={isSubmitting}
-                    className="px-6 py-3 rounded-xl bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-white text-xs sm:text-sm font-bold flex items-center gap-2 cursor-pointer transition-all shadow-lg shadow-blue-500/20 disabled:opacity-50"
+                    className="px-7 py-3 rounded-full bg-gradient-to-r from-[#c5a059] via-[#e5c07b] to-[#b38947] hover:brightness-110 text-[#050B14] text-xs sm:text-sm font-extrabold uppercase tracking-wider flex items-center gap-2 cursor-pointer transition-all shadow-lg shadow-[#c5a059]/25 disabled:opacity-50"
                   >
                     {isSubmitting ? (
                       <span>Processing Application...</span>

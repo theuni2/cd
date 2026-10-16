@@ -540,7 +540,7 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import { ArrowRight, Sparkles, Mail, ArrowUp, Clock } from "lucide-react";
+import { ArrowRight, Sparkles, Mail, ArrowUp, Clock, Lock } from "lucide-react";
 
 export default function SolveFooterCTA({ onOpenRegister }) {
   const styles = {
@@ -710,9 +710,20 @@ export default function SolveFooterCTA({ onOpenRegister }) {
             backgroundSize: "3rem 3rem", maskImage: "radial-gradient(circle, #000, transparent)"
           }} />
 
-          <div style={styles.ctaLabel}>
-            <Sparkles size={14} />
-            <span>Applications are Live</span>
+          <div style={{
+            ...styles.ctaLabel,
+            color: "#f87171",
+            backgroundColor: "rgba(239, 68, 68, 0.1)",
+            border: "1px solid rgba(239, 68, 68, 0.25)",
+            display: "inline-flex",
+            alignItems: "center",
+            gap: "6px",
+            padding: "6px 14px",
+            borderRadius: "100px",
+            marginBottom: "20px"
+          }}>
+            <Lock size={13} />
+            <span>Registration Closed</span>
           </div>
 
           <h2 style={styles.ctaTitle}>Got an Idea?<br />Let’s SOLVE It.</h2>
@@ -730,27 +741,32 @@ export default function SolveFooterCTA({ onOpenRegister }) {
             fontWeight: 700,
             marginBottom: "24px"
           }}>
-            <Clock size={15} color="#ef4444" />
-            <span>SOLVE Competition will be closed 11:50pm IST on 15oct</span>
+            <Lock size={15} color="#ef4444" />
+            <span>SOLVE Registration Closed at 11:50 PM IST on 15 Oct</span>
           </div>
           
           <p style={styles.ctaSubtitle}>
-            Bring your pitch deck and your 3-minute video to our global evaluation arena. No mentorship clutter. No logistical complications. Just absolute impact.
+            The portal has officially closed for this edition. All submitted pitch decks and video pitches are currently undergoing review by our global evaluation jury.
           </p>
 
           <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "10px" }}>
-            <motion.button 
-              whileHover={{ scale: 1.03, boxShadow: "0 20px 40px rgba(197, 160, 89, 0.15)" }}
-              whileTap={{ scale: 0.98 }}
-              onClick={onOpenRegister}
-              style={styles.primaryBtn}
+            <button 
+              disabled
+              style={{
+                ...styles.primaryBtn,
+                background: "rgba(255, 255, 255, 0.08)",
+                color: "rgba(255, 255, 255, 0.45)",
+                border: "1px solid rgba(255, 255, 255, 0.15)",
+                cursor: "not-allowed",
+                boxShadow: "none"
+              }}
             >
-              Submit Your Pitch
-              <ArrowRight size={18} />
-            </motion.button>
+              <Lock size={16} />
+              Registration Closed
+            </button>
 
-            <span style={{ fontSize: "13px", color: "#fca5a5", display: "flex", alignItems: "center", gap: "6px", fontWeight: 600 }}>
-              <Clock size={14} color="#ef4444" /> Closes at 11:50 PM IST on 15 Oct
+            <span style={{ fontSize: "13px", color: "#a1a1aa", display: "flex", alignItems: "center", gap: "6px", fontWeight: 500 }}>
+              <Lock size={14} color="#71717a" /> Closed on 15 Oct 2026 (11:50 PM IST) • Submissions Under Review
             </span>
           </div>
         </div>
