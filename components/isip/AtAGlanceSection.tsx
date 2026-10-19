@@ -16,19 +16,19 @@ import {
 export default function AtAGlanceSection() {
   const stats = [
     {
-      number: "$8,500",
+      number: "₹75,000",
       label: "Seed Grant Pool",
-      subtext: "1st: $5,000 • 2nd: $2,500 • 3rd: $1,000",
+      subtext: "1st: ₹40,000 • 2nd: ₹25,000 • 3rd: ₹10,000",
     },
     {
-      number: "1,000",
-      label: "Global Builders",
-      subtext: "Grades 8–12 • Solo or Teams of 3",
+      number: "Grades 8–12",
+      label: "Global Student Builders",
+      subtext: "Solo Founders or Teams of 3",
     },
     {
-      number: "4 Lead",
-      label: "University Faculty",
-      subtext: "IIT, IISc, Ashoka & Global Mentors",
+      number: "Leading Faculty",
+      label: "Academic & Industry Mentors",
+      subtext: "Leading Professionals from Google & OpenAI",
     },
     {
       number: "100%",
@@ -68,7 +68,7 @@ export default function AtAGlanceSection() {
             </p>
 
             <p className="text-sm sm:text-base text-slate-400 font-light leading-relaxed">
-              Over 9 structured weeks, university faculty and global venture leaders guide you step-by-step from discovering an authentic problem to building a tested venture blueprint. Zero built code required — you are judged purely on framework depth, problem validation, and strategic conviction.
+              Over 8 structured weeks, university faculty and global venture leaders guide you step-by-step from discovering an authentic problem to building a tested venture blueprint. Zero built code required — you are judged purely on framework depth, problem validation, and strategic conviction.
             </p>
 
             {/* Stats Grid with Gold Left-Borders (FORGE Signature Layout) */}
@@ -119,11 +119,11 @@ export default function AtAGlanceSection() {
                     Faculty-Led Masterclasses
                   </span>
                   <span className="text-[11px] font-semibold text-emerald-400 bg-emerald-500/10 px-2.5 py-0.5 rounded-full border border-emerald-500/20">
-                    4 Lead Mentors
+                    Leading University Faculty
                   </span>
                 </div>
                 <p className="text-xs sm:text-sm text-slate-200 font-light">
-                  Direct guidance from IIT, IISc & global university academics, paired with continuous formative AI feedback on every brief.
+                  Direct guidance from leading professionals from Google & OpenAI, paired with continuous formative AI feedback on every brief.
                 </p>
               </div>
             </div>

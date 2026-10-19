@@ -18,7 +18,7 @@ export default function MentorsSection() {
     {
       name: "Dr. Aalok Sharma",
       role: "Lead Tech Track Faculty",
-      institution: "Ex-IIT Faculty • AI Systems",
+      institution: "Leading University Faculty • AI Systems",
       image: "/prof_aalok.jpeg",
       bio: "Specializes in computer vision and applied machine learning architectures. Mentored 40+ student research publications.",
     },
@@ -47,7 +47,7 @@ export default function MentorsSection() {
 
   const facultyTiers = [
     {
-      title: "4 Lead Mentors",
+      title: "Leading University Faculty",
       desc: "Weekly masterclasses, open office hours & 1:1 clinics for Top 100 teams.",
       icon: GraduationCap,
     },

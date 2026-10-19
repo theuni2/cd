@@ -13,7 +13,8 @@ import {
   DollarSign,
   Medal,
   Star,
-  MapPin
+  MapPin,
+  Globe
 } from "lucide-react";
 
 interface PrizesSectionProps {
@@ -35,7 +36,7 @@ export default function PrizesSection({ onRegisterClick }: PrizesSectionProps) {
           </div>
 
           <h2 className="font-serif-luxury text-3xl sm:text-5xl font-bold tracking-tight text-white mb-4">
-            $8,500 Non-Dilutive <br />
+            ₹75,000 Non-Dilutive <br />
             <span className="text-[#c5a059] italic font-normal">Cash Seed Grants.</span>
           </h2>
 
@@ -63,12 +64,12 @@ export default function PrizesSection({ onRegisterClick }: PrizesSectionProps) {
                 2nd Place Runner-Up
               </span>
               <span className="font-serif-luxury text-4xl sm:text-5xl font-bold text-white block mb-6">
-                $2,500
+                ₹25,000
               </span>
               <ul className="space-y-2.5 text-xs sm:text-sm text-slate-300 text-left mb-8">
                 <li className="flex items-center gap-2">
                   <CheckCircle2 className="w-4 h-4 text-[#c5a059] shrink-0" />
-                  <span>$2,500 Seed Grant</span>
+                  <span>₹25,000 Seed Grant</span>
                 </li>
                 <li className="flex items-center gap-2">
                   <CheckCircle2 className="w-4 h-4 text-[#c5a059] shrink-0" />
@@ -110,12 +111,12 @@ export default function PrizesSection({ onRegisterClick }: PrizesSectionProps) {
                 1st Place Winner
               </span>
               <span className="font-serif-luxury text-5xl sm:text-6xl font-extrabold text-[#c5a059] block mb-6">
-                $5,000
+                ₹40,000
               </span>
               <ul className="space-y-3 text-xs sm:text-sm text-slate-200 text-left mb-8">
                 <li className="flex items-center gap-2.5 font-medium">
                   <CheckCircle2 className="w-4 h-4 text-[#c5a059] shrink-0" />
-                  <span>$5,000 Cash Seed Grant</span>
+                  <span>₹40,000 Cash Seed Grant</span>
                 </li>
                 <li className="flex items-center gap-2.5">
                   <CheckCircle2 className="w-4 h-4 text-[#c5a059] shrink-0" />
@@ -127,7 +128,7 @@ export default function PrizesSection({ onRegisterClick }: PrizesSectionProps) {
                 </li>
                 <li className="flex items-center gap-2.5">
                   <CheckCircle2 className="w-4 h-4 text-[#c5a059] shrink-0" />
-                  <span>Direct Showcase at Dubai Edition 2</span>
+                  <span>Global Investor Panel Live Feature</span>
                 </li>
                 <li className="flex items-center gap-2.5">
                   <CheckCircle2 className="w-4 h-4 text-[#c5a059] shrink-0" />
@@ -160,12 +161,12 @@ export default function PrizesSection({ onRegisterClick }: PrizesSectionProps) {
                 3rd Place Winner
               </span>
               <span className="font-serif-luxury text-4xl sm:text-5xl font-bold text-white block mb-6">
-                $1,000
+                ₹10,000
               </span>
               <ul className="space-y-2.5 text-xs sm:text-sm text-slate-300 text-left mb-8">
                 <li className="flex items-center gap-2">
                   <CheckCircle2 className="w-4 h-4 text-[#c5a059] shrink-0" />
-                  <span>$1,000 Seed Grant</span>
+                  <span>₹10,000 Seed Grant</span>
                 </li>
                 <li className="flex items-center gap-2">
                   <CheckCircle2 className="w-4 h-4 text-[#c5a059] shrink-0" />
@@ -188,7 +189,7 @@ export default function PrizesSection({ onRegisterClick }: PrizesSectionProps) {
 
         </div>
 
-        {/* Dubai Edition 2 Grand Stage Spotlight Card */}
+        {/* Fully Online Grand Finals Spotlight Card */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -198,14 +199,14 @@ export default function PrizesSection({ onRegisterClick }: PrizesSectionProps) {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
             <div className="lg:col-span-7 space-y-4">
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#c5a059]/15 border border-[#c5a059]/30 text-xs font-bold uppercase tracking-wider text-[#c5a059]">
-                <MapPin className="w-3.5 h-3.5" />
-                <span>Next Edition Horizon • Dubai 2028</span>
+                <Globe className="w-3.5 h-3.5" />
+                <span>Edition 1 • 100% Online Global Grand Finals</span>
               </div>
               <h3 className="font-serif-luxury text-2xl sm:text-3xl font-bold text-white">
-                The Dubai In-Person Grand Finals
+                Live Online Grand Finals
               </h3>
               <p className="text-sm sm:text-base text-slate-300 font-light leading-relaxed">
-                While Edition 1 is fully online for maximum accessibility, Edition 1 winners and top alumni receive guaranteed priority placement and travel grant eligibility for the in-person Dubai Grand Stage showcase in Edition 2.
+                Edition 1 is conducted 100% online for maximum global accessibility. Top 20 finalist teams pitch live directly to a distinguished Global Investor & Faculty Panel from anywhere in the world, eliminating logistical barriers while delivering high-stakes international exposure.
               </p>
               <div className="pt-2 flex items-center gap-3 text-xs text-slate-400">
                 <span className="flex items-center gap-1.5 font-medium text-white">
@@ -215,15 +216,15 @@ export default function PrizesSection({ onRegisterClick }: PrizesSectionProps) {
                 <span>•</span>
                 <span className="flex items-center gap-1.5 font-medium text-white">
                   <Trophy className="w-4 h-4 text-[#c5a059]" />
-                  International Stage
+                  Live Virtual Stage
                 </span>
               </div>
             </div>
 
             <div className="lg:col-span-5 relative h-56 rounded-2xl overflow-hidden border border-white/10">
               <Image
-                src="/images/isip_dubai_final.jpg"
-                alt="Dubai Grand Innovation Stage for ISIP"
+                src="/images/isip_hero_banner.jpg"
+                alt="Global Online Grand Innovation Stage for ISIP"
                 fill
                 className="object-cover"
               />

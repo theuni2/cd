@@ -21,8 +21,8 @@ export default function ProgramCalendarSection() {
   const phases = [
     {
       num: "01",
-      title: "Foundation & Ideation",
-      timeline: "Weeks 1–3 • May 2027",
+      title: "Ideation & Foundation",
+      timeline: "Weeks 1–2 • May 2027",
       badge: "Venture Build Phase",
       checkpoint: "Checkpoint 1: Idea Brief (20% of Qualifier Score)",
       description:
@@ -37,35 +37,35 @@ export default function ProgramCalendarSection() {
     },
     {
       num: "02",
-      title: "Architecture & Stress-Testing",
-      timeline: "Weeks 4–6 • June 2027",
+      title: "Execution & Marketing",
+      timeline: "Weeks 3–6 • June 2027",
       badge: "Top 100 Qualifier Gate",
-      checkpoint: "Checkpoint 2 & 3: Solution Framework & 10-Slide Deck (80% of Score)",
+      checkpoint: "Checkpoint 2 & 3: Solution Framework & Go-To-Market Pitch Deck (80% of Score)",
       description:
-        "Translate your concept into an architectural blueprint. Build interactive Figma/Canva wireframes, map out unit economics, and submit your final 10-slide pitch deck.",
+        "Translate your concept into an execution blueprint and marketing engine. Build interactive Figma/Canva wireframes, map customer acquisition channels and unit economics, and submit your final 10-slide pitch deck.",
       deliverables: [
-        "Solution Framework mockup (Figma, Canva, or system schematic)",
-        "Feasibility stress-test: unit economics, costs, and risk matrix",
-        "72-hour window at Checkpoint 2 to refine and resubmit after feedback",
+        "Solution Framework & prototype mockup (Figma, Canva, or system schematic)",
+        "Go-To-Market strategy, distribution roadmap & customer acquisition channels",
+        "Feasibility stress-test: unit economics, pricing models, and risk matrix",
         "Final 10-slide pitch deck & 3-minute video pitch submission",
       ],
       mentorFocus: "Dual independent grading by Lead Mentor + Second Reviewer",
     },
     {
       num: "03",
-      title: "The Accelerator & Demo Day",
-      timeline: "Weeks 7–9 • Late June 2027",
+      title: "Accelerator & Presentation",
+      timeline: "Weeks 7–8 • Late June 2027",
       badge: "Championship Stage",
       checkpoint: "Top 100 Semi-Finals ➔ Top 20 Finalist Prep ➔ Live Grand Demo Day",
       description:
-        "The highest-performing teams enter dedicated pitch clinics. The Top 20 rehearse with US & UK global mentors, culminating in the live virtual showcase before VC & academic judges.",
+        "The highest-performing teams enter dedicated presentation clinics. The Top 20 rehearse with US & UK global mentors, culminating in the live virtual showcase before VC & industry judges.",
       deliverables: [
-        "Top 100: Dedicated 30-min 1:1 pitch clinic with Lead Faculty",
+        "Top 100: Dedicated 30-min 1:1 pitch & presentation clinic with Lead Faculty",
         "Top 20: Exclusive masterclass with US/UK/Singapore venture leaders",
-        "Full dress rehearsal & slide polish with university mentors",
-        "Grand Demo Day: Live pitches before 5–7 judges for $8,500 cash pool",
+        "Full dress rehearsal & presentation polish with industry mentors",
+        "Grand Demo Day: Live pitches before 5–7 judges for ₹75,000 cash pool",
       ],
-      mentorFocus: "Live judging panel of venture capitalists & university professors",
+      mentorFocus: "Live judging panel of venture capitalists & industry experts",
     },
   ];
 
@@ -79,7 +79,7 @@ export default function ProgramCalendarSection() {
         <div className="text-center mb-16">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full border border-[#c5a059]/40 bg-[#0a192f] text-xs font-bold uppercase tracking-[0.2em] text-[#c5a059] mb-4">
             <Sparkles className="w-3.5 h-3.5 text-[#c5a059]" />
-            <span>The 9-Week Builder Journey</span>
+            <span>The 8-Week Builder Journey</span>
           </div>
 
           <h2 className="font-serif-luxury text-3xl sm:text-5xl font-bold tracking-tight text-white mb-4">

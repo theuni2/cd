@@ -49,14 +49,14 @@ export default function FloatingApplyBar({ onRegisterClick }: FloatingApplyBarPr
                   </span>
                 </div>
                 <p className="text-[11px] text-slate-300 font-light hidden sm:block">
-                  9-Week Faculty Incubator • $8,500 Cash Seed Pool • Grades 8–12
+                  8-Week Faculty Incubator • ₹75,000 Cash Seed Pool • Grades 8–12
                 </p>
               </div>
             </div>
 
             <div className="flex items-center gap-3 w-full sm:w-auto justify-end">
               <span className="text-xs font-mono font-bold text-[#c5a059] hidden md:block">
-                ₹5,000 / Student
+                $20 / Student
               </span>
               <button
                 onClick={onRegisterClick}

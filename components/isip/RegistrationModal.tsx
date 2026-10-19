@@ -134,7 +134,8 @@ export default function RegistrationModal({
   };
 
   const teamMemberCount = teamType === "solo" ? 1 : formData.teamMember3Name ? 3 : 2;
-  const totalFee = teamMemberCount * 5000;
+  const perStudentFeeUSD = 20;
+  const totalFee = teamMemberCount * perStudentFeeUSD;
 
   if (!isOpen) return null;
 
@@ -218,7 +219,7 @@ export default function RegistrationModal({
                         >
                           <User className="w-5 h-5 text-cyan-400 mb-2" />
                           <div className="font-bold text-sm text-white">Solo Innovator</div>
-                          <div className="text-xs text-slate-400 mt-1">1 student founder (₹5,000)</div>
+                          <div className="text-xs text-slate-400 mt-1">1 student founder ($20)</div>
                         </button>
 
                         <button
@@ -232,7 +233,7 @@ export default function RegistrationModal({
                         >
                           <Users className="w-5 h-5 text-emerald-400 mb-2" />
                           <div className="font-bold text-sm text-white">Collaborative Team</div>
-                          <div className="text-xs text-slate-400 mt-1">2 to 3 students (₹5,000 / student)</div>
+                          <div className="text-xs text-slate-400 mt-1">2 to 3 students ($20 / student)</div>
                         </button>
                       </div>
                     </div>
@@ -500,7 +501,7 @@ export default function RegistrationModal({
                     <div className="p-4 rounded-xl bg-slate-950 border border-slate-800 flex items-center justify-between text-xs">
                       <div>
                         <span className="text-slate-400 block">Registration Fee ({teamMemberCount} student{teamMemberCount > 1 ? "s" : ""}):</span>
-                        <span className="text-white font-bold text-sm">₹{totalFee.toLocaleString("en-IN")}</span>
+                        <span className="text-white font-bold text-sm">${totalFee}</span>
                       </div>
                       <span className="text-emerald-400 font-mono text-[11px] bg-emerald-500/10 px-2 py-1 rounded">
                         Full Refund Pre-Week 1
@@ -532,7 +533,7 @@ export default function RegistrationModal({
                     {isSubmitting ? (
                       <span>Processing Application...</span>
                     ) : step === 3 ? (
-                      <span>Complete Registration (₹{totalFee.toLocaleString("en-IN")})</span>
+                      <span>Complete Registration (${totalFee})</span>
                     ) : (
                       <>
                         <span>Continue</span>

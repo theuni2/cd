@@ -93,7 +93,7 @@ export default function TracksSection({ onSelectTrack }: TracksSectionProps) {
             transition={{ delay: 0.2 }}
             className="text-base sm:text-lg text-slate-300 font-light"
           >
-            Choose your arena. Both tracks compete for the identical $8,500 prize pool and receive tailored faculty mentorship.
+            Choose your arena. Both tracks compete for the identical ₹75,000 prize pool and receive tailored faculty mentorship.
           </motion.p>
         </div>
 

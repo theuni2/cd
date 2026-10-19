@@ -13,12 +13,16 @@ export default function FaqSection() {
       a: "ISIP is open to students worldwide in Grades 8 through 12. You can compete solo as an individual founder or in collaborative teams of up to 3 students from any school or city.",
     },
     {
+      q: "Do students need continuous live presence or fixed daily hours to participate?",
+      a: "No! ISIP is structured flexibly to fit around rigorous school schedules, extracurriculars, and exam periods. All faculty masterclasses and mentor sessions are recorded for on-demand viewing, and office hours have flexible slots. You only need approximately 3–5 hours per week at your own schedule to complete your checkpoint deliverables.",
+    },
+    {
       q: "Do I need previous coding experience or a built software prototype?",
       a: "No! Absolutely no coding, hardware, or built software is required. You are evaluated on problem validation, analytical framework depth, interactive Figma/Canva wireframes, and pitch conviction.",
     },
     {
-      q: "What does the ₹5,000 per student fee include?",
-      a: "The fee covers the full 9-week program: weekly masterclasses led by university faculty, open office hours, 24/7 AI-assisted draft scoring, independent human dual-grading, and 1:1 faculty clinics for the Top 100.",
+      q: "What does the $20 per student fee include?",
+      a: "The fee covers the full 8-week program: weekly masterclasses led by university faculty, open office hours, 24/7 AI-assisted draft scoring, independent human dual-grading, and 1:1 faculty clinics for the Top 100.",
     },
     {
       q: "Who owns our venture idea and intellectual property?",
@@ -26,7 +30,7 @@ export default function FaqSection() {
     },
     {
       q: "How does the selection funnel work (Top 100, Top 20, Top 3)?",
-      a: "All teams build during Weeks 1–6. Top 100 qualifiers receive 1:1 mentor pitch clinics. Semi-finals determine the Top 20 finalists, who rehearse before pitching live at Demo Day for $8,500 in seed prizes.",
+      a: "All teams build during Weeks 1–6 across Ideation & Execution. In Week 7, Top 100 qualifiers receive 1:1 mentor pitch clinics. Semi-finals determine the Top 20 finalists, who rehearse before pitching live at Grand Demo Day in Week 8 for ₹75,000 in seed prizes.",
     },
     {
       q: "What if our venture bridges both Tech and Social Impact?",

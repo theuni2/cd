@@ -72,7 +72,7 @@ export default function ISIPClient() {
         onSelectTrack={(track) => handleOpenRegister(track)}
       />
 
-      {/* 4. 9-Week Program Calendar & Milestones */}
+      {/* 4. 8-Week Program Calendar & Milestones */}
       <ProgramCalendarSection />
 
       {/* 5. Funnel Progression & Coaching Support */}
@@ -81,7 +81,7 @@ export default function ISIPClient() {
       {/* 6. Rubric & Judging Criteria */}
       <RubricSection />
 
-      {/* 7. $8,500 Cash Seed Pool & Honors */}
+      {/* 7. ₹75,000 Cash Seed Pool & Honors */}
       <PrizesSection
         onRegisterClick={() => handleOpenRegister()}
       />
@@ -118,7 +118,7 @@ export default function ISIPClient() {
             </h2>
 
             <p className="text-base sm:text-lg text-slate-300 font-light max-w-2xl mx-auto leading-relaxed">
-              Join 1,000 ambitious students across Grades 8–12. Learn real venture frameworks, get actionable feedback at every step, and pitch for $8,500 in seed prizes.
+              Join ambitious students across Grades 8–12. Learn real venture frameworks, get actionable feedback at every step, and pitch for ₹75,000 in seed prizes.
             </p>
 
             <div className="pt-4 flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -127,7 +127,7 @@ export default function ISIPClient() {
                 id="footer-cta-register-btn"
                 className="w-full sm:w-auto px-10 py-4 rounded-full bg-gradient-to-r from-[#c5a059] via-[#e5c07b] to-[#b38947] hover:brightness-110 text-[#050B14] font-extrabold text-sm sm:text-base tracking-wider uppercase shadow-xl shadow-[#c5a059]/25 transition-all cursor-pointer flex items-center justify-center gap-2.5 hover:scale-[1.02] active:scale-[0.98]"
               >
-                <span>Register for ISIP (₹5,000)</span>
+                <span>Register for ISIP ($20)</span>
                 <ArrowRight className="w-4 h-4" />
               </button>
 
@@ -146,7 +146,7 @@ export default function ISIPClient() {
               </span>
               <span className="flex items-center gap-1.5 font-medium text-slate-300">
                 <Trophy className="w-4 h-4 text-[#c5a059]" />
-                $8,500 Seed Pool
+                ₹75,000 Seed Pool
               </span>
               <span className="flex items-center gap-1.5 font-medium text-slate-300">
                 <ShieldCheck className="w-4 h-4 text-emerald-400" />

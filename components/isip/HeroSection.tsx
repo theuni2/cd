@@ -56,10 +56,10 @@ export default function HeroSection({
   }, [targetDate]);
 
   const kpis = [
-    { value: "9 WEEKS", label: "Faculty-Led Incubator", highlight: true },
-    { value: "$8,500", label: "Seed Capital Pool", highlight: true },
+    { value: "8 WEEKS", label: "Faculty-Led Incubator", highlight: true },
+    { value: "₹75,000", label: "Seed Capital Pool", highlight: true },
     { value: "GRADES 8–12", label: "Solo or Teams of 3", highlight: false },
-    { value: "₹5,000", label: "Per Builder Fee", highlight: false },
+    { value: "$20", label: "Per Builder Fee", highlight: false },
     { value: "0% EQUITY", label: "100% Student IP", highlight: true },
   ];
 
@@ -116,7 +116,7 @@ export default function HeroSection({
             transition={{ duration: 0.7, delay: 0.2 }}
             className="text-base sm:text-xl text-slate-300 font-light max-w-3xl mx-auto leading-relaxed"
           >
-            A 9-week venture incubator for students in <strong className="text-white font-semibold">Grades 8–12</strong>. Master venture frameworks under university faculty, build ideas across Tech & Social Impact, and compete for <strong className="text-[#c5a059] font-semibold">$8,500 in seed prizes</strong>.
+            An 8-week venture incubator for students in <strong className="text-white font-semibold">Grades 8–12</strong>. Master venture frameworks under university faculty, build ideas across Tech & Social Impact, and compete for <strong className="text-[#c5a059] font-semibold">₹75,000 in seed prizes</strong>.
           </motion.p>
         </div>
 
@@ -132,7 +132,7 @@ export default function HeroSection({
             id="hero-register-btn"
             className="w-full sm:w-auto px-9 py-4 rounded-full bg-gradient-to-r from-[#c5a059] via-[#e5c07b] to-[#b38947] hover:brightness-110 text-[#050B14] font-extrabold text-sm sm:text-base tracking-wider uppercase transition-all duration-300 shadow-xl shadow-[#c5a059]/20 flex items-center justify-center gap-2.5 cursor-pointer hover:scale-[1.02] active:scale-[0.98]"
           >
-            <span>Register for ISIP (₹5,000)</span>
+            <span>Register for ISIP ($20)</span>
             <ArrowRight className="w-4 h-4" />
           </button>
 
@@ -142,7 +142,7 @@ export default function HeroSection({
             className="w-full sm:w-auto px-8 py-4 rounded-full bg-[#0a192f]/70 hover:bg-[#0a192f] text-slate-200 border border-white/15 hover:border-[#c5a059]/50 font-semibold text-sm sm:text-base transition-all duration-300 flex items-center justify-center gap-2 cursor-pointer backdrop-blur-md"
           >
             <Calendar className="w-4 h-4 text-[#c5a059]" />
-            <span>Explore 9-Week Journey</span>
+            <span>Explore 8-Week Journey</span>
           </button>
         </motion.div>
 
@@ -227,7 +227,7 @@ export default function HeroSection({
                 <span className="text-slate-400">Total Seed Pool:</span>
                 <span className="font-bold text-[#c5a059] flex items-center gap-1">
                   <Trophy className="w-3.5 h-3.5" />
-                  $8,500 Cash Grants
+                  ₹75,000 Cash Grants
                 </span>
               </div>
               <div className="flex items-center justify-between py-1.5 border-b border-white/5">
@@ -267,11 +267,11 @@ export default function HeroSection({
                 <div className="flex items-center gap-2">
                   <span className="w-2 h-2 rounded-full bg-[#c5a059] animate-pulse" />
                   <span className="text-xs font-semibold text-slate-200">
-                    Funnel: 1,000 Builders ➔ Top 100 ➔ Top 20 ➔ Top 3
+                    Funnel: All Builders ➔ Top 100 ➔ Top 20 ➔ Top 3
                   </span>
                 </div>
                 <span className="text-xs font-bold text-[#c5a059] bg-[#c5a059]/15 px-3 py-1 rounded-full border border-[#c5a059]/40">
-                  1st: $5,000 • 2nd: $2,500 • 3rd: $1,000
+                  1st: $1,000 • 2nd: $650 • 3rd: $250
                 </span>
               </div>
             </div>
