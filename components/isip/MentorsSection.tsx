@@ -10,38 +10,26 @@ import {
   ShieldCheck,
   CheckCircle2,
   Sparkles,
-  Award
+  Award,
+  Linkedin
 } from "lucide-react";
 
 export default function MentorsSection() {
   const mentors = [
     {
-      name: "Dr. Aalok Sharma",
-      role: "Lead Tech Track Faculty",
-      institution: "Leading University Faculty • AI Systems",
-      image: "/prof_aalok.jpeg",
-      bio: "Specializes in computer vision and applied machine learning architectures. Mentored 40+ student research publications.",
-    },
-    {
-      name: "Prof. Kimberly Rose Clark",
-      role: "Global Advisory Mentor",
-      institution: "Dartmouth College • Behavioral Science",
-      image: "/professor/kimberly_rose_clark.png",
-      bio: "Lecturer and venture advisor bridging consumer behavior, cognitive models, and ethical product adoption.",
-    },
-    {
-      name: "Dr. Shambhu Nath",
-      role: "Lead Social Impact Faculty",
-      institution: "Public Policy & Development Economics",
-      image: "/shambhu.jpeg",
-      bio: "Decade of grassroots fieldwork designing community distribution models and sustainable social enterprise frameworks.",
-    },
-    {
       name: "Dr. Yogi Patel",
       role: "Venture Systems & Prototyping",
-      institution: "Biomedical Systems & DeepTech",
+      institution: "Argonne National Lab • DeepTech Systems",
       image: "/yogi_patel.jpeg",
-      bio: "Advises high school founders on hardware unit economics, prototype stress-testing, and university patent filing.",
+      bio: "Aerospace engineer advising high school founders on hardware unit economics, prototype stress-testing, and university patent filing.",
+    },
+    {
+      name: "Mahima Bhagat",
+      role: "Senior Consultant, Deloitte India",
+      institution: "UN Women 30 for 2030 • McKinsey NGWL",
+      image: "/mahima_bhagat.jpeg",
+      bio: "Senior Consultant at Deloitte India, UN Women 30 for 2030, Fellow at Global Shapers New Delhi Hub, McKinsey Next Generation Women Leaders Asia, and Pro-Bono Consultant.",
+      linkedin: "https://www.linkedin.com/in/mahima-bhagat/",
     },
   ];
 
@@ -87,7 +75,7 @@ export default function MentorsSection() {
         </div>
 
         {/* FORGE-Style Circular Portrait Faculty Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 max-w-4xl mx-auto gap-8 mb-16">
           {mentors.map((mentor, idx) => (
             <motion.div
               key={idx}
@@ -95,10 +83,10 @@ export default function MentorsSection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: idx * 0.1 }}
-              className="text-center group"
+              className="text-center group p-8 rounded-3xl bg-[#0a192f]/40 border border-white/5 hover:border-[#c5a059]/40 transition-all duration-300 flex flex-col items-center"
             >
               {/* Circular Portrait with Gold Border Hover Animation */}
-              <div className="w-32 h-32 mx-auto mb-5 relative rounded-full overflow-hidden border-2 border-white/15 group-hover:border-[#c5a059] transition-all duration-500 shadow-xl group-hover:shadow-[#c5a059]/25 group-hover:scale-105">
+              <div className="w-36 h-36 mx-auto mb-5 relative rounded-full overflow-hidden border-2 border-white/15 group-hover:border-[#c5a059] transition-all duration-500 shadow-xl group-hover:shadow-[#c5a059]/25 group-hover:scale-105">
                 <Image
                   src={mentor.image}
                   alt={mentor.name}
@@ -108,7 +96,7 @@ export default function MentorsSection() {
               </div>
 
               {/* Name & Academic Rank */}
-              <h3 className="font-serif-luxury text-lg font-bold text-white group-hover:text-[#c5a059] transition-colors mb-1">
+              <h3 className="font-serif-luxury text-xl font-bold text-white group-hover:text-[#c5a059] transition-colors mb-1">
                 {mentor.name}
               </h3>
               
@@ -120,9 +108,21 @@ export default function MentorsSection() {
                 {mentor.institution}
               </span>
 
-              <p className="text-xs text-slate-400 font-light leading-relaxed">
+              <p className="text-xs sm:text-sm text-slate-300 font-light leading-relaxed max-w-md mx-auto mb-4">
                 {mentor.bio}
               </p>
+
+              {mentor.linkedin && (
+                <a
+                  href={mentor.linkedin}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 mt-auto px-4 py-1.5 rounded-full bg-[#0a192f] border border-[#c5a059]/40 text-[#c5a059] hover:bg-[#c5a059] hover:text-[#050B14] text-xs font-semibold tracking-wide transition-all duration-300"
+                >
+                  <Linkedin className="w-3.5 h-3.5" />
+                  <span>LinkedIn Profile</span>
+                </a>
+              )}
             </motion.div>
           ))}
         </div>

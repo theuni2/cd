@@ -56,7 +56,7 @@ export default function FloatingApplyBar({ onRegisterClick }: FloatingApplyBarPr
 
             <div className="flex items-center gap-3 w-full sm:w-auto justify-end">
               <span className="text-xs font-mono font-bold text-[#c5a059] hidden md:block">
-                $20 / Student
+                ₹2,000 / Student
               </span>
               <button
                 onClick={onRegisterClick}

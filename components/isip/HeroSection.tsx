@@ -59,7 +59,7 @@ export default function HeroSection({
     { value: "8 WEEKS", label: "Faculty-Led Incubator", highlight: true },
     { value: "₹75,000", label: "Seed Capital Pool", highlight: true },
     { value: "GRADES 8–12", label: "Solo or Teams of 3", highlight: false },
-    { value: "$20", label: "Per Builder Fee", highlight: false },
+    { value: "₹2,000", label: "Per Builder Fee", highlight: false },
     { value: "0% EQUITY", label: "100% Student IP", highlight: true },
   ];
 
@@ -132,7 +132,7 @@ export default function HeroSection({
             id="hero-register-btn"
             className="w-full sm:w-auto px-9 py-4 rounded-full bg-gradient-to-r from-[#c5a059] via-[#e5c07b] to-[#b38947] hover:brightness-110 text-[#050B14] font-extrabold text-sm sm:text-base tracking-wider uppercase transition-all duration-300 shadow-xl shadow-[#c5a059]/20 flex items-center justify-center gap-2.5 cursor-pointer hover:scale-[1.02] active:scale-[0.98]"
           >
-            <span>Register for ISIP ($20)</span>
+            <span>Register for ISIP (₹2,000)</span>
             <ArrowRight className="w-4 h-4" />
           </button>
 

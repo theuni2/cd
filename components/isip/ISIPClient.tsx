@@ -127,7 +127,7 @@ export default function ISIPClient() {
                 id="footer-cta-register-btn"
                 className="w-full sm:w-auto px-10 py-4 rounded-full bg-gradient-to-r from-[#c5a059] via-[#e5c07b] to-[#b38947] hover:brightness-110 text-[#050B14] font-extrabold text-sm sm:text-base tracking-wider uppercase shadow-xl shadow-[#c5a059]/25 transition-all cursor-pointer flex items-center justify-center gap-2.5 hover:scale-[1.02] active:scale-[0.98]"
               >
-                <span>Register for ISIP ($20)</span>
+                <span>Register for ISIP (₹2,000)</span>
                 <ArrowRight className="w-4 h-4" />
               </button>
 

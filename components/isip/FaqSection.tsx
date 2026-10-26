@@ -21,7 +21,7 @@ export default function FaqSection() {
       a: "No! Absolutely no coding, hardware, or built software is required. You are evaluated on problem validation, analytical framework depth, interactive Figma/Canva wireframes, and pitch conviction.",
     },
     {
-      q: "What does the $20 per student fee include?",
+      q: "What does the ₹2,000 per student fee include?",
       a: "The fee covers the full 8-week program: weekly masterclasses led by university faculty, open office hours, 24/7 AI-assisted draft scoring, independent human dual-grading, and 1:1 faculty clinics for the Top 100.",
     },
     {
