@@ -26,7 +26,7 @@ export default function HeroSection({
   onRegisterClick,
   onExploreCalendarClick,
 }: HeroSectionProps) {
-  const targetDate = new Date("2027-05-01T23:59:59").getTime();
+  const targetDate = new Date("2026-12-10T23:59:59").getTime();
 
   const [timeLeft, setTimeLeft] = useState({
     days: 0,
@@ -56,11 +56,11 @@ export default function HeroSection({
   }, [targetDate]);
 
   const kpis = [
-    { value: "8 WEEKS", label: "Faculty-Led Incubator", highlight: true },
-    { value: "₹75,000", label: "Seed Capital Pool", highlight: true },
-    { value: "GRADES 8–12", label: "Solo or Teams of 3", highlight: false },
+    { value: "28 OCT – 10 DEC", label: "Registration Window", highlight: true },
+    { value: "10 – 20 DEC", label: "7-Days Live Classes", highlight: false },
+    { value: "30 DEC – 7 JAN", label: "Deck & Website Submissions", highlight: true },
+    { value: "10 JANUARY", label: "Results & ₹75K Grants", highlight: true },
     { value: "₹2,000", label: "Per Builder Fee", highlight: false },
-    { value: "0% EQUITY", label: "100% Student IP", highlight: true },
   ];
 
   return (
@@ -116,7 +116,7 @@ export default function HeroSection({
             transition={{ duration: 0.7, delay: 0.2 }}
             className="text-base sm:text-xl text-slate-300 font-light max-w-3xl mx-auto leading-relaxed"
           >
-            An 8-week venture incubator for students in <strong className="text-white font-semibold">Grades 8–12</strong>. Master venture frameworks under university faculty, build ideas across Tech & Social Impact, and compete for <strong className="text-[#c5a059] font-semibold">₹75,000 in seed prizes</strong>.
+            An intensive venture competition for students in <strong className="text-white font-semibold">Grades 8–12</strong>. Master venture frameworks in 7 days of live masterclasses, build your Pitch Deck & Website prototype, and compete for <strong className="text-[#c5a059] font-semibold">₹75,000 in seed prizes</strong>.
           </motion.p>
         </div>
 
@@ -142,7 +142,7 @@ export default function HeroSection({
             className="w-full sm:w-auto px-8 py-4 rounded-full bg-[#0a192f]/70 hover:bg-[#0a192f] text-slate-200 border border-white/15 hover:border-[#c5a059]/50 font-semibold text-sm sm:text-base transition-all duration-300 flex items-center justify-center gap-2 cursor-pointer backdrop-blur-md"
           >
             <Calendar className="w-4 h-4 text-[#c5a059]" />
-            <span>Explore 8-Week Journey</span>
+            <span>Explore Program Timeline</span>
           </button>
         </motion.div>
 
@@ -187,7 +187,7 @@ export default function HeroSection({
                   Registration Window
                 </span>
                 <h3 className="text-base font-serif-luxury font-bold text-white">
-                  Edition 1 Cohort Closes In
+                  Registration Closes 10th Dec
                 </h3>
               </div>
               <span className="flex h-3 w-3 rounded-full bg-[#c5a059] animate-ping" />
@@ -224,23 +224,23 @@ export default function HeroSection({
             {/* Quick Metrics Strip */}
             <div className="space-y-2.5 text-xs sm:text-sm text-slate-300">
               <div className="flex items-center justify-between py-1.5 border-b border-white/5">
-                <span className="text-slate-400">Total Seed Pool:</span>
-                <span className="font-bold text-[#c5a059] flex items-center gap-1">
-                  <Trophy className="w-3.5 h-3.5" />
-                  ₹75,000 Cash Grants
-                </span>
+                <span className="text-slate-400">Registration:</span>
+                <span className="font-semibold text-white">28th Oct – 10th Dec (₹2,000)</span>
               </div>
               <div className="flex items-center justify-between py-1.5 border-b border-white/5">
-                <span className="text-slate-400">Builder Format:</span>
-                <span className="font-semibold text-white">Solo or Teams of up to 3</span>
+                <span className="text-slate-400">Classes (7 Days):</span>
+                <span className="font-semibold text-emerald-400">10th – 20th Dec (Live Faculty)</span>
               </div>
               <div className="flex items-center justify-between py-1.5 border-b border-white/5">
-                <span className="text-slate-400">Pre-built Code:</span>
-                <span className="font-semibold text-emerald-400">None Required (Frameworks)</span>
+                <span className="text-slate-400">Submissions Window:</span>
+                <span className="font-semibold text-white">30th Dec – 7th Jan (Deck + Web)</span>
               </div>
               <div className="flex items-center justify-between py-1.5">
-                <span className="text-slate-400">Grand Finals:</span>
-                <span className="font-semibold text-[#c5a059]">Live Virtual Demo Day</span>
+                <span className="text-slate-400">Results & Seed Pool:</span>
+                <span className="font-bold text-[#c5a059] flex items-center gap-1">
+                  <Trophy className="w-3.5 h-3.5" />
+                  10th Jan (₹75,000 Pool)
+                </span>
               </div>
             </div>
           </motion.div>

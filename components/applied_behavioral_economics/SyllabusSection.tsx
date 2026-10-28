@@ -121,7 +121,7 @@ export default function SyllabusSection() {
   ];
 
   return (
-    <section id="curriculum" className="py-24 bg-gradient-to-b from-slate-50 via-white to-slate-50 text-slate-900 relative">
+    <section id="syllabus" className="py-24 bg-gradient-to-b from-slate-50 via-white to-slate-50 text-slate-900 relative">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Header */}

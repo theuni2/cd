@@ -64,7 +64,7 @@ export default function ApplicationModal({ isOpen, onClose }: ModalProps) {
                   <span className="px-3 py-0.5 rounded-full bg-emerald-500/20 border border-emerald-500/40 text-emerald-400 text-[11px] font-bold uppercase tracking-wider">
                     Fellowship Application
                   </span>
-                  <span className="text-xs text-slate-400">Cohort Limit: 20-25 Fellows</span>
+                  <span className="text-xs text-slate-400">Cohort Limit: 30-35 Fellows</span>
                 </div>
                 <h3 className="text-xl sm:text-2xl font-bold text-white">
                   The Applied Behavioral Economics Scholar Program

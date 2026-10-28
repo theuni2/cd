@@ -21,51 +21,67 @@ export default function ProgramCalendarSection() {
   const phases = [
     {
       num: "01",
-      title: "Ideation & Foundation",
-      timeline: "Weeks 1–2 • May 2027",
-      badge: "Venture Build Phase",
-      checkpoint: "Checkpoint 1: Idea Brief (20% of Qualifier Score)",
+      title: "Registration & Onboarding",
+      timeline: "28th Oct – 10th Dec",
+      badge: "Registration Open",
+      checkpoint: "Checkpoint 1: Team Enrollment & Track Selection (₹2,000 Fee)",
       description:
-        "Isolate an authentic pain point by interviewing real stakeholders. Frame your hypothesis, analyze competitors, and submit your 1-page structured Idea Brief.",
+        "Registration window opens on 28th October for students in Grades 8–12. Form your solo or 3-builder team, select Tech Innovation or Social Impact, complete guardian DPDP consent, and access onboarding toolkits.",
       deliverables: [
-        "Problem discovery logs with 5–10 real stakeholder conversations",
-        "1-page structured Idea Brief defining market gap and persona",
-        "Instant formative AI rubric evaluation with 3-point fix list",
-        "Weekly live faculty masterclass & open office hours",
+        "Solo or Team Registration (Up to 3 builders • Grades 8–12)",
+        "Track Confirmation: Tech Innovation or Social Impact",
+        "Minor Safeguarding parent/guardian verified DPDP consent",
+        "ISIP Portal access & preliminary venture discovery toolkit",
       ],
-      mentorFocus: "Faculty-led problem framing & user discovery methodology",
+      mentorFocus: "Cohort Admissions & Pre-Program Onboarding Support",
     },
     {
       num: "02",
-      title: "Execution & Marketing",
-      timeline: "Weeks 3–6 • June 2027",
-      badge: "Top 100 Qualifier Gate",
-      checkpoint: "Checkpoint 2 & 3: Solution Framework & Go-To-Market Pitch Deck (80% of Score)",
+      title: "Live Classes (7 Days)",
+      timeline: "10th Dec – 20th Dec",
+      badge: "7-Days Live Masterclasses",
+      checkpoint: "Checkpoint 2: Core Venture Frameworks & Discovery",
       description:
-        "Translate your concept into an execution blueprint and marketing engine. Build interactive Figma/Canva wireframes, map customer acquisition channels and unit economics, and submit your final 10-slide pitch deck.",
+        "7 days of high-impact live masterclasses and interactive clinics led by university faculty. Learn authentic stakeholder discovery, market hypothesis testing, wireframing, and venture feasibility.",
       deliverables: [
-        "Solution Framework & prototype mockup (Figma, Canva, or system schematic)",
-        "Go-To-Market strategy, distribution roadmap & customer acquisition channels",
-        "Feasibility stress-test: unit economics, pricing models, and risk matrix",
-        "Final 10-slide pitch deck & 3-minute video pitch submission",
+        "7 days of live interactive masterclasses with university faculty",
+        "Problem discovery & authentic stakeholder validation methodology",
+        "Wireframing & system architecture workshops (Figma, Canva & schematics)",
+        "Open faculty office hours, live interactive Q&A & clinic sessions",
       ],
-      mentorFocus: "Dual independent grading by Lead Mentor + Second Reviewer",
+      mentorFocus: "Faculty-led problem validation & prototype architecture",
     },
     {
       num: "03",
-      title: "Accelerator & Presentation",
-      timeline: "Weeks 7–8 • Late June 2027",
-      badge: "Championship Stage",
-      checkpoint: "Top 100 Semi-Finals ➔ Top 20 Finalist Prep ➔ Live Grand Demo Day",
+      title: "Submissions Window",
+      timeline: "30th Dec – 7th Jan",
+      badge: "Deliverables Window",
+      checkpoint: "Checkpoint 3: Pitch Deck & Website / Prototype Submission",
       description:
-        "The highest-performing teams enter dedicated presentation clinics. The Top 20 rehearse with US & UK global mentors, culminating in the live virtual showcase before VC & industry judges.",
+        "Finalize and submit your venture deliverables during the dedicated submission window. Every team submits their structured 10-slide pitch deck and working website or interactive prototype for independent scoring.",
       deliverables: [
-        "Top 100: Dedicated 30-min 1:1 pitch & presentation clinic with Lead Faculty",
-        "Top 20: Exclusive masterclass with US/UK/Singapore venture leaders",
-        "Full dress rehearsal & presentation polish with industry mentors",
-        "Grand Demo Day: Live pitches before 5–7 judges for ₹75,000 cash pool",
+        "10-Slide Investor & Impact Pitch Deck (Problem, Solution, TAM, Unit Economics)",
+        "Working Website / Prototype Showcase (Live link, Figma prototype, or Web app)",
+        "3-Minute recorded video walkthrough & executive pitch",
+        "Dual independent evaluation by Lead Mentor & second reviewer",
       ],
-      mentorFocus: "Live judging panel of venture capitalists & industry experts",
+      mentorFocus: "Independent dual-review grading & rubric scoring",
+    },
+    {
+      num: "04",
+      title: "Results & Prize Awards",
+      timeline: "10th January",
+      badge: "Grand Results Declaration",
+      checkpoint: "Final Checkpoint: Official Winners & ₹75,000 Cash Pool Allocation",
+      description:
+        "Official announcement of ISIP Champions, Runner-ups, and Track Winners on 10th January, followed by seed prize pool distribution and induction into the global student builder network.",
+      deliverables: [
+        "Official leaderboard publication & winner honors announcement",
+        "Distribution of ₹75,000 cash seed grant pool (1st: ₹40K, 2nd: ₹25K, 3rd: ₹10K)",
+        "Verified credential certificate & admissions portfolio documentation",
+        "Incubation and global advisory pathways for top ventures",
+      ],
+      mentorFocus: "Live announcement by VC & industry judges panel",
     },
   ];
 
@@ -79,12 +95,12 @@ export default function ProgramCalendarSection() {
         <div className="text-center mb-16">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full border border-[#c5a059]/40 bg-[#0a192f] text-xs font-bold uppercase tracking-[0.2em] text-[#c5a059] mb-4">
             <Sparkles className="w-3.5 h-3.5 text-[#c5a059]" />
-            <span>The 8-Week Builder Journey</span>
+            <span>Competition Timeline & Milestones</span>
           </div>
 
           <h2 className="font-serif-luxury text-3xl sm:text-5xl font-bold tracking-tight text-white mb-4">
-            From First Idea to <br />
-            <span className="text-[#c5a059] italic font-normal">Live Global Demo Day.</span>
+            From Idea to Prototype & <br />
+            <span className="text-[#c5a059] italic font-normal">Grand Prize Results.</span>
           </h2>
 
           <div className="w-16 h-1 bg-[#c5a059] mx-auto mt-4" />

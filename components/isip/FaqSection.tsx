@@ -22,15 +22,15 @@ export default function FaqSection() {
     },
     {
       q: "What does the ₹2,000 per student fee include?",
-      a: "The fee covers the full 8-week program: weekly masterclasses led by university faculty, open office hours, 24/7 AI-assisted draft scoring, independent human dual-grading, and 1:1 faculty clinics for the Top 100.",
+      a: "The fee covers the complete program: 7 days of live faculty-led masterclasses, open office hours, mentor evaluation, rubric feedback on your Pitch Deck and Website prototype, and consideration for the ₹75,000 seed grant pool.",
     },
     {
       q: "Who owns our venture idea and intellectual property?",
       a: "You and your team retain 100% full, unencumbered ownership of all ideas, pitch decks, and prototypes. ISIP takes 0% equity and 0% IP ownership.",
     },
     {
-      q: "How does the selection funnel work (Top 100, Top 20, Top 3)?",
-      a: "All teams build during Weeks 1–6 across Ideation & Execution. In Week 7, Top 100 qualifiers receive 1:1 mentor pitch clinics. Semi-finals determine the Top 20 finalists, who rehearse before pitching live at Grand Demo Day in Week 8 for ₹75,000 in seed prizes.",
+      q: "How does the competition timeline work?",
+      a: "Registration runs from 28th Oct to 10th Dec. Enrolled teams attend 7 days of live faculty masterclasses from 10th to 20th Dec. The submission window opens 30th Dec to 7th Jan for your 10-slide Pitch Deck and Website/Prototype, followed by official results and prize awards on 10th January.",
     },
     {
       q: "What if our venture bridges both Tech and Social Impact?",

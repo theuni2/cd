@@ -481,12 +481,11 @@ const Footer = () => {
           <FooterSection
             title="Programs"
             links={[
-              { label: 'Research', href: '/research' },
-              { label: 'Behavioral Economics Scholar', href: '/applied-behavioral-economics-scholar' },
+              { label: 'Behavioral Economics Fellowship', href: '/hanover' },
+              { label: 'ThinkTank Research', href: '/research' },
               { label: 'Internships', href: '/internship' },
-              { label: 'Social Projects', href: '/launchpad' },
+              { label: 'LaunchPad Passion Projects', href: '/launchpad' },
               { label: 'Writing Programs', href: '/essay_comp' },
-              { label: 'Workshops', href: '/workshop' },
             ]}
           />
 
@@ -494,13 +493,12 @@ const Footer = () => {
           <FooterSection
             title="Competitions & Resources"
             links={[
-              {
-                label: 'FORGE Essay Competition',
-                href: '/forge_writing_competition',
-              },
+              { label: 'All Competitions Directory', href: '/competitions' },
+              { label: 'ISIP Innovation Prize', href: '/isip' },
+              { label: 'FORGE Essay Competition', href: '/forge_writing_competition' },
+              { label: 'Novus Dubai Essay', href: '/novus_comp' },
               { label: 'Blogs', href: '/blogs' },
               { label: 'Our Book', href: '/book' },
-              { label: 'Cookie Policy', href: '/cookies' },
             ]}
           />
 
@@ -516,7 +514,7 @@ const Footer = () => {
             </p>
 
             <div className="flex flex-col gap-4">
-              {pathname === '/applied-behavioral-economics-scholar' ? (
+              {(pathname === '/applied-behavioral-economics-scholar' || pathname === '/hanover') ? (
                 <a
                   href="https://lms.thecareerdiscovery.com/home-programs/d73c70d8-1b5a-43a7-95c9-bb40db3a68d9"
                   target="_blank"

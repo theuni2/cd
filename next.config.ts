@@ -66,6 +66,13 @@ const nextConfig = {
 
   async redirects() {
     return [
+      // Behavioral Economics Scholar redirect to Hanover
+      {
+        source: '/applied-behavioral-economics-scholar',
+        destination: '/hanover',
+        permanent: true,
+      },
+
       // Old duplicate URL
       {
         source: '/india/research-mentors-students-india-2',

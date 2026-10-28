@@ -80,7 +80,7 @@ export default function HeroSection({ onApplyClick }: HeroProps) {
               <span className="text-slate-300">•</span>
               <span className="text-slate-700">Grades 9–12</span>
               <span className="text-slate-300">•</span>
-              <span className="text-slate-900 font-extrabold">20–25 Fellows Max</span>
+              <span className="text-slate-900 font-extrabold">30-35 fellows</span>
             </motion.div>
 
             {/* Main Headline */}
@@ -99,7 +99,7 @@ export default function HeroSection({ onApplyClick }: HeroProps) {
               variants={itemVariants}
               className="text-lg sm:text-xl text-slate-600 leading-relaxed font-light max-w-2xl"
             >
-              A six-week fellowship plus Week Zero in Applied Behavioral Economics & Choice Architecture. Master decision theory, diagnose commercial friction, and produce a consultancy-grade <span className="text-slate-900 font-semibold underline decoration-emerald-500 decoration-2 underline-offset-4">Behavioral Strategy Brief</span>.
+              A six-week fellowship plus Week Zero in Applied Behavioral Economics & Choice Architecture. Master decision theory, diagnose commercial friction, and produce a consultancy-grade <span className="text-slate-900 font-semibold underline decoration-emerald-500 decoration-2 underline-offset-4">behavioral strategy brief</span>.
             </motion.p>
 
             {/* Action Buttons */}
@@ -113,16 +113,16 @@ export default function HeroSection({ onApplyClick }: HeroProps) {
                 rel="noopener noreferrer"
                 className="px-8 py-4 rounded-2xl bg-gradient-to-r from-emerald-600 via-teal-600 to-indigo-600 hover:from-emerald-500 hover:to-indigo-500 text-white font-extrabold text-base shadow-xl shadow-emerald-600/20 flex items-center justify-center gap-2 group cursor-pointer transition-all hover:scale-[1.02] active:scale-[0.98]"
               >
-                <span>Apply / Contact</span>
+                <span>Apply</span>
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </a>
 
               <a
-                href="#reading-list"
+                href="#syllabus"
                 className="px-8 py-4 rounded-2xl bg-white hover:bg-slate-50 text-slate-800 font-bold text-base border border-slate-200 transition-all flex items-center justify-center gap-2 shadow-sm hover:shadow-md"
               >
                 <BookOpen className="w-5 h-5 text-emerald-600" />
-                View Week Zero Literature
+                View Syllabus
               </a>
             </motion.div>
 
@@ -172,7 +172,7 @@ export default function HeroSection({ onApplyClick }: HeroProps) {
                   <Globe className="w-3.5 h-3.5" /> Schedule
                 </div>
                 <div className="text-slate-900 font-extrabold text-xs">Saturdays Live</div>
-                <div className="text-slate-500 text-[11px]">ET • GST • IST</div>
+                <div className="text-slate-500 text-[11px]">GMT</div>
               </motion.div>
             </motion.div>
 

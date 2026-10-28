@@ -72,7 +72,7 @@ export default function ISIPClient() {
         onSelectTrack={(track) => handleOpenRegister(track)}
       />
 
-      {/* 4. 8-Week Program Calendar & Milestones */}
+      {/* 4. Program Calendar & Milestones */}
       <ProgramCalendarSection />
 
       {/* 5. Funnel Progression & Coaching Support */}
@@ -109,7 +109,7 @@ export default function ISIPClient() {
           >
             <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-[#c5a059]/40 bg-[#0a192f] text-xs font-bold uppercase tracking-[0.2em] text-[#c5a059]">
               <Sparkles className="w-3.5 h-3.5" />
-              <span>Inaugural Cohort • Summer 2027</span>
+              <span>Inaugural Cohort • 2026–2027</span>
             </div>
 
             <h2 className="font-serif-luxury text-3xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-white leading-tight">

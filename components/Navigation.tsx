@@ -1031,26 +1031,21 @@ const Navigation = () => {
     ? "text-gray-900 hover:text-gray-600 font-medium"
     : "text-white hover:text-gray-200 font-medium"
 
-  /* ===================== UPDATED NAV DATA ===================== */
   const navItems = [
     { href: '/', label: 'Home' },
     { 
-      href: '/research', 
-      label: 'Research',
+      href: '/hanover', 
+      label: 'Fellowship',
       subItems: [
-        { href: '/research', label: 'ThinkTank Research' },
-        { href: '/applied-behavioral-economics-scholar', label: 'Behavioral Economics (Prof. Clark)' },
+        { href: '/hanover', label: 'Applied Behavioral Economics (Prof. Clark)' },
       ]
     },
-    { href: '/internship', label: 'Internships' },
-    { href: '/launchpad', label: 'Passion Project' },
-    { href: '/essay_comp', label: 'Writing Programs' },
-    // { href: '/workshop', label: 'Workshops' },
     { 
-      href: '#', 
+      href: '/competitions', 
       label: 'Competitions', 
       subItems: [
-        // { href: '/isip', label: 'ISIP Innovation Prize' },
+        { href: '/competitions', label: 'All Competitions Directory' },
+        { href: '/isip', label: 'ISIP Innovation Prize' },
         { href: '/forge_writing_competition', label: 'FORGE Essay Competition' },
         { href: '/solve_eg', label: 'SOLVE Competition' },
         { href: '/novus_comp', label: 'Novus Dubai Essay Competition' },
@@ -1122,7 +1117,7 @@ const Navigation = () => {
             })}
 
             {/* Contact Button */}
-            {pathname === '/applied-behavioral-economics-scholar' ? (
+            {(pathname === '/applied-behavioral-economics-scholar' || pathname === '/hanover') ? (
               <a
                 href="https://lms.thecareerdiscovery.com/home-programs/d73c70d8-1b5a-43a7-95c9-bb40db3a68d9"
                 target="_blank"
@@ -1195,7 +1190,7 @@ const Navigation = () => {
 
                 {/* Mobile Contact Button */}
                 <div className="pt-2">
-                  {pathname === '/applied-behavioral-economics-scholar' ? (
+                  {(pathname === '/applied-behavioral-economics-scholar' || pathname === '/hanover') ? (
                     <a
                       href="https://lms.thecareerdiscovery.com/home-programs/d73c70d8-1b5a-43a7-95c9-bb40db3a68d9"
                       target="_blank"

@@ -49,7 +49,7 @@ export default function FloatingApplyBar({ onRegisterClick }: FloatingApplyBarPr
                   </span>
                 </div>
                 <p className="text-[11px] text-slate-300 font-light hidden sm:block">
-                  8-Week Faculty Incubator • ₹75,000 Cash Seed Pool • Grades 8–12
+                  Reg: 28 Oct–10 Dec • Classes: 10–20 Dec • ₹75K Seed Pool
                 </p>
               </div>
             </div>

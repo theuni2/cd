@@ -22,7 +22,7 @@ export default function BehavioralEconomicsClient() {
 
   return (
     <div className="relative min-h-screen bg-white text-slate-900 font-sans selection:bg-emerald-500 selection:text-white">
-      
+
 
 
       {/* Main Sections */}
@@ -34,8 +34,8 @@ export default function BehavioralEconomicsClient() {
       <ProcessSection />
       <ReadingListSection />
       <SyllabusSection />
-      <RubricSection />
-      <CoachAndBudgetSection />
+      {/* <RubricSection /> */}
+      {/* <CoachAndBudgetSection /> */}
       <GuidelinesSection />
 
       {/* Final Call to Action Section */}
@@ -58,7 +58,7 @@ export default function BehavioralEconomicsClient() {
             </h2>
 
             <p className="text-slate-300 text-base sm:text-lg max-w-2xl mx-auto font-light leading-relaxed">
-              Join 20 to 25 selected fellows for six live sessions with Dartmouth Professor Kimberly Rose Clark, Ph.D., and graduate with a consultancy-ready Behavioral Strategy Brief.
+              Join 30 to 35 selected fellows for six live sessions with Dartmouth Professor Kimberly Rose Clark, Ph.D., and graduate with a consultancy-ready Behavioral Strategy Brief.
             </p>
 
             <div className="pt-4 flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -78,16 +78,29 @@ export default function BehavioralEconomicsClient() {
 
       {/* Floating Contact & Enrollment Button */}
       <div className="fixed bottom-6 right-6 z-40">
-        <a
+        <motion.a
           href="https://lms.thecareerdiscovery.com/home-programs/d73c70d8-1b5a-43a7-95c9-bb40db3a68d9"
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center gap-2 px-5 py-3 rounded-full bg-slate-900/95 hover:bg-slate-950 text-white font-bold text-sm border border-emerald-500/40 shadow-2xl shadow-emerald-500/20 backdrop-blur-md transition-all hover:scale-105 active:scale-95 group"
+          animate={{
+            x: [0, -5, 5, -5, 5, -2, 2, 0],
+            rotate: [0, -4, 4, -4, 4, -2, 2, 0],
+            scale: [1, 1.04, 1, 1.04, 1, 1, 1, 1],
+          }}
+          transition={{
+            duration: 1.2,
+            repeat: Infinity,
+            repeatDelay: 2.5,
+            ease: "easeInOut",
+          }}
+          whileHover={{ scale: 1.08, rotate: 0, x: 0 }}
+          whileTap={{ scale: 0.95 }}
+          className="flex items-center gap-2 px-5 py-3 rounded-full bg-slate-900/95 hover:bg-slate-950 text-white font-bold text-sm border border-emerald-500/40 shadow-2xl shadow-emerald-500/25 backdrop-blur-md transition-all group cursor-pointer"
         >
           <span className="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse" />
           <span>Contact & Apply</span>
           <ArrowUpRight className="w-4 h-4 text-emerald-400 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
-        </a>
+        </motion.a>
       </div>
 
       {/* Application Form Modal */}

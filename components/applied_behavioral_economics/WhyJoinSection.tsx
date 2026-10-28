@@ -94,9 +94,11 @@ export default function WhyJoinSection() {
         </motion.div>
 
         {/* Pillars Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-8 max-w-6xl mx-auto">
           {pillars.map((pillar, idx) => {
             const Icon = pillar.icon;
+            const isFourth = idx === 3;
+            const isFifth = idx === 4;
             return (
               <motion.div
                 key={idx}
@@ -105,7 +107,11 @@ export default function WhyJoinSection() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: idx * 0.1 }}
                 whileHover={{ y: -6 }}
-                className={`p-8 rounded-3xl bg-gradient-to-br ${pillar.color} border ${pillar.borderColor} shadow-lg hover:shadow-2xl transition-all duration-300 flex flex-col justify-between`}
+                className={`p-8 rounded-3xl bg-gradient-to-br ${pillar.color} border ${pillar.borderColor} shadow-lg hover:shadow-2xl transition-all duration-300 flex flex-col justify-between lg:col-span-2 ${
+                  isFourth ? "lg:col-start-2" : ""
+                } ${
+                  isFifth ? "md:col-span-2 md:max-w-md md:mx-auto lg:max-w-none lg:mx-0 lg:col-span-2" : ""
+                }`}
               >
                 <div>
                   <div className="flex items-center justify-between mb-6">

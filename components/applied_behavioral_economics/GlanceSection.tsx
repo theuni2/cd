@@ -25,7 +25,7 @@ export default function GlanceSection() {
     {
       icon: Award,
       title: "Vertical",
-      detail: "Business & Economics",
+      detail: "Economics & Psychology",
       highlight: "Interdisciplinary",
     },
     {
@@ -55,8 +55,8 @@ export default function GlanceSection() {
     {
       icon: CheckCircle2,
       title: "Cohort Size & Grade",
-      detail: "Grades 9–12, 20 to 25 fellows, admitted strictly by application and interview",
-      highlight: "Selective (20-25 Fellows)",
+      detail: "Grades 9–12, 30 to 35 fellows, admitted strictly by application and interview",
+      highlight: "Selective (30-35 Fellows)",
     },
     {
       icon: UserCheck,
