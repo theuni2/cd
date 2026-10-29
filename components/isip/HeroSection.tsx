@@ -56,10 +56,10 @@ export default function HeroSection({
   }, [targetDate]);
 
   const kpis = [
-    { value: "28 OCT – 10 DEC", label: "Registration Window", highlight: true },
-    { value: "10 – 20 DEC", label: "7-Days Live Classes", highlight: false },
+    { value: "10 DEC", label: "Registration Deadline", highlight: true },
+    { value: "11 – 20 DEC", label: "7-Days Live Classes", highlight: false },
     { value: "30 DEC – 7 JAN", label: "Deck & Website Submissions", highlight: true },
-    { value: "10 JANUARY", label: "Results & ₹75K Grants", highlight: true },
+    { value: "10 MARCH", label: "Results & ₹75K Grants", highlight: true },
     { value: "₹2,000", label: "Per Builder Fee", highlight: false },
   ];
 
@@ -224,12 +224,12 @@ export default function HeroSection({
             {/* Quick Metrics Strip */}
             <div className="space-y-2.5 text-xs sm:text-sm text-slate-300">
               <div className="flex items-center justify-between py-1.5 border-b border-white/5">
-                <span className="text-slate-400">Registration:</span>
-                <span className="font-semibold text-white">28th Oct – 10th Dec (₹2,000)</span>
+                <span className="text-slate-400">Registration Deadline:</span>
+                <span className="font-semibold text-white">10th Dec (₹2,000 Fee)</span>
               </div>
               <div className="flex items-center justify-between py-1.5 border-b border-white/5">
-                <span className="text-slate-400">Classes (7 Days):</span>
-                <span className="font-semibold text-emerald-400">10th – 20th Dec (Live Faculty)</span>
+                <span className="text-slate-400">7-Days Live Classes:</span>
+                <span className="font-semibold text-emerald-400">11th – 20th Dec (Live Faculty)</span>
               </div>
               <div className="flex items-center justify-between py-1.5 border-b border-white/5">
                 <span className="text-slate-400">Submissions Window:</span>
@@ -239,7 +239,7 @@ export default function HeroSection({
                 <span className="text-slate-400">Results & Seed Pool:</span>
                 <span className="font-bold text-[#c5a059] flex items-center gap-1">
                   <Trophy className="w-3.5 h-3.5" />
-                  10th Jan (₹75,000 Pool)
+                  10th March 2027 (₹75,000 Pool)
                 </span>
               </div>
             </div>

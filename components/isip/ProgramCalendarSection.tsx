@@ -24,9 +24,9 @@ export default function ProgramCalendarSection() {
       title: "Registration & Onboarding",
       timeline: "28th Oct – 10th Dec",
       badge: "Registration Open",
-      checkpoint: "Checkpoint 1: Team Enrollment & Track Selection (₹2,000 Fee)",
+      checkpoint: "Checkpoint 1: Registration Deadline: 10th Dec (₹2,000 Fee)",
       description:
-        "Registration window opens on 28th October for students in Grades 8–12. Form your solo or 3-builder team, select Tech Innovation or Social Impact, complete guardian DPDP consent, and access onboarding toolkits.",
+        "Registration window is open until 10th December for students in Grades 8–12. Form your solo or 3-builder team, select Tech Innovation or Social Impact, complete guardian DPDP consent, and access onboarding toolkits.",
       deliverables: [
         "Solo or Team Registration (Up to 3 builders • Grades 8–12)",
         "Track Confirmation: Tech Innovation or Social Impact",
@@ -38,11 +38,11 @@ export default function ProgramCalendarSection() {
     {
       num: "02",
       title: "Live Classes (7 Days)",
-      timeline: "10th Dec – 20th Dec",
+      timeline: "11th Dec – 20th Dec",
       badge: "7-Days Live Masterclasses",
       checkpoint: "Checkpoint 2: Core Venture Frameworks & Discovery",
       description:
-        "7 days of high-impact live masterclasses and interactive clinics led by university faculty. Learn authentic stakeholder discovery, market hypothesis testing, wireframing, and venture feasibility.",
+        "7 days of high-impact live masterclasses and interactive clinics led by university faculty from 11th to 20th December. Learn authentic stakeholder discovery, market hypothesis testing, wireframing, and venture feasibility.",
       deliverables: [
         "7 days of live interactive masterclasses with university faculty",
         "Problem discovery & authentic stakeholder validation methodology",
@@ -70,11 +70,11 @@ export default function ProgramCalendarSection() {
     {
       num: "04",
       title: "Results & Prize Awards",
-      timeline: "10th January",
+      timeline: "10th March 2027",
       badge: "Grand Results Declaration",
       checkpoint: "Final Checkpoint: Official Winners & ₹75,000 Cash Pool Allocation",
       description:
-        "Official announcement of ISIP Champions, Runner-ups, and Track Winners on 10th January, followed by seed prize pool distribution and induction into the global student builder network.",
+        "Official announcement of ISIP Champions, Runner-ups, and Track Winners on 10th March 2027, followed by seed prize pool distribution and induction into the global student builder network.",
       deliverables: [
         "Official leaderboard publication & winner honors announcement",
         "Distribution of ₹75,000 cash seed grant pool (1st: ₹40K, 2nd: ₹25K, 3rd: ₹10K)",

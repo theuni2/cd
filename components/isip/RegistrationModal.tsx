@@ -573,7 +573,7 @@ export default function RegistrationModal({
                 </div>
                 <div className="flex justify-between text-slate-400">
                   <span>Cohort Launch:</span>
-                  <span className="text-amber-400 font-mono">Classes: 10th – 20th Dec 2026</span>
+                  <span className="text-amber-400 font-mono">Classes: 11th – 20th Dec 2026</span>
                 </div>
                 <div className="flex justify-between text-slate-400">
                   <span>DPDP Parent Consent:</span>

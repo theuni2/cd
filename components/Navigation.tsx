@@ -1041,6 +1041,16 @@ const Navigation = () => {
       ]
     },
     { 
+      href: '/research', 
+      label: 'Research',
+      subItems: [
+        { href: '/research', label: 'ThinkTank Research' },
+        { href: '/hanover', label: 'Behavioral Economics (Prof. Clark)' },
+      ]
+    },
+    { href: '/internship', label: 'Internships' },
+    { href: '/launchpad', label: 'Passion Project' },
+    { 
       href: '/competitions', 
       label: 'Competitions', 
       subItems: [

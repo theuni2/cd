@@ -82,7 +82,7 @@ export const competitionsData: Competition[] = [
     format: "10-Slide Pitch Deck & Website / Prototype",
     eligibility: "Solo or Teams of up to 3 • Grades 8–12",
     prize: "₹75,000 Cash Seed Grants & Mentorship",
-    timeline: "Reg: 28 Oct – 10 Dec • Results: 10 Jan",
+    timeline: "Deadline: 10 Dec • Classes: 11–20 Dec • Results: 10 March 2027",
     href: "/isip",
     accentGradient: "from-emerald-500/10 via-teal-500/5 to-transparent",
     cardBorder: "border-emerald-200 hover:border-emerald-400",

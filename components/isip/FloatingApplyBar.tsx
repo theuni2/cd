@@ -49,7 +49,7 @@ export default function FloatingApplyBar({ onRegisterClick }: FloatingApplyBarPr
                   </span>
                 </div>
                 <p className="text-[11px] text-slate-300 font-light hidden sm:block">
-                  Reg: 28 Oct–10 Dec • Classes: 10–20 Dec • ₹75K Seed Pool
+                  Deadline: 10 Dec • Classes: 11–20 Dec • ₹75K Seed Pool
                 </p>
               </div>
             </div>

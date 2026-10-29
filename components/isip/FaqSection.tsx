@@ -30,7 +30,7 @@ export default function FaqSection() {
     },
     {
       q: "How does the competition timeline work?",
-      a: "Registration runs from 28th Oct to 10th Dec. Enrolled teams attend 7 days of live faculty masterclasses from 10th to 20th Dec. The submission window opens 30th Dec to 7th Jan for your 10-slide Pitch Deck and Website/Prototype, followed by official results and prize awards on 10th January.",
+      a: "Registration runs until the 10th Dec deadline. Enrolled teams attend 7 days of live faculty masterclasses from 11th to 20th Dec. The submission window opens 30th Dec to 7th Jan for your 10-slide Pitch Deck and Website/Prototype, followed by official results and prize awards on 10th March 2027.",
     },
     {
       q: "What if our venture bridges both Tech and Social Impact?",
